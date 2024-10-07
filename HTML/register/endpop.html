@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<style>
+    body{
+        background-color:rgb(255, 255, 255);
+        margin : 100px;
+        margin-top: 10px;
+        padding : 500px;
+        padding-top:10px;
+    }
+
+    .img{
+    display:flex;
+    justify-content: center;
+    }
+
+   .content{
+    width: 100%;
+    justify-content: center;
+   }
+
+   .description{
+    width:100%;
+    float:left;
+    clear:both;
+    text-align: center;
+   }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>금액사용내역 팝업</title>
+</head>
+<body class="body">
+    <input type="button" value="팝업창 호출" onclick="showPopup();" />    <div class="content">
+        <div class="description">
+            <h4>금액 사용 내역</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+               when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+               but also the leap into electronic typesetting, remaining essentially unchanged. 
+               It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+               and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <img src="../../img/산나비.avif" img height="100%" img width="100%">
+        </div>            
+</body>
+<script language="javascript">
+    function showPopup() { window.open("popup.html", "a", "width=1200, height=1200"); }
+    </script>
+</html>

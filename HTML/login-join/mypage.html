@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<style>
+.body{
+    background-color:rgb(255, 255, 255);
+    margin : 0px;
+    margin-top: 10px;
+    padding : 100px;
+    padding-top:10px;
+}
+
+.displaytext{
+  text-align: center;
+  color:black;
+  font-size: 30px;
+}
+
+.img{
+  text-align: center;
+}
+
+.box{
+  position:flex;
+  margin : 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+input{
+  border:1px solid black; 
+  border-radius: 5px;
+  width: 300px;
+  height:50px;
+  text-align: center;
+  margin : 0 auto;
+}
+
+.displaytextbox{
+  position:flex;
+  margin : 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.home{
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
+}
+
+.register{
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
+  display:inline-block;
+}
+
+.ended{
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
+  display:inline-block;
+}
+
+.purchase{
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
+  display:inline-block;
+}
+
+.profile{
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
+}
+
+.regifunding{
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
+  display:inline-block;
+}
+
+.paidfunding{
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
+  display:inline-block;
+}
+
+.textarea{
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  border-color:rgb(0, 0, 0);
+  color:black;
+  margin:5px;
+  margin-top:0px;
+}
+
+.registered{
+  width:200px;
+  height:200px;
+  display:inline-block;
+  margin-top: 20px;
+  margin-right:20px;
+}
+
+.paid{
+  width:200px;
+  height:200px;
+  display:inline-block;
+  margin-top:0px;
+  margin-right:20px;
+}
+
+.placeholder{
+  text-align:left;
+  font-style:italic;
+  margin:20px;
+  margin-bottom :0px;
+  margin-top:1px;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>마이페이지</title>
+</head>
+<body class="body">
+    <div class="img">
+        <img src="../../img/jikbakguri (1).png">
+    </div>
+    <div class="displaytextbox">    
+        <form>
+            <h1 class="displaytext">마이페이지</h1>
+        </form>
+    </div>
+    <div>
+        <button class="home">홈</button>
+        <button class="register">펀딩등록</button>
+        <button class="ended">종료 프로젝트</button>
+        <button class="purchase">작품 구매</button>
+    </div>
+    <div>
+        <button class="profile" a href="">프로필</button>
+        <button class="regifunding" a href="">등록한 펀딩</button>
+        <button class="paidfunding" a href="">후원한 펀딩</button>
+    </div>
+    <div>
+        <h4 class="placeholder">프로필</h4>
+        <br/>
+        <textarea class="textarea"></textarea>
+    </div>
+    <div>
+        <h4 class="placeholder">등록한 펀딩</h4>
+        <br/>
+        <img src="../../img/jikbakguri (1).png" class="registered">
+        <img src="../../img/jikbakguri (1).png" class="registered">
+        <img src="../../img/jikbakguri (1).png" class="registered">
+    </div>
+    <div>
+        <h4 class="placeholder">후원한 펀딩</h4>
+        <br/>
+        <img src="../../img/경옥고.jpeg" class="paid">
+        <img src="../../img/산나비.avif" class="paid">
+        <img src="../../img/jikbakguri (1).png" class="paid">
+    </div>
+</body>
+</html>

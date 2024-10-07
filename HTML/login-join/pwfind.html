@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <style>     
+    @media (max-width:800px) {
+        .body{
+            background-color:rgb(250, 117, 117);
+        }    
+    }
+
+    .body{
+    position:flex;
+    background-color:rgb(255, 255, 255);
+    margin : 100px;
+    margin-top: 10px;
+    padding : 500px;
+    padding-top:10px;
+    }
+
+    .displaytext{
+    text-align: center;
+    color:black;
+    font-size: 30px;
+    }
+
+    .img{
+    text-align: center;
+    }
+
+    .box{
+    position:flex;
+    margin : 0 auto;
+    text-align: center;
+    width: 100%;
+    }
+
+    input{
+    border:1px solid black; 
+    background: #fafafa;
+    border-radius: 3px;
+    width: 500px;
+    height:100px;
+    text-align: center;
+    text-indent: 10px;
+    font-size: 30px;
+    margin : 0 auto;
+    padding:10px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+    outline-color: gray;
+    }
+
+    /* input {
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    text-indent: 10px;
+    outline-color: gray;
+    } */
+
+    .displaytextbox{
+    position:flex;
+    margin : 0 auto;
+    text-align: center;
+    width: 50%;
+    }
+
+    .verifycheck{
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    margin : 0 auto;
+    float: left;
+    }
+
+    .button{
+    width: 525px;
+    height: 120px;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 5px;
+    border-color:white;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width", initial-scale="0.67", maximum-scale="0.67">
+        <title>비밀번호 찾기</title>
+    </head>
+    <body class="body">
+        <div class="img">
+            <img src="../../img/jikbakguri (1).png">
+        </div>
+        <br/>
+        
+        <div class="displaytextbox">    
+            <form>
+                <h1 class="displaytext">인증번호를 받을 이메일 입력하기</h1>
+            </form>
+        </div>
+        <br/>
+        
+        <div class="box">
+            <form>
+                <input class="input" input type="name" placeholder="이름 입력">
+            </form>
+            <form>
+                <input class="input" input type="email" placeholder="godchangseop.@naver.com">
+            </form>
+            <form>
+                <input class="input" input type="email" placeholder="인증번호 입력">
+            </form>
+            <button class="button">인증번호 확인</button>
+        </div>
+    </body>
+    </html>
