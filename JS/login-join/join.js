@@ -46,13 +46,16 @@ const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
 const inputEmailPwdCh = document.getElementById('userPwdCh');
 const loginBtn = document.getElementById('btnLogin');
+const emailCk = document.getElementById('userEmailCk');
+const copyCk = document.getElementById('userCopy');
 
 const nameWarning = document.getElementById('nameWarning');
 const phoneWarning = document.getElementById('phoneWarning');
 const emailWarning = document.getElementById('emailWarning');
 const pwdWarning = document.getElementById('pwdWarning');
 const pwdChWarning = document.getElementById('pwdChWarning');
-
+const resultMessageId = document.getElementById('resultMessageId');
+const resultMessageCopy = document.getElementById('resultMessageCopy');
 
 const join_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
@@ -63,6 +66,8 @@ const join_user = () => {
     emailWarning.textContent = '';
     pwdWarning.textContent = '';
     pwdChWarning.textContent = '';
+    resultMessageId.textContent = '';
+    resultMessageCopy.textContent = '';
 
     // 이름 검사 (2~10자)
     if (inputName.value.length < 2 || inputName.value.length > 10 || /\s/.test(inputName.value)) {
@@ -104,15 +109,31 @@ const join_user = () => {
         isValid = false;
     }
 
+    if (!emailCk.checked) {
+        resultMessageId.textContent = '이메일 중복확인을 체크해 주세요';
+        loginBtn.style.backgroundColor = 'red';
+        loginBtn.disabled = true;
+        isValid = false;
+    }
+
+    if (!copyCk.checked) {
+        resultMessageCopy.textContent += (resultMessageCopy.textContent ? ' ' : '') + '약관에 동의해 주세요.';
+        loginBtn.style.backgroundColor = 'red';
+        loginBtn.disabled = true;
+        isValid = false;
+    }
+
     // 모든 조건을 통과했을 경우
     if (isValid) {
         loginBtn.style.backgroundColor = "#0095F6";
         loginBtn.disabled = false;
+        resultMessageId.textContent = ''; // 통과 시 메세지 지우기
     }
 }
 
 // 페이지 이동
 const moveToMain = () => {
+    alert('가입을 환영합니다 !')
     location.replace('../../HTML/mainpage/main.html');
 }
 
@@ -131,6 +152,8 @@ inputPhone.addEventListener('input', join_user);
 inputEmailId.addEventListener('input', join_user);
 inputEmailPwd.addEventListener('input', join_user);
 inputEmailPwdCh.addEventListener('input', join_user);
+emailCk.addEventListener('change', join_user);
+copyCk.addEventListener('change', join_user);
 
 
 // 회원가입 로직 끝

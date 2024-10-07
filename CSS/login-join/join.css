@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
 /* join */
 
 body {
@@ -18,26 +16,31 @@ join form {
 join .container {
     width: 500px;
     position: relative;
-    top: 10px;
-}
-
-join fieldset {
-    border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 20px;
-    padding: 10px 30px 30px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: white;
 }
 
 join .joinLogo {
     width: 100%;
     height: 100px;
+    background-size: cover;
+}
+
+join .joinLogo .joinLogoPic img {
+    width: 100%;
+    height: 90px;
+}
+
+join fieldset {
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 5px 30px 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
 }
 
 join .container .comment {
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 45px;
 }
 
 join .container fieldset div input#userName,
@@ -88,7 +91,13 @@ join .container fieldset div.inputEmailCk {
     padding-bottom: 20px;
 }
 
-join .container fieldset .loginBtn {
+join .container fieldset .inputEmailCk div#resultMessageId {
+    position: relative;
+    top: 10px;
+    left: 150px;
+}
+
+resultMessage join .container fieldset .loginBtn {
     width: 100%;
     height: 100px;
 }
@@ -123,10 +132,16 @@ join .container fieldset div.inputCopy {
 }
 
 join .container fieldset a {
-    color: white;
+    color: skyblue;
     text-decoration: none;
     font-size: 13px;
     padding-left: 10px;
+}
+
+join .container fieldset div#resultMessageCopy {
+    position: relative;
+    top: 5px;
+    left: 110px;
 }
 
 join .container fieldset a:hover {
