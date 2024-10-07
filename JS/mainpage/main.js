@@ -1,3 +1,10 @@
+// Join 화면으로 이동
+const moveToJoin = () => {
+    location.replace('../../HTML/login-join/join.html');
+}
+joinBtn.addEventListener('click', moveToJoin);
+
+
 // main slider 동작구현 =================================================================
 
 let currentIndex = 0;
@@ -72,22 +79,22 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
     const picList = container.querySelector('.pic_list');
     const images = picList.querySelectorAll('li img');
     const liIndex = container.querySelectorAll(".list"); // class명 list인 li태그         
-    let currentIndex = 0;        
+    let currentIndex = 0;
 
     container.querySelector('.btn1').addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + images.length) % images.length; // 이전 이미지로 이동        
         // picList.style.transform = 'translate(0vw)'; // 슬라이드 이동
-        for (let i=0; i<liIndex.length; i++) { // li태그 전체 숨김 처리
+        for (let i = 0; i < liIndex.length; i++) { // li태그 전체 숨김 처리
             liIndex[i].style.display = "none";
-        }     
+        }
         container.querySelector("#list" + currentIndex).style.display = "block"; // display : block; 
     });
 
-    container.querySelector('.btn2').addEventListener('click', () => {        
+    container.querySelector('.btn2').addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % images.length; // 다음 이미지로 이동 (0)        
-        for (let i=0; i<liIndex.length; i++) { // li태그 전체 숨김 처리
+        for (let i = 0; i < liIndex.length; i++) { // li태그 전체 숨김 처리
             liIndex[i].style.display = "none";
-        }        
+        }
         container.querySelector("#list" + currentIndex).style.display = "block"; // 하나의 li만 보이기
     });
 });

@@ -1,5 +1,11 @@
 /* join */
 
+body {
+    background: url(../../img/배경11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 join form {
     width: 100%;
     display: flex;
@@ -9,62 +15,135 @@ join form {
 
 join .container {
     width: 500px;
-}
-
-join fieldset {
-    border: 1px solid gray;
-    border-radius: 20px;
-    padding: 10px 30px 30px;
+    position: relative;
 }
 
 join .joinLogo {
     width: 100%;
     height: 100px;
+    background-size: cover;
+}
+
+join .joinLogo .joinLogoPic img {
+    width: 100%;
+    height: 90px;
+}
+
+join fieldset {
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    padding: 5px 30px 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
 }
 
 join .container .comment {
     letter-spacing: 2px;
-    line-height: 35px;
+    line-height: 45px;
 }
 
-join .container div input#userid,
+join .container fieldset div input#userName,
 #userPhone,
 #userEmail,
 #userPwd,
 #userPwdCh {
     width: 100%;
-    height: 40px;
-    margin: 20px 0px 15px;
+    height: 50px;
+    margin: 15px 0px 10px;
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, .12);
-    font-size: 16px;
-}
-
-join .container div input:focus {
     outline: none;
-    /* border-bottom: 3px solid black; */
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    padding: 5px 0px 0px 20px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
 }
 
-join .container div.inputEmailCk {
+join .container fieldset div input:hover {
+    box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212);
+}
+
+join .container fieldset div input::placeholder {
+    color: white;
+}
+
+join .container fieldset div.warning {
+    display: flex;
     position: relative;
-    right: 150px;
+    bottom: 5px;
+    left: 20px;
+    color: rgb(252, 146, 146);
+    font-size: 12px;
+}
+
+join .container fieldset i {
+    position: absolute;
+    right: 35px;
+    transform: translateY(-220%);
+    font-size: 23px;
+}
+
+join .container fieldset div.inputEmailCk {
+    position: relative;
+    right: 130px;
     padding-bottom: 20px;
 }
 
-join .container .sumit {
+join .container fieldset .inputEmailCk div#resultMessageId {
+    position: relative;
+    top: 10px;
+    left: 150px;
+}
+
+resultMessage join .container fieldset .loginBtn {
     width: 100%;
     height: 100px;
 }
 
-join .container .sumit button{
+join .container fieldset .loginBtn button {
     width: 100%;
     height: 50px;
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 1px solid white;
+    border-radius: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    /* font-weight: bold; */
     letter-spacing: 5px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 0 40px 40px white inset;
+    transition: all 150ms ease-in-out;
+}
+
+join .container fieldset .loginBtn button:hover {
+    box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212);
+}
+
+join .container fieldset div.inputCopy {
+    position: relative;
+    /* right: 70px; */
+    top: 10px;
+}
+
+join .container fieldset a {
+    color: skyblue;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+join .container fieldset div#resultMessageCopy {
+    position: relative;
+    top: 5px;
+    left: 110px;
+}
+
+join .container fieldset a:hover {
+    text-decoration: underline;
 }

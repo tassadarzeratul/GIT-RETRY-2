@@ -4,13 +4,16 @@ registerPop .container {
     display: flex;
     justify-content: center;
     text-align: center;
+    position: relative;
+    top: 30px;
 }
 
 registerPop fieldset {
     width: 300px;
-    border: 1px solid gray;
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding: 10px 30px 50px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
 }
 
 registerPop .container .comment {
@@ -29,4 +32,13 @@ registerPop .container button {
     color: white;
     font-size: 20px;
     letter-spacing: 5px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 0 40px 40px black inset;
+    transition: all 150ms ease-in-out;
+}
+
+registerPop .container button:hover {
+    box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
+
 }
