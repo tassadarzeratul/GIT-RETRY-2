@@ -1,0 +1,28 @@
+.align {
+    display:block;
+    text-align:center;
+
+}
+
+input {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    text-indent: 10px;
+    outline-color: gray;
+
+}
+
+#certifyBtn {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto;
+    background: black;
+    color: #dbdbdb;
+
+}
