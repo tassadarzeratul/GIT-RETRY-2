@@ -15,7 +15,7 @@
 <body>
     <!--join 화면 시작-->
     <join>
-        <form action="#" method="post" autocomplete="off">
+        <form action="#" method="post">
             <div class="container">
                 <div class="joinLogo">
                     <div class="joinLogoPic">
@@ -28,7 +28,8 @@
                     </div>
                     <div class="inputName">
                         <label for="userid">
-                            <input class="name" id="userid" type="text" placeholder="이름 입력" required>
+                            <input class="name" id="userName" type="text" placeholder="이름 입력" required>
+                            <div class="warning" id="nameWarning"></div>
                             <i class="fa-solid fa-user"></i>
                         </label>
                     </div>
@@ -36,12 +37,14 @@
                         <label for="userPhone">
                             <input class="phone" id="userPhone" type="tel" placeholder="휴대폰 번호 입력" maxlength="11"
                                 required>
+                            <div class="warning" id="phoneWarning"></div>
                             <i class="fa-solid fa-phone"></i>
                         </label>
                     </div>
                     <div class="inputEmail">
                         <label for="userEmail">
                             <input class="email" id="userEmail" type="email" placeholder="이메일 주소 입력" required>
+                            <div class="warning" id="emailWarning"></div>
                             <i class="fa-solid fa-envelope"></i>
                         </label>
                     </div>
@@ -54,14 +57,17 @@
                     <div class="inputPwd">
                         <label for="userPwd">
                             <input class="password" id="userPwd" type="password" placeholder="비밀번호 입력" minlength="8"
-                                maxlength="16" required>
+                                maxlength="16" autocomplete="off" required>
+                            <div class="warning" id="pwdWarning"></div>
                             <i class="fa-solid fa-lock"></i>
                         </label>
                     </div>
                     <div class="inputPwdCh">
                         <label for="userPwdCh">
                             <input class="password" id="userPwdCh" type="password" placeholder="비밀번호 확인" minlength="8"
-                                maxlength="16" required>
+                                maxlength="16" autocomplete="off" required>
+                            <div class="warning" id="pwdChWarning"></div>
+
                             <i class="fa-solid fa-lock"></i>
                         </label>
                     </div>

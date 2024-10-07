@@ -40,7 +40,7 @@ join .container .comment {
     line-height: 35px;
 }
 
-join .container fieldset div input#userid,
+join .container fieldset div input#userName,
 #userPhone,
 #userEmail,
 #userPwd,
@@ -64,6 +64,15 @@ join .container fieldset div input:hover {
 
 join .container fieldset div input::placeholder {
     color: white;
+}
+
+join .container fieldset div.warning {
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    left: 20px;
+    color: rgb(252, 146, 146);
+    font-size: 12px;
 }
 
 join .container fieldset i {
