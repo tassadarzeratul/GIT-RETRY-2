@@ -36,11 +36,11 @@ main header .container {
 
 main header .logo {
     width: 100%;
-    height: 100px;
+    height: 90px;
 }
 
 main header .logo .logo_pic {
-    width: 90%;
+    width: 100%;
     height: 100%;
     background-image: url(../../img/jikbakguri2.png);
     background-repeat: no-repeat;
@@ -63,7 +63,6 @@ main header .menu li {
     border: none;
     cursor: pointer;
     font-size: 18px;
-    /* font-weight: bold; */
 }
 
 main header .login {
@@ -98,7 +97,6 @@ main .mainBox .right {
 main section {
     width: 100%;
     height: 500px;
-    border: 1px solid;
     border-radius: 5px;
     margin: 0px 0px 20px;
     overflow: hidden;
@@ -146,7 +144,6 @@ main sub div {
 main sub .pic_container .pic_list img {
     width: 100%;
     height: 180px;
-    border: 1px solid;
     border-radius: 5px;
     background-size: cover;
     position: absolute;

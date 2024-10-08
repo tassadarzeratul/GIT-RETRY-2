@@ -20,6 +20,7 @@ li {
 /* admin 시작  */
 /* header */
 
+
 .admin {
     height: auto;
     margin: 10px 50px;
@@ -32,11 +33,11 @@ li {
 
 .admin header .logo {
     width: 100%;
-    height: 100px;
+    height: 90px;
 }
 
 .admin header .logo .logo_pic {
-    width: 90%;
+    width: 100%;
     height: 100%;
     background-image: url(../../img/jikbakguri2.png);
     background-repeat: no-repeat;
@@ -60,7 +61,6 @@ li {
     cursor: pointer;
     font-size: 18px;
 }
-
 
 /* navFilter */
 
