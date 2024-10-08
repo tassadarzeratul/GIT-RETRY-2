@@ -38,6 +38,12 @@
 
 // 회원가입 로직 끝
 
+// Login 화면으로 이동
+const joinToLogin = () => {
+    window.open('../../HTML/login-join/login.html');
+}
+joinToJoin.addEventListener('click', joinToLogin);
+
 
 // 회원가입 로직 시작
 const inputName = document.getElementById('userName');
