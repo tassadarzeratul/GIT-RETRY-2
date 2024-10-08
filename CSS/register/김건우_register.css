@@ -80,8 +80,8 @@ margin-top:20px;
 margin-bottom:20px;
 }
 
-.button{
-width: 100px;;
+.register .content .button{
+width: 100px;
 height:80px;
 font-size:25px;
 background-color: rgb(215, 253, 127);
@@ -100,11 +100,11 @@ width: 78%;
 color: #999999;
 }
 
-.filebox input[type="file"] {
-position: absolute;
+.filebox .input[type="file"] {
+position: relative;
 width: 0;
 height: 0;
 padding: 0;
 overflow: hidden;
-border: 0;
+border: 1px solid black;
 }
