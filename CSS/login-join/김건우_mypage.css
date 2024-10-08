@@ -1,3 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 .body{
     background-color:rgb(255, 255, 255);
     margin : 0px;
@@ -14,6 +31,7 @@
 
 .img{
   text-align: center;
+  border:1px solid red;
 }
 
 .box{
@@ -85,44 +103,36 @@ input{
 .profile{
   width: 200px;
   background-color: rgb(0, 0, 0);
-  padding: 15px;
+  padding: 16px;
   border-radius: 5px;
   border-color:white;
   text-align: center;
   color:white;
+  margin-inline: 1px;
 }
 
 .regifunding{
   width: 200px;
   background-color: rgb(0, 0, 0);
-  padding: 15px;
+  padding: 16px;
   border-radius: 5px;
   border-color:white;
   text-align: center;
   color:white;
   display:inline-block;
+  margin-inline: 1px;
 }
 
 .paidfunding{
   width: 200px;
   background-color: rgb(0, 0, 0);
-  padding: 15px;
+  padding: 16px;
   border-radius: 5px;
   border-color:white;
   text-align: center;
   color:white;
   display:inline-block;
-}
-
-.textarea{
-  width: 100%;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2px;
-  border-color:rgb(0, 0, 0);
-  color:black;
-  margin:5px;
-  margin-top:0px;
+  margin-inline: 1px;
 }
 
 .registered{
@@ -130,21 +140,48 @@ input{
   height:200px;
   display:inline-block;
   margin-top: 20px;
-  margin-right:20px;
+  margin-bottom : 20px;
+  margin-inline: 30px;
 }
 
 .paid{
   width:200px;
   height:200px;
   display:inline-block;
-  margin-top:0px;
-  margin-right:20px;
+  margin-top:20px;
+  margin-bottom : 20px;
+  margin-inline: 30px;
 }
 
-.placeholder{
+.profilemenu{
   text-align:left;
   font-style:italic;
-  margin:20px;
-  margin-bottom :0px;
-  margin-top:1px;
+  margin:25px;
+  margin-top:10px;
+  border:1px solid black;
+  margin-bottom:20px;
+}
+
+.textarea{
+  border:1px solid black;
+  margin:25px;
+}
+
+.text{
+  background-color: rgb(245, 137, 137);
+  margin:25px;
+  color:black;
+  padding-top:0px;
+  text-align: left;
+}
+
+.buttons{
+  padding-left:20px;
+  padding: 20px;
+  padding-bottom:5px;
+}
+
+.menu{
+  padding-left:20px;
+  padding: 20px;
 }
