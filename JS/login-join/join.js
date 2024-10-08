@@ -111,14 +111,14 @@ const join_user = () => {
 
     if (!emailCk.checked) {
         resultMessageId.textContent = '이메일 중복확인을 체크해 주세요';
-        loginBtn.style.backgroundColor = 'red';
+        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
         isValid = false;
     }
 
     if (!copyCk.checked) {
         resultMessageCopy.textContent += (resultMessageCopy.textContent ? ' ' : '') + '약관에 동의해 주세요.';
-        loginBtn.style.backgroundColor = 'red';
+        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
         isValid = false;
     }
