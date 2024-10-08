@@ -1,4 +1,23 @@
-registerPop .container {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.registerPop .container {
     width: 100%;
     height: 300px;
     display: flex;
@@ -8,22 +27,23 @@ registerPop .container {
     top: 30px;
 }
 
-registerPop fieldset {
-    width: 300px;
+.registerPop fieldset {
+    width: 380px;
     border: 0.1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding: 10px 30px 50px;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
 }
 
-registerPop .container .comment {
+.registerPop .container .comment {
     position: relative;
     top: 30px;
+    line-height: 60px;
 }
 
-registerPop .container button {
+.registerPop .container button {
     width: 100%;
-    height: 55px;
+    height: 50px;
     border: 1px solid black;
     border-radius: 15px;
     position: relative;
@@ -38,7 +58,7 @@ registerPop .container button {
     transition: all 150ms ease-in-out;
 }
 
-registerPop .container button:hover {
+.registerPop .container button:hover {
     box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
 
 }

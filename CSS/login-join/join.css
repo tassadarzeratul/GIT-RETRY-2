@@ -6,30 +6,30 @@ body {
     background-size: cover;
 }
 
-join form {
+.join form {
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-join .container {
+.join .container {
     width: 500px;
     position: relative;
 }
 
-join .joinLogo {
+.join .joinLogo {
     width: 100%;
     height: 100px;
     background-size: cover;
 }
 
-join .joinLogo .joinLogoPic img {
+.join .joinLogo .joinLogoPic img {
     width: 100%;
     height: 90px;
 }
 
-join fieldset {
+.join fieldset {
     border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 20px;
     padding: 5px 30px 30px;
@@ -38,12 +38,12 @@ join fieldset {
     color: white;
 }
 
-join .container .comment {
+.join .container .comment {
     letter-spacing: 2px;
     line-height: 45px;
 }
 
-join .container fieldset div input#userName,
+.join .container fieldset div input#userName,
 #userPhone,
 #userEmail,
 #userPwd,
@@ -61,15 +61,15 @@ join .container fieldset div input#userName,
     color: white;
 }
 
-join .container fieldset div input:hover {
+.join .container fieldset div input:hover {
     box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212);
 }
 
-join .container fieldset div input::placeholder {
+.join .container fieldset div input::placeholder {
     color: white;
 }
 
-join .container fieldset div.warning {
+.join .container fieldset div.warning {
     display: flex;
     position: relative;
     bottom: 5px;
@@ -78,31 +78,31 @@ join .container fieldset div.warning {
     font-size: 12px;
 }
 
-join .container fieldset i {
+.join .container fieldset i {
     position: absolute;
     right: 35px;
     transform: translateY(-220%);
     font-size: 23px;
 }
 
-join .container fieldset div.inputEmailCk {
+.join .container fieldset div.inputEmailCk {
     position: relative;
     right: 130px;
     padding-bottom: 20px;
 }
 
-join .container fieldset .inputEmailCk div#resultMessageId {
+.join .container fieldset .inputEmailCk div#resultMessageId {
     position: relative;
     top: 10px;
     left: 150px;
 }
 
-resultMessage join .container fieldset .loginBtn {
+/* .container fieldset .loginBtn {
     width: 100%;
     height: 100px;
-}
+} */
 
-join .container fieldset .loginBtn button {
+.join .container fieldset .loginBtn button {
     width: 100%;
     height: 50px;
     border: 1px solid white;
@@ -121,29 +121,29 @@ join .container fieldset .loginBtn button {
     transition: all 150ms ease-in-out;
 }
 
-join .container fieldset .loginBtn button:hover {
+.join .container fieldset .loginBtn button:hover {
     box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212);
 }
 
-join .container fieldset div.inputCopy {
+.join .container fieldset div.inputCopy {
     position: relative;
     /* right: 70px; */
     top: 10px;
 }
 
-join .container fieldset a {
+.join .container fieldset a {
     color: skyblue;
     text-decoration: none;
     font-size: 13px;
     padding-left: 10px;
 }
 
-join .container fieldset div#resultMessageCopy {
+.join .container fieldset div#resultMessageCopy {
     position: relative;
     top: 5px;
     left: 110px;
 }
 
-join .container fieldset a:hover {
+.join .container fieldset a:hover {
     text-decoration: underline;
 }
