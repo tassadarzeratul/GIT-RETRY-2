@@ -76,6 +76,12 @@ li {
     color: white;
     background-color: black;
     cursor: pointer;
-
+    display: inline-block;
+    box-shadow: 0 0 40px 40px black inset;
+    transition: all 150ms ease-in-out;
 }
 
+.detail_2 .container .right button.sponsor:hover {
+    box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
+
+}
