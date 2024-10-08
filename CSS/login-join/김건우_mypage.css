@@ -153,14 +153,14 @@ margin:25px;
 }
 
 .textarea{
-  border:1px solid black;
+  /* border:1px solid black; */
   margin:25px;
 }
 
 .area{
-  background-color: rgba(250, 131, 131, 0.712);
+  background-color: rgba(139, 210, 252, 0.712);
+  border:1px solid black;
   margin:25px;
-  color:black;
   padding-top:0px;
   text-align: left;
 }

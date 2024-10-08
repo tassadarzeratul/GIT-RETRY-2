@@ -45,7 +45,7 @@ const inputPhone = document.getElementById('userPhone');
 const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
 const inputEmailPwdCh = document.getElementById('userPwdCh');
-const loginBtn = document.getElementById('btnLogin');
+const loginBtn = document.getElementById('btnjoin');
 const emailCk = document.getElementById('userEmailCk');
 const copyCk = document.getElementById('userCopy');
 
