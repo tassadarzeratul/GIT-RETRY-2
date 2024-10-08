@@ -136,6 +136,8 @@
     border:1px solid black;
     position:relative;
     left:30px;
+    display:flex;
+    flex-direction: column;
    }
 
    .product{
@@ -144,7 +146,8 @@
     width:200px;
     height:100px;
     margin-top: 20px;
-    display:inline-block;
+    position: relative;
+    left:150px;
    }
 
    .descriptiontext{
