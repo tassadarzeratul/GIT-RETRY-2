@@ -15,63 +15,58 @@
 <body>
     <!--join 화면 시작-->
     <div class="join">
-        <form action="#" method="post">
-            <div class="container">
-                <div class="joinLogo">
-                    <div class="joinLogoPic">
-                        <img src="../../img/jikbakguri2.png">
-                    </div>
+        <div class="joinLogo">
+            <div class="joinLogoPic">
+                <img src="../../img/jikbakguri2.png">
+            </div>
+        </div>
+        <fieldset>
+            <form action="#" method="post">
+                <div class="comment">
+                    <h2>세상에 하나뿐인<br>특별한 프로젝트를 발견해 보세요</h2>
                 </div>
-                <fieldset>
-                    <div class="comment">
-                        <h2>세상에 하나뿐인<br>특별한 프로젝트를 발견해 보세요</h2>
-                    </div>
-                    <div class="inputName">
-                        <label for="userid">
-                            <input class="name" id="userName" type="text" placeholder="이름 입력" autocomplete="off"
-                                required>
-                            <div class="warning" id="nameWarning"></div>
-                            <i class="fa-solid fa-user"></i>
-                        </label>
-                    </div>
-                    <div class="inputPhone">
-                        <label for="userPhone">
-                            <input class="phone" id="userPhone" type="tel" placeholder="휴대폰 번호 입력" maxlength="11"
-                                autocomplete="off" required>
-                            <div class="warning" id="phoneWarning"></div>
-                            <i class="fa-solid fa-phone"></i>
-                        </label>
-                    </div>
-                    <div class="inputEmail">
-                        <label for="userEmail">
-                            <input class="email" id="userEmail" type="email" placeholder="이메일 주소 입력" autocomplete="off"
-                                required>
-                            <div class="warning" id="emailWarning"></div>
-                            <i class="fa-solid fa-envelope"></i>
-                        </label>
-                    </div>
+                <div class="inputName">
+                    <label for="userid">
+                        <input class="name" id="userName" type="text" placeholder="이름 입력" autocomplete="off" required>
+                        <div class="warning" id="nameWarning"></div>
+                    </label>
+                </div>
+                <div class="inputPhone">
+                    <label for="userPhone">
+                        <input class="phone" id="userPhone" type="tel" placeholder="휴대폰 번호 입력" maxlength="11"
+                            autocomplete="off" required>
+                        <div class="warning" id="phoneWarning"></div>
+                    </label>
+                </div>
+                <div class="inputEmail">
+                    <label for="userEmail">
+                        <input class="email" id="userEmail" type="email" placeholder="이메일 주소 입력" autocomplete="off"
+                            required>
+                        <div class="warning" id="emailWarning"></div>
+                    </label>
+                </div>
+
+                <div class="inputPwd">
+                    <label for="userPwd">
+                        <input class="password" id="userPwd" type="password" placeholder="비밀번호 입력" minlength="8"
+                            maxlength="16" autocomplete="off" required>
+                        <div class="warning" id="pwdWarning"></div>
+                    </label>
+                </div>
+                <div class="inputPwdCh">
+                    <label for="userPwdCh">
+                        <input class="password" id="userPwdCh" type="password" placeholder="비밀번호 확인" minlength="8"
+                            maxlength="16" autocomplete="off" required>
+                        <div class="warning" id="pwdChWarning"></div>
+                    </label>
+                </div>
+                <div class="inputCilk">
                     <div class="inputEmailCk">
                         <label for="userEmailCk">
                             <input class="emailCk" id="userEmailCk" type="checkbox" required>
                             이메일 중복확인
                         </label>
                         <div id="resultMessageId" class="warning"></div>
-                    </div>
-                    <div class="inputPwd">
-                        <label for="userPwd">
-                            <input class="password" id="userPwd" type="password" placeholder="비밀번호 입력" minlength="8"
-                                maxlength="16" autocomplete="off" required>
-                            <div class="warning" id="pwdWarning"></div>
-                            <i class="fa-solid fa-lock"></i>
-                        </label>
-                    </div>
-                    <div class="inputPwdCh">
-                        <label for="userPwdCh">
-                            <input class="password" id="userPwdCh" type="password" placeholder="비밀번호 확인" minlength="8"
-                                maxlength="16" autocomplete="off" required>
-                            <div class="warning" id="pwdChWarning"></div>
-                            <i class="fa-solid fa-lock"></i>
-                        </label>
                     </div>
                     <div class="inputCopy">
                         <label for="userCopy">
@@ -80,17 +75,19 @@
                         </label>
                         <div id="resultMessageCopy" class="warning"></div>
                     </div>
-                    <div class="loginBtn">
-                        <button type="submit" id="btnjoin">회원가입</button>
-                    </div>
-                    <div class="inputLogin" id="btnLogin">
-                        이미 계정이 있으신가요? <a href="#">로그인 하기</a>
-                    </div>
-                </fieldset>
+                </div>
+                <div class="loginBtn">
+                    <button type="submit" id="btnjoin">회원가입</button>
+                </div>
+                <div class="inputLogin" id="btnLogin">
+                    이미 계정이 있으신가요? <a href="#">로그인 하기</a>
+                </div>
+        </fieldset>
+
         </form>
     </div>
-        <!--join 화면 끝-->
-        <script src="../../JS/login-join/join.js" defer=""></script>
+    <!--join 화면 끝-->
+    <script src="../../JS/login-join/join.js" defer=""></script>
 </body>
 
 </html>
