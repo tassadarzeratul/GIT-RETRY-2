@@ -99,7 +99,14 @@ li {
   display:inline-block;
 }
 
-.profile{
+.menu{
+  /* border: 1px solid black; */
+padding-left:20px;
+padding: 0px;
+margin:25px;
+}
+
+.menu .profile{
   width: 200px;
   background-color: rgb(0, 0, 0);
   padding: 16px;
@@ -110,19 +117,8 @@ li {
   margin-inline: 1px;
 }
 
-.regifunding{
-  width: 200px;
-  background-color: rgb(0, 0, 0);
-  padding: 16px;
-  border-radius: 5px;
-  border-color:white;
-  text-align: center;
-  color:white;
-  display:inline-block;
-  margin-inline: 1px;
-}
 
-.paidfunding{
+.menu .regifunding{
   width: 200px;
   background-color: rgb(0, 0, 0);
   padding: 16px;
@@ -134,30 +130,25 @@ li {
   margin-inline: 1px;
 }
 
-.registered{
-  width:200px;
-  height:200px;
+.menu .paidfunding{
+  width: 200px;
+  background-color: rgb(0, 0, 0);
+  padding: 16px;
+  border-radius: 5px;
+  border-color:white;
+  text-align: center;
+  color:white;
   display:inline-block;
-  margin-top: 20px;
-  margin-bottom : 20px;
-  margin-inline: 30px;
-}
-
-.paid{
-  width:200px;
-  height:200px;
-  display:inline-block;
-  margin-top:20px;
-  margin-bottom : 20px;
-  margin-inline: 30px;
+  margin-inline: 1px;
 }
 
 .profilemenu{
   text-align:left;
   font-style:italic;
+  font-size: 20px;
   margin:25px;
   margin-top:10px;
-  border:1px solid black;
+  /* border:1px solid black; */
   margin-bottom:20px;
 }
 
@@ -174,9 +165,20 @@ li {
   text-align: left;
 }
 
-.menu{
-    /* border: 1px solid black; */
-  padding-left:20px;
-  padding: 0px;
-  margin:25px;
+.area .registered{
+  width:200px;
+  height:200px;
+  display:inline-block;
+  margin-top: 20px;
+  margin-bottom : 20px;
+  margin-inline: 30px;
+}
+
+.area .paid{
+  width:200px;
+  height:200px;
+  display:inline-block;
+  margin-top:20px;
+  margin-bottom : 20px;
+  margin-inline: 30px;
 }
