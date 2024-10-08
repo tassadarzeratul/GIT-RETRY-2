@@ -1,62 +1,51 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+.detail_1 .logo img{
+    max-width: 300px;
 }
-/* detail_1 .container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-} */
 
 detail_1 .container .left {
+    float: left;
     width: 50%;
     height: 600px;
-    /* margin-left: 30px; */
 }
-
 detail_1 .container .left img {
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
-}
-
-detail_1 .container .right p {
-    width: 40%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 18px;
     
 }
 
-detail1_ .container left p{
-    width: 100%;
+
+detail_1 .container .left p{
+    text-align: left;
 }
 
 
-ul {
+
+
+
+detail_1 .container ul {
     display:table;
     margin: 80px auto;
-    background: white;
+    background: rgb(241, 240, 240);
     border-radius: 3px;
     width: 70%;
     padding: 10px 20px;
 }
 
-.title{
+detail_1 .container .title{
     margin-left: 450px;
 }
 
-ul li{
+detail_1 .container ul li{
     list-style: none;
     display: inline-block;
     margin-left: 50px;
     
 }
 
-ul li a{
+detail_1 .container ul li a{
     text-decoration: none;
     color: black;
     font-size: 18px;
@@ -65,7 +54,69 @@ ul li a{
     display: block;
 
 }
+detail_1 .container .right {
+    width: 40%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+    
+}
 
+detail_1 .container .leftright .right .target_price,
+.price,
+.restDate,
+.persons,
+.supporter,
+.sponsor {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+detail_1 .container .right div p {
+    margin-bottom: 1px;
+}
+
+detail_1 .container .right div strong {
+    font-size: 30px;
+}
+
+detail_1 .container .right button.sponsor {
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 0 40px 40px black inset;
+    transition: all 150ms ease-in-out;
+}
+
+detail_1 .container .right button.sponsor:hover {
+    box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px rgb(235, 235, 238);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 
 .list {
     position: relative;
     height: 50px;
@@ -81,8 +132,6 @@ ul li a{
 
 
 
-
-
 .scroll1, .scroll2{
     width: 100%;
     height: 380px;
@@ -90,10 +139,10 @@ ul li a{
 .scroll3{
     width: 100%;
     height: 600px;
-}
+} */
 
 
-/* ul li a::after {
+/* 버튼효과 ul li a::after {
     content: '';
     position: absolute;
     left: 0px;
