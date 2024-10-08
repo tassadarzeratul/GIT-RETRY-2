@@ -23,47 +23,40 @@ li {
     padding-top:10px;
 }
 
+.img{
+  /* border:1px solid red; */
+  text-align: center;
+  padding:10px;
+  padding-bottom:6px;
+  margin-left:25px;
+  margin-right:25px;
+  margin-bottom:30px;
+}
+
 .displaytextbox{
   position:flex;
   margin-left:100px;
   margin-right:100px;
   text-align: center;
-  border:1px solid black;
+  /* border:1px solid black; */
 }
 
-.displaytext{
+.displaytextbox .displaytext{
   text-align: center;
   color:black;
-  font-size: 40px;
+  font-size: 50px;
+  margin-bottom:50px;
 }
 
-.img{
-  text-align: center;
-  border:1px solid red;
-  padding:10px;
-  padding-bottom:6px;
-  margin-left:25px;
-  margin-right:25px;
-  margin-bottom:25px;
+.buttons{
+  /* border:1px solid black; */
+  margin: 25px;
+  margin-bottom:10px;
+  padding-left:20px;
+  padding: 0px;
 }
 
-.box{
-  position:flex;
-  margin : 0 auto;
-  text-align: center;
-  width: 100%;
-}
-
-input{
-  border:1px solid black; 
-  border-radius: 5px;
-  width: 300px;
-  height:50px;
-  text-align: center;
-  margin : 0 auto;
-}
-
-.home{
+.buttons .home{
   width: 150px;
   background-color: rgb(0, 0, 0);
   padding: 15px;
@@ -73,7 +66,7 @@ input{
   color:white;
 }
 
-.register{
+.buttons .register{
   width: 150px;
   background-color: rgb(0, 0, 0);
   padding: 15px;
@@ -84,7 +77,7 @@ input{
   display:inline-block;
 }
 
-.ended{
+.buttons .ended{
   width: 150px;
   background-color: rgb(0, 0, 0);
   padding: 15px;
@@ -95,7 +88,7 @@ input{
   display:inline-block;
 }
 
-.purchase{
+.buttons .purchase{
   width: 150px;
   background-color: rgb(0, 0, 0);
   padding: 15px;
@@ -106,7 +99,14 @@ input{
   display:inline-block;
 }
 
-.profile{
+.menu{
+  /* border: 1px solid black; */
+padding-left:20px;
+padding: 0px;
+margin:25px;
+}
+
+.menu .profile{
   width: 200px;
   background-color: rgb(0, 0, 0);
   padding: 16px;
@@ -117,7 +117,8 @@ input{
   margin-inline: 1px;
 }
 
-.regifunding{
+
+.menu .regifunding{
   width: 200px;
   background-color: rgb(0, 0, 0);
   padding: 16px;
@@ -129,7 +130,7 @@ input{
   margin-inline: 1px;
 }
 
-.paidfunding{
+.menu .paidfunding{
   width: 200px;
   background-color: rgb(0, 0, 0);
   padding: 16px;
@@ -139,32 +140,15 @@ input{
   color:white;
   display:inline-block;
   margin-inline: 1px;
-}
-
-.registered{
-  width:200px;
-  height:200px;
-  display:inline-block;
-  margin-top: 20px;
-  margin-bottom : 20px;
-  margin-inline: 30px;
-}
-
-.paid{
-  width:200px;
-  height:200px;
-  display:inline-block;
-  margin-top:20px;
-  margin-bottom : 20px;
-  margin-inline: 30px;
 }
 
 .profilemenu{
   text-align:left;
   font-style:italic;
+  font-size: 20px;
   margin:25px;
   margin-top:10px;
-  border:1px solid black;
+  /* border:1px solid black; */
   margin-bottom:20px;
 }
 
@@ -175,22 +159,26 @@ input{
 
 .area{
   background-color: rgba(250, 131, 131, 0.712);
-  border: 1px solid black;
   margin:25px;
   color:black;
   padding-top:0px;
   text-align: left;
 }
 
-.buttons{
-  margin: 25px;
-  margin-bottom:10px;
-  padding-left:20px;
-  padding: 20px;
-  border:1px solid black;
+.area .registered{
+  width:200px;
+  height:200px;
+  display:inline-block;
+  margin-top: 20px;
+  margin-bottom : 20px;
+  margin-inline: 30px;
 }
 
-.menu{
-  padding-left:20px;
-  padding: 20px;
+.area .paid{
+  width:200px;
+  height:200px;
+  display:inline-block;
+  margin-top:20px;
+  margin-bottom : 20px;
+  margin-inline: 30px;
 }

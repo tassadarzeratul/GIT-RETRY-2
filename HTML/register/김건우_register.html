@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<link rel="stylesheet" href="../../CSS/register/김건우_register.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>펀딩 등록 화면</title>
+</head>
+<body>
+    <!-- 김건우 register 시작 -->
+    <div class="register">
+        <div>
+            <!-- <h1 class="displaytext">펀딩 등록 화면</h1> -->
+        </div>
+        <div class="content">
+            <div class="mainimage">
+                <img src="../../img/프로젝트 배경.PNG" width="100%" height="100%">
+            </div>
+            <div class="description">
+                <h1>펀딩 주제</h1>
+                <textarea class="theme" placeholder="너무어렵다ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ"></textarea>
+                <h1>펀딩 설명</h1>
+                <textarea class="details" placeholder="너무어렵다ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ"></textarea>
+                <h4>업로드할 사진 미리보기</h4>
+                <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple />
+                <div id="image_container"></div>
+                <h4>등록하기</h4>
+                <button class="button">등록</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function setThumbnail(event) {
+        for (var image of event.target.files) {
+            var reader = new FileReader();
+
+            reader.onload = function (event) {
+                var img = document.createElement("img");
+                img.setAttribute("src", event.target.result);
+                document.querySelector("div#image_container").appendChild(img);
+            };
+            console.log(image);
+            reader.readAsDataURL(image);
+        }
+    }
+</script>
+<script src="김건우_register.js"></script>
+<!-- 김건우 register 끝 -->
+</html>
