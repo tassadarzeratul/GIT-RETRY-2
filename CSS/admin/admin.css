@@ -18,7 +18,6 @@ li {
 }
 
 /* admin 시작  */
-
 /* header */
 
 .admin {
@@ -69,17 +68,23 @@ li {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-bottom: 5px;
 }
 
-.admin .navFilter .nav .comment {
-    font-size: 24px;
+.admin .navFilter .nav .subComment .filter{
+    font-size: 20px;
 }
 
 /* section */
 
 .admin section .pic_container {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
+}
+
+.admin section .pic_container .maindComment{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .admin section .pic_container .pic_list {
@@ -92,12 +97,48 @@ li {
 }
 
 .admin section .pic_container .pic_list .inner {
-    margin-top: 50px;
+    margin-top: 40px;
+}
+
+.admin section .pic_container .pic_list .inner .comment{
+    width: 280px;
+    height: 100px;
+}
+
+
+.admin section .pic_container .pic_list .inner .author {
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+.admin section .pic_container .pic_list .inner .title {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+.admin section .pic_container .pic_list .inner .description {
+    font-size: 12px;
+    position: relative;
+    top: 18px;
+    color: rgb(75, 90, 105);
+}
+
+.admin section .pic_container .pic_list .inner .line {
+    border-bottom: 2px solid black;
+    position: relative;
+    top: 12px;
 }
 
 .admin section .pic_container .pic_list img {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 180px;
     border-radius: 5px;
     background-size: cover;
 }
+
+
+
+
