@@ -17,24 +17,26 @@ li {
     list-style: none;
 }
 
-/* Main  */
+/* admin 시작  */
 
-main {
+/* header */
+
+.admin {
     height: auto;
-    margin: 20px 50px;
+    margin: 10px 50px;
 }
 
-main header .container {
+.admin header .container {
     width: 75%;
     display: column;
 }
 
-main header .logo {
+.admin header .logo {
     width: 100%;
     height: 100px;
 }
 
-main header .logo .logo_pic {
+.admin header .logo .logo_pic {
     width: 90%;
     height: 100%;
     background-image: url(../../img/jikbakguri2.png);
@@ -42,7 +44,7 @@ main header .logo .logo_pic {
     cursor: pointer;
 }
 
-main header .menu {
+.admin header .menu {
     width: 90%;
     height: 50px;
     display: flex;
@@ -52,7 +54,7 @@ main header .menu {
     text-align: center;
 }
 
-main header .menu li {
+.admin header .menu li {
     width: 15%;
     background: transparent;
     border: none;
@@ -60,25 +62,42 @@ main header .menu li {
     font-size: 18px;
 }
 
-main section {
-    width: 100%;
-    height: 500px;
+
+/* navFilter */
+
+.admin .navFilter .nav {
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    margin-top: 30px;
 }
 
-main section div {
-    width: 24%;
-    height: 200px;
-    position: relative;
+.admin .navFilter .nav .comment {
+    font-size: 24px;
 }
 
-main section .pic_container .pic_list img {
+/* section */
+
+.admin section .pic_container {
     width: 100%;
+    margin-top: 20px;
+}
+
+.admin section .pic_container .pic_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 30px;
+}
+
+.admin section .pic_container .pic_list .inner {
+    margin-top: 50px;
+}
+
+.admin section .pic_container .pic_list img {
+    width: 200px;
     height: 200px;
-    border: 1px solid;
     border-radius: 5px;
     background-size: cover;
-    position: absolute;
 }
