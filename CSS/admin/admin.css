@@ -17,21 +17,11 @@ li {
     list-style: none;
 }
 
-/* button {
-    all: unset;
-} */
-
-
 /* Main  */
 
 main {
     height: auto;
     margin: 20px 50px;
-}
-
-main header {
-    display: flex;
-    justify-content: space-between
 }
 
 main header .container {
@@ -68,109 +58,27 @@ main header .menu li {
     border: none;
     cursor: pointer;
     font-size: 18px;
-    /* font-weight: bold; */
 }
-
-main header .login {
-    width: 25%;
-    display: flex;
-}
-
-main header .login button {
-    width: 100%;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-/* 메인 슬라이드 사진 */
 
 main section {
     width: 100%;
     height: 500px;
-    border: 1px solid;
-    border-radius: 5px;
-    margin: 0px 0px 20px;
-    overflow: hidden;
-}
-
-main section .pic_container {
-    width: 100%;
-    height: 500px;
-    position: relative;
-}
-
-main section .pic_slider {
-    display: flex;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-}
-
-main section .pic_slider li {
-    width: 33.33%;
-}
-
-main section .pic_slider li img {
-    width: 100%;
-    height: 500px;
-    flex-shrink: 0;
-    background-size: cover;
-}
-
-/* 서브 슬라이드 사진 */
-
-main sub {
-    width: 100%;
-    height: 200px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
 }
 
-main sub div {
+main section div {
     width: 24%;
     height: 200px;
     position: relative;
 }
 
-/* main sub .pic_list {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-} */
-
-main sub .pic_container .pic_list img {
+main section .pic_container .pic_list img {
     width: 100%;
     height: 200px;
     border: 1px solid;
     border-radius: 5px;
     background-size: cover;
     position: absolute;
-}
-
-main sub button {
-    all: unset;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
-main sub .btn1,
-main sub .btn3,
-main sub .btn5,
-main sub .btn7 {
-    left: 10px;
-}
-
-main sub .btn2,
-main sub .btn4,
-main sub .btn6,
-main sub .btn8 {
-    right: 10px;
-}
-
-.on {
-    display: inline;
 }
