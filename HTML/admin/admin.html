@@ -14,7 +14,7 @@
 
 <body>
     <!--main 화면 시작-->
-    <main>
+    <div class="admin">
         <header class="header">
             <div class="container">
                 <div class="logo">
@@ -22,24 +22,90 @@
                     </div>
                 </div>
                 <ul class="menu">
-                    <li>홈</li>
+                    <li id="adminToMainBtn">홈</li>
                     <li>펀딩등록</li>
                     <li>종료펀딩</li>
                     <li>작품구매</li>
                 </ul>
             </div>
         </header>
+        <nav class="navFilter">
+            <div class="nav">
+                <div class="comment">등록한 펀딩</div>
+                <select class="filter" id="navFilter">
+                    <option value="펀딩 상태 필터">펀딩 상태</option>
+                    <option value="진행중">진행중</option>
+                    <option value="종료">종료</option>
+                </select>
+            </div>
+        </nav>
         <section>
             <div class="pic_container">
-                <ul class="pic_list">
-                    <li><img src="../../img/배경1.png" alt="img1"></li>
-                    <li><img src="../../img/배경1.png" alt="img1"></li>
-                    <li><img src="../../img/배경1.png" alt="img1"></li>
-                    <li><img src="../../img/배경1.png" alt="img1"></li>
-                </ul>
+                <div class="pic_list">
+                    <div class="inner" id="adminPic_1">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_2">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_3">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_4">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_5">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_6">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_7">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_8">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_9">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                    <div class="inner" id="adminPic_10">
+                        <img src="../../img/배경1.png" alt="img1">
+                        <div>펀딩 코드 : </div>
+                        <div>펀딩 명 : </div>
+                        <div>펀딩 상태 : </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
+    </div>
     <!--Main 화면 끝-->
     <script src="../../js/admin/admin.js"></script>
 </body>
