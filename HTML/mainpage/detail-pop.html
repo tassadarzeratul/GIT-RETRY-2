@@ -10,18 +10,20 @@
 </head>
 
 <body>
-    <div class="detail_Pop">
-        <div class="container">
-            <p><h2>상품 선택 텍스트</h2></p><br>
-            <div>
+    <form>
+        <div class="detail_Pop">
+            <div class="container">
                 <div class="discription">
-                    <form>
-                        <textarea class="detailsBox" readonly rows="10">상품 설명</textarea>
-                    </form>
-                </div><br>
-
+                    <div>상품 선택 텍스트</div>
+                    <div class="box">
+                        <textarea class="detailBox" readonly rows="10">상품 설명</textarea>
+                    </div>
+                </div>
                 <div class="cnt">
-                    <button type="button">+</button><input type="number"><button type="button">-</button>
+                    <input class="cntBtn" type='button' onclick='count("plus")' value='+' />
+                    <span id='result'>0</span>
+                    <input class="cntBtn" type='button' onclick='count("minus")' value='-' />
+
                 </div><br>
 
                 <div class="payment">
@@ -29,7 +31,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
+    <script src="../../JS/mainpage/detail-pop.js"></script>
+
 </body>
 
 </html>
