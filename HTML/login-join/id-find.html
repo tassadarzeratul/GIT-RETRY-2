@@ -8,31 +8,38 @@
         <link rel="stylesheet" href="../../CSS/login-join/id-find.css">
     </head>
     <body>
-        <idFind>
+        <div class="idFind">
             <div class="align">
                 <a class="logo" href="#">
                     <img src="../../img/jikbakguri2.png" alt="logo">
                 </a><br/>
+                
                 <form method="post">
-                    <div>
-                        <p>이메일 주소</p>
-                        <input id="email" type="email" placeholder="인증번호를 수신할 이메일 주소를 입력하세요.">
+                    <div class="inputGroup">
+                        <input type="email" required>
+                        <label>E-mail</label>
+                        <span></span>
                     </div>
-                    <div>
-                        <p>이름</p>
-                        <input id="name" type="text" placeholder="이름을 입력하세요">
+                    <div class="inputGroup">
+                        <input type="text" required>
+                        <label>Name</label>
+                        <span></span>
                     </div>
-                    <div>
-                        <p>휴대폰 번호</p>
-                        <input id="phone" type="tel" placeholder="휴대폰 번호를 입력하세요">
+                    <div class="inputGroup">
+                        <input type="tel" required>
+                        <label>Phone</label>
+                        <span></span>
                     </div>
-                    <div>
-                        <p>인증번호 입력</p>
-                        <input id="certify" type="text" placeholder="메일로 전송된 인증 번호를 입력하세요."><br>
-                        <button id="certifyBtn" type="submit">인증번호확인</button>
+                    <div class="inputGroup">
+                        <input type="text" required>
+                        <label>Certify Number</label>
+                        <span></span>
+                    </div><br>
+                    <div class="certify">
+                        <button class="certifyBtn" type="submit">인증번호확인</button>
                     </div>
                 </form>
             </div>
-        </idFind>
+        </div>
     </body>
 </html>

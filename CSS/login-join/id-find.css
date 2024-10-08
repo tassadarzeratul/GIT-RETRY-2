@@ -1,45 +1,87 @@
-* {
+.idFind * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a,
-a:link,
-a:visited {
-    color: inherit;
-    text-decoration: none;
+.idFind {
+    display: flex;
+    margin: auto;
 }
 
-li {
-    list-style: none;
+.idFind .align {
+    margin: auto;
 }
 
-.align {
-    display:block;
-    text-align:center;
-
+.idFind .inputGroup {
+    position: relative;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 100px;
 }
 
-input {
+.idFind input {
+    font-size: 15px;
+    color: #222222;
+    width: 500px;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+}
+
+.idFind input::placeholder {
+    color: #aaaaaa;
+}
+
+.idFind input:focus {
+    outline: none;
+}
+
+.idFind span {
     display: block;
-    width: 300px;
-    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    /* right로만 바꿔주면 오 - 왼 */
+    background-color: #666;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.idFind label {
+    position: absolute;
+    color: #aaa;
+    left: 10px;
+    font-size: 20px;
+    bottom: 8px;
+    transition: all .2s;
+}
+
+.idFind input:focus~label,
+input:valid~label {
+    font-size: 16px;
+    bottom: 40px;
+    color: #666;
+    font-weight: bold;
+}
+
+.idFind input:focus~span,
+input:valid~span {
+    width: 100%;
+}
+
+.idFind .certifyBtn {
+    text-align: center;
+    display: block;
+    width: 400px;
+    height: 50px;
     margin: 10px auto;
-    background: #fafafa;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-    text-indent: 10px;
-    outline-color: gray;
-
-}
-
-#certifyBtn {
-    display: block;
-    width: 300px;
-    height: 40px;
-    margin: 0 auto;
     background: black;
     color: #dbdbdb;
-
 }

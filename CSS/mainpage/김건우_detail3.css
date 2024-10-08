@@ -70,7 +70,6 @@ li{
 .bigbox .left{
     width:50%;
     text-align: center;
-    border:1px solid black;
 }
 
 .descriptiontext{
@@ -80,7 +79,6 @@ li{
 .bigbox .right{
     width:40%;
     text-align: center;
-    border:1px solid black;
     position:relative;
     left:30px;
     display:flex;
