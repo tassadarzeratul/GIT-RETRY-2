@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrap_container::after {
+.login .wrap_container::after {
     content:"";
     clear: both;
     display: block;
 }
 
-.left{
+.login .left{
     background: #fff;
     width: 50%;
     border: none;
@@ -18,7 +18,7 @@
     float: left;
 }
 
-.right {
+.login .right {
     padding-top: 0;
 	width: 50%;
 	text-align: center;
@@ -26,12 +26,12 @@
     
 }
 
-.wrap_container .left {
+.login .wrap_container .left {
     padding: 13.0rcap;
    
 }
 
-.wrap_container .right img{
+.login .wrap_container .right img{
     max-width: 100%;
     max-height: 100%;
     position: relative;
@@ -39,7 +39,7 @@
 
 
 
-input {
+.login input {
     display: block;
     width: 250px;
     height: 40px;
@@ -51,22 +51,22 @@ input {
     outline-color: gray;
 }
 
-input:first-child{
+.login input:first-child{
     margin-bottom: 0.5rem;
 }
-input:nth-child(2){
+.login input:nth-child(2){
     margin-bottom: 1.5rem;
 }
 
-li {
+.login li {
     list-style: none;
 }
-a{
+.login{
     text-decoration: none;
     color: inherit;
 }
 
-.loginbtn{
+.login.loginbtn{
     display: block;
     width: 250px;
     height: 40px;
@@ -75,7 +75,7 @@ a{
     color: #dbdbdb;
 }
 
-.logo{
+.login.logo{
     display: block;
     width: 15rem;
     margin: 0 auto;
@@ -83,11 +83,11 @@ a{
     padding-bottom: 1rem;
 }
 
-.findpw{
+.login.findpw{
     text-align: center;
 }
 
-.create_id{
+.login.create_id{
     text-align: center;
 }
 /* lsh */
