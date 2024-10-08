@@ -53,6 +53,8 @@ main header .menu {
     display: flex;
     background: transparent;
     border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
     align-items: center;
     text-align: center;
 }
