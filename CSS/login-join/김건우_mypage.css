@@ -175,7 +175,6 @@ input{
 
 .area{
   background-color: rgba(250, 131, 131, 0.712);
-  border: 1px solid black;
   margin:25px;
   color:black;
   padding-top:0px;
@@ -186,11 +185,13 @@ input{
   margin: 25px;
   margin-bottom:10px;
   padding-left:20px;
-  padding: 20px;
+  padding: 0px;
   border:1px solid black;
 }
 
 .menu{
   padding-left:20px;
-  padding: 20px;
+  padding: 0px;
+  border: 1px solid black;
+  margin:25px;
 }
