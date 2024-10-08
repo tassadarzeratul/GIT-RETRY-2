@@ -49,6 +49,8 @@ li {
     height: 50px;
     display: flex;
     background: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     align-items: center;
     text-align: center;
