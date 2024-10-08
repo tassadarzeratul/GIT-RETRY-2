@@ -23,15 +23,28 @@ li {
     padding-top:10px;
 }
 
+.displaytextbox{
+  position:flex;
+  margin-left:100px;
+  margin-right:100px;
+  text-align: center;
+  border:1px solid black;
+}
+
 .displaytext{
   text-align: center;
   color:black;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .img{
   text-align: center;
   border:1px solid red;
+  padding:10px;
+  padding-bottom:6px;
+  margin-left:25px;
+  margin-right:25px;
+  margin-bottom:25px;
 }
 
 .box{
@@ -48,13 +61,6 @@ input{
   height:50px;
   text-align: center;
   margin : 0 auto;
-}
-
-.displaytextbox{
-  position:flex;
-  margin : 0 auto;
-  text-align: center;
-  width: 50%;
 }
 
 .home{
@@ -167,8 +173,9 @@ input{
   margin:25px;
 }
 
-.text{
-  background-color: rgb(245, 137, 137);
+.area{
+  background-color: rgba(250, 131, 131, 0.712);
+  border: 1px solid black;
   margin:25px;
   color:black;
   padding-top:0px;
@@ -176,9 +183,11 @@ input{
 }
 
 .buttons{
+  margin: 25px;
+  margin-bottom:10px;
   padding-left:20px;
   padding: 20px;
-  padding-bottom:5px;
+  border:1px solid black;
 }
 
 .menu{
