@@ -20,7 +20,7 @@ li {
 .detail_2 .container {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .detail_2 .container .left {
@@ -42,6 +42,8 @@ li {
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 18px;
+    position: relative;
+    left: 30px;
     
 }
 
