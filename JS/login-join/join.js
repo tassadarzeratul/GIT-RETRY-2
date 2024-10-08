@@ -132,7 +132,7 @@ const join_user = () => {
 }
 
 // 페이지 이동
-const moveToMain = () => {
+const joinToMain = () => {
     alert('가입을 환영합니다 !')
     location.replace('../../HTML/mainpage/main.html');
 }
@@ -142,7 +142,7 @@ loginBtn.addEventListener('click', (event) => {
     event.preventDefault(); // 기본 동작 방지
     join_user(); // 입력검사 호출
     if (!loginBtn.disabled) { // 버튼이 활성화된 경우에만 이동
-        moveToMain();
+        joinToMain();
     }
 });
 

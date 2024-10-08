@@ -1,18 +1,18 @@
 // Join 화면으로 이동
 const mainToJoin = () => {
-    location.replace('../../HTML/login-join/join.html');
+    window.open('../../HTML/login-join/join.html', '_blank');
 }
 joinBtn.addEventListener('click', mainToJoin);
 
 // Login 화면으로 이동
 const mainToLogin = () => {
-    location.replace('../../HTML/login-join/login.html');
+    window.open('../../HTML/login-join/login.html');
 }
 loginBtn.addEventListener('click', mainToLogin);
 
-// Login 화면으로 이동
+// Mapage 화면으로 이동
 const mainToMypage = () => {
-    location.replace('../../HTML/mypage/김건우_mypage.html');
+    window.open('../../HTML/mypage/김건우_mypage.html');
 }
 myPageBtn.addEventListener('click', mainToMypage);
 
