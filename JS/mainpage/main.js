@@ -1,3 +1,14 @@
+// main 화면으로 이동
+// const mainToMain = () => {
+//     window.open('../../HTML/mainpage/main.html', '_blank');
+// }
+// logo_picMain.addEventListener('click', mainToMain);
+
+const mainToMain_1 = () => {
+    window.open('../../HTML/mainpage/main.html', '_blank');
+}
+logo_picMainHome.addEventListener('click', mainToMain_1);
+
 // Join 화면으로 이동
 const mainToJoin = () => {
     window.open('../../HTML/login-join/join.html', '_blank');

@@ -39,6 +39,13 @@
 // 회원가입 로직 끝
 
 // Login 화면으로 이동
+// 로고
+const joinToLogin_1 = () => {
+    window.open('../../HTML/mainpage/main.html');
+}
+joinPic.addEventListener('click', joinToLogin_1);
+
+// 회원가입
 const joinToLogin = () => {
     window.open('../../HTML/login-join/login.html');
 }

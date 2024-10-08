@@ -44,7 +44,6 @@ main header .logo .logo_pic {
     height: 100%;
     background-image: url(../../img/jikbakguri2.png);
     background-repeat: no-repeat;
-    cursor: pointer;
 }
 
 main header .menu {

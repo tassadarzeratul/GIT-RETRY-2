@@ -31,6 +31,7 @@ li {
     position: relative;
     top: 8px;
     right: 104px;
+    cursor: pointer;
 }
 
 .join fieldset {
