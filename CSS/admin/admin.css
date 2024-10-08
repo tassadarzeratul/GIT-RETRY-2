@@ -24,6 +24,7 @@ li {
 .admin {
     height: auto;
     margin: 10px 50px;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
 .admin header .container {
@@ -62,7 +63,6 @@ li {
     border: none;
     cursor: pointer;
     font-size: 22px;
-    font-family: "Gowun Dodum", sans-serif;
 }
 
 /* navFilter */
@@ -100,7 +100,7 @@ li {
 }
 
 .admin section .pic_container .pic_list .inner {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .admin section .pic_container .pic_list .inner .comment {
@@ -132,7 +132,7 @@ li {
 .admin section .pic_container .pic_list .inner .line {
     border-bottom: 2px solid black;
     position: relative;
-    top: 12px;
+    top: 10px;
 }
 
 .admin section .pic_container .pic_list img {
@@ -140,4 +140,15 @@ li {
     height: 180px;
     border-radius: 5px;
     background-size: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.admin section .pic_container .pic_list .inner img {
+    transform: rotate(0) scale(1);
+    transition: .3s ease-in-out;
+}
+
+.admin section .pic_container .pic_list .inner:hover img {
+    transform: rotate(5deg) scale(1);
 }
