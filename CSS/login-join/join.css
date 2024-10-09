@@ -50,16 +50,17 @@ li {
 /* input 스타일 */
 .join form fieldset div.inputBox {
     position: relative;
-    margin-top: 55px;
+    margin-top: 70px;
 }
 
 .join form fieldset div.inputBox input {
     width: 100%;
     border: none;
     border-bottom: solid 1px #aaaaaa;
-    padding: 10px 0;
+    padding: 10px 0 0 10px;
     font-size: 16px;
     color: #222;
+    outline: none;
 }
 
 /* 레이블 스타일 */
@@ -68,7 +69,7 @@ li {
     color: #aaa;
     left: 10px;
     font-size: 20px;
-    transition: all .2s;
+    transition: all .3s;
 }
 
 /* span 강조선 스타일 */
@@ -79,12 +80,7 @@ li {
     width: 0;
     height: 2px;
     border-radius: 2px;
-    transition: width 0.5s;
-}
-
-.join form fieldset div.inputBox input:focus,
-.join form fieldset div.inputBox input:valid {
-    outline: none;
+    transition: 0.5s;
 }
 
 .join form fieldset div.inputBox input:focus~span,
@@ -99,6 +95,12 @@ li {
     bottom: 50px;
     color: black;
     font-weight: bold;
+}
+
+.join form fieldset div.inputBox label.active {
+    bottom: 30px;
+    font-size: 16px;
+    color: #666;
 }
 
 /* 체크박스 스타일 */
