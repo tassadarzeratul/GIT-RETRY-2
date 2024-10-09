@@ -46,8 +46,6 @@ const mainToPurchase_1 = () => {
 purchase_1.addEventListener('click', mainToPurchase_1);
 
 
-
-
 // main slider 동작구현 =================================================================
 
 let currentIndex = 0;
