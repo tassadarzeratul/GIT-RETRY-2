@@ -133,27 +133,27 @@ copyCk.addEventListener('change', join_user);
 
 
 // =============================================================================
+
 // 입력창 label 기능
 
-document.addEventListener('DOMContentLoaded', function () {
-    const inputs = document.querySelectorAll('.inputBox input');
+// $(document).ready(function () {
+//     $('.inputBox input').focus(function () {
+//         $(this).sibligns('label').addClass('active');
+//     });
 
-    inputs.forEach(input => {
-        // 포커스 이벤트: 입력 시작 시 레이블 숨김
-        input.addEventListener('focus', function () {
-            const label = this.nextElementSibling; // 다음 형제 요소인 label 선택
-            label.classList.add('active'); // 활성화 클래스 추가
-        });
-
-        // 블러 이벤트: 입력 필드가 포커스를 잃을 때 체크
-        input.addEventListener('blur', function () {
-            if (this.value === '') {
-                const label = this.nextElementSibling; // 다음 형제 요소인 label 선택
-                label.classList.remove('active'); // 활성화 클래스 제거
-            }
-        });
-    });
-});
+//     $('.inputBox input').on('input', function () {
+//         if ($(this).val().length > 0) {
+//             $(this).siblings('label').addClass('active');
+//         } else {
+//             $(this).siblings('label').removeClass('active');
+//         }
+//     });
+//     $('.inputBox input').blur(function () {
+//         if ($(this).val().lenght === 0) {
+//             $(this).siblings('label').removeClass('active');
+//         }
+//     });
+// });
 
 
 // =============================================================================

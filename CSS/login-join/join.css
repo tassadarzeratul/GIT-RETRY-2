@@ -50,14 +50,14 @@ li {
 /* input 스타일 */
 .join form fieldset div.inputBox {
     position: relative;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .join form fieldset div.inputBox input {
     width: 100%;
     border: none;
     border-bottom: solid 1px #aaaaaa;
-    padding: 10px 0 0 10px;
+    padding: 5px;
     font-size: 16px;
     color: #222;
     outline: none;
@@ -76,7 +76,7 @@ li {
 .join form fieldset div.inputBox span {
     display: block;
     position: absolute;
-    background-color: #666;
+    background-color: #706f6f;
     width: 0;
     height: 2px;
     border-radius: 2px;
@@ -90,24 +90,18 @@ li {
 
 /* 레이블 효과 */
 .join form fieldset div.inputBox input:focus+label,
-.join form fieldset div.inputBox div.inputBox input:valid+label {
+.join form fieldset div.inputBox input:valid+label {
     font-size: 16px;
-    bottom: 50px;
+    bottom: 40px;
     color: black;
     font-weight: bold;
-}
-
-.join form fieldset div.inputBox label.active {
-    bottom: 30px;
-    font-size: 16px;
-    color: #666;
 }
 
 /* 체크박스 스타일 */
 .join form fieldset div.inputCheck {
     text-align: left;
     position: relative;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* 버튼 스타일 */
