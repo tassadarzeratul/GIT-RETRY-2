@@ -144,7 +144,9 @@ endPage .up .useAmount button:hover {
 
 }
 
-endPage footer .community div .comment {
+
+/* 커뮤니티 댓글창 */
+endPage footer .comment {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -154,24 +156,24 @@ endPage footer .community div .comment {
 
 }
 
-endPage footer .community div .comment > li {
+endPage footer .comment > li {
     margin-top: 20px;
 
 }
 
-endPage footer .community div .comment > li:nth-child(1) {
+endPage footer .comment > li:nth-child(1) {
     margin: 0px;
 
 }
 
-endPage footer .community div .comment-row {
+endPage footer .comment-row {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 
 }
 
-endPage footer .community div .comment-row > li:nth-child(2) {
+endPage footer .comment-row > li:nth-child(2) {
     flex-shrink: 0;
     flex-grow: 1;
     padding-left: 25px;
@@ -180,12 +182,12 @@ endPage footer .community div .comment-row > li:nth-child(2) {
 
 }
 
-endPage footer .community div .comment-row > li:nth-child(2) {
+endPage footer .comment-row > li:nth-child(2) {
     width: 85px;
 
 }
 
-endPage footer .community div .comment-form > form {
+endPage footer .comment-form > form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -193,24 +195,81 @@ endPage footer .community div .comment-form > form {
     
 }
 
-endPage footer .community div .comment-form > form > h4 {
+endPage footer .comment-form > form > h4 {
     width: 100%;
     margin: 14px 0 14px 0;
     
 }
 
-endPage footer .community div .comment-content {
+endPage footer .comment-content {
     cursor: pointer;
     word-break: break-all;
     padding-right: 25px;
     
 }
 
-endPage footer .community div .comment-content {
-    cursor: pointer;
-    word-break: break-all;
-    padding-right: 25px;
+endPage footer .ps_box {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 51px;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    background: #fff;
+    box-sizing: border-box;
     
 }
+
+endPage footer .ps_box > input {
+    outline: none;
+    
+}
+
+endPage footer .int {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    padding-right: 25px;
+    line-height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+    z-index: 10;
+    
+}
+
+endPage footer .btn {
+    width: 18%;
+    padding: 18px 0 16px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    
+}
+
+endPage footer .comment-delete-btn {
+    display: inline-block;
+    margin-left: 7px;
+    cursor: pointer;
+    
+}
+
+endPage footer .comment-update-input {
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+    color: #666;
+    outline: none;
+    
+}
+
+
+
 
 
