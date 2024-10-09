@@ -2,17 +2,17 @@ body{
     background-color:rgb(255, 255, 255);
 }
 
-.img{
+.endpop .img{
     display:flex;
     justify-content: center;
 }
 
-.content{
+.endpop .content{
     width: 100%;
     justify-content: center;
 }
 
-.description{
+.endpop .description{
     width:100%;
     float:left;
     clear:both;
