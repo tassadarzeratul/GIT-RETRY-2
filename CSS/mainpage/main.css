@@ -134,7 +134,7 @@ main section .pic_slider li img {
 main .subPicComment {
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 20px 0px 5px 0px;
 }
 
 /* 서브 배열 */

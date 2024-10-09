@@ -1,9 +1,4 @@
 // main 화면으로 이동
-// const mainToMain = () => {
-//     window.open('../../HTML/mainpage/main.html', '_blank');
-// }
-// logo_picMain.addEventListener('click', mainToMain);
-
 const mainToMain_1 = () => {
     window.open('../../HTML/mainpage/main.html', '_blank');
 }
@@ -44,6 +39,7 @@ const mainToPurchase_1 = () => {
     window.open('../../HTML/register/purchase_1.html');
 }
 purchase_1.addEventListener('click', mainToPurchase_1);
+allPic.addEventListener('click', mainToPurchase_1);
 
 
 // main slider 동작구현 =================================================================
