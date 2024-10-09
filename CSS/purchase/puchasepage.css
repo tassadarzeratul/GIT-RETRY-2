@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Main  */
+
+purchasePage {
+    height: auto;
+    margin: 20px 150px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+purchasePage header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+purchasePage header .container {
+    width: 75%;
+    display: column;
+}
+
+/* 메인 로고 */
+purchasePage header .logo {
+    width: 100%;
+    height: 90px;
+}
+
+purchasePage header .logo .logo_pic {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/jikbakguri2.png);
+    background-repeat: no-repeat;
+}
+
+/* 메인 메뉴 */
+purchasePage header .menu {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+purchasePage header .menu li {
+    width: 15%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+
+/* 우측 회원가입, 로그인, 마이페이지 부분 */
+purchasePage header .login {
+    width: 25%;
+    display: flex;
+}
+
+purchasePage header .login button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 메인 */
+
+purchasePage .mainBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 메인 왼쪽 부분 */
+purchasePage .mainBox .left {
+    width: 75%;
+}
+
+purchasePage section {
+    width: 60%;
+    height: 500px;
+    border-radius: 5px;
+    margin: 0px 0px 20px;
+    overflow: hidden;
+}
+
+/* 메인 슬라이더 */
+purchasePage section .pic_slider {
+    display: flex;
+    width: 310%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* 메인 슬라이더 3장 간격 */
+purchasePage section .pic_slider li {
+    width: 33.3%;
+}
+
+/* 메인 이미지 */
+purchasePage section .pic_slider li img {
+    width: 100%;
+    height: 500px;
+    flex-shrink: 0;
+    background-size: cover;
+}
+
+/* 서브 슬라이드 */
+
+/* 서브 코멘트 */
+purchasePage .subPicComment {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0px 5px 0px;
+}
+
+/* 서브 배열 */
+purchasePage sub {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* 서브 슬라이드 사진 간격 */
+purchasePage sub div {
+    width: 24%;
+    height: 180px;
+    position: relative;
+}
+
+/* 서브 슬라이드 사진 */
+purchasePage sub .pic_container .pic_list img {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background-size: cover;
+    position: absolute;
+}
+
+/* 서브 슬라이드 버튼 */
+purchasePage sub button {
+    all: unset;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* 서브 슬라이드 왼쪽 버튼 위치 */
+purchasePage sub .btn1,
+purchasePage sub .btn3,
+purchasePage sub .btn5,
+purchasePage sub .btn7 {
+    left: 10px;
+}
+
+/* 서브 슬라이드 오른쪽 버튼 위치 */
+purchasePage sub .btn2,
+purchasePage sub .btn4,
+purchasePage sub .btn6,
+purchasePage sub .btn8 {
+    right: 10px;
+}
+
+
+/* 메인 오른쪽 부분 */
+purchasePage .mainBox .right {
+    width: 22%;
+}
+
+purchasePage .mainBox .right .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
+    margin: -10px 0px 15px 0px;
+}
+
+purchasePage .mainBox .right .title div {
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+purchasePage .mainBox .right .pic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+purchasePage .mainBox .right .pic .rightPic {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+purchasePage .mainBox .right .pic .rightPic img {
+    width: 40%;
+    height: 120px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+purchasePage .mainBox .right .pic .rightPic .num {
+    width: 8%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+purchasePage .mainBox .right .pic .rightPic .comment {
+    width: 52%;
+    font-size: 17px;
+    white-space: normal;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+purchasePage .mainBox .right .pic .rightPic .comment dt {
+    font-size: 16px;
+    margin: 3px 0px 5px 0px;
+}
+
+purchasePage .mainBox .right .pic .rightPic .comment dd {
+    font-size: 18px;
+    font-family: "Gowun Dodum", sans-serif;
+}
