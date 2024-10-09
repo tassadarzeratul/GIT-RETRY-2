@@ -68,17 +68,19 @@ li {
   box-shadow:none !important;
   
   width: 150px;
-  background-color: rgb(255, 100, 100);
+  /* background-color: rgb(255, 100, 100); */
+  background-color: transparent;
   padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
-  color:white;
+  color:black;
 }
 
 .buttons .home:hover{
-  background-color: rgb(220, 80, 80);
-  transition:0.2s;
+  background-color: black;
+  color:white;
+  transition:0.3s;
 }
 
 
