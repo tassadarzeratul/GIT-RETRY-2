@@ -83,28 +83,40 @@ margin-bottom:20px;
 .register .content .button{
 width: 100px;
 height:80px;
-font-size:25px;
-background-color: rgba(250, 131, 131, 0.712);
-border:1px solid black;
-border-radius: 10px;
+font-size:20px;
+background-color: rgb(255, 100, 100);
+border:transparent;
+border-radius: 5px;
 margin-top:30px;
+display:inline;
 }
 
-.filebox .upload-name {
-display: inline-block;
-height: 40px;
-/* padding: 0 10px; */
-vertical-align: middle;
-border: 1px solid #dddddd;
-width: 78%;
-color: #999999;
+.register .content .button:hover{
+    background-color: rgb(220, 80, 80);
+    transition:0.2s;
+  }
+
+/* test */
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
 }
 
-.filebox .input[type="file"] {
-position: relative;
-width: 0;
-height: 0;
-padding: 0;
-overflow: hidden;
-border: 1px solid black;
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
