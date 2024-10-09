@@ -20,6 +20,8 @@ body{
     /* margin-top: 10px;
     padding : 100px;
     padding-top:10px; */
+    /* background-image:url(../../img/lightblue.jpg) ; */
+    background-repeat:none;
 }
 
 .register{
@@ -70,6 +72,10 @@ font-size:25px;
 margin-top:20px;
 margin-bottom:20px;
 left:30px;
+border: 2px solid rgb(255, 100, 100);
+border-radius: 5px;
+resize: none;
+outline: none;
 }
 
 .register .content .description .details{
@@ -78,33 +84,51 @@ height:500px;
 font-size:25px;
 margin-top:20px;
 margin-bottom:20px;
+border: 2px solid rgb(255, 100, 100);
+border-radius: 5px;
+resize: none;
+outline: none;
 }
 
 .register .content .button{
-width: 100px;
-height:80px;
-font-size:25px;
-background-color: rgba(250, 131, 131, 0.712);
-border:1px solid black;
-border-radius: 10px;
+width: 140px;
+height:50px;
+font-size:20px;
+background-color: rgb(255, 100, 100);
+color:white;
+border:transparent;
+border-radius: 5px;
 margin-top:30px;
+display:inline;
 }
 
-.filebox .upload-name {
-display: inline-block;
-height: 40px;
-/* padding: 0 10px; */
-vertical-align: middle;
-border: 1px solid #dddddd;
-width: 78%;
-color: #999999;
+.register .content .button:hover{
+    background-color: rgb(0, 0, 0); 
+    transition:0.5s;
+    color:white;
+  }
+
+/* test */
+.register .content .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
 }
 
-.filebox .input[type="file"] {
-position: relative;
-width: 0;
-height: 0;
-padding: 0;
-overflow: hidden;
-border: 1px solid black;
+.register .content .upload-btn-wrapper .btn{
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 100, 100);
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register .content .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }

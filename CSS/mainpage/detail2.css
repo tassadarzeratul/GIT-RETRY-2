@@ -17,24 +17,28 @@ li {
     list-style: none;
 }
 
+/* detail_2 */
+
 .detail_2 .container {
     width: 100%;
     display: flex;
     /* justify-content: space-evenly; */
 }
 
+/* detail_2 왼쪽 사진부분 */
 .detail_2 .container .left {
     width: 50%;
     height: 600px;
-    /* margin-left: 30px; */
 }
 
+/* detail_2 왼쪽 사진*/
 .detail_2 .container .left img {
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
 }
 
+/* detail_2 오른쪽 구성 */
 .detail_2 .container .right {
     width: 40%;
     height: 600px;
@@ -46,42 +50,27 @@ li {
     left: 30px;
 }
 
-.detail_2 .container .right .target_price,
-.price,
-.restDate,
-.persons,
-.supporter,
-.sponsor {
-    width: 100%;
-    /* border: 1px solid black; */
-}
-
-.detail_2 .container .right div p {
-    margin-bottom: 1px;
-}
-
 .detail_2 .container .right div strong {
     font-size: 30px;
 }
 
+/* detail_2 오른쪽 후원버튼 */
 .detail_2 .container .right button.sponsor {
     width: 100%;
     height: 60px;
     border: 1px solid black;
     border-radius: 20px;
-    text-align: center;
-    background: transparent;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 2px;
     color: white;
     background-color: black;
     cursor: pointer;
-    display: inline-block;
     box-shadow: 0 0 40px 40px black inset;
-    transition: all 150ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
+/* detail_2 오른쪽 후원버튼 기능 */
 .detail_2 .container .right button.sponsor:hover {
     box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
 

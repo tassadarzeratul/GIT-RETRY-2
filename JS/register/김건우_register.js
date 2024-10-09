@@ -9,5 +9,13 @@ function setThumbnail(event) {
         };
         console.log(image);
         reader.readAsDataURL(image);
+
     }
 }
+
+const textarea = useRef();
+
+const handleResizeHeight = () => {
+  textarea.current.style.height = 'auto'; //height 초기화
+  textarea.current.style.height = textarea.current.scrollHeight + 'px';
+};

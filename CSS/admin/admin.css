@@ -19,8 +19,6 @@ li {
 
 /* admin 시작  */
 
-/* header */
-
 .admin {
     height: auto;
     margin: 10px 50px;
@@ -31,6 +29,8 @@ li {
     width: 75%;
     display: column;
 }
+
+/* 상단 로고 */
 
 .admin header .logo {
     width: 100%;
@@ -43,6 +43,8 @@ li {
     background-image: url(../../img/jikbakguri2.png);
     background-repeat: no-repeat;
 }
+
+/* nmenu */
 
 .admin header .menu {
     width: 90%;
@@ -64,19 +66,6 @@ li {
     font-size: 22px;
 }
 
-/* navFilter */
-
-.admin .navFilter .nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 5px;
-}
-
-.admin .navFilter .nav .subComment .filter {
-    font-size: 20px;
-}
-
 /* section */
 
 .admin section .pic_container {
@@ -84,11 +73,26 @@ li {
     margin-top: 15px;
 }
 
+/* section 멘트 */
 .admin section .pic_container .maindComment {
     font-size: 20px;
     font-weight: bold;
 }
 
+/* navFilter */
+.admin section .navFilter .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+/* navFilter 멘트 */
+.admin section .navFilter .nav .subComment {
+    font-size: 18px;
+}
+
+/* section pic 화면구성 */
 .admin section .pic_container .pic_list {
     width: 100%;
     display: flex;
@@ -99,50 +103,20 @@ li {
 }
 
 .admin section .pic_container .pic_list .inner {
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.admin section .pic_container .pic_list .inner .comment {
-    width: 280px;
-    height: 100px;
-}
-
-
-.admin section .pic_container .pic_list .inner .author {
-    font-size: 14px;
-    position: relative;
-    top: 2px;
-}
-
-.admin section .pic_container .pic_list .inner .title {
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    top: 10px;
-}
-
-.admin section .pic_container .pic_list .inner .description {
-    font-size: 12px;
-    position: relative;
-    top: 18px;
-    color: rgb(75, 90, 105);
-}
-
-.admin section .pic_container .pic_list .inner .line {
-    border-bottom: 2px solid black;
-    position: relative;
-    top: 10px;
-}
-
+/* section pic 사진 */
 .admin section .pic_container .pic_list img {
-    width: 280px;
-    height: 180px;
-    border-radius: 5px;
+    width: 290px;
+    height: 160px;
+    border-radius: 10px;
     background-size: cover;
     cursor: pointer;
     position: relative;
 }
 
+/* section pic 사진 동작구현 */
 .admin section .pic_container .pic_list .inner img {
     transform: rotate(0) scale(1);
     transition: .3s ease-in-out;
@@ -150,4 +124,36 @@ li {
 
 .admin section .pic_container .pic_list .inner:hover img {
     transform: rotate(5deg) scale(1);
+}
+
+/* section pic 작가, 제목, 내용부분 */
+.admin section .pic_container .pic_list .inner .comment {
+    width: 280px;
+    height: 130px;
+}
+
+/* section pic 작가부분 */
+.admin section .pic_container .pic_list .inner .author {
+    font-size: 14px;
+}
+
+/* section pic 제목부분 */
+.admin section .pic_container .pic_list .inner .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* section pic 내용부분 */
+.admin section .pic_container .pic_list .inner .description {
+    width: 100%;
+    height: 65px;
+    font-size: 15px;
+    position: relative;
+    top: 18px;
+    color: rgb(75, 90, 105);
+}
+
+/* section pic 아래밑줄 */
+.admin section .pic_container .pic_list .inner .line {
+    border-bottom: 2px solid black;
 }
