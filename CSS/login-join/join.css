@@ -72,6 +72,15 @@ li {
     transition: all .3s;
 }
 
+/* 레이블 효과 */
+.join form fieldset div.inputBox input:focus+label,
+.join form fieldset div.inputBox input:valid+label {
+    font-size: 16px;
+    bottom: 40px;
+    color: black;
+    font-weight: bold;
+}
+
 /* span 강조선 스타일 */
 .join form fieldset div.inputBox span {
     display: block;
@@ -83,19 +92,12 @@ li {
     transition: 0.5s;
 }
 
+/* 스팬 효과 */
 .join form fieldset div.inputBox input:focus~span,
 .join form fieldset div.inputBox input:valid~span {
     width: 100%;
 }
 
-/* 레이블 효과 */
-.join form fieldset div.inputBox input:focus+label,
-.join form fieldset div.inputBox input:valid+label {
-    font-size: 16px;
-    bottom: 40px;
-    color: black;
-    font-weight: bold;
-}
 
 /* 체크박스 스타일 */
 .join form fieldset div.inputCheck {
