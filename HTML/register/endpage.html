@@ -39,6 +39,7 @@
                     <li>관람 인원 수</li>
                 </ul>
             </section>
+            <!-- 전시회 정보 노출 -->
             <section class="creatorProfile">
                 <ul>
                     <li>이름</li>
@@ -48,7 +49,28 @@
                     <li>펀딩 횟수</li>
                 </ul>
             </section>
+            <!-- 작가 프로필 정보 노출 -->
             <div class="useAmount">
                 <button>금액사용내역</button>
             </div>
-        </div> 
+            <!-- 금액 사용 내역 버튼 -->
+        </div>
+        <footer class="community">
+            <div>
+                <ul class="comment">
+                    <li class="comment-form">
+                        <form id="commentFrm">
+                            <h4>댓글쓰기 <span></span></h4>
+                            <span class="ps_box">
+                                <input type="text" placeholder="댓글 내용을 입력해주세요." class="int" name="content" />
+                            </span>
+                        </form>
+                    </li>
+                    <li id="comment-list"></li>
+                </ul>
+            </div>
+        </footer>
+    </endPage>
+    <script src="../../JS/register/endpage.js"></script>
+</body>
+</html>

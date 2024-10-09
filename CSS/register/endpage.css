@@ -141,7 +141,76 @@ endPage .up .useAmount button {
     
 endPage .up .useAmount button:hover {
     box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
-    
-    
 
 }
+
+endPage footer .community div .comment {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 30px;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+endPage footer .community div .comment > li {
+    margin-top: 20px;
+
+}
+
+endPage footer .community div .comment > li:nth-child(1) {
+    margin: 0px;
+
+}
+
+endPage footer .community div .comment-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+endPage footer .community div .comment-row > li:nth-child(2) {
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding-left: 25px;
+    z-index: 1;
+    width: 100%;
+
+}
+
+endPage footer .community div .comment-row > li:nth-child(2) {
+    width: 85px;
+
+}
+
+endPage footer .community div .comment-form > form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+endPage footer .community div .comment-form > form > h4 {
+    width: 100%;
+    margin: 14px 0 14px 0;
+    
+}
+
+endPage footer .community div .comment-content {
+    cursor: pointer;
+    word-break: break-all;
+    padding-right: 25px;
+    
+}
+
+endPage footer .community div .comment-content {
+    cursor: pointer;
+    word-break: break-all;
+    padding-right: 25px;
+    
+}
+
+
