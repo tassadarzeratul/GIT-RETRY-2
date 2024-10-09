@@ -20,71 +20,62 @@
                 <img src="../../img/jikbakguri2.png" id="joinPic">
             </div>
         </div>
-        <fieldset>
-            <form action="#" method="post">
+        <form action="#" method="post">
+            <fieldset>
                 <div class="comment">
                     <h2>세상에 하나뿐인<br>특별한 프로젝트를 발견해 보세요</h2>
                 </div>
-                <div class="inputName">
-                    <label for="userid">
-                        <input class="name" id="userName" type="text" placeholder="Name" autocomplete="off" required>
-                        <span></span>
-                        <div class="warning" id="nameWarning"></div>
-                    </label>
+                <div class="inputBox">
+                    <input class="name" id="userName" type="text" placeholder="" autocomplete="off" required>
+                    <label for="userName">Name</label>
+                    <span class="hightlight"></span>
+                    <div class="warning" id="nameWarning"></div>
                 </div>
-                <div class="inputPhone">
-                    <label for="userPhone">
-                        <input class="phone" id="userPhone" type="tel" placeholder="Phone Number" maxlength="11"
-                            autocomplete="off" required>
-                        <div class="warning" id="phoneWarning"></div>
-                    </label>
+                <div class="inputBox">
+                    <input class="phone" id="userPhone" type="tel" placeholder=" " maxlength="11" autocomplete="off"
+                        required>
+                    <label for="userPhone">Phone</label>
+                    <span class="warning" id="phoneWarning"></span>
                 </div>
-                <div class="inputEmail">
-                    <label for="userEmail">
-                        <input class="email" id="userEmail" type="email" placeholder="Email address" autocomplete="off"
-                            required>
-                        <div class="warning" id="emailWarning"></div>
-                    </label>
+                <div class="inputBox">
+                    <input class="email" id="userEmail" type="email" placeholder=" " autocomplete="off" required>
+                    <label for="userEmail">Email</label>
+                    <div class="warning" id="emailWarning"></div>
                 </div>
-                <div class="inputPwd">
-                    <label for="userPwd">
-                        <input class="password" id="userPwd" type="password" placeholder="Password" minlength="8"
-                            maxlength="16" autocomplete="off" required>
-                        <div class="warning" id="pwdWarning"></div>
-                    </label>
+                <div class="inputBox">
+                    <input class="password" id="userPwd" type="password" placeholder=" " minlength="8" maxlength="16"
+                        autocomplete="off" required>
+                    <label for="userPwd">Password</label>
+                    <div class="warning" id="pwdWarning"></div>
                 </div>
-                <div class="inputPwdCh">
-                    <label for="userPwdCh">
-                        <input class="password" id="userPwdCh" type="password" placeholder="Password Confirm"
-                            minlength="8" maxlength="16" autocomplete="off" required>
-                        <div class="warning" id="pwdChWarning"></div>
-                    </label>
+                <div class="inputBox">
+                    <input class="password" id="userPwdCk" type="password" placeholder=" " minlength="8" maxlength="16"
+                        autocomplete="off" required>
+                    <label for="userPwdCk">Password Confirm</label>
+                    <div class="warning" id="pwdChWarning"></div>
                 </div>
-                <div class="inputCilk">
+                <div class="inputCheck">
                     <div class="inputEmailCk">
                         <label for="userEmailCk">
-                            <input class="emailCk" id="userEmailCk" type="checkbox" required>
-                            이메일 중복확인
+                            <input class="emailCheck" id="userEmailCk" type="checkbox" required> 이메일 중복확인
                         </label>
                         <div id="resultMessageId" class="warning"></div>
                     </div>
                     <div class="inputCopy">
                         <label for="userCopy">
-                            <input class="Copy" id="userCopy" type="checkbox" required>
-                            약관을 읽고 동의합니다 <a href="#">약관보기</a>
-                        </label>
+                            <input class="terms-check" id="userCopy" type="checkbox" required> 약관을 읽고 동의합니다</label>
+                        <a href="#">약관보기</a>
                         <div id="resultMessageCopy" class="warning"></div>
                     </div>
                 </div>
                 <div class="loginBtn">
                     <button type="submit" id="btnjoin">회원가입</button>
                 </div>
-                <div class="inputLogin" id="btnLogin">
-                    이미 계정이 있으신가요? <a href="#" id="joinToJoin">로그인 하기</a>
-                </div>
-        </fieldset>
-
+            </fieldset>
         </form>
+        <div class="inputLogin" id="btnLogin">
+            이미 계정이 있으신가요? <a href="#" id="joinToJoin">로그인 하기</a>
+        </div>
     </div>
     <!--join 화면 끝-->
     <script src="../../JS/login-join/join.js" defer=""></script>

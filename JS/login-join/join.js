@@ -3,7 +3,7 @@
 // const inputPhone = document.getElementById('userPhone');
 // const inputEmailId = document.getElementById('userEmail');
 // const inputEmailPwd = document.getElementById('userPwd');
-// const inputEmailPwdCh = document.getElementById('userPwdCh');
+// const inputEmailPwdCk = document.getElementById('userPwdCk');
 // const loginBtn = document.getElementById('btnLogin');
 
 // // 로그인 버튼 활성화/비활성화 함수
@@ -11,7 +11,7 @@
 //     // 이메일 형식과 비밀번호 길이 확인
 //     if (inputEmailId.value.length > 0 && inputEmailPwd.value.length > 7
 //         && inputName.value.length > 0 && inputPhone.value.length > 10
-//         && inputEmailPwdCh.value === inputEmailPwd.value) {
+//         && inputEmailPwdCk.value === inputEmailPwd.value) {
 
 //         loginBtn.disabled = false; // 버튼 활성화
 //         loginBtn.style.backgroundColor = "#0095F6";
@@ -34,7 +34,7 @@
 // inputEmailPwd.addEventListener('input', color);
 // inputName.addEventListener('input', color);
 // inputPhone.addEventListener('input', color);
-// inputEmailPwdCh.addEventListener('input', color);
+// inputEmailPwdCk.addEventListener('input', color);
 
 // 회원가입 로직 끝
 
@@ -57,7 +57,7 @@ const inputName = document.getElementById('userName');
 const inputPhone = document.getElementById('userPhone');
 const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
-const inputEmailPwdCh = document.getElementById('userPwdCh');
+const inputEmailPwdCk = document.getElementById('userPwdCk');
 const loginBtn = document.getElementById('btnjoin');
 const emailCk = document.getElementById('userEmailCk');
 const copyCk = document.getElementById('userCopy');
@@ -115,7 +115,7 @@ const join_user = () => {
     }
 
     // 비밀번호 확인 검사 (일치 여부)
-    else if (inputEmailPwd.value !== inputEmailPwdCh.value) {
+    else if (inputEmailPwd.value !== inputEmailPwdCk.value) {
         pwdChWarning.textContent = '비밀번호가 일치하지 않습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
@@ -164,7 +164,7 @@ inputName.addEventListener('input', join_user);
 inputPhone.addEventListener('input', join_user);
 inputEmailId.addEventListener('input', join_user);
 inputEmailPwd.addEventListener('input', join_user);
-inputEmailPwdCh.addEventListener('input', join_user);
+inputEmailPwdCk.addEventListener('input', join_user);
 emailCk.addEventListener('change', join_user);
 copyCk.addEventListener('change', join_user);
 

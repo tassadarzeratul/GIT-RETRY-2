@@ -18,6 +18,7 @@ li {
     list-style: none;
 }
 
+/* 전체 스타일 */
 .join {
     display: flex;
     flex-direction: column;
@@ -27,23 +28,30 @@ li {
     font-family: "Gowun Dodum", sans-serif;
 }
 
-.join .joinLogo .joinLogoPic {
+/* 링크색깔 */
+.join a {
+    color: rgb(16, 63, 134);
+}
+
+/* 메인로고 */
+.join .joinLogo div.joinLogoPic {
     position: relative;
     top: 8px;
     right: 104px;
     cursor: pointer;
 }
 
-.join fieldset {
-    width: 600px;
+/* ========== form 하위 ========== */
+
+/* form 스타일 */
+.join form fieldset {
+    width: 500px;
     border: none;
+
 }
 
-.join fieldset form {
-    width: 100%;
-}
-
-.join fieldset form .comment {
+/* 상단 멘트 스타일 */
+.join form fieldset input.comment {
     margin-top: 15px;
     margin-bottom: 5px;
     letter-spacing: 2px;
@@ -51,38 +59,39 @@ li {
     font-size: 18px;
 }
 
-.join fieldset input#userName,
-#userPhone,
-#userEmail,
-#userPwd,
-#userPwdCh {
-    width: 500px;
+/* input 스타일 */
+.join form fieldset div.inputBox input {
+    width: 100%;
+    max-width: 500px;
     height: 50px;
-    margin-top: 30px;
     border: none;
     border-bottom: solid #aaaaaa 1px;
+    margin-top: 15px;
     font-size: 15px;
     color: #222222;
     outline: none;
 }
 
-.join fieldset input::placeholder {
+.join form fieldset input::placeholder {
     color: #aaaaaa;
 }
 
-.join fieldset .inputCilk {
+/* 체크박스 스타일 */
+.join form fieldset div.inputCheck {
     text-align: left;
     position: relative;
-    margin-top: 15px;
-    margin-left: 60px;
+    margin-bottom: 40px;
+
 }
 
-.join fieldset form .loginBtn button {
-    width: 400px;
+/* 버튼 스타일 */
+.join form fieldset div.loginBtn button {
+    width: 100%;
+    max-width: 400px;
     height: 50px;
     border: 1px solid white;
     border-radius: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 10px;
     background-color: black;
     color: white;
@@ -93,22 +102,31 @@ li {
     cursor: pointer;
     display: inline-block;
     box-shadow: 0 0 40px 40px black inset;
-    transition: all 150ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
-.join fieldset form .loginBtn button:hover {
+/* 버튼 스타일 */
+.join form fieldset div.loginBtn button:hover {
     box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212);
 }
 
-.join fieldset form .inputLogin {
-    margin-top: 20px;
-}
+/* input 유효성확인 멘트 스타일 */
 
-.join fieldset form .warning {
-    margin-top: 5px;
+.join form fieldset .warning {
     color: rgb(230, 35, 35);
 }
 
-.join fieldset form a {
-    color: rgb(16, 63, 134);
+.join form fieldset .inputBox .warning {
+    color: rgb(230, 35, 35);
+    position: relative;
+    bottom: 25px;
+}
+
+.join form fieldset div.inputBox label {
+    display: flex;
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    color: #aaa;
+    transition: all .2s ease;
 }
