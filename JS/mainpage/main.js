@@ -27,6 +27,24 @@ const mainToMypage = () => {
 }
 myPageBtn.addEventListener('click', mainToMypage);
 
+// 펀딩등록 화면으로 이동
+const mainToRegister = () => {
+    window.open('../../HTML/register/김건우_register.html');
+}
+register.addEventListener('click', mainToRegister);
+
+// 종료펀딩 화면으로 이동
+const mainToEnd = () => {
+    window.open('../../HTML/register/end.html');
+}
+end.addEventListener('click', mainToEnd);
+
+// 작품구매 화면으로 이동
+const mainToPurchase_1 = () => {
+    window.open('../../HTML/register/purchase_1.html');
+}
+purchase_1.addEventListener('click', mainToPurchase_1);
+
 
 // main slider 동작구현 =================================================================
 
