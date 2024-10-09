@@ -225,6 +225,7 @@ main .mainBox .right .pic .rightPic img {
     width: 40%;
     height: 120px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 main .mainBox .right .pic .rightPic .num {
@@ -240,6 +241,7 @@ main .mainBox .right .pic .rightPic .comment {
     font-size: 17px;
     white-space: normal;
     word-break: break-all;
+    cursor: pointer;
 }
 
 main .mainBox .right .pic .rightPic .comment dt {
