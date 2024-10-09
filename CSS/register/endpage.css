@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Main  */
+
+endPage {
+    height: auto;
+    margin: 20px 150px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+endPage header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+endPage header .container {
+    width: 75%;
+    display: column;
+}
+
+/* 메인 로고 */
+endPage header .logo {
+    width: 100%;
+    height: 90px;
+}
+
+endPage header .logo .logo_pic {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/jikbakguri2.png);
+    background-repeat: no-repeat;
+}
+
+/* 메인 메뉴 */
+endPage header .pageMenu {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+endPage header .pageMenu li {
+    width: 15%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+
+/* 우측 회원가입, 로그인, 마이페이지 부분 */
+endPage header .userMenu {
+    width: 25%;
+    display: flex;
+}
+
+endPage header .userMenu button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+endPage .up {
+    display: flex;
+}
+
+/* 전시회 정보 */
+endPage .up section.exhibitionInformation {
+    display: inline-block;
+    width: 40%;
+    border: solid black 2px;
+    margin-right: 5%;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 400%;
+    text-indent: 3%;
+    margin: 10px 15px 15px 10px;
+
+    
+}
+
+/* 창작자 정보 */
+endPage .up section.creatorProfile {
+    display: inline-block;
+    width: 40%;
+    border: solid black 2px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 350%;
+    text-indent: 3%;
+    margin: 10px 0px 15px 0px;
+
+}
+
+/* 금액사용내역 버튼 */
+endPage .up .useAmount button {
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    margin: 20% 20% 20% 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 50px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0 0 40px 40px black inset;
+    transition: all 300ms ease-in-out;
+}
+    
+endPage .up .useAmount button:hover {
+    box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
+    
+    
+
+}
