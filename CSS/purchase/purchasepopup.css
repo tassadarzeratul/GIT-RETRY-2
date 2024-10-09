@@ -11,15 +11,15 @@ body{
   background: white;
 }
 
-#wrap{
+.purchasepopup #wrap{
   width:70%;
   margin:20px auto;
   height: 2000px;
 }
-#accordian{
+.purchasepopup #accordian{
   width:80%;
 }
-#accordian .number{
+.purchasepopup #accordian .number{
   width:50px;
   height:50px;
   background:#fff;
@@ -30,7 +30,7 @@ body{
   float:left;
 }
 
-#accordian .step{
+.purchasepopup #accordian .step{
   width:100%;
   height:63px;
   background:#3a4958;
@@ -43,7 +43,7 @@ body{
   float:left;
 }
 
-#accordian .title{
+.purchasepopup #accordian .title{
   float:left;
   width:80%;
   height:50px;
@@ -53,16 +53,16 @@ body{
 }
 
 
-#accordian .title h1{
+.purchasepopup #accordian .title h1{
   font-size:2em;
   font-weight:400;
   margin-top:10px;
 
 }
 
-#accordian .content .box{
+.purchasepopup #accordian .content .box{
   width: 450px;
-  height: 70px;
+  height: 50px;
   background: #fafafa;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
@@ -70,7 +70,7 @@ body{
   outline-color: gray;
 }
 
-#accordian .content{
+.purchasepopup #accordian .content{
   padding:2em 2em;
   width:100%;
   margin:0 auto;
@@ -79,9 +79,22 @@ body{
   display:block;
   float:left;
 }
-#accordian #textarea_id{
+.purchasepopup #accordian #textarea_id{
   width: 100%;
   height: 120px;
+}
+
+.purchasepopup .check{
+  margin-top: 1.5rem;
+  margin-bottom: 1.0rem;
+}
+
+
+
+
+.purchasepopup .order{
+  width: 300px;
+  height: 40px;
 }
 
 

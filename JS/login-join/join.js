@@ -1,44 +1,5 @@
-// 회원가입 로직 시작
-// const inputName = document.getElementById('userName');
-// const inputPhone = document.getElementById('userPhone');
-// const inputEmailId = document.getElementById('userEmail');
-// const inputEmailPwd = document.getElementById('userPwd');
-// const inputEmailPwdCh = document.getElementById('userPwdCh');
-// const loginBtn = document.getElementById('btnLogin');
+// 화면 이동 
 
-// // 로그인 버튼 활성화/비활성화 함수
-// function color() {
-//     // 이메일 형식과 비밀번호 길이 확인
-//     if (inputEmailId.value.length > 0 && inputEmailPwd.value.length > 7
-//         && inputName.value.length > 0 && inputPhone.value.length > 10
-//         && inputEmailPwdCh.value === inputEmailPwd.value) {
-
-//         loginBtn.disabled = false; // 버튼 활성화
-//         loginBtn.style.backgroundColor = "#0095F6";
-
-//         // 로그인 버튼 클릭 시 페이지 이동
-//         loginBtn.addEventListener('click', moveToMain);
-
-//     } else {
-//         loginBtn.style.backgroundColor = 'red'; // 유효하지 않은 경우 버튼 색 변경
-//         loginBtn.disabled = true; // 버튼 비활성화
-//     }
-// }
-
-// // 페이지 이동 함수
-// function moveToMain() {
-//     location.replace('../../HTML/mainpage/main.html');
-// }
-// // 입력 필드 값이 변경될 때마다 color 함수 호출 (실시간으로 버튼 상태 업데이트)
-// inputEmailId.addEventListener('input', color);
-// inputEmailPwd.addEventListener('input', color);
-// inputName.addEventListener('input', color);
-// inputPhone.addEventListener('input', color);
-// inputEmailPwdCh.addEventListener('input', color);
-
-// 회원가입 로직 끝
-
-// Login 화면으로 이동
 // 로고
 const joinToLogin_1 = () => {
     window.open('../../HTML/mainpage/main.html');
@@ -52,12 +13,14 @@ const joinToLogin = () => {
 joinToJoin.addEventListener('click', joinToLogin);
 
 
-// 회원가입 로직 시작
+// =============================================================================
+// 입력창 유효성 검사 
+
 const inputName = document.getElementById('userName');
 const inputPhone = document.getElementById('userPhone');
 const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
-const inputEmailPwdCh = document.getElementById('userPwdCh');
+const inputEmailPwdCk = document.getElementById('userPwdCk');
 const loginBtn = document.getElementById('btnjoin');
 const emailCk = document.getElementById('userEmailCk');
 const copyCk = document.getElementById('userCopy');
@@ -115,7 +78,7 @@ const join_user = () => {
     }
 
     // 비밀번호 확인 검사 (일치 여부)
-    else if (inputEmailPwd.value !== inputEmailPwdCh.value) {
+    else if (inputEmailPwd.value !== inputEmailPwdCk.value) {
         pwdChWarning.textContent = '비밀번호가 일치하지 않습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
@@ -164,9 +127,33 @@ inputName.addEventListener('input', join_user);
 inputPhone.addEventListener('input', join_user);
 inputEmailId.addEventListener('input', join_user);
 inputEmailPwd.addEventListener('input', join_user);
-inputEmailPwdCh.addEventListener('input', join_user);
+inputEmailPwdCk.addEventListener('input', join_user);
 emailCk.addEventListener('change', join_user);
 copyCk.addEventListener('change', join_user);
 
 
-// 회원가입 로직 끝
+// =============================================================================
+
+// 입력창 label 기능
+
+// $(document).ready(function () {
+//     $('.inputBox input').focus(function () {
+//         $(this).sibligns('label').addClass('active');
+//     });
+
+//     $('.inputBox input').on('input', function () {
+//         if ($(this).val().length > 0) {
+//             $(this).siblings('label').addClass('active');
+//         } else {
+//             $(this).siblings('label').removeClass('active');
+//         }
+//     });
+//     $('.inputBox input').blur(function () {
+//         if ($(this).val().lenght === 0) {
+//             $(this).siblings('label').removeClass('active');
+//         }
+//     });
+// });
+
+
+// =============================================================================
