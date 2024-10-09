@@ -1,18 +1,106 @@
-section.portfolio{
-    width: 120%;
-    height: 130%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Main  */
+
+main {
+  height: auto;
+  margin: 10px 50px;
+}
+
+main header {
+  /* display: flex; */
+  justify-content: space-between
+}
+
+main header .container1 {
+  width: 75%;
+  display: column;
+}
+
+main header .logo {
+  width: 100%;
+  height: 90px;
+}
+
+main header .logo .logo_pic {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/jikbakguri2.png);
+  background-repeat: no-repeat;
+}
+
+main header .menu {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+main header .menu li {
+  width: 15%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .login {
+  width: 25%;
+  display:flex;
+}
+
+main header .login button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
+  
+}
+main header{
+  display: flex;
 }
 
 
-section.portfolio::after{
-    content:"";
-    display:block;
-    clear:both;
-  }
+
+
+
+/* section.portfolio{
+    width: 120%;
+    height: 130%;
+} */
+
+
+
   
   section.portfolio .portfolio-inner{
-    width: 20%;
-    margin-right:5%;
+    width: 300px;
+    margin-top: 7%;
+    margin-right:7%;
     padding:1rem 1rem 1.5rem 1rem;
     float:left;
     background-color:#f8f8f8;
@@ -25,7 +113,8 @@ section.portfolio::after{
   }
  
   section.portfolio .portfolio-inner img{
-    width:100%;
+    width:100px;
+    height: 100px;
     display:block;
     
   }
@@ -33,6 +122,7 @@ section.portfolio::after{
   section.portfolio .portfolio-inner strong{
     margin:0.5rem 0;
     display:block;
+    
   }
   
   section.portfolio .portfolio-inner h3{
