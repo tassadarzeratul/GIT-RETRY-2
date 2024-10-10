@@ -114,7 +114,7 @@ li {
     border-radius: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
-    background-color: black;
+    background-color: rgb(52, 99, 255);
     color: white;
     font-size: 20px;
     font-family: "Noto Sans KR", sans-serif;
@@ -122,10 +122,11 @@ li {
     letter-spacing: 5px;
     cursor: pointer;
     display: inline-block;
-    box-shadow: 0 0 40px 40px black inset;
+    box-shadow: 0 0 40px 40px rgb(52, 99, 255) inset;
     transition: all 250ms ease-in-out;
 }
 
+/* 버튼 스타일 후버 */
 .join form fieldset div.loginBtn button:hover {
     box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212);
 }
