@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+li {
+  list-style: none;
+}
+
+/* Main  */
+
+main {
+  height: auto;
+  margin: 10px 50px;
+  
+}
+
+main header {
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+main header .container1 {
+  width: 75%;
+  display: column;
+}
+
+main header .logo {
+  width: 100%;
+  height: 90px;
+}
+
+main header .logo .logo_pic {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/jikbakguri2.png);
+  background-repeat: no-repeat;
+}
+
+main header .menu {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+main header .menu li {
+  width: 15%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .menu li:hover{
+  color: rgba(120, 179, 32, 0.89);
+}
+
+
+
+
+
+main header .login {
+  width: 25%;
+  display:flex;
+}
+
+
+
+main header .login button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
+  
+}
+
+main header .login button:hover {
+  color: rgba(120, 179, 32, 0.89);
+}
+
+
+main header{
+  display: flex;
+}
+
+
+main section {
+    width: 100%;
+    height: 470px;
+    border-radius: 5px;
+    margin: 0px 0px 20px;
+    overflow: hidden;
+}
+/* Main 끝 */
+
+
+/* 슬라이더 */
+.sildeshow-container{
+   padding: 30px;
+}
+
+.Slidesbackground {
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow-image{
+    border-radius: 1%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mySlides {
+    width: 300%;
+    height: 450px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+
+
+/* 슬라이드 끝 */
+
+
+
+  /* 작품구매창 */
+  section.portfolio .portfolio-inner{
+    width: 300px;
+    margin-top: 7%;
+    margin-right:7%;
+    padding:1rem 1rem 1.5rem 1rem;
+    float:left;
+    background-color:#f8f8f8;
+    border:1px solid #ccc;
+    margin-bottom:3rem;
+    
+    
+  }
+ 
+  section.portfolio .portfolio-inner:nth-child(3n){
+     margin-right:0;
+  }
+ 
+  section.portfolio .portfolio-inner img{
+    width:100px;
+    height: 100px;
+    display:block;
+    
+  }
+
+  section.portfolio .portfolio-inner strong{
+    margin:0.5rem 0;
+    display:block;
+    font-family: "Gowun Dodum", sans-serif;
+    
+  }
+  
+  section.portfolio .portfolio-inner h3{
+    font-size:1.75rem;
+  }
+   /* 작품구매창 끝 */
+  
