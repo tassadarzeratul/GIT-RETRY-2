@@ -21,23 +21,18 @@ const handleResizeHeight = () => {
 
 
 // 추가
-function imgSize(which){
-    var width = eval("document."+which+".width");
-    var height = eval("document."+which+".height");
-    var temp = 0; 
-    var max_width= 600;   // 이미지의 가로 최대 크기    
-    var max_height = 400; // 이미지의 세로 최대 크기
-    
-    if ( width > max_width ) {  // 이미지가 600보다 크다면 너비를 600으로 맞우고 비율에 맞춰 세로값을 변경한다.      
-        height = height/(width / max_width);
-        eval("document."+which+".width = max_width");     
-        eval("document."+which+".height = height");
-        width = max_width;     
-    }
- 
-    if( height > max_height ) {
-        width = width/(height / max_height);
-        eval(document.getElementById(which).width = width);
-        eval(document.getElementById(which).height = max_height);
-    }
-}
+// function loadFile(input) {
+//     let file = input.files[0]; // 선택파일 가져오기
+
+//     let newImage = document.createElement("img"); //새 이미지 태그 생성
+
+//     //이미지 source 가져오기
+//     newImage.src = URL.createObjectURL(file);
+//     newImage.style.width = "100%"; //div에 꽉차게 넣으려고
+//     newImage.style.height = "100%";
+//     newImage.style.objectFit = "cover"; // div에 넘치지 않고 들어가게
+
+//     //이미지를 image-show div에 추가
+//     let container = document.getElementById('image-show');
+//     container.appendChild(newImage);
+// }
