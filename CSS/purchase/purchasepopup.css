@@ -109,7 +109,7 @@ body{
   font-family: "Gowun Dodum", sans-serif;
 }
 .purchasepopup .order:hover{
-  background: rgba(173, 170, 170, 0.342);
+  background: orange;
   color: black;
   font-family: "Gowun Dodum", sans-serif;
 }
