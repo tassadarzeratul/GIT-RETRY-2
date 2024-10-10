@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
 @media only all and (min-width: 1200px){
-    
+
 }
 
 *{
@@ -38,6 +38,10 @@ body{
     width:100%;
     
     clear:both;
-    text-align: center;
-    
+    text-align: center;   
+}
+
+.endpop .border .confirm .confirmbutton{
+    background-color: rgb(52, 99, 255);
+    color:white;
 }

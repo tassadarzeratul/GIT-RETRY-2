@@ -10,13 +10,16 @@
 <body>
 <!-- 김건우 register 시작 -->
 <div class="register">
+    <div class="img">
+        <img src="../../img/withDreamLogo2.png">
+    </div>
     <div class="menu">
         <div class="fund">
             <p>펀딩 등록하기:</p>
             <p>자신만의 펀딩을 등록해 보세요</p>
-        <div class="mainimage">
+        <!-- <div class="mainimage">
             <img src="../../img/logo.jpg" width="15%" height="100%">
-        </div>
+        </div> -->
         </div>
     </div>
     <div class="content">
@@ -28,15 +31,16 @@
                 
             <div class="buttons">
                 <div class="upload-btn-wrapper">
-                    <button class="btn">파일 업로드</button>                
-                    <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple />
+                    <button class="btn">파일 업로드
+                        <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple />
+                    </button>                
+                    <!-- <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple /> -->
                 <div id="image_container"></div>
                 </div>
-                <button class="button">등록하기</button>
             </div>
-
             <div class="tip">
                 <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 허용되지 않습니다.</h4>
+            <button class="button">등록하기</button>
             </div>
         </div>
     </div>
