@@ -35,10 +35,11 @@ li {
 
 /* 메인 로고 */
 .join .joinLogo div.joinLogoPic {
-    position: relative;
-    top: 8px;
-    right: 104px;
     cursor: pointer;
+}
+
+.join .joinLogo div.joinLogoPic img {
+    width: 80%;
 }
 
 /* form 스타일 */
@@ -114,7 +115,7 @@ li {
     border-radius: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
-    background-color: rgb(52, 99, 255);
+    background-color: rgb(0, 44, 190);
     color: white;
     font-size: 20px;
     font-family: "Noto Sans KR", sans-serif;
@@ -122,14 +123,17 @@ li {
     letter-spacing: 5px;
     cursor: pointer;
     display: inline-block;
-    box-shadow: 0 0 40px 40px rgb(52, 99, 255) inset;
-    transition: all 250ms ease-in-out;
+    /* box-shadow: 0 0 40px 40px #4d4bc4 inset; */
+    /* transition: all 250ms ease-in-out; */
+    transition:0.5s
 }
 
 /* 버튼 스타일 후버 */
 .join form fieldset div.loginBtn button:hover {
-    box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212);
+    background-color: rgb(0, 26, 111);
+    /* box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212); */
 }
+
 
 /* 버튼 아래 부분 */
 .join form fieldset div.inputLogin {
