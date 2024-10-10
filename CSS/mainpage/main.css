@@ -178,13 +178,14 @@ main section .pic_slider li img {
 /* 서브 코멘트 */
 main .subPicComment {
   font-size: 22px;
-  margin: 20px 0px 5px 0px;
+  margin: 30px 0px 5px 0px;
+  font-weight: bold;
 }
 
 /* 서브 배열 */
 main sub {
   width: 100%;
-  height: 180px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -193,14 +194,14 @@ main sub {
 /* 서브 슬라이드 사진 간격 */
 main sub div {
   width: 24%;
-  height: 180px;
+  height: 150px;
   position: relative;
 }
 
 /* 서브 슬라이드 사진 */
 main sub .pic_container .pic_list img {
   width: 100%;
-  height: 180px;
+  height: 150px;
   border-radius: 5px;
   background-size: cover;
   position: absolute;
@@ -305,6 +306,62 @@ main .mainBox .right .pic .rightPic .comment dd {
   font-family: "Gowun Dodum", sans-serif;
 }
 
+/* other pic */
+
+main .other {
+  width: 100%;
+  display: flex;
+}
+
+/* other 코멘트 */
+main .otherPicComment {
+  width: 100%;
+  border-top: 2px solid rgb(184, 181, 181);
+  margin: 100px 0px 10px 0px;
+  padding-top: 100px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .other .otherLeft {
+  width: 100%;
+}
+
+main .other .otherLeft .inner {
+  width: 100%;
+  height: 1550px;
+}
+
+main .other .otherLeft .inner img {
+  width: 60%;
+  height: 500px;
+}
+
+main .other .otherRight {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main .other .otherRight .otherPic_container {
+  width: 100%;
+}
+
+main .other .otherRight .otherPic_container .inner {
+  width: 80%;
+  white-space: normal;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+main .other .otherRight .otherPic_container .inner img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  cursor: pointer;
+}
+
 /* 미디어 쿼리 */
 /* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용)  */
 @media only all and (min-width: 1800px) {
@@ -327,7 +384,17 @@ main .mainBox .right .pic .rightPic .comment dd {
 
   /* 서브 배열 */
   main sub {
-    height: 150px;
+    height: 200px;
+  }
+
+  /* 서브 슬라이드 사진 간격 */
+  main sub div {
+    height: 200px;
+  }
+
+  /* 서브 슬라이드 사진 */
+  main sub .pic_container .pic_list img {
+    height: 200px;
   }
 
   /* 메인 오른쪽 타이틀 전체보기 */
@@ -342,7 +409,7 @@ main .mainBox .right .pic .rightPic .comment dd {
   /* 메인 오른쪽 이미지 크기 */
   main .mainBox .right .pic .rightPic img {
     width: 45%;
-    height: 120px;
+    height: 130px;
   }
 
   /* 메인 오른쪽 이미지 옆 번호 */

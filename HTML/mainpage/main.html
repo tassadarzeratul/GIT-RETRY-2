@@ -1,213 +1,245 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../../css/mainpage/main.css" />
-  </head>
 
-  <body>
-    <!--main 화면 시작-->
-    <main>
-      <header class="header">
-        <div class="top">
-          <div class="logo_pic" id="logo_picMain">
-            <img src="../../img/withDreamLogo2.png" alt="logo" />
-          </div>
-          <div class="jlmToBtn">
-            <button type="button" id="joinBtn">Join</button>
-            <button type="button" id="loginBtn">Login</button>
-            <button type="button" id="myPageBtn">MyPage</button>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../css/mainpage/main.css" />
+</head>
+
+<body>
+  <!--main 화면 시작-->
+  <main>
+    <header class="header">
+      <div class="top">
+        <div class="logo_pic" id="logo_picMain">
+          <img src="../../img/withDreamLogo2.png" alt="logo" />
         </div>
-        <div class="scroll">
-          <div class="menu">
-            <ul class="menu_inner">
-              <li id="mainToHome">홈</li>
-              <li id="mainToRegister">펀딩 등록</li>
-              <li id="mainToend">종료 펀딩</li>
-              <li id="mainTopurchase_1">작품 구매</li>
+        <div class="jlmToBtn">
+          <button type="button" id="joinBtn">Join</button>
+          <button type="button" id="loginBtn">Login</button>
+          <button type="button" id="myPageBtn">MyPage</button>
+        </div>
+      </div>
+      <div class="scroll">
+        <div class="menu">
+          <ul class="menu_inner">
+            <li id="mainToHome">홈</li>
+            <li id="mainToRegister">펀딩 등록</li>
+            <li id="mainToend">종료 펀딩</li>
+            <li id="mainTopurchase_1">작품 구매</li>
+          </ul>
+        </div>
+        <div class="search">
+          <input type="text" id="searchBox" placeholder="검색어를 입력해주세요." />
+          <i class="fa-solid fa-magnifying-glass" id="searchI"></i>
+        </div>
+      </div>
+    </header>
+    <div class="mainBox">
+      <!-- 왼쪽 사진부분  -->
+      <div class="left">
+        <!-- 메인 슬라이더 -->
+        <section>
+          <div class="pic_container">
+            <ul class="pic_slider">
+              <li><img src="../../img/배경23.png" alt="img23" /></li>
+              <li><img src="../../img/배경29.png" alt="img29" /></li>
+              <li><img src="../../img/배경25.png" alt="img25" /></li>
+              <li><img src="../../img/배경30.png" alt="img25" /></li>
+              <li><img src="../../img/배경24.png" alt="img25" /></li>
             </ul>
           </div>
-          <div class="search">
-            <input
-              type="text"
-              id="searchBox"
-              placeholder="검색어를 입력해주세요."
-            />
-            <i class="fa-solid fa-magnifying-glass" id="searchI"></i>
+        </section>
+
+        <!-- 서브 슬라이더 -->
+        <div class="subPicComment">주목할 만한 프로젝트</div>
+        <sub>
+          <!-- 첫번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li class="list"><img src="../../img/배경17.jpg" alt="img17" /></li>
+              <li class="list"><img src="../../img/배경13.jpg" alt="img13" /></li>
+              <li class="list"><img src="../../img/배경23.png" alt="img14" /></li>
+              <li class="list"><img src="../../img/배경18.jpg" alt="img18" /></li>
+              <li class="list"><img src="../../img/배경20.jpg" alt="img20" /></li>
+            </ul>
+            <button class="btn1 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn2 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
           </div>
-        </div>
-      </header>
-      <div class="mainBox">
-        <div class="left">
-          <section>
-            <div class="pic_container">
-              <ul class="pic_slider">
-                <li><img src="../../img/배경23.png" alt="img23" /></li>
-                <li><img src="../../img/배경29.png" alt="img29" /></li>
-                <li><img src="../../img/배경25.png" alt="img25" /></li>
-                <li><img src="../../img/배경30.png" alt="img25" /></li>
-                <li><img src="../../img/배경24.png" alt="img25" /></li>
-              </ul>
-            </div>
-          </section>
-          <div class="subPicComment">주목할 만한 프로젝트</div>
-          <sub>
-            <div class="pic_container">
-              <ul class="pic_list">
-                <li class="list">
-                  <img src="../../img/배경17.jpg" alt="img17" />
-                </li>
-                <li class="list">
-                  <img src="../../img/배경13.jpg" alt="img13" />
-                </li>
-                <li class="list">
-                  <img src="../../img/배경23.png" alt="img14" />
-                </li>
-                <li class="list">
-                  <img src="../../img/배경18.jpg" alt="img18" />
-                </li>
-                <li class="list">
-                  <img src="../../img/배경20.jpg" alt="img20" />
-                </li>
-              </ul>
-              <button class="btn1 prevBtn">
-                <i class="fa-solid fa-angle-left fa-2x"></i>
-              </button>
-              <button class="btn2 nextBtn">
-                <i class="fa-solid fa-angle-right fa-2x"></i>
-              </button>
-            </div>
-
-            <div class="pic_container">
-              <ul class="pic_list">
-                <li><img src="../../img/배경12.png" alt="img12" /></li>
-                <li><img src="../../img/배경18.jpg" alt="img18" /></li>
-                <li><img src="../../img/배경15.jpg" alt="img15" /></li>
-                <li><img src="../../img/배경20.jpg" alt="img20" /></li>
-                <li><img src="../../img/배경13.jpg" alt="img13" /></li>
-              </ul>
-              <button class="btn3 prevBtn">
-                <i class="fa-solid fa-angle-left fa-2x"></i>
-              </button>
-              <button class="btn4 nextBtn">
-                <i class="fa-solid fa-angle-right fa-2x"></i>
-              </button>
-            </div>
-
-            <div class="pic_container">
-              <ul class="pic_list">
-                <li><img src="../../img/배경13.jpg" alt="img13" /></li>
-                <li><img src="../../img/배경1.png" alt="img6" /></li>
-                <li><img src="../../img/배경30.png" alt="img3" /></li>
-                <li><img src="../../img/배경11.jpg" alt="img11" /></li>
-                <li><img src="../../img/배경15.jpg" alt="img15" /></li>
-              </ul>
-              <button class="btn5 prevBtn">
-                <i class="fa-solid fa-angle-left fa-2x"></i>
-              </button>
-              <button class="btn6 nextBtn">
-                <i class="fa-solid fa-angle-right fa-2x"></i>
-              </button>
-            </div>
-
-            <div class="pic_container">
-              <ul class="pic_list">
-                <li><img src="../../img/배경27.png" alt="img6" /></li>
-                <li><img src="../../img/배경20.jpg" alt="img20" /></li>
-                <li><img src="../../img/배경16.jpg" alt="img16" /></li>
-                <li><img src="../../img/배경18.jpg" alt="img18" /></li>
-                <li><img src="../../img/배경19.jpg" alt="img19" /></li>
-              </ul>
-              <button class="btn7 prevBtn">
-                <i class="fa-solid fa-angle-left fa-2x"></i>
-              </button>
-              <button class="btn8 nextBtn">
-                <i class="fa-solid fa-angle-right fa-2x"></i>
-              </button>
-            </div>
-          </sub>
-        </div>
-        <div class="right">
-          <div class="title">
-            <p>인기 프로젝트</p>
-            <div id="allPic">전체보기</div>
+          <!-- 두번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li><img src="../../img/배경12.png" alt="img12" /></li>
+              <li><img src="../../img/배경18.jpg" alt="img18" /></li>
+              <li><img src="../../img/배경15.jpg" alt="img15" /></li>
+              <li><img src="../../img/배경20.jpg" alt="img20" /></li>
+              <li><img src="../../img/배경13.jpg" alt="img13" /></li>
+            </ul>
+            <button class="btn3 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn4 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
           </div>
-          <div class="pic">
-            <div class="rightPic">
-              <img src="../../img/배경30.png" alt="img6" />
-              <div class="num">1</div>
-              <div class="comment">
-                <dl>
-                  <dt>humanpicture</dt>
-                  <dd>단 하나라도, 낭만 품고 살기 낭만을 찍은 엽서북</dd>
-                </dl>
-              </div>
+          <!-- 세번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li><img src="../../img/배경13.jpg" alt="img13" /></li>
+              <li><img src="../../img/배경1.png" alt="img6" /></li>
+              <li><img src="../../img/배경30.png" alt="img3" /></li>
+              <li><img src="../../img/배경11.jpg" alt="img11" /></li>
+              <li><img src="../../img/배경15.jpg" alt="img15" /></li>
+            </ul>
+            <button class="btn5 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn6 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
+          </div>
+          <!-- 네번째 -->
+          <div class="pic_container">
+            <ul class="pic_list">
+              <li><img src="../../img/배경27.png" alt="img6" /></li>
+              <li><img src="../../img/배경20.jpg" alt="img20" /></li>
+              <li><img src="../../img/배경16.jpg" alt="img16" /></li>
+              <li><img src="../../img/배경18.jpg" alt="img18" /></li>
+              <li><img src="../../img/배경19.jpg" alt="img19" /></li>
+            </ul>
+            <button class="btn7 prevBtn">
+              <i class="fa-solid fa-angle-left fa-2x"></i>
+            </button>
+            <button class="btn8 nextBtn">
+              <i class="fa-solid fa-angle-right fa-2x"></i>
+            </button>
+          </div>
+        </sub>
+      </div>
+      <!-- 인기 프로젝트 -->
+      <div class="right">
+        <div class="title">
+          <p>인기 프로젝트</p>
+          <div id="allPic">전체보기</div>
+        </div>
+        <div class="pic">
+          <div class="rightPic">
+            <img src="../../img/배경30.png" alt="img6" />
+            <div class="num">1</div>
+            <div class="comment">
+              <dl>
+                <dt>humanpicture</dt>
+                <dd>단 하나라도, 낭만 품고 살기 낭만을 찍은 엽서북</dd>
+              </dl>
             </div>
-            <div class="rightPic">
-              <img src="../../img/배경28.png" alt="img6" />
-              <div class="num">2</div>
-              <div class="comment">
-                <dl>
-                  <dt>pinkhuman</dt>
-                  <dd>
-                    하루하루가 반복되고 있나요? 어쩌면 우리에게 쉼표가 필요한..
-                  </dd>
-                </dl>
-              </div>
+          </div>
+          <div class="rightPic">
+            <img src="../../img/배경28.png" alt="img6" />
+            <div class="num">2</div>
+            <div class="comment">
+              <dl>
+                <dt>pinkhuman</dt>
+                <dd>
+                  하루하루가 반복되고 있나요? 어쩌면 우리에게 쉼표가 필요한..
+                </dd>
+              </dl>
             </div>
-            <div class="rightPic">
-              <img src="../../img/배경16.jpg" alt="img6" />
-              <div class="num">3</div>
-              <div class="comment">
-                <dl>
-                  <dt>human</dt>
-                  <dd>
-                    기억하고 싶은 유럽의 찰나가 담긴 엽서북과 마스킹 테이프
-                    [Nostalgia]
-                  </dd>
-                </dl>
-              </div>
+          </div>
+          <div class="rightPic">
+            <img src="../../img/배경16.jpg" alt="img6" />
+            <div class="num">3</div>
+            <div class="comment">
+              <dl>
+                <dt>human</dt>
+                <dd>
+                  기억하고 싶은 유럽의 찰나가 담긴 엽서북과 마스킹 테이프
+                  [Nostalgia]
+                </dd>
+              </dl>
             </div>
-            <div class="rightPic">
-              <img src="../../img/배경26.png" alt="img6" />
-              <div class="num">4</div>
-              <div class="comment">
-                <dl>
-                  <dt>reack class</dt>
-                  <dd>그 동안의 오늘이었던 날들을 간직한 엽서북입니다.</dd>
-                </dl>
-              </div>
+          </div>
+          <div class="rightPic">
+            <img src="../../img/배경26.png" alt="img6" />
+            <div class="num">4</div>
+            <div class="comment">
+              <dl>
+                <dt>reack class</dt>
+                <dd>그 동안의 오늘이었던 날들을 간직한 엽서북입니다.</dd>
+              </dl>
             </div>
-            <div class="rightPic">
-              <img src="../../img/배경24.png" alt="img6" />
-              <div class="num">5</div>
-              <div class="comment">
-                <dl>
-                  <dt>jps</dt>
-                  <dd>
-                    초점없는 사진엔 사연이 있다. 흐려진 기록을sdfdsdf 재구성한
-                    필름사진집..
-                  </dd>
-                </dl>
-              </div>
+          </div>
+          <div class="rightPic">
+            <img src="../../img/배경24.png" alt="img6" />
+            <div class="num">5</div>
+            <div class="comment">
+              <dl>
+                <dt>jps</dt>
+                <dd>
+                  초점없는 사진엔 사연이 있다. 흐려진 기록을sdfdsdf 재구성한
+                  필름사진집..
+                </dd>
+              </dl>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <!--Main 화면 끝-->
-    <script src="../../js/mainpage/main.js"></script>
-  </body>
+    </div>
+
+    <div class="otherPicComment">이런 프로젝트 어때요?</div>
+    <div class="other">
+      <div class="otherLeft">
+        <div class="inner">
+          <img src="../../img/배경18.jpg" alt="img18" />
+        </div>
+      </div>
+      <div class="otherRight">
+        <div class="otherPic_container">
+          <div class="inner" id="otherPic_1">
+            <img src="../../img/배경30.png" alt="img30">
+            <div class="comment">
+              <div class="author">휴먼 시간</div>
+              <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+              <div class="description">따뜻한 대화로 만드는 가족사진</div>
+            </div>
+          </div>
+        </div>
+        <div class="otherPic_container">
+          <div class="inner" id="otherPic_2">
+            <img src="../../img/배경28.png" alt="img28">
+            <div class="comment">
+              <div class="author">휴먼 시간</div>
+              <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+              <div class="description">따뜻한 대화로 만드는 가족사진</div>
+            </div>
+          </div>
+        </div>
+        <div class="otherPic_container">
+          <div class="inner" id="otherPic_3">
+            <img src="../../img/배경28.png" alt="img28">
+            <div class="comment">
+              <div class="author">휴먼 시간</div>
+              <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+              <div class="description">따뜻한 대화로 만드는 가족사진</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <!--Main 화면 끝-->
+  <script src="../../js/mainpage/main.js"></script>
+</body>
+
 </html>
