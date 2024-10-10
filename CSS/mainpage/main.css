@@ -59,6 +59,10 @@ main header .jlmToBtn button {
     font-family: "Gowun Dodum", sans-serif;
 }
 
+main header .jlmToBtn button:hover{
+    color: orange;
+}
+
 /* nmenu */
 
 main header .scroll {
@@ -88,6 +92,11 @@ main header .menu li {
     cursor: pointer;
     font-size: 22px;
 }
+
+main header .menu li:hover{
+    color: orange;
+}
+
 
 /* 우측 서치부분 */
 main header .search {
