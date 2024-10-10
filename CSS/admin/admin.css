@@ -27,12 +27,39 @@ li {
 
 /* 상단 로고 */
 
+.admin header .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .admin header .logo_pic {
     width: 65%;
 }
 
 .admin header .logo_pic img{
     width: 50%;
+}
+
+.admin header .jlmToBtn {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.admin header .jlmToBtn button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+.admin header .jlmToBtn button:hover{
+    color: orange;
 }
 
 /* nmenu */
@@ -63,6 +90,10 @@ li {
     border: none;
     cursor: pointer;
     font-size: 22px;
+}
+
+.admin header .menu li:hover{
+    color: orange;
 }
 
 /* 우측 서치부분 */
