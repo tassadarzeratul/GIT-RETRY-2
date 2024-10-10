@@ -27,16 +27,12 @@ li {
 
 /* 상단 로고 */
 
-.admin header .logo {
-    width: 100%;
-    height: 90px;
+.admin header .logo_pic {
+    width: 65%;
 }
 
-.admin header .logo .logo_pic {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/jikbakguri2.png);
-    background-repeat: no-repeat;
+.admin header .logo_pic img{
+    width: 50%;
 }
 
 /* nmenu */

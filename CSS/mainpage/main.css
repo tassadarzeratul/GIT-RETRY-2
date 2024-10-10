@@ -17,42 +17,8 @@ li {
     list-style: none;
 }
 
-/* Main  */
 
-main {
-    height: auto;
-    margin: 20px 50px;
-    font-family: "Gowun Dodum", sans-serif;
-}
-
-main header .container {
-    width: 75%;
-    display: column;
-}
-
-/* 메인 로고 */
-main header .logo {
-    width: 100%;
-    height: 90px;
-}
-
-main header .logo .logo_pic {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/jikbakguri2.png);
-    background-repeat: no-repeat;
-}
-
-/* main header .logo .logo_picComment{
-    position: absolute;
-    left: 650px;
-    transform: rotate(-20deg) scale(2);
-    color: rgb(191, 192, 197);
-} */
-
-
-
-/* admin 시작  */
+/* Main 시작  */
 
 main {
     height: auto;
@@ -62,17 +28,16 @@ main {
 
 /* 상단 로고 */
 
-main header .logo {
-    width: 100%;
-    height: 90px;
+main header .logo_pic {
+    width: 65%;
 }
 
-main header .logo div#logo_pic {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/);
-    background-repeat: no-repeat;
+main header .logo_pic img{
+    width: 50%;
 }
+
+
+
 
 /* nmenu */
 
