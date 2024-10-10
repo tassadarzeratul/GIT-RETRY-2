@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: "Gowun Dodum", sans-serif;
 }
 
 a,
@@ -24,14 +27,27 @@ body{
     background-repeat:none;
 }
 
-.register{
-    width: 100%;
-}
-
 .register .displaytext{
     text-align: center;
     color:black;
     font-size: 30px;
+}
+
+.register .menu .fund{
+    margin-top: 30px;
+    margin:50px;
+    margin-bottom:10px;
+    font-size :20px;
+    font-weight:bold;
+}
+
+.register .menu .mainimage{
+    width:100%;
+    height:100%;
+    position: relative;
+    left:990px;
+    right:0px;
+    top:-50px;
 }
 
 .register .content{
@@ -39,52 +55,45 @@ body{
     /* padding:5px; */
     margin:5px;
     justify-content: center;
-    display: flex;
+    display: inline-block;
 } 
 
-.register .content .mainimage{
-    width:50%;
-    height:100vh;
-    position: relative;
-    left:-10px;
-    margin-top:-50px;
-    background-size:cover;
-    /* padding:20px;
-    padding-right: 20px; */
-    /* margin-top:0px; */
-}
-
 .register .content .description{
-    width:60%;
+    width:100%;
     clear:both;
     display:inline-block;
-    text-align: center;
+    margin:50px;
+    margin-top:10px;
     margin-bottom:50px;
+    font-size :15px;
     /* padding:10px;
     padding-left:10px;
     padding-top:00px; */
 }
 
 .register .content .description .theme{
-    width:90%;
-    height:100px;
-    font-size:25px;
+    width:100%;
+    height:50px;
+    font-size:15px;
     margin-top:20px;
     margin-bottom:20px;
-    left:30px;
-    border: 2px solid rgb(255, 100, 100);
+    border: 2px solid rgb(52, 99, 255);
     border-radius: 5px;
     resize: none;
     outline: none;
 }
 
+.register .content .description .buttons{
+    display:inline-block;
+}
+
 .register .content .description .details{
-    width:90%;
-    height:500px;
-    font-size:25px;
+    width:100%;
+    height:300px;
+    font-size:15px;
     margin-top:20px;
     margin-bottom:20px;
-    border: 2px solid rgb(255, 100, 100);
+    border: 2px solid rgb(52, 99, 255);
     border-radius: 5px;
     resize: none;
     outline: none;
@@ -94,12 +103,11 @@ body{
     width: 140px;
     height:50px;
     font-size:20px;
-    background-color: rgb(255, 100, 100);
+    background-color: rgb(52, 99, 255);
     color:white;
     border:transparent;
     border-radius: 5px;
     margin-top:30px;
-    display:inline;
 }
 
 .register .content .button:hover{
@@ -117,10 +125,10 @@ body{
 
 .register .content .upload-btn-wrapper .btn{
     border: 2px solid rgb(0, 0, 0);
-    color: rgb(255, 100, 100);
+    color: rgb(52, 99, 255);
     background-color: white;
     padding: 8px 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -131,4 +139,8 @@ body{
     left: 0;
     top: 0;
     opacity: 0;
+}
+
+.register .content .tip{
+    margin-top:20px;
 }

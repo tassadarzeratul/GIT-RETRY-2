@@ -25,15 +25,6 @@ li {
     font-family: "Gowun Dodum", sans-serif;
 }
 
-/* .admin header .container {
-    width: 75%;
-    display: column;
-} */
-
-.admin header .container {
-    width: 100%;
-}
-
 /* 상단 로고 */
 
 .admin header .logo {
@@ -50,8 +41,18 @@ li {
 
 /* nmenu */
 
-.admin header .menu {
-    width: 90%;
+.admin header .container {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(243, 243, 243);
+}
+
+.admin header .container .scroll{
+    width: 100%;
+}
+
+.admin header .scroll .menu {
+    width: 100%;
     height: 50px;
     display: flex;
     background: white;
@@ -60,9 +61,6 @@ li {
     border: none;
     align-items: center;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 5;
 }
 
 .admin header .menu li {
@@ -71,6 +69,43 @@ li {
     border: none;
     cursor: pointer;
     font-size: 22px;
+}
+
+/* 우측 서치부분 */
+.admin header .search {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.admin header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+}
+
+.admin header .search i {
+    position: relative;
+    bottom: 8px;
+    right: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.admin header .login button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
 /* section */
@@ -90,7 +125,7 @@ li {
 .admin section .navFilter .nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 

@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
+
+@media only all and (min-width: 1200px){
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 a,
@@ -42,6 +49,8 @@ li {
 
 .displaytextbox{
   position:flex;
+  margin-top: 100px;
+  margin-bottom: 70px;
   margin-left:100px;
   margin-right:100px;
   text-align: center;
@@ -57,11 +66,13 @@ li {
 
 .buttons{
   /* border:1px solid black; */
-  margin: 25px;
-  margin-bottom:10px;
-  padding-left:20px;
-  padding: 0px;
+  margin-bottom:20px;
+  padding:0px;
 }
+
+.menu{
+  padding: 0px;
+  }
 
 .buttons .home{
   outline:none !important;
@@ -69,12 +80,14 @@ li {
   
   width: 150px;
   /* background-color: rgb(255, 100, 100); */
-  background-color: transparent;
+  background-color: rgb(52, 99, 255);
+  margin-right:10px;
   padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
-  color:black;
+  color:white;
+  font-weight: bold;
 }
 
 .buttons .home:hover{
@@ -89,18 +102,21 @@ li {
   box-shadow:none !important;
 
   width: 150px;
-  background-color: rgb(255, 100, 100);
+  background-color: rgb(52, 99, 255);
+  margin-right:10px;
+
   padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
   color:white;
   display:inline-block;
+  font-weight: bold;
 }
 
 .buttons .register:hover{
-  background-color: rgb(220, 80, 80);
-  transition:0.2s;
+  background-color: rgb(0, 0, 0);
+  transition:0.3s;
 }
 
 .buttons .ended{
@@ -108,18 +124,21 @@ li {
   box-shadow:none !important;
 
   width: 150px;
-  background-color: rgb(255, 100, 100);
+  background-color: rgb(52, 99, 255);
+  margin-right:10px;
+
   padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
   color:white;
+  font-weight: bold;
   display:inline-block;
 }
 
 .buttons .ended:hover{
-  background-color: rgb(220, 80, 80);
-  transition:0.2s;
+  background-color: black;
+  transition:0.4s;
 }
 
 .buttons .purchase{
@@ -127,92 +146,94 @@ li {
   box-shadow:none !important;
 
   width: 150px;
-  background-color: rgb(255, 100, 100);
+  background-color: rgb(52, 99, 255);
   padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
   color:white;
+  font-weight: bold;
   display:inline-block;
 }
 
 .buttons .purchase:hover{
-  background-color: rgb(220, 80, 80);
-  transition:0.2s;
-}
-
-.menu{
-  /* border: 1px solid black; */
-padding-left:20px;
-padding: 0px;
-margin:25px;
+  background-color: black;
+  transition:0.4s;
 }
 
 .menu .profile{
   outline:none !important;
   box-shadow:none !important;
 
-  width: 200px;
-  background-color: rgb(255, 100, 100);
-  padding: 16px;
+  width: 205px;
+  background-color: rgb(52, 99, 255);
+  margin-right:px;
+
+  padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
   color:white;
-  margin-inline: 1px;
+  font-weight: bold;
+  margin-right:10px;
+  display:inline-block;
 }
 
 .menu .profile:hover{
-  background-color: rgb(220, 80, 80);
-  transition:0.2s;
+  background-color: black;
+  transition:0.4s;
 }
 
 .menu .regifunding{
   outline:none !important;
   box-shadow:none !important;
   
-  width: 200px;
-  background-color: rgb(255, 100, 100);
-  padding: 16px;
+  width: 205px;
+  background-color: rgb(52, 99, 255);
+  padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
   color:white;
+  font-weight: bold;
   display:inline-block;
-  margin-inline: 1px;
+  margin-right:10px;
+
 }
 
 .menu .regifunding:hover{
-  background-color: rgb(220, 80, 80);
-  transition:0.2s;
+  background-color: black;
+  transition:0.4s;
 }
 
 .menu .paidfunding{
   outline:none !important;
   box-shadow:none !important;
 
-  width: 200px;
-  background-color: rgb(255, 100, 100);
-  padding: 16px;
+  width: 205px;
+  background-color: rgb(52, 99, 255);
+  
+  padding: 15px;
   border-radius: 5px;
   border-color:transparent;
   text-align: center;
   color:white;
+  font-weight: bold;
   display:inline-block;
-  margin-inline: 1px;
+  margin-right:10px;
+
 }
 
 .menu .paidfunding:hover{
-  background-color: rgb(220, 80, 80);
-  transition:0.2s;
+  background-color: black;
+  transition:0.4s;
 }
 
 .profilemenu{
   text-align:left;
   font-style:italic;
   font-size: 20px;
-  margin:25px;
-  margin-top:10px;
+  margin-top:60px;
   /* border:1px solid black; */
   margin-bottom:20px;
 }
@@ -223,18 +244,15 @@ margin:25px;
 }
 
 .area{
-  background-color: rgba(139, 210, 252, 0.712);
-  border:1px solid black;
-  margin:25px;
   padding-top:0px;
   text-align: left;
+  margin-bottom:30px;
 }
 
 .area .registered{
   width:200px;
   height:200px;
   display:inline-block;
-  margin-top: 20px;
   margin-bottom : 20px;
   margin-inline: 30px;
 }
@@ -333,6 +351,7 @@ li {
 .mypage section .pic_container .maindComment {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .mypage section .pic_container .pic_list {
@@ -389,11 +408,11 @@ li {
     position: relative;
 }
 
-.mypage section .pic_container .pic_list .inner img {
+/* .mypage section .pic_container .pic_list .inner img {
     transform: rotate(0) scale(1);
     transition: .3s ease-in-out;
 }
 
 .mypage section .pic_container .pic_list .inner:hover img {
     transform: rotate(5deg) scale(1);
-}
+} */
