@@ -25,12 +25,6 @@ main {
     font-family: "Gowun Dodum", sans-serif;
 }
 
-main header {
-    display: flex;
-    justify-content: space-between;
-
-}
-
 main header .container {
     width: 75%;
     display: column;
@@ -50,14 +44,27 @@ main header .logo .logo_pic {
 }
 
 /* 메인 메뉴 */
-main header .menu {
+
+main header .container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(243, 243, 243);
+}
+
+main header .container .scroll{
+    width: 100%;
+}
+
+main header .scroll .menu {
     width: 100%;
     height: 50px;
     display: flex;
     background: white;
-    border: none;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: none;
     align-items: center;
     text-align: center;
 }
@@ -74,8 +81,9 @@ main header .menu li {
 
 /* 우측 회원가입, 로그인, 마이페이지 부분 */
 main header .login {
-    width: 25%;
+    width: 40%;
     display: flex;
+    align-items: center;
 }
 
 main header .login button {

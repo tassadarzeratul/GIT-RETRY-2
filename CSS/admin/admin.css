@@ -40,9 +40,11 @@ li {
 }
 
 /* nmenu */
+
 .admin header .container {
     width: 100%;
     display: flex;
+    border-bottom: 2px solid rgb(243, 243, 243);
 }
 
 .admin header .container .scroll{
@@ -62,7 +64,7 @@ li {
 }
 
 .admin header .menu li {
-    width: 15.75%;
+    width: 15%;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -73,8 +75,9 @@ li {
 .admin header .search {
     width: 40%;
     display: flex;
-    align-items: end;
+    align-items: center;
 }
+
 .admin header .search input {
     width: 100%;
     height: 35px;
@@ -82,7 +85,16 @@ li {
     border: none;
     padding: 15px;
     margin-left: 100px;
-    background-color: #dbdfde;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+}
+
+.admin header .search i {
+    position: relative;
+    bottom: 8px;
+    right: 30px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 
@@ -113,7 +125,7 @@ li {
 .admin section .navFilter .nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 
