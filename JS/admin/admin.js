@@ -9,5 +9,5 @@ $('#adminToRegister').on('click', () => adminToGo ('../../HTML/register/김건�
 // 종료펀딩
 $('#adminToend').on('click', () => adminToGo ('../../HTML/register/end.html'));
 // 작품구매
-$('#adminTopurchase_1').on('click', () => adminToGo('../../HTML/register/purchase_1.html'));
+$('#adminTopurchase_1').on('click', () => adminToGo('../../HTML/purchase/purchase1.html'));
 

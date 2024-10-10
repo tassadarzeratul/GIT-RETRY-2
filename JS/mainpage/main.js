@@ -52,13 +52,15 @@ $('#mainToRegister').on('click', () => mainToGo('../../HTML/register/김건우_r
 // 종료펀딩
 $('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
-$('#allPic, #mainTopurchase_1').on('click', () => mainToGo('../../HTML/register/purchase_1.html'));
+$('#allPic, #mainTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // join
 $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
 $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
 $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.html'));
+// 검색어입력 돋보기
+$('#searchI').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 
 
 

@@ -68,7 +68,7 @@ main header .jlmToBtn button:hover{
 main header .scroll {
     width: 100%;
     display: flex;
-    border-bottom: 2px solid rgb(243, 243, 243);
+    border-bottom: 2px solid rgb(184, 181, 181);
 }
 
 main header .scroll .menu{
@@ -182,7 +182,6 @@ main section .pic_slider li img {
 /* 서브 코멘트 */
 main .subPicComment {
     font-size: 22px;
-    font-weight: bold;
     margin: 20px 0px 5px 0px;
 }
 
