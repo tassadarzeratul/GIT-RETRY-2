@@ -44,4 +44,13 @@ body{
 .endpop .border .confirm .confirmbutton{
     background-color: rgb(52, 99, 255);
     color:white;
+    width: 150px;
+    border-radius: 5px;
+    border:transparent;
+    font-weight: bold;
+}
+
+.endpop .border .confirm .confirmbutton :hover{
+    background-color: black;
+    color:black;
 }
