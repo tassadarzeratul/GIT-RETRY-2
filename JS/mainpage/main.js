@@ -42,23 +42,23 @@
 // $('#allPic').on('click', mainToPurchase_1);
 
 
-const urlToGo = (url) => {
+const mainToGo = (url) => {
     window.open(url);
 }
 // 홈
-$('#logo_picMainHome').on('click', () => urlToGo('../../HTML/mainpage/main.html'));
+$('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#register').on('click', () => urlToGo('../../HTML/register/김건우_register.html'));
+$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/김건우_register.html'));
 // 종료펀딩
-$('#end').on('click', () => urlToGo('../../HTML/register/end.html'));
+$('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
-$('#allPic, #purchase_1').on('click', () => urlToGo('../../HTML/register/purchase_1.html'));
+$('#allPic, #mainTopurchase_1').on('click', () => mainToGo('../../HTML/register/purchase_1.html'));
 // join
-$('#joinBtn').on('click', () => urlToGo('../../HTML/login-join/join.html'));
+$('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
-$('#loginBtn').on('click', () => urlToGo('../../HTML/login-join/login.html'));
+$('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#myPageBtn').on('click', () => urlToGo('../../HTML/mypage/김건우_mypage.html'));
+$('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.html'));
 
 
 
