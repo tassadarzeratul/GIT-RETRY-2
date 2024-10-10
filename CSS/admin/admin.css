@@ -67,7 +67,7 @@ li {
 .admin header .scroll {
     width: 100%;
     display: flex;
-    border-bottom: 2px solid rgb(243, 243, 243);
+    border-bottom: 2px solid rgb(184, 181, 181);
 }
 
 .admin header .scroll .menu{
