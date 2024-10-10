@@ -1,45 +1,53 @@
 <!-- KGW -->
 <!DOCTYPE html>
 <html lang="ko">
-<link rel="stylesheet" href="../../CSS/login-join/김건우_mypage.css">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/mainpage/detail1.css" />
+    <link rel="stylesheet" href="../../CSS/login-join/김건우_mypage.css">
     <title>마이페이지</title>
 </head>
+
 <body>
     <!-- mypage 시작 -->
     <div class="mypage">
-    <!-- header 시작 -->
+        <!-- header 시작 -->
         <header class="header">
             <div class="top">
-                <div class="logo_pic" id="logo_picMain">
+                <div class="logo_pic">
                     <img src="../../img/withDreamLogo2.png" alt="logo">
                 </div>
                 <div class="jlmToBtn">
-                    <button type="button" id="joinBtn">Join</button>
-                    <button type="button" id="loginBtn">Login</button>
-                    <button type="button" id="myPageBtn">MyPage</button>
+                    <button type="button" id="mypageTojoin">Join</button>
+                    <button type="button" id="mypageTologin">Login</button>
+                    <button type="button" id="mypageTomyPage">MyPage</button>
                 </div>
             </div>
             <div class="scroll">
                 <div class="menu">
                     <ul class="menu_inner">
-                        <li id="mainToHome">홈</li>
-                        <li id="mainToRegister">펀딩 등록</li>
-                        <li id="mainToend">종료 펀딩</li>
-                        <li id="mainTopurchase_1">작품 구매</li>
-                        <li id="profile">프로필</li>
-                        <li id="registered">등록한 펀딩</li>
-                        <li id="paid">후원한 펀딩</li>
+                        <li id="myPageToHome">홈</li>
+                        <li id="myPageToRegister">펀딩 등록</li>
+                        <li id="myPageToend">종료 펀딩</li>
+                        <li id="myPageTopurchase_1">작품 구매</li>
+                        <li id="myPageToprofile">프로필</li>
+                        <li id="myPageToregistered">등록한 펀딩</li>
+                        <li id="myPageTopaid">후원한 펀딩</li>
                     </ul>
                 </div>
             </div>
         </header>
-    <!-- header 종료 -->
-    <!-- 마이페이지 글자 시작 -->
-        <div class="displaytextbox">    
+        <!-- header 종료 -->
+        <!-- 마이페이지 글자 시작 -->
+        <div class="displaytextbox">
             <h1 class="displaytext">마이페이지</h1>
         </div>
         <!-- <div class="buttons">
@@ -57,14 +65,19 @@
             <h4 class="profilemenu">내 프로필</h4>
             <div class="textarea">
                 <div class="area">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </text>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </text>
+                </div>
             </div>
-        </div>
-    <!--admin 붙여넣음-->
-        <section>
-            <div class="pic_container">
-                <div class="maindComment">등록한 펀딩</div>
+            <!--admin 붙여넣음-->
+            <section>
+                <div class="pic_container">
+                    <div class="maindComment">등록한 펀딩</div>
                     <div class="pic_list">
                         <div class="inner" id="mypagePic_1">
                             <img src="../../img/배경1.png" alt="img1">
@@ -103,7 +116,7 @@
                             <div class="line"></div>
                         </div>
                     </div>
-                <div class="maindComment">후원한 펀딩</div>
+                    <div class="maindComment">후원한 펀딩</div>
                     <div class="pic_list">
                         <div class="inner" id="mypagePic_1">
                             <img src="../../img/배경1.png" alt="img1">
@@ -141,12 +154,13 @@
                             </div>
                             <div class="line"></div>
                         </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <!--admain 화면 끝-->
-    <script src="../../js/admin/admin.js"></script>
-     <!-- mypage 끝 -->
+            </section>
+        </div>
+        <!--admain 화면 끝-->
+        <script src="../../JS/mypage/mypage.js"></script>
+        <!-- mypage 끝 -->
 </body>
+
 </html>
