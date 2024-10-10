@@ -28,6 +28,13 @@ main {
 
 /* 상단 로고 */
 
+main header .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 main header .logo_pic {
     width: 65%;
 }
@@ -36,8 +43,21 @@ main header .logo_pic img{
     width: 50%;
 }
 
+main header .jlmToBtn {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
 
-
+main header .jlmToBtn button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+}
 
 /* nmenu */
 
