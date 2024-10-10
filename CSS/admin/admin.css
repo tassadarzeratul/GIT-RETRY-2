@@ -32,7 +32,7 @@ li {
     height: 90px;
 }
 
-.admin header .logo div#logo_picId {
+.admin header .logo .logo_pic {
     width: 100%;
     height: 100%;
     background-image: url(../../img/jikbakguri2.png);
@@ -41,29 +41,27 @@ li {
 
 /* nmenu */
 
-.admin header .container {
+.admin header .scroll {
     width: 100%;
     display: flex;
     border-bottom: 2px solid rgb(243, 243, 243);
 }
 
-.admin header .container .scroll{
+.admin header .scroll .menu{
     width: 100%;
 }
 
-.admin header .scroll .menu {
+.admin header .scroll .menu .menu_inner {
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     background: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border: none;
     align-items: center;
     text-align: center;
 }
 
-.admin header .menu li {
+.admin header .menu_inner li {
     width: 15%;
     background: transparent;
     border: none;
@@ -91,7 +89,6 @@ li {
 
 .admin header .search i {
     position: relative;
-    bottom: 8px;
     right: 30px;
     font-size: 18px;
     cursor: pointer;
