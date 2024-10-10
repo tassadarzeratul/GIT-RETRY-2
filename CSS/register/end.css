@@ -71,10 +71,20 @@ main header .menu li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
+main header .menu li:hover{
+  color: rgba(120, 179, 32, 0.89);
+}
+
+
+
+
+
 main header .login {
   width: 25%;
   display:flex;
 }
+
+
 
 main header .login button {
   width: 100%;
@@ -85,6 +95,12 @@ main header .login button {
   font-family: "Gowun Dodum", sans-serif;
   
 }
+
+main header .login button:hover {
+  color: rgba(120, 179, 32, 0.89);
+}
+
+
 main header{
   display: flex;
 }
