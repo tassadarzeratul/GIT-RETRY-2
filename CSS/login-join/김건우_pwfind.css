@@ -64,7 +64,7 @@
 }
 
 .pwFind input:focus~label,
-input:valid~label {
+.pwFind input:valid~label {
     font-size: 16px;
     bottom: 40px;
     color: #666;
@@ -72,7 +72,7 @@ input:valid~label {
 }
 
 .pwFind input:focus~span,
-input:valid~span {
+.pwFind input:valid~span {
     width: 100%;
 }
 
