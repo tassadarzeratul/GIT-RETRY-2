@@ -37,6 +37,27 @@
     position: relative;
 }
 
+.login .inputbox {
+    padding-top: 140px;
+}
+
+.login .loginbtn{
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    
+    
+}
+.login a{
+    padding: 30px;
+    text-decoration-line: none;
+    color: black;
+}
+.login .ipw{
+    padding-top: 50px;
+}
 
 
 .login input {
@@ -49,6 +70,7 @@
     border-radius: 3px;
     text-indent: 10px;
     outline-color: gray;
+    
 }
 
 .login input:first-child{
@@ -66,15 +88,7 @@
     color: inherit;
 }
 
-.login.loginbtn{
-    display: block;
-    width: 250px;
-    height: 40px;
-    margin: 0 auto;
-    background: black;
-    color: #dbdbdb;
-}
-
+ 
 .login.logo{
     display: block;
     width: 15rem;
