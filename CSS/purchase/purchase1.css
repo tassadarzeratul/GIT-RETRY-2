@@ -22,35 +22,35 @@ li {
 
 /* Main  */
 
-main {
+.purchase1 main {
   height: auto;
   margin: 10px 50px;
   
 }
 
-main header {
+.purchase1 main header {
   /* display: flex; */
   justify-content: space-between;
 }
 
-main header .container1 {
+.purchase1 main header .container1 {
   width: 75%;
   display: column;
 }
 
-main header .logo {
+.purchase1 main header .logo {
   width: 100%;
   height: 90px;
 }
 
-main header .logo .logo_pic {
+.purchase1 main header .logo .logo_pic {
   width: 100%;
   height: 100%;
   background-image: url(../../img/jikbakguri2.png);
   background-repeat: no-repeat;
 }
 
-main header .menu {
+.purchase1 main header .menu {
   width: 90%;
   height: 50px;
   display: flex;
@@ -62,7 +62,7 @@ main header .menu {
   text-align: center;
 }
 
-main header .menu li {
+.purchase1 main header .menu li {
   width: 15%;
   background: transparent;
   border: none;
@@ -71,22 +71,22 @@ main header .menu li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
-main header .menu li:hover{
-  color: rgba(120, 179, 32, 0.89);
+.purchase1 main header .menu li:hover{
+  color: orange;
 }
 
 
 
 
 
-main header .login {
+.purchase1 main header .login {
   width: 25%;
   display:flex;
 }
 
 
 
-main header .login button {
+.purchase1 main header .login button {
   width: 100%;
   background: transparent;
   border: none;
@@ -96,17 +96,17 @@ main header .login button {
   
 }
 
-main header .login button:hover {
-  color: rgba(120, 179, 32, 0.89);
+.purchase1 main header .login button:hover {
+  color: orange;
 }
 
 
-main header{
+.purchase1 main header{
   display: flex;
 }
 
 
-main section {
+.purchase1 main section {
     width: 100%;
     height: 470px;
     border-radius: 5px;
@@ -117,23 +117,23 @@ main section {
 
 
 /* 슬라이더 */
-.sildeshow-container{
+.purchase1 .sildeshow-container{
    padding: 30px;
 }
 
-.Slidesbackground {
+.purchase1 .Slidesbackground {
     margin: 0;
     padding: 0;
 }
 
-.slideshow-image{
+.purchase1 .slideshow-image{
     border-radius: 1%;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.mySlides {
+.purchase1 .mySlides {
     width: 300%;
     height: 450px;
     /* justify-content: center; */
@@ -148,7 +148,7 @@ main section {
 
 
   /* 작품구매창 */
-  section.portfolio .portfolio-inner{
+  .purchase1 section.portfolio .portfolio-inner{
     width: 300px;
     margin-top: 7%;
     margin-right:7%;
@@ -161,25 +161,25 @@ main section {
     
   }
  
-  section.portfolio .portfolio-inner:nth-child(3n){
+  .purchase1 section.portfolio .portfolio-inner:nth-child(3n){
      margin-right:0;
   }
  
-  section.portfolio .portfolio-inner img{
+  .purchase1 section.portfolio .portfolio-inner img{
     width:100px;
     height: 100px;
     display:block;
     
   }
 
-  section.portfolio .portfolio-inner strong{
+  .purchase1 section.portfolio .portfolio-inner strong{
     margin:0.5rem 0;
     display:block;
     font-family: "Gowun Dodum", sans-serif;
     
   }
   
-  section.portfolio .portfolio-inner h3{
+  .purchase1 section.portfolio .portfolio-inner h3{
     font-size:1.75rem;
   }
    /* 작품구매창 끝 */

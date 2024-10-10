@@ -27,48 +27,73 @@ li {
 
 /* 상단 로고 */
 
-.admin header .logo {
+.admin header .top {
     width: 100%;
-    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.admin header .logo div#logo_picId {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/jikbakguri2.png);
-    background-repeat: no-repeat;
+.admin header .logo_pic {
+    width: 65%;
+}
+
+.admin header .logo_pic img{
+    width: 50%;
+}
+
+.admin header .jlmToBtn {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.admin header .jlmToBtn button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+.admin header .jlmToBtn button:hover{
+    color: orange;
 }
 
 /* nmenu */
 
-.admin header .container {
+.admin header .scroll {
     width: 100%;
     display: flex;
     border-bottom: 2px solid rgb(243, 243, 243);
 }
 
-.admin header .container .scroll{
+.admin header .scroll .menu{
     width: 100%;
 }
 
-.admin header .scroll .menu {
+.admin header .scroll .menu .menu_inner {
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     background: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border: none;
     align-items: center;
     text-align: center;
 }
 
-.admin header .menu li {
+.admin header .menu_inner li {
     width: 15%;
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 22px;
+}
+
+.admin header .menu li:hover{
+    color: orange;
 }
 
 /* 우측 서치부분 */
@@ -91,7 +116,6 @@ li {
 
 .admin header .search i {
     position: relative;
-    bottom: 8px;
     right: 30px;
     font-size: 18px;
     cursor: pointer;
