@@ -11,7 +11,9 @@
 <!-- 김건우 register 시작 -->
 <div class="register">
     <div class="img">
-        <img src="../../img/withDreamLogo2.png">
+        <a class="logo" href="../../HTML/mainpage/main.html">
+            <img src="../../img/withDreamLogo2.png">
+        </a>
     </div>
     <div class="menu">
         <div class="fund">
@@ -34,33 +36,20 @@
                     <button class="btn">파일 업로드
                         <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple />
                     </button>                
-                    <!-- <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple /> -->
                 <div id="image_container"></div>
                 </div>
             </div>
             <div class="tip">
-                <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 허용되지 않습니다.</h4>
-            <button class="button">등록하기</button>
+                <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 올릴 수 없습니다.</h4>
+                <h4>※가이드라인에 맞지 않는 이미지는 임의로 수정될 수 있습니다.</h4>
+            <!-- 클릭시 팝업 -->
+            <button class="button" onclick="showPopup();" />등록하기</button>
             </div>
         </div>
     </div>
 </div>
 </body>
-<script>
-    function setThumbnail(event) {
-        for (var image of event.target.files) {
-            var reader = new FileReader();
-
-            reader.onload = function (event) {
-                var img = document.createElement("img");
-                img.setAttribute("src", event.target.result);
-                document.querySelector("div#image_container").appendChild(img);
-            };
-            console.log(image);
-            reader.readAsDataURL(image);
-        }
-    }
-</script>
-<script src="../../CSS/register/김건우_register.css"></script>
+<script src="../../JS/register/김건우_upload.js"></script>
+<script src="../../JS/register/김건우_register.js"></script>
 <!-- 김건우 register 끝 -->
 </html>

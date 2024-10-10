@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
 
-
-@media only all and (min-width: 1200px){
+@media only all and (min-width: 1200px) {
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,88 +13,189 @@
 a,
 a:link,
 a:visited {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-.body{
-    background-color:rgb(255, 255, 255);
-    margin : 0px;
-    margin-top: 10px;
-    padding : 100px;
-    padding-top:10px;
-}
+/* mypage 시작 */
 
 .mypage {
   height: auto;
-  margin: 10px 50px;
+  margin: 20px 50px;
   font-family: "Gowun Dodum", sans-serif;
 }
 
+/* 상단 로고 */
 
-.mypage .img{
-  /* border:1px solid red; */
-  /* text-align: center; */
-  padding:0px;
-  padding-bottom:6px;
-  margin-left:0px;
-  margin-right:25px;
-  margin-bottom:0px;
+.mypage .header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.displaytextbox{
-  position:flex;
+.mypage .header .logo_pic {
+  width: 65%;
+}
+
+.mypage .header .logo_pic img {
+  width: 50%;
+}
+
+.mypage .header .jlmToBtn {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.mypage .header .jlmToBtn button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.mypage .header .jlmToBtn button:hover {
+  color: orange;
+}
+
+/* nmenu */
+
+.mypage .header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
+.mypage .header .scroll .menu {
+  width: 100%;
+}
+
+.mypage .header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
+.mypage .header .menu li {
+  width: 15%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.mypage .header .menu li:hover {
+  color: orange;
+}
+
+/* 우측 서치부분 */
+.mypage .header .search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.mypage .header .search input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  margin-left: 100px;
+  background-color: rgb(243, 243, 243);
+  outline: none;
+}
+
+.mypage .header .search i {
+  position: relative;
+  right: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mypage .header .login button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 메인 */
+
+.mypage .header .mainBox {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 메인 왼쪽 부분 */
+.mypage .header .mainBox .left {
+  width: 75%;
+}
+
+.displaytextbox {
+  position: flex;
   margin-top: 40px;
   margin-bottom: 70px;
-  margin-left:100px;
-  margin-right:100px;
+  margin-left: 100px;
+  margin-right: 100px;
   text-align: center;
   /* border:1px solid black; */
 }
 
-.displaytextbox .displaytext{
+.displaytextbox .displaytext {
   text-align: center;
-  color:black;
+  color: black;
   font-size: 50px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
-.buttons{
+.buttons {
   /* border:1px solid black; */
-  margin-bottom:20px;
-  padding:0px;
+  margin-bottom: 20px;
+  padding: 0px;
 }
 
-.menu{
+.menu {
   padding: 0px;
-  }
+}
 
-.buttons .home{
-  outline:none !important;
-  box-shadow:none !important;
-  
+.buttons .home {
+  outline: none !important;
+  box-shadow: none !important;
+
   width: 150px;
   /* background-color: rgb(255, 100, 100); */
   background-color: rgb(52, 99, 255);
-  margin-right:10px;
+  margin-right: 10px;
   padding: 15px;
   border-radius: 5px;
-  border-color:transparent;
+  border-color: transparent;
   text-align: center;
-  color:white;
+  color: white;
   font-weight: bold;
 }
 
-.buttons .home:hover{
+/* .buttons .home:hover{
   background-color: black;
   color:white;
   transition:0.3s;
 }
-
 
 .buttons .register{
   outline:none !important;
@@ -228,64 +328,64 @@ li {
 .menu .paidfunding:hover{
   background-color: black;
   transition:0.4s;
-}
+} */
 
-.profilemenu{
-  text-align:left;
-  font-style:italic;
-  font-size: 20px;
-  margin-top:60px;
-  /* border:1px solid black; */
-  margin-bottom:20px;
-}
-
-.textarea{
-  /* border:1px solid black; */
-  margin:0px;
-}
-
-.area{
-  padding-top:0px;
+.profilemenu {
   text-align: left;
-  margin-bottom:30px;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 60px;
+  /* border:1px solid black; */
+  margin-bottom: 20px;
 }
 
-.area .registered{
-  width:200px;
-  height:200px;
-  display:inline-block;
-  margin-bottom : 20px;
+.textarea {
+  /* border:1px solid black; */
+  margin: 0px;
+}
+
+.area {
+  padding-top: 0px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.area .registered {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-bottom: 20px;
   margin-inline: 30px;
 }
 
-.area .paid{
-  width:200px;
-  height:200px;
-  display:inline-block;
-  margin-top:20px;
-  margin-bottom : 20px;
+.area .paid {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-inline: 30px;
 }
 
 /* 정규형 css 시작 */
 
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a,
 a:link,
 a:visited {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /* admin 시작  */
@@ -293,120 +393,119 @@ li {
 /* header */
 
 .mypage header .container {
-    width: 75%;
-    display: column;
+  width: 75%;
+  display: column;
 }
 
 .mypage header .logo {
-    width: 100%;
-    height: 90px;
+  width: 100%;
+  height: 90px;
 }
 
 .mypage header .logo div#logo_picId {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/jikbakguri2.png);
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/jikbakguri2.png);
+  background-repeat: no-repeat;
 }
 
 .mypage header .menu {
-    width: 90%;
-    height: 50px;
-    display: flex;
-    background: transparent;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    align-items: center;
-    text-align: center;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  background: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  align-items: center;
+  text-align: center;
 }
 
 .mypage header .menu li {
-    width: 15%;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 22px;
+  width: 15%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
 }
 
 /* navFilter */
 
 .mypage .navFilter .nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 .mypage .navFilter .nav .subComment .filter {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* section */
 
 .mypage section .pic_container {
-    width: 100%;
-    margin-top: 15px;
+  width: 100%;
+  margin-top: 15px;
 }
 
 .mypage section .pic_container .maindComment {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .mypage section .pic_container .pic_list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 30px;
 }
 
 .mypage section .pic_container .pic_list .inner {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .mypage section .pic_container .pic_list .inner .comment {
-    width: 280px;
-    height: 100px;
+  width: 280px;
+  height: 100px;
 }
 
-
 .mypage section .pic_container .pic_list .inner .author {
-    font-size: 14px;
-    position: relative;
-    top: 2px;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
 }
 
 .mypage section .pic_container .pic_list .inner .title {
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
 }
 
 .mypage section .pic_container .pic_list .inner .description {
-    font-size: 12px;
-    position: relative;
-    top: 18px;
-    color: rgb(75, 90, 105);
+  font-size: 12px;
+  position: relative;
+  top: 18px;
+  color: rgb(75, 90, 105);
 }
 
 .mypage section .pic_container .pic_list .inner .line {
-    border-bottom: 2px solid black;
-    position: relative;
-    top: 10px;
+  border-bottom: 2px solid black;
+  position: relative;
+  top: 10px;
 }
 
 .mypage section .pic_container .pic_list img {
-    width: 280px;
-    height: 180px;
-    border-radius: 5px;
-    background-size: cover;
-    cursor: pointer;
-    position: relative;
+  width: 280px;
+  height: 180px;
+  border-radius: 5px;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
 }
 
 /* .mypage section .pic_container .pic_list .inner img {
