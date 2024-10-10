@@ -21,7 +21,7 @@ li {
 
 main {
     height: auto;
-    margin: 20px 150px;
+    margin: 20px 50px;
     font-family: "Gowun Dodum", sans-serif;
 }
 
@@ -100,6 +100,7 @@ main .mainBox .left {
     width: 75%;
 }
 
+/* 메인 슬라이드 부분 */
 main section {
     width: 100%;
     height: 470px;
@@ -194,6 +195,7 @@ main .mainBox .right {
     width: 22%;
 }
 
+/* 메인 오른쪽 타이틀 */
 main .mainBox .right .title {
     display: flex;
     justify-content: space-between;
@@ -202,18 +204,21 @@ main .mainBox .right .title {
     margin: -10px 0px 15px 0px;
 }
 
+/* 메인 오른쪽 타이틀 전체보기 */
 main .mainBox .right .title div {
     font-size: 18px;
     font-weight: normal;
     cursor: pointer;
 }
 
+/* 메인 오른쪽 전체공간 */
 main .mainBox .right .pic {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+/* 메인 오른쪽  사진공간 */
 main .mainBox .right .pic .rightPic {
     width: 100%;
     display: flex;
@@ -221,6 +226,7 @@ main .mainBox .right .pic .rightPic {
     margin-bottom: 15px;
 }
 
+/* 메인 오른쪽 이미지 크기 */
 main .mainBox .right .pic .rightPic img {
     width: 40%;
     height: 120px;
@@ -228,6 +234,7 @@ main .mainBox .right .pic .rightPic img {
     cursor: pointer;
 }
 
+/* 메인 오른쪽 이미지 옆 번호 */
 main .mainBox .right .pic .rightPic .num {
     width: 8%;
     font-size: 24px;
@@ -236,6 +243,7 @@ main .mainBox .right .pic .rightPic .num {
     color: red;
 }
 
+/* 메인 오른쪽 이미지 옆 번호 옆 멘트 */
 main .mainBox .right .pic .rightPic .comment {
     width: 52%;
     font-size: 17px;
@@ -244,12 +252,56 @@ main .mainBox .right .pic .rightPic .comment {
     cursor: pointer;
 }
 
+/* 메인 오른쪽 멘트 상단 문구 */
 main .mainBox .right .pic .rightPic .comment dt {
     font-size: 16px;
     margin: 3px 0px 5px 0px;
 }
 
+/* 메인 오른ㅉ고 멘트 하단 문구 */
 main .mainBox .right .pic .rightPic .comment dd {
     font-size: 18px;
     font-family: "Gowun Dodum", sans-serif;
+}
+
+
+/* 미디어 쿼리 */
+@media only all and (min-width: 1200px) {
+
+    /* 메인 슬라이드 부분 */
+    main section {
+        height: 490px;
+    }
+
+    /* 서브 배열 */
+    main sub {
+        height: 150px;
+    }
+
+    /* 메인 오른쪽 타이틀 전체보기 */
+    main .mainBox .right .title div {
+        font-size: 16px;
+    }
+
+    /* 메인 오른쪽 이미지 크기 */
+    main .mainBox .right .pic .rightPic img {
+        width: 45%;
+        height: 120px;
+    }
+
+    /* 메인 오른쪽 이미지 옆 번호 */
+    main .mainBox .right .pic .rightPic .num {
+        width: 8%;
+        font-size: 18px;
+    }
+
+    /* 메인 오른쪽 멘트 상단 문구 */
+    main .mainBox .right .pic .rightPic .comment dt {
+        font-size: 15px;
+    }
+
+    /* 메인 오른ㅉ고 멘트 하단 문구 */
+    main .mainBox .right .pic .rightPic .comment dd {
+        font-size: 13px;
+    }
 }

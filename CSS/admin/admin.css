@@ -21,13 +21,17 @@ li {
 
 .admin {
     height: auto;
-    margin: 10px 50px;
+    margin: 20px 50px;
     font-family: "Gowun Dodum", sans-serif;
 }
 
-.admin header .container {
+/* .admin header .container {
     width: 75%;
     display: column;
+} */
+
+.admin header .container {
+    width: 100%;
 }
 
 /* 상단 로고 */
@@ -50,12 +54,15 @@ li {
     width: 90%;
     height: 50px;
     display: flex;
-    background: transparent;
+    background: white;
     margin-top: 10px;
     margin-bottom: 10px;
     border: none;
     align-items: center;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .admin header .menu li {
@@ -99,7 +106,7 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    bottom: 30px;
+    /* bottom: 30px; */
 }
 
 .admin section .pic_container .pic_list .inner {
@@ -156,4 +163,11 @@ li {
 /* section pic 아래밑줄 */
 .admin section .pic_container .pic_list .inner .line {
     border-bottom: 2px solid black;
+}
+
+/* 미디어쿼리 */
+@media only all and (min-width: 1200px) {
+    .admin section .pic_container .pic_list img {
+        width: 100%;
+    }
 }
