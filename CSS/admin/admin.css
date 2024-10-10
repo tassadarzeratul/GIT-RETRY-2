@@ -58,6 +58,10 @@ li {
     font-family: "Gowun Dodum", sans-serif;
 }
 
+.admin header .jlmToBtn button:hover{
+    color: orange;
+}
+
 /* nmenu */
 
 .admin header .scroll {
@@ -86,6 +90,10 @@ li {
     border: none;
     cursor: pointer;
     font-size: 22px;
+}
+
+.admin header .menu li:hover{
+    color: orange;
 }
 
 /* 우측 서치부분 */
