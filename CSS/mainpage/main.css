@@ -51,10 +51,10 @@ main header .logo .logo_pic {
 
 /* 메인 메뉴 */
 main header .menu {
-    width: 90%;
+    width: 100%;
     height: 50px;
     display: flex;
-    background: transparent;
+    background: white;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -258,7 +258,7 @@ main .mainBox .right .pic .rightPic .comment dt {
     margin: 3px 0px 5px 0px;
 }
 
-/* 메인 오른ㅉ고 멘트 하단 문구 */
+/* 메인 오른쪽 멘트 하단 문구 */
 main .mainBox .right .pic .rightPic .comment dd {
     font-size: 18px;
     font-family: "Gowun Dodum", sans-serif;
