@@ -9,7 +9,6 @@ function setThumbnail(event) {
         };
         console.log(image);
         reader.readAsDataURL(image);
-
     }
 }
 
