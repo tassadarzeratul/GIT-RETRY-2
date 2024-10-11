@@ -187,7 +187,7 @@ li {
 }
 
 .admin section .pic_container .pic_list .inner:hover img {
-  transform: rotate(5deg) scale(1);
+  transform: rotate(1.5deg) scale(1);
 }
 
 /* section pic 작가, 제목, 내용부분 */
