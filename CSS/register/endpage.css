@@ -18,84 +18,129 @@ li {
 }
 
 /* Main  */
+/* detail1 시작  */
 
-endPage {
+.endPage {
     height: auto;
-    margin: 20px 150px;
+    margin: 20px 50px;
     font-family: "Gowun Dodum", sans-serif;
-}
-
-endPage header {
-    position: sticky;
+  }
+  
+  /* 상단 로고 */
+  
+  .endPage header .top {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-
-}
-
-endPage header .container {
-    width: 75%;
-    display: column;
-}
-
-/* 메인 로고 */
-endPage header .logo {
-    width: 100%;
-    height: 90px;
-}
-
-endPage header .logo .logo_pic {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/jikbakguri2.png);
-    background-repeat: no-repeat;
-}
-
-/* 메인 메뉴 */
-endPage header .pageMenu {
-    width: 90%;
-    height: 50px;
+    align-items: center;
+  }
+  
+  .endPage header .logo_pic {
+    width: 65%;
+  }
+  
+  .endPage header .logo_pic img {
+    width: 50%;
+  }
+  
+  .endPage header .jlmToBtn {
+    width: 25%;
     display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  /* join, loing, mypage */
+  .endPage header .jlmToBtn button {
     background: transparent;
     border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+  
+  .endPage header .jlmToBtn button:hover {
+    color: orange;
+  }
+  
+  /* nmenu */
+  
+  .endPage header .scroll {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(184, 181, 181);
+  }
+  
+  .endPage header .scroll .menu {
+    width: 100%;
+  }
+  
+  .endPage header .scroll .menu .menu_inner {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background: white;
+    border: none;
     align-items: center;
     text-align: center;
-}
-
-endPage header .pageMenu li {
+  }
+  
+  .endPage header .menu li {
     width: 15%;
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 22px;
-    font-family: "Gowun Dodum", sans-serif;
-}
-
-
-/* 우측 회원가입, 로그인, 마이페이지 부분 */
-endPage header .userMenu {
-    width: 25%;
+  }
+  
+  .endPage header .menu li:hover {
+    color: orange;
+  }
+  
+  /* 우측 서치부분 */
+  .endPage header .search {
+    width: 40%;
     display: flex;
-}
-
-endPage header .userMenu button {
+    align-items: center;
+  }
+  
+  .endPage header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+  
+  .endPage header .search i {
+    position: relative;
+    right: 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .endPage header .login button {
     width: 100%;
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 22px;
     font-family: "Gowun Dodum", sans-serif;
-}
+  }
 
-endPage .up {
+.endPage div.up {
     display: flex;
+    margin-top: 10px;
 }
 
 /* 전시회 정보 */
-endPage .up section.exhibitionInformation {
+.endPage div .exhibitionInformation {
     display: inline-block;
-    width: 40%;
+    width: 100%;
     border: solid black 2px;
     margin-right: 5%;
     font-size: 22px;
@@ -108,9 +153,9 @@ endPage .up section.exhibitionInformation {
 }
 
 /* 창작자 정보 */
-endPage .up section.creatorProfile {
+.endPage section.creatorProfile {
     display: inline-block;
-    width: 40%;
+    width: 100%;
     border: solid black 2px;
     font-size: 22px;
     font-weight: bold;
@@ -121,32 +166,31 @@ endPage .up section.creatorProfile {
 }
 
 /* 금액사용내역 버튼 */
-endPage .up .useAmount button {
-    justify-content: center;
-    text-align: center;
-    width: 60%;
-    height: 60%;
-    margin: 20% 20% 20% 20%;
-    border: 1px solid black;
-    border-radius: 10px;
+
+.endPage .up .useAmount button {
+    width: 100px;
+    height: 350px;
+    margin: 30% 20% 20% 20%;
+    background-color: rgb(52, 99, 255);
+    color: white;
+    box-shadow: 0px 5px 0px 0px #000000;
+    border-radius: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 50px;
-    color: white;
-    background-color: black;
-    cursor: pointer;
-    box-shadow: 0 0 40px 40px black inset;
-    transition: all 300ms ease-in-out;
-}
-    
-endPage .up .useAmount button:hover {
-    box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
-
-}
+  }
+  
+.endPage .up .useAmount button:hover {
+    background: #073ef5;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
 
 
 /* 커뮤니티 댓글창 */
-endPage footer .comment {
+.endPage footer .comment {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -156,24 +200,24 @@ endPage footer .comment {
 
 }
 
-endPage footer .comment > li {
+.endPage footer .comment > li {
     margin-top: 20px;
 
 }
 
-endPage footer .comment > li:nth-child(1) {
+.endPage footer .comment > li:nth-child(1) {
     margin: 0px;
 
 }
 
-endPage footer .comment-row {
+.endPage footer .comment-row {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 
 }
 
-endPage footer .comment-row > li:nth-child(2) {
+.endPage footer .comment-row > li:nth-child(2) {
     flex-shrink: 0;
     flex-grow: 1;
     padding-left: 25px;
@@ -182,12 +226,12 @@ endPage footer .comment-row > li:nth-child(2) {
 
 }
 
-endPage footer .comment-row > li:nth-child(2) {
+.endPage footer .comment-row > li:nth-child(2) {
     width: 85px;
 
 }
 
-endPage footer .comment-form > form {
+.endPage footer .comment-form > form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -195,20 +239,20 @@ endPage footer .comment-form > form {
     
 }
 
-endPage footer .comment-form > form > h4 {
+.endPage footer .comment-form > form > h4 {
     width: 100%;
     margin: 14px 0 14px 0;
     
 }
 
-endPage footer .comment-content {
+.endPage footer .comment-content {
     cursor: pointer;
     word-break: break-all;
     padding-right: 25px;
     
 }
 
-endPage footer .ps_box {
+.endPage footer .ps_box {
     display: block;
     position: relative;
     width: 80%;
@@ -220,12 +264,12 @@ endPage footer .ps_box {
     
 }
 
-endPage footer .ps_box > input {
+.endPage footer .ps_box > input {
     outline: none;
     
 }
 
-endPage footer .int {
+.endPage footer .int {
     display: block;
     position: relative;
     width: 100%;
@@ -240,7 +284,7 @@ endPage footer .int {
     
 }
 
-endPage footer .btn {
+.endPage footer .btn {
     width: 18%;
     padding: 18px 0 16px;
     text-align: center;
@@ -253,14 +297,14 @@ endPage footer .btn {
     
 }
 
-endPage footer .comment-delete-btn {
+.endPage .comment-delete-btn {
     display: inline-block;
     margin-left: 7px;
     cursor: pointer;
     
 }
 
-endPage footer .comment-update-input {
+.endPage .comment-update-input {
     border: none;
     border-bottom: 1px solid #333;
     font-size: 16px;

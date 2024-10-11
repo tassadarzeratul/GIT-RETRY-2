@@ -1,7 +1,7 @@
 const commentBtn = document.querySelector("#commentFrm");
 const commentList = document.querySelector("#comment-list");
-console.log(commentList);
-// const total = document.querySelector("h4 > span");
+// console.log(commentList);
+const total = document.querySelector("h4 > span");
 const list = [];
 
 // console.log(commentBtn);
@@ -14,45 +14,45 @@ function Comment(content) {
 
 
 
-function createRow() {
+function createRow(userid, content, date) {
     const ul = document.createElement("ul");
     const li1 = document.createElement("li");
     const li2 = document.createElement("li");
     const li3 = document.createElement("li");
 
-    console.log(ul);
-    console.log(li1);
-    console.log(li2);
-    console.log(li3);
+    // console.log(ul);
+    // console.log(li1);
+    // console.log(li2);
+    // console.log(li3);
 
     ul.append(li1);
     ul.append(li2);
     ul.append(li3);
 
-//     ul.setAttribute("class", "comment-row");
-//     ul1.setAttribute("class", "comment-id");
-//     ul2.setAttribute("class", "comment-content");
-//     ul3.setAttribute("class", "comment-date");
+    ul.setAttribute("class", "comment-row");
+    ul1.setAttribute("class", "comment-id");
+    ul2.setAttribute("class", "comment-content");
+    ul3.setAttribute("class", "comment-date");
 
-//     li1.innerHTML = userid;
-//     li2.innerHTML = content;
-//     li3.innerHTML = date;
+    li1.innerHTML = userid;
+    li2.innerHTML = content;
+    li3.innerHTML = date;
 
     return ul;
     
 }
 
-// function drawing() {
-//     commentList.innerHTML = "";
-//     for (let i = list.length; i >= 0; i++) {
-//         const row = createRow(list[i].userid, list[i].content, list[i].date);
-//         commentList.append(row);
-//     }
-// }
+function drawing() {
+    commentList.innerHTML = "a";
+    for (let i = list.length - 1; i >= 0; i--) {
+        const row = createRow(list[i].userid, list[i].content, list[i].date);
+        commentList.append(row);
+    }
+}
 
-// function totalRecord() {
-//     total.innerHTML = `(${list.length})`;
-// }
+function totalRecord() {
+    total.innerHTML = `(${list.length})`;
+}
 
 function commentBtnHandler(e) {
     e.preventDefault();
@@ -77,11 +77,11 @@ function commentBtnHandler(e) {
 
     const commentObj = new Comment(input.value);
     list.push(commentObj);
-//     totalRecord();
+    totalRecord();
 
-//     drawing();
+    drawing();
     e.target.reset();
 }
 
-// totalRecord();
+totalRecord();
 commentBtn.addEventListener("submit", commentBtnHandler);
