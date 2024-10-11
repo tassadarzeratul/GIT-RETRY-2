@@ -145,6 +145,20 @@ li {
 
 /* 슬라이드 끝 */
 
+/* 작품구매 텍스트 */
+
+
+.purchase1 .purchase-items p{
+  text-size-adjust: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin-top: 25px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 작품구매 텍스트 끝 */
+
 
 
   /* 작품구매창 */
@@ -161,6 +175,8 @@ li {
     
   }
  
+
+
   .purchase1 section.portfolio .portfolio-inner:nth-child(3n){
      margin-right:0;
   }
@@ -182,5 +198,8 @@ li {
   .purchase1 section.portfolio .portfolio-inner h3{
     font-size:1.75rem;
   }
+
+
+  
    /* 작품구매창 끝 */
   
