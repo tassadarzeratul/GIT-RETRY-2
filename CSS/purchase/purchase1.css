@@ -161,7 +161,7 @@ main .mainBox .left {
 .purchase1 .slideshow-image{
     border-radius: 1%;
     width: 100%;
-    height: 100%;
+    height: 105%;
     overflow: hidden;
 }
 
@@ -202,6 +202,8 @@ main .mainBox .left {
     float:left;
     background-color:#f8f8f8;
     margin-bottom:3rem;
+    margin-right: 1px;
+    margin-left: 13px;
     
     
   }
@@ -231,7 +233,7 @@ main .mainBox .left {
     height: 250px;
     display:block;
     transition-duration:0.3s;
-    
+    overflow: none;
   }
 
   .purchase1 section.portfolio .portfolio-inner:hover img{
@@ -255,3 +257,8 @@ main .mainBox .left {
   
    /* 작품구매창 끝 */
   
+
+   .purchase1 .explain .linee {
+    color: blue;
+   }
+   
