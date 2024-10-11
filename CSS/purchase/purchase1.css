@@ -78,6 +78,7 @@ main header .scroll .menu .menu_inner {
   background: white;
   align-items: center;
   text-align: center;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 main header .menu li {
@@ -86,11 +87,13 @@ main header .menu li {
   border: none;
   cursor: pointer;
   font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 main header .menu li:hover {
   color: orange;
   font-weight: bold;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 /* 우측 서치부분 */
@@ -109,6 +112,7 @@ main header .search input {
   margin-left: 100px;
   background-color: rgb(243, 243, 243);
   outline: none;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 main header .search i {
@@ -182,6 +186,8 @@ main .mainBox .left {
   color: black;
   margin-top: 25px;
   font-family: "Gowun Dodum", sans-serif;
+  padding:1rem 1rem 1.5rem 1rem;
+  
 }
 
 /* 작품구매 텍스트 끝 */
@@ -192,21 +198,30 @@ main .mainBox .left {
   .purchase1 section.portfolio .portfolio-inner{
     width: 300px;
     margin-top: 7%;
-    margin-right:7%;
+    ;
     padding:1rem 1rem 1.5rem 1rem;
     float:left;
     background-color:#f8f8f8;
-    
     margin-bottom:3rem;
     
     
+  }
+
+  .purchase1 section.portfolio .portfolio-inner #name{
+    font-size: 12px;
+    color: gray;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner #cost{
+    font-size: 18px;
+    color: rgba(0, 89, 255, 0.87);
   }
 
   
  
 
 
-  .purchase1 section.portfolio .portfolio-inner:nth-child(3n){
+  .purchase1 section.portfolio .portfolio-inner:nth-child(4n){
      margin-right:0;
   }
  
