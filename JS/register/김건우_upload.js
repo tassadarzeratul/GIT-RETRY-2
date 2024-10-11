@@ -15,8 +15,8 @@ function setThumbnail(event) {
 const textarea = useRef();
 
 const handleResizeHeight = () => {
-  textarea.current.style.height = 'auto'; //height 초기화
-  textarea.current.style.height = textarea.current.scrollHeight + 'px';
+    textarea.current.style.height = 'auto'; //height 초기화
+    textarea.current.style.height = textarea.current.scrollHeight + 'px';
 };
 
 
