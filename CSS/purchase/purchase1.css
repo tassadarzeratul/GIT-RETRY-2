@@ -197,7 +197,7 @@ main .mainBox .left {
   /* 작품구매창 */
   .purchase1 section.portfolio .portfolio-inner{
     width: 300px;
-    margin-top: 7%;
+    margin-top: 30px;
     ;
     padding:1rem 1rem 1.5rem 1rem;
     float:left;
