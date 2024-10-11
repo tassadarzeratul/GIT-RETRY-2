@@ -3,8 +3,9 @@
 * {
   margin: 0;
   padding: 0;
+  
   box-sizing: border-box;
-  max-width: 100%;
+  
 
 }
 
@@ -22,6 +23,14 @@ li {
 
 /* Main  */
 /* 상단 로고 */
+
+.purchase1 {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+
 
 main header .top {
   width: 100%;
@@ -112,7 +121,6 @@ main header .search input {
   margin-left: 100px;
   background-color: rgb(243, 243, 243);
   outline: none;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 main header .search i {
@@ -161,13 +169,13 @@ main .mainBox .left {
 .purchase1 .slideshow-image{
     border-radius: 1%;
     width: 100%;
-    height: 100%;
+    height: 105%;
     overflow: hidden;
 }
 
 .purchase1 .mySlides {
-    width: 300%;
-    height: 450px;
+    width: 1065px;
+    height: 350px;
     /* justify-content: center; */
     align-items: center;
 }
@@ -184,9 +192,10 @@ main .mainBox .left {
   font-size: 30px;
   font-weight: bold;
   color: black;
-  margin-top: 25px;
+  margin-top: 1px;
   font-family: "Gowun Dodum", sans-serif;
   padding:1rem 1rem 1.5rem 1rem;
+  
   
 }
 
@@ -196,13 +205,17 @@ main .mainBox .left {
 
   /* 작품구매창 */
   .purchase1 section.portfolio .portfolio-inner{
-    width: 300px;
-    margin-top: 30px;
-    ;
-    padding:1rem 1rem 1.5rem 1rem;
+    width: 265px;
+    margin-top: 1px;;
+    /* padding:1rem 1rem 1.5rem 0rem; */
     float:left;
     background-color:#f8f8f8;
-    margin-bottom:3rem;
+    margin-bottom:4rem;
+    margin-right: 1px;
+  
+    
+    
+    
     
     
   }
@@ -212,9 +225,14 @@ main .mainBox .left {
     color: gray;
   }
 
+  .purchase1 section.portfolio .portfolio-inner #product_name{
+   
+  }
+
   .purchase1 section.portfolio .portfolio-inner #cost{
     font-size: 18px;
     color: rgba(0, 89, 255, 0.87);
+    
   }
 
   
@@ -228,11 +246,21 @@ main .mainBox .left {
 
 
   .purchase1 section.portfolio .portfolio-inner img{
-    width:300px;
+    width:230px;
     height: 250px;
     display:block;
+    transition-duration:0.3s;
+    overflow: none;
+    /* margin: 5px 10px; */
+    
     
   }
+
+  .purchase1 section.portfolio .portfolio-inner:hover img{
+    transform: scale(1.1);
+  }
+
+
 
   .purchase1 section.portfolio .portfolio-inner strong{
     margin:0.5rem 0;
@@ -249,3 +277,8 @@ main .mainBox .left {
   
    /* 작품구매창 끝 */
   
+
+   .purchase1 .explain .linee {
+    color: blue;
+   }
+   
