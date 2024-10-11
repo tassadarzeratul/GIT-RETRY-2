@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+
 .pwFind * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,8 @@
 }
 
 .pwFind .align {
-    margin: auto;
+    margin-left:50px;
+    margin-top: 90px;
 }
 
 .pwFind .inputGroup {
@@ -81,16 +84,44 @@
     display: block;
     width: 300px;
     height: 50px;
-    margin: 10px auto;
-    margin-top:70px;
-    background: rgb(52, 99, 255);
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:20px;
+    background: rgb(26, 74, 233);
     color: white;
-    border-radius: 15px;
+    border-radius: 30px;
     border:transparent;
-    transition:0.5s
+    transition:0.5s;
+    font-size: 18px;
+    font-weight:bold;
 }
 
 /* 확인버튼 효과 */
 .pwFind .certifyBtn:hover{
-    background-color: rgb(0, 44, 190);
+    background-color: rgb(1, 20, 85);
+}
+
+/* 비번찾기화면 배너 이미지 */
+.pwFind .right .banner{
+    width: 100%;
+    right:100px;
+    margin-left: 100px;
+}
+
+/* 로고 */
+.pwFind .align .logo img{
+    width:80%;
+    position: relative;
+    left:30px;
+}
+
+/* 버튼 밑 글씨 */
+
+.pwFind .align .inputLogin{
+    text-align: center;
+    margin-top:5px;
+}
+
+.pwFind .align .inputLogin{
+    font-family: "Gowun Dodum", sans-serif;    
 }
