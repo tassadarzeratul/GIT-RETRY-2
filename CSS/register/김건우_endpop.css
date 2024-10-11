@@ -14,6 +14,7 @@
 
 body{
     background-color:rgb(255, 255, 255);
+    justify-content: center;
 }
 
 .endpop .border{
@@ -41,16 +42,21 @@ body{
     text-align: center;   
 }
 
-.endpop .border .confirm .confirmbutton{
+.endpop .confirm{
+    justify-content: center;
+    display:flex;
+}
+
+.endpop button{
     background-color: rgb(52, 99, 255);
     color:white;
     width: 150px;
     border-radius: 5px;
     border:transparent;
     font-weight: bold;
+    cursor:pointer;
 }
 
-.endpop .border .confirm .confirmbutton :hover{
-    background-color: black;
-    color:black;
+.endpop button:hover{
+    background-color: rgb(0, 35, 150);
 }
