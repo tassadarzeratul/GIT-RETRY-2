@@ -84,14 +84,16 @@
     display: block;
     width: 300px;
     height: 50px;
-    margin: 10px auto;
-    margin-top:70px;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:20px;
     background: rgb(26, 74, 233);
     color: white;
     border-radius: 30px;
     border:transparent;
     transition:0.5s;
     font-size: 18px;
+    font-weight:bold;
 }
 
 /* 확인버튼 효과 */
