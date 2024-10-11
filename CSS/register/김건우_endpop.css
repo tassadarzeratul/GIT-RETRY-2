@@ -17,12 +17,10 @@ body{
     justify-content: center;
 }
 
-.endpop .border{
-    background-color: none;
-    border-left:3px solid rgb(52, 99, 255);
-    border-top: 3px solid rgb(52, 99, 255);
-    border-right: 3px solid rgb(52, 99, 255);
-    border-bottom: 3px solid rgb(52, 99, 255);
+.endpop .description{
+    background-color:rgba(0, 0, 255, 0.267);
+    border-radius: 10px;
+    border:3px solid rgb(1, 20, 85);
 }
 
 .endpop .img{
@@ -58,5 +56,5 @@ body{
 }
 
 .endpop button:hover{
-    background-color: rgb(0, 35, 150);
+    background-color: rgb(1, 20, 85);
 }
