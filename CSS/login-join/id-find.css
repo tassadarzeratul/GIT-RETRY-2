@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+
 .idFind * {
     margin: 0;
     padding: 0;
@@ -76,12 +78,26 @@ input:valid~span {
     width: 100%;
 }
 
+.idFind .certify {
+    display: flex;
+  }
+
 .idFind .certifyBtn {
-    text-align: center;
-    display: block;
-    width: 400px;
-    height: 50px;
-    margin: 10px auto;
-    background: black;
-    color: #dbdbdb;
-}
+    width: 50%;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+    background-color: rgb(52, 99, 255);
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 auto;
+  }
+  
+  /* detail_2 오른쪽 후원버튼 기능 */
+  .idFind .certifyBtn:hover {
+    background-color: rgb(0, 26, 111);
+  }
