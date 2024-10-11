@@ -51,8 +51,8 @@ main header .jlmToBtn {
 
 main header .jlmToBtn button {
   background: transparent;
-  border: none;
   outline: none;
+  border: none;
   font-size: 22px;
   cursor: pointer;
   font-family: "Gowun Dodum", sans-serif;
@@ -60,6 +60,7 @@ main header .jlmToBtn button {
 
 main header .jlmToBtn button:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* nmenu */
@@ -79,7 +80,6 @@ main header .scroll .menu .menu_inner {
   height: 70px;
   display: flex;
   background: white;
-  border: none;
   align-items: center;
   text-align: center;
 }
@@ -94,6 +94,7 @@ main header .menu li {
 
 main header .menu li:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* 우측 서치부분 */
@@ -311,14 +312,15 @@ main .mainBox .right .pic .rightPic .comment dd {
 main .other {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 /* other 코멘트 */
 main .otherPicComment {
   width: 100%;
   border-top: 2px solid rgb(184, 181, 181);
-  margin: 100px 0px 10px 0px;
-  padding-top: 100px;
+  margin: 50px 0px 10px 0px;
+  padding-top: 50px;
   font-size: 22px;
   font-weight: bold;
 }
@@ -329,18 +331,17 @@ main .other .otherLeft {
 
 main .other .otherLeft .inner {
   width: 100%;
-  height: 1550px;
+  height: 150px;
 }
 
 main .other .otherLeft .inner img {
-  width: 60%;
-  height: 500px;
+  width: 50%;
+  height: 300px;
 }
 
 main .other .otherRight {
   width: 100%;
   display: flex;
-  justify-content: center;
 }
 
 main .other .otherRight .otherPic_container {
