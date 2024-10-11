@@ -18,95 +18,140 @@ li {
 }
 
 /* Main  */
+/* detail1 시작  */
 
-purchasePage {
+.purchasePage {
     height: auto;
-    margin: 20px 150px;
+    margin: 20px 50px;
     font-family: "Gowun Dodum", sans-serif;
-}
-
-purchasePage header {
+  }
+  
+  /* 상단 로고 */
+  
+.purchasePage header .top {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-
-}
-
-purchasePage header .container {
-    width: 75%;
-    display: column;
-}
-
-/* 메인 로고 */
-purchasePage header .logo {
-    width: 100%;
-    height: 90px;
-}
-
-purchasePage header .logo .logo_pic {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/jikbakguri2.png);
-    background-repeat: no-repeat;
-}
-
-/* 메인 메뉴 */
-purchasePage header .pageMenu {
-    width: 90%;
-    height: 50px;
+    align-items: center;
+  }
+  
+.purchasePage header .logo_pic {
+    width: 65%;
+  }
+  
+.purchasePage header .logo_pic img {
+    width: 50%;
+  }
+  
+.purchasePage header .jlmToBtn {
+    width: 25%;
     display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  /* join, loing, mypage */
+.purchasePage header .jlmToBtn button {
     background: transparent;
     border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+  
+.purchasePage header .jlmToBtn button:hover {
+    color: orange;
+  }
+  
+  /* nmenu */
+  
+.purchasePage header .scroll {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(184, 181, 181);
+  }
+  
+.purchasePage header .scroll .menu {
+    width: 100%;
+  }
+  
+.purchasePage header .scroll .menu .menu_inner {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background: white;
+    border: none;
     align-items: center;
     text-align: center;
-}
-
-purchasePage header .pageMenu li {
+  }
+  
+.purchasePage header .menu li {
     width: 15%;
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 22px;
-    font-family: "Gowun Dodum", sans-serif;
-}
-
-
-/* 우측 회원가입, 로그인, 마이페이지 부분 */
-purchasePage header .userMenu {
-    width: 25%;
+  }
+  
+.purchasePage header .menu li:hover {
+    color: orange;
+  }
+  
+  /* 우측 서치부분 */
+.purchasePage header .search {
+    width: 40%;
     display: flex;
-}
-
-purchasePage header .userMenu button {
+    align-items: center;
+  }
+  
+.purchasePage header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+  
+.purchasePage header .search i {
+    position: relative;
+    right: 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+.purchasePage header .login button {
     width: 100%;
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 22px;
     font-family: "Gowun Dodum", sans-serif;
-}
+  }
 
 /* 메인 */
 
-purchasePage .mainContainer {
+.purchasePage .mainContainer {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 /* 메인 왼쪽 부분 */
-purchasePage .mainContainer .left {
+.purchasePage .mainContainer .left {
     width: 60%;
 }
 
-purchasePage .creationName {
+.purchasePage .creationName {
     width: 95%;
     margin: 10px 0;
     text-align: center;
 }
 
-purchasePage section {
+.purchasePage section {
     width: 95%;
     height: 500px;
     border-radius: 5px;
@@ -116,7 +161,7 @@ purchasePage section {
 
 
 /* 메인 이미지 */
-purchasePage section .CreationImgView img {
+.purchasePage section .CreationImgView img {
     width: 100%;
     height: 500px;
     flex-shrink: 0;
@@ -125,11 +170,11 @@ purchasePage section .CreationImgView img {
 
 
 /* 메인 오른쪽 부분 */
-purchasePage .mainContainer .right {
+.purchasePage .mainContainer .right {
     width: 40%;
 }
 
-purchasePage .mainContainer .right .creatorInformation {
+.purchasePage .mainContainer .right .creatorInformation {
     display: flex;
     justify-content: space-between;
     font-size: 22px;
@@ -139,27 +184,27 @@ purchasePage .mainContainer .right .creatorInformation {
 }
 
 
-purchasePage .down {
+.purchasePage .down {
     display: flex;
     justify-content: center;
     
 }
 
-purchasePage .down button {
-    width: 100%;
-    height: 60px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 50px;
+.purchasePage .down button {
+    width: 35%;
+    height: 80px;
+    font-size: 30px;
+    background-color: rgb(52, 99, 255);
     color: white;
-    background-color: black;
+    box-shadow: 0px 5px 0px 0px #000000;
+    border-radius: 15px;
+    margin: 10px 0px 20px 0px;
+    transition: all 0.2s;
     cursor: pointer;
-    box-shadow: 0 0 40px 40px black inset;
-    transition: all 300ms ease-in-out;
-}
-
-/* purchasePage .down button:hover {
-    box-shadow: 0 0 10px 0 rgb(158, 158, 235) inset, 0 0 10px 1px blue;
-} */
+  }
+  
+.purchasePage .down button:hover {
+    background: #073ef5;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
