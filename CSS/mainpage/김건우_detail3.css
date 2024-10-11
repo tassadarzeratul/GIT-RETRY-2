@@ -58,7 +58,8 @@ li {
 
 .detail3 .bigbox .right .descriptiontext {
     width: 300px;
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
 .detail3 .bigbox .right .product {
