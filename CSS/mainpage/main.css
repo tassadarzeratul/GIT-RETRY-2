@@ -51,8 +51,8 @@ main header .jlmToBtn {
 
 main header .jlmToBtn button {
   background: transparent;
-  border: none;
   outline: none;
+  border: none;
   font-size: 22px;
   cursor: pointer;
   font-family: "Gowun Dodum", sans-serif;
@@ -60,6 +60,7 @@ main header .jlmToBtn button {
 
 main header .jlmToBtn button:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* nmenu */
@@ -79,7 +80,6 @@ main header .scroll .menu .menu_inner {
   height: 70px;
   display: flex;
   background: white;
-  border: none;
   align-items: center;
   text-align: center;
 }
@@ -94,6 +94,7 @@ main header .menu li {
 
 main header .menu li:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* 우측 서치부분 */

@@ -60,6 +60,7 @@ li {
 
 .admin header .jlmToBtn button:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* nmenu */
@@ -94,6 +95,7 @@ li {
 
 .admin header .menu li:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* 우측 서치부분 */
