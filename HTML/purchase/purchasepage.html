@@ -15,30 +15,34 @@
 
 <body>
     <!--main 화면 시작-->
-    <purchasePage>
+    <div class="purchasePage">
         <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <div class="logo_pic" id="logo_picMain">
-                    </div>
+            <div class="top">
+                <div class="logo_pic">
+                    <img src="../../img/withDreamLogo2.png" alt="logo" />
                 </div>
-                <ul class="pageMenu">
-                    <li id="logo_picMainHome">홈</li>
-                    <li id="register">펀딩등록</li>
-                    <li id="end">종료펀딩</li>
-                    <li id="purchase_1">작품구매</li>
-                </ul>
+                <div class="jlmToBtn">
+                    <button type="button" id="detail1ToJoin">Join</button>
+                    <button type="button" id="detail1Tologin">Login</button>
+                    <button type="button" id="detail1ToMyPagen">MyPage</button>
+                </div>
             </div>
-            <div class="userMenu">
-                <button type="button" id="myPageBtn">MyPage</button>
+            <div class="scroll">
+                <div class="menu">
+                    <ul class="menu_inner">
+                        <li id="detail1ToHome">홈</li>
+                        <li id="detail1ToRegister">펀딩 등록</li>
+                        <li id="detail1ToEnd">종료 펀딩</li>
+                        <li id="detail1Topurchase_1">작품 구매</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" id="detail1SearchBox" placeholder="검색어를 입력해주세요." />
+                    <i class="fa-solid fa-magnifying-glass" id="detail1SearchI"></i>
+                </div>
             </div>
         </header>
 <!-- ====================================== 상단 메뉴(header) 공통 아이템 ==================================================== -->
-        
-
-
-
-
         <div class="creationName">
             <h1>작품명</h1>
         </div>
@@ -69,7 +73,6 @@
         </div>
     </purchasePage>
     <!--Main 화면 끝-->
-    <!-- <script src="../../js/mainpage/main.js"></script> -->
+    <script src="../../js/mainpage/main.js"></script>
 </body>
-
 </html>
