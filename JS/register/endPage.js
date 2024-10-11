@@ -43,7 +43,7 @@ function createRow(userid, content, date) {
 }
 
 function drawing() {
-    commentList.innerHTML = "a";
+    commentList.innerHTML = "";
     for (let i = list.length - 1; i >= 0; i--) {
         const row = createRow(list[i].userid, list[i].content, list[i].date);
         commentList.append(row);
