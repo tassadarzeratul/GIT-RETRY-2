@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko">
-<link rel="stylesheet" href="../../CSS/register/김건우_register.css">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>펀딩 등록 화면</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../CSS/register/김건우_register.css">
 </head>
+
 <body>
-<!-- 김건우 register 시작 -->
-<div class="register">
-    <div class="img">
-        <a class="logo" href="../../HTML/mainpage/main.html">
-            <img src="../../img/withDreamLogo2.png">
-        </a>
-    </div>
-    <div class="menu">
-        <div class="fund">
-            <p>펀딩 등록하기:</p>
-            <p>자신만의 펀딩을 등록해 보세요</p>
-        <!-- <div class="mainimage">
-            <img src="../../img/logo.jpg" width="15%" height="100%">
-        </div> -->
+    <!-- 김건우 register 시작 -->
+    <div class="register">
+        <div class="img">
+            <a class="logo" href="../../HTML/mainpage/main.html">
+                <img src="../../img/withDreamLogo2.png">
+            </a>
         </div>
-    </div>
-    <div class="content">
-        <div class="description">
-            <h1>펀딩 주제</h1>
+        <div class="menu">
+            <div class="fund">세상에 하나뿐인 특별한 자신만의 펀딩을 등록해 보세요</div>
+        </div>
+        <div class="content">
+            <form class="description">
+                <h2>펀딩 주제</h2>
                 <textarea class="theme" placeholder="펀딩 주제를 작성해주세요"></textarea>
-            <h1>펀딩 설명</h1>
+                <h2>펀딩 설명</h2>
                 <textarea class="details" placeholder="펀딩 설명을 작성해주세요"></textarea>
-                
-            <div class="buttons">
-                <div class="upload-btn-wrapper">
-                    <button class="btn">파일 업로드
-                        <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple />
-                    </button>                
-                <div id="image_container"></div>
+                <div class="buttons">
+                    <div class="tip">
+                        <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 올릴 수 없습니다.</h4>
+                        <h4>※가이드라인에 맞지 않는 이미지는 임의로 수정될 수 있습니다.</h4>
+                        <!-- 클릭시 팝업 -->
+                    </div>
+                    <div class="upload-btn-wrapper">
+                        <button class="btn">파일 업로드
+                            <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);"
+                                multiple />
+                        </button>
+                        <div id="image_container"></div>
+                    </div>
+                    <button class="button" type="submit" id="registerBtn" onclick="showPopup();" />등록하기</button>
                 </div>
-            </div>
-            <div class="tip">
-                <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 올릴 수 없습니다.</h4>
-                <h4>※가이드라인에 맞지 않는 이미지는 임의로 수정될 수 있습니다.</h4>
-            <!-- 클릭시 팝업 -->
-            <button class="button" onclick="showPopup();" />등록하기</button>
-            </div>
+            </form>
         </div>
     </div>
-</div>
+    <script src="../../JS/register/김건우_upload.js"></script>
+    <script src="../../JS/register/김건우_register.js"></script>
 </body>
-<script src="../../JS/register/김건우_upload.js"></script>
-<script src="../../JS/register/김건우_register.js"></script>
+
 <!-- 김건우 register 끝 -->
+
 </html>
