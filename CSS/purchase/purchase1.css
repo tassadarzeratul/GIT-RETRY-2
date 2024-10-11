@@ -167,7 +167,7 @@ main .mainBox .left {
 
 .purchase1 .mySlides {
     width: 300%;
-    height: 450px;
+    height: 350px;
     /* justify-content: center; */
     align-items: center;
 }
@@ -184,7 +184,7 @@ main .mainBox .left {
   font-size: 30px;
   font-weight: bold;
   color: black;
-  margin-top: 25px;
+  margin-top: 1px;
   font-family: "Gowun Dodum", sans-serif;
   padding:1rem 1rem 1.5rem 1rem;
   
@@ -197,8 +197,7 @@ main .mainBox .left {
   /* 작품구매창 */
   .purchase1 section.portfolio .portfolio-inner{
     width: 300px;
-    margin-top: 30px;
-    ;
+    margin-top: 1px;;
     padding:1rem 1rem 1.5rem 1rem;
     float:left;
     background-color:#f8f8f8;
