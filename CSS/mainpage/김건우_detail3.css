@@ -72,6 +72,8 @@ li {
     transition: all 0.2s;
     cursor: pointer;
     border-color:transparent;    
+    Font-weight:bold;
+    font-size:15px;
 }
 
 .detail3 .bigbox .right .product:hover {
@@ -79,14 +81,6 @@ li {
     background-color: #2d50c5;
     border-color: rgb(0, 0, 0);
     border-style:solid;
-}
-
-.detail3 .bigbox .right .product .dot{
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 20
 }
 
 /* detail 3 끝 */

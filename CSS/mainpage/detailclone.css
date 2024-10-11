@@ -349,7 +349,51 @@ a:visited {
 
 /* detail 3 끝 */
 
+/* detail 4 시작 */
+/* detail 4 끝 */
 
+/* detail 5 시작 */
+*{
+  box-sizing:border-box;
+/*   -webkit-box-sizing:border-box; */
+  -moz-box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body{
+  padding:0;
+  margin:0;
+  background: white;
+}
+
+.detail_5 #copyright{
+  width:80%;
+  margin:50px auto;
+  font-family: "Gowun Dodum", sans-serif;
+  height:500px;
+}
+.detail_5 #textarea_id{
+  width: 100%;
+  height: 400px;
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight:bold;
+  font-family: "Gowun Dodum", sans-serif;
+}
+/* detail 5 끝 */
 
 
 /* 미디어 쿼리 */
