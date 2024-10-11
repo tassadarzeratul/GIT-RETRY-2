@@ -21,48 +21,67 @@ li {
 }
 
 /* Main  */
+/* 상단 로고 */
 
-.purchase1 main {
-  height: auto;
-  margin: 10px 50px;
-  
-}
-
-.purchase1 main header {
-  /* display: flex; */
-  justify-content: space-between;
-}
-
-.purchase1 main header .container1 {
-  width: 75%;
-  display: column;
-}
-
-.purchase1 main header .logo {
+main header .top {
   width: 100%;
-  height: 90px;
-}
-
-.purchase1 main header .logo .logo_pic {
-  width: 100%;
-  height: 100%;
-  background-image: url(../../img/jikbakguri2.png);
-  background-repeat: no-repeat;
-}
-
-.purchase1 main header .menu {
-  width: 90%;
-  height: 50px;
   display: flex;
-  background: transparent;
-  border: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  justify-content: space-between;
   align-items: center;
+}
+
+main header .logo_pic {
+  width: 65%;
+}
+
+main header .logo_pic img {
+  width: 50%;
+}
+
+main header .jlmToBtn {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
-.purchase1 main header .menu li {
+main header .jlmToBtn button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .jlmToBtn button:hover {
+  color: orange;
+  font-weight: bold;
+}
+
+/* nmenu */
+
+main header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
+main header .scroll .menu {
+  width: 100%;
+}
+
+main header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  align-items: center;
+  text-align: center;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .menu li {
   width: 15%;
   background: transparent;
   border: none;
@@ -71,48 +90,61 @@ li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
-.purchase1 main header .menu li:hover{
+main header .menu li:hover {
   color: orange;
+  font-weight: bold;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
-
-
-
-
-.purchase1 main header .login {
-  width: 25%;
-  display:flex;
+/* 우측 서치부분 */
+main header .search {
+  width: 40%;
+  display: flex;
+  align-items: center;
 }
 
+main header .search input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  margin-left: 100px;
+  background-color: rgb(243, 243, 243);
+  outline: none;
+  font-family: "Gowun Dodum", sans-serif;
+}
 
+main header .search i {
+  position: relative;
+  right: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-.purchase1 main header .login button {
+main header .login button {
   width: 100%;
   background: transparent;
   border: none;
   cursor: pointer;
   font-size: 22px;
   font-family: "Gowun Dodum", sans-serif;
-  
 }
 
-.purchase1 main header .login button:hover {
-  color: orange;
-}
+/* 메인 */
 
-
-.purchase1 main header{
+main .mainBox {
+  width: 100%;
+  margin-top: 30px;
   display: flex;
+  justify-content: space-between;
 }
 
-
-.purchase1 main section {
-    width: 100%;
-    height: 470px;
-    border-radius: 5px;
-    margin: 0px 0px 20px;
-    overflow: hidden;
+/* 메인 왼쪽 부분 */
+main .mainBox .left {
+  width: 75%;
 }
+
 /* Main 끝 */
 
 
@@ -149,12 +181,13 @@ li {
 
 
 .purchase1 .purchase-items p{
-  text-size-adjust: 100px;
   font-size: 30px;
   font-weight: bold;
   color: black;
   margin-top: 25px;
   font-family: "Gowun Dodum", sans-serif;
+  padding:1rem 1rem 1.5rem 1rem;
+  
 }
 
 /* 작품구매 텍스트 끝 */
@@ -164,26 +197,39 @@ li {
   /* 작품구매창 */
   .purchase1 section.portfolio .portfolio-inner{
     width: 300px;
-    margin-top: 7%;
-    margin-right:7%;
+    margin-top: 30px;
+    ;
     padding:1rem 1rem 1.5rem 1rem;
     float:left;
     background-color:#f8f8f8;
-    border:1px solid #ccc;
     margin-bottom:3rem;
     
     
   }
+
+  .purchase1 section.portfolio .portfolio-inner #name{
+    font-size: 12px;
+    color: gray;
+  }
+
+  .purchase1 section.portfolio .portfolio-inner #cost{
+    font-size: 18px;
+    color: rgba(0, 89, 255, 0.87);
+  }
+
+  
  
 
 
-  .purchase1 section.portfolio .portfolio-inner:nth-child(3n){
+  .purchase1 section.portfolio .portfolio-inner:nth-child(4n){
      margin-right:0;
   }
  
+
+
   .purchase1 section.portfolio .portfolio-inner img{
-    width:100px;
-    height: 100px;
+    width:300px;
+    height: 250px;
     display:block;
     
   }
