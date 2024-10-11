@@ -26,7 +26,7 @@ li {
 
 .purchase1 {
   height: auto;
-  margin: 10px 50px;
+  margin: 30px 100px;
   font-family: "Gowun Dodum", sans-serif;
 }
 
@@ -168,7 +168,7 @@ main .mainBox .left {
 
 .purchase1 .slideshow-image{
     border-radius: 1%;
-    width: 110%;
+    width: 100%;
     height: 105%;
     overflow: hidden;
 }
@@ -205,12 +205,12 @@ main .mainBox .left {
 
   /* 작품구매창 */
   .purchase1 section.portfolio .portfolio-inner{
-    width: 290px;
+    width: 265px;
     margin-top: 1px;;
     /* padding:1rem 1rem 1.5rem 0rem; */
     float:left;
     background-color:#f8f8f8;
-    margin-bottom:3rem;
+    margin-bottom:4rem;
     margin-right: 1px;
   
     
