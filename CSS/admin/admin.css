@@ -172,7 +172,7 @@ li {
 
 /* section pic 사진 */
 .admin section .pic_container .pic_list img {
-  width: 290px;
+  width: 270px;
   height: 160px;
   border-radius: 10px;
   background-size: cover;
