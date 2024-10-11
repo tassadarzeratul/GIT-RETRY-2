@@ -3,8 +3,9 @@
 * {
   margin: 0;
   padding: 0;
+  
   box-sizing: border-box;
-  max-width: 100%;
+  
 
 }
 
@@ -22,6 +23,14 @@ li {
 
 /* Main  */
 /* 상단 로고 */
+
+.purchase1 {
+  height: auto;
+  margin: 10px 50px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+
 
 main header .top {
   width: 100%;
@@ -112,7 +121,6 @@ main header .search input {
   margin-left: 100px;
   background-color: rgb(243, 243, 243);
   outline: none;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 main header .search i {
@@ -160,13 +168,13 @@ main .mainBox .left {
 
 .purchase1 .slideshow-image{
     border-radius: 1%;
-    width: 100%;
+    width: 110%;
     height: 105%;
     overflow: hidden;
 }
 
 .purchase1 .mySlides {
-    width: 300%;
+    width: 1065px;
     height: 350px;
     /* justify-content: center; */
     align-items: center;
@@ -187,6 +195,7 @@ main .mainBox .left {
   margin-top: 1px;
   font-family: "Gowun Dodum", sans-serif;
   padding:1rem 1rem 1.5rem 1rem;
+  margin-left: 100px;
   
 }
 
@@ -196,14 +205,17 @@ main .mainBox .left {
 
   /* 작품구매창 */
   .purchase1 section.portfolio .portfolio-inner{
-    width: 300px;
+    width: 290px;
     margin-top: 1px;;
-    padding:1rem 1rem 1.5rem 1rem;
+    /* padding:1rem 1rem 1.5rem 0rem; */
     float:left;
     background-color:#f8f8f8;
     margin-bottom:3rem;
     margin-right: 1px;
-    margin-left: 13px;
+  
+    
+    
+    
     
     
   }
@@ -213,9 +225,14 @@ main .mainBox .left {
     color: gray;
   }
 
+  .purchase1 section.portfolio .portfolio-inner #product_name{
+   
+  }
+
   .purchase1 section.portfolio .portfolio-inner #cost{
     font-size: 18px;
     color: rgba(0, 89, 255, 0.87);
+    
   }
 
   
@@ -229,11 +246,14 @@ main .mainBox .left {
 
 
   .purchase1 section.portfolio .portfolio-inner img{
-    width:300px;
+    width:230px;
     height: 250px;
     display:block;
     transition-duration:0.3s;
     overflow: none;
+    /* margin: 5px 10px; */
+    
+    
   }
 
   .purchase1 section.portfolio .portfolio-inner:hover img{
