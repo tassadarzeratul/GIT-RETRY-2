@@ -2,7 +2,7 @@
 
 // 로고
 const joinToLogin_1 = () => {
-    window.open('../../HTML/mainpage/main.html');
+    window.location.replace('../../HTML/mainpage/main.html');
 }
 joinPic.addEventListener('click', joinToLogin_1);
 
