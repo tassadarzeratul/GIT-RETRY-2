@@ -10,11 +10,11 @@ pwfindPic.addEventListener('click', pwfindToLogo);
 // 입력창 유효성 검사 
 
 const inputEmailId = document.getElementById('userEmail');
-const inputEmailPwd = document.getElementById('userPwd');
+const inputName = document.getElementById('userName');
 const pwfindBtn = document.getElementById('btnpwfind');
 
 const emailWarning = document.getElementById('emailWarning');
-const pwdWarning = document.getElementById('pwdWarning');
+const pwdWarning = document.getElementById('nameWarning');
 
 const pwfind_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
@@ -31,9 +31,8 @@ const pwfind_user = () => {
         isValid = false;
     }
 
-    // 비밀번호 검사 (8~16자)
-    else if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
-        pwdWarning.textContent = '비밀번호는 8~16자여야 하며 공백을 포함할 수 없습니다.';
+    else if (inputName.value.length < 2 || inputName.value.length > 10 || /\s/.test(inputName.value)) {
+        nameWarning.textContent = '이름은 2~10자이며 공백을 포함할 수 없습니다.';
         pwfindBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         pwfindBtn.disabled = true;
         isValid = false;
@@ -48,6 +47,7 @@ const pwfind_user = () => {
 
 // 페이지 이동
 const pwfindToMain = () => {
+    alert('Email을 확인해주세요')
     location.replace('../../HTML/mainpage/main.html');
 }
 
@@ -63,4 +63,4 @@ pwfindBtn.addEventListener('click', (event) => {
 
 // 각 입력 필드에서 입력이 변경될 때마다 pwfind_user 호출
 inputEmailId.addEventListener('input', pwfind_user);
-inputEmailPwd.addEventListener('input', pwfind_user);
+inputName.addEventListener('input', pwfind_user);

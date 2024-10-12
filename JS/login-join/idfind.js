@@ -3,25 +3,29 @@
 const loginToLogo = () => {
     window.location.replace('../../HTML/mainpage/main.html');
 }
-loginPic.addEventListener('click', loginToLogo);
+idfindPic.addEventListener('click', loginToLogo);
 
 // =============================================================================
-alert('ddd')
+
 // 입력창 유효성 검사 
 
 const inputEmailId = document.getElementById('userEmail');
-const inputEmailPwd = document.getElementById('userPwd');
+const inputName = document.getElementById('userName');
+const inputPhone = document.getElementById('userPhone');
 const loginBtn = document.getElementById('btnidfind');
 
 const emailWarning = document.getElementById('emailWarning');
-const pwdWarning = document.getElementById('pwdWarning');
+const nameWarning = document.getElementById('nameWarning');
+const phoneWarning = document.getElementById('phoneWarning');
 
 const idfind_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
 
     // 경고 메시지 초기화
     emailWarning.textContent = '';
-    pwdWarning.textContent = '';
+    nameWarning.textContent = '';
+    phoneWarning.textContent = '';
+
 
     // 이메일 검사 (@ 포함)
     if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
@@ -29,15 +33,23 @@ const idfind_user = () => {
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
         isValid = false;
-    }
-
-    // 비밀번호 검사 (8~16자)
-    else if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
-        pwdWarning.textContent = '비밀번호는 8~16자여야 하며 공백을 포함할 수 없습니다.';
+    }  
+    // 이름 검사 (2~10자)
+    else if (inputName.value.length < 2 || inputName.value.length > 10 || /\s/.test(inputName.value)) {
+        nameWarning.textContent = '이름은 2~10자이며 공백을 포함할 수 없습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
         isValid = false;
     }
+
+    // 전화번호 검사 (11자)
+    else if (inputPhone.value.length !== 11 || /\s/.test(inputPhone.value)) {
+        phoneWarning.textContent = '전화번호는 11자리여야 하며 공백을 포함할 수 없습니다.';
+        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
+        loginBtn.disabled = true;
+        isValid = false;
+    }
+
 
     // 모든 조건을 통과했을 경우
     if (isValid) {
@@ -48,7 +60,7 @@ const idfind_user = () => {
 
 // 페이지 이동
 const idfindToMain = () => {
-    alert('피자나라 치킨공주 !!')
+    alert('Email을 확인해주세요')
     location.replace('../../HTML/mainpage/main.html');
 }
 
@@ -63,5 +75,5 @@ loginBtn.addEventListener('click', (event) => {
 
 // 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
 inputEmailId.addEventListener('input', idfind_user);
-inputEmailPwd.addEventListener('input', idfind_user);
-
+inputName.addEventListener('input', idfind_user);
+inputPhone.addEventListener('input', idfind_user);
