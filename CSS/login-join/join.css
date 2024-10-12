@@ -42,7 +42,7 @@ li {
 /* 메인 로고 */
 .join .joinLogo div.joinLogoPic {
     cursor: pointer;
-    margin-top: 50px;
+    /* margin-top: 20px; */
 }
 
 .join .joinLogo div.joinLogoPic img {
@@ -58,7 +58,7 @@ li {
 /* input 스타일 */
 .join form fieldset div.inputBox {
     position: relative;
-    margin-top: 45px;
+    margin-top: 50px;
 }
 
 .join form fieldset div.inputBox input {
