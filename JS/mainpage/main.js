@@ -45,6 +45,8 @@
 const mainToGo = (url) => {
     window.open(url);
 }
+// 로고
+$('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
