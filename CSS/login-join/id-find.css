@@ -1,114 +1,174 @@
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
+/* login */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
-.idFind * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.idFind {
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.left{
+    float: left;
+    width: 50%;
+
+}
+.right{
+    float: right;
+    width: 50%;
+}
+
+.right img{
+    height: 900px;
+}
+
+.inputput{
+    margin-top: 20%;
+    margin-bottom:10%;
+}
+
+
+/* 전체 스타일 */
+.idfindPage {
     display: flex;
-    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Gowun Dodum", sans-serif;
 }
 
-.idFind .align {
-    margin: auto;
+/* 링크 색깔 */
+.idfindPage a {
+    color: rgb(16, 63, 134);
 }
 
-.idFind .inputGroup {
-    position: relative;
-    width: 500px;
-    margin-left: 50px;
-    margin-top: 100px;
+/* 메인 로고 */
+.idfindPage .idfindLogo div.idfindLogoPic {
+    cursor: pointer;
+    margin-top: 57px;
 }
 
-.idFind input {
-    font-size: 15px;
-    color: #222222;
+.idfindPage .idfindLogo div.idfindLogoPic img {
+    width: 80%;
+}
+
+/* form 스타일 */
+.idfindPage form fieldset {
     width: 500px;
     border: none;
-    border-bottom: solid #aaaaaa 1px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+}
+
+/* input 스타일 */
+.idfindPage form fieldset div.inputBox {
     position: relative;
-    background: none;
-    z-index: 5;
+    margin-top: 60px;
 }
 
-.idFind input::placeholder {
-    color: #aaaaaa;
-}
-
-.idFind input:focus {
+.idfindPage form fieldset div.inputBox input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #aaaaaa;
+    padding:5px;
+    font-size: 16px;
+    color: #222;
     outline: none;
 }
 
-.idFind span {
+/* 레이블 스타일 */
+.idfindPage form fieldset div.inputBox label {
+    position: absolute;
+    color: #aaa;
+    left: 10px;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+/* 레이블 효과 */
+.idfindPage form fieldset div.inputBox input:focus+label,
+.idfindPage form fieldset div.inputBox input:valid+label {
+    font-size: 16px;
+    bottom: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+/* span 강조선 스타일 */
+.idfindPage form fieldset div.inputBox span {
     display: block;
     position: absolute;
-    bottom: 0;
-    left: 0%;
-    /* right로만 바꿔주면 오 - 왼 */
-    background-color: #666;
+    background-color: #706f6f;
     width: 0;
     height: 2px;
     border-radius: 2px;
     transition: 0.5s;
 }
 
-.idFind label {
-    position: absolute;
-    color: #aaa;
-    left: 10px;
-    font-size: 20px;
-    bottom: 8px;
-    transition: all .2s;
-}
-
-.idFind input:focus~label,
-input:valid~label {
-    font-size: 16px;
-    bottom: 40px;
-    color: #666;
-    font-weight: bold;
-}
-
-.idFind input:focus~span,
-input:valid~span {
+/* 스팬 효과 */
+.idfindPage form fieldset div.inputBox input:focus~span,
+.idfindPage form fieldset div.inputBox input:valid~span {
     width: 100%;
 }
 
-.idFind .certify {
-    display: flex;
-  }
-
-.idFind .certifyBtn {
-    width: 50%;
-    height: 70px;
-    border: 1px solid;
-    border-radius: 40px;
-    font-size: 18px;
+/* 버튼 스타일 */
+.idfindPage form fieldset div.idfindBtn button {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 44, 190);
+    color: white;
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
     font-weight: bold;
     letter-spacing: 5px;
-    color: white;
-    background-color: rgb(52, 99, 255);
     cursor: pointer;
-    transition: 0.5s;
-    margin: 0 auto;
-  }
-  
-  /* detail_2 오른쪽 후원버튼 기능 */
-  .idFind .certifyBtn:hover {
-    background-color: rgb(0, 26, 111);
-  }
-
-  /* 버튼 밑 문구 추가함 - 건우 */
-
-.idFind .align .inputLogin{
-    text-align: center;
-    margin-top:15px;
+    display: inline-block;
+    /* box-shadow: 0 0 40px 40px #4d4bc4 inset; */
+    /* transition: all 250ms ease-in-out; */
+    transition:0.5s
 }
 
-.idFind .align .inputLogin{
-    font-family: "Gowun Dodum", sans-serif;    
+/* 버튼 스타일 후버 */
+.idfindPage form fieldset div.idfindBtn button:hover {
+    background-color: rgb(0, 26, 111);
+    /* box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212); */
+}
+
+/* 버튼 아래 부분 */
+.idfindPage form fieldset div.inputpwfind {
+    margin-top: 20px;
+}
+
+
+/* 버튼 아래 부분 */
+.idfindPage form fieldset div.inputpwfind {
+    margin-top: 20px;
+}
+
+.idfindPage .find {
+    text-align: left;
+}
+
+/* input 유효성 확인 멘트 스타일 */
+.idfindPage form fieldset div.warning {
+    margin-top: 5px;
+    color: rgb(230, 35, 35);
+}
+
+.idfindPage form fieldset div.inputBox .warning {
+    position: absolute;
 }
