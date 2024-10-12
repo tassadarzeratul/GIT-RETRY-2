@@ -9,7 +9,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel ="stylesheet" href="../../CSS/purchase/purchase1.css">
-        <title></title>
+        <title>작품 구매</title>
     </head>
     <body>
         <!-- PortFolio -->
@@ -21,9 +21,9 @@
                 <main>
                   <header class="header">
                     <div class="top">
-                      <div class="logo_pic" id="logo_picMain">
-                        <img src="../../img/withDreamLogo2.png" alt="logo" />
-                      </div>
+                      <a class="logo_pic" id="logo_picMain" href="../../HTML/mainpage/main.html">
+                        <img src="../../img/withDreamLogo2.png" alt="logo">
+                      </a>
                       <div class="jlmToBtn">
                         <button type="button" id="joinBtn">Join</button>
                         <button type="button" id="loginBtn">Login</button>
@@ -33,8 +33,11 @@
                     <div class="scroll">
                       <div class="menu">
                         <ul class="menu_inner">
-                          <li id="mainToHome">홈</li>
-                          <li id="mainToRegister">펀딩 등록</li>
+
+                          
+                          <li id="mainToHome" onclick="location.href='../../HTML/mainpage/main.html'">홈</li>
+                          
+                          <li id="mainToRegister" onclick="location.href'../../HTML/'">펀딩 등록</li>
                           <li id="mainToend">종료 펀딩</li>
                           <li id="mainTopurchase_1">작품 구매</li>
                         </ul>
@@ -174,11 +177,11 @@
   <p class="companyx">
     직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
     
-    직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+    직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
 
 </div>
 
         <!-- //end PortFolio -->
         <script src="../../JS/purchase/purchase1.js"></script>
-      </body>
-      </html>
+</body>
+</html>
