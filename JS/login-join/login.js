@@ -30,7 +30,7 @@ loginPic.addEventListener('click', loginToLogo);
 
 const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
-const loginBtn = document.getElementById('btnjoin');
+const loginBtn = document.getElementById('btnlogin');
 
 const emailWarning = document.getElementById('emailWarning');
 const pwdWarning = document.getElementById('pwdWarning');
@@ -84,6 +84,6 @@ loginBtn.addEventListener('click', (event) => {
 });
 
 // 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
-inputEmailId.addEventListener('input', join_user);
-inputEmailPwd.addEventListener('input', join_user);
+inputEmailId.addEventListener('input', login_user);
+inputEmailPwd.addEventListener('input', login_user);
 
