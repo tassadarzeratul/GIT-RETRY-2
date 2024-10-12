@@ -41,6 +41,7 @@ main header .top {
 
 main header .logo_pic {
   width: 65%;
+  cursor: pointer;
 }
 
 main header .logo_pic img {
@@ -223,10 +224,6 @@ main .mainBox .left {
   .purchase1 section.portfolio .portfolio-inner #name{
     font-size: 12px;
     color: gray;
-  }
-
-  .purchase1 section.portfolio .portfolio-inner #product_name{
-   
   }
 
   .purchase1 section.portfolio .portfolio-inner #cost{
