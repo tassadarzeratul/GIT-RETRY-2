@@ -34,8 +34,6 @@ const loginBtn = document.getElementById('btnlogin');
 
 const emailWarning = document.getElementById('emailWarning');
 const pwdWarning = document.getElementById('pwdWarning');
-const resultMessageId = document.getElementById('resultMessageId');
-const resultMessageCopy = document.getElementById('resultMessageCopy');
 
 const login_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
@@ -64,13 +62,12 @@ const login_user = () => {
     if (isValid) {
         loginBtn.style.backgroundColor = "#0095F6";
         loginBtn.disabled = false;
-        resultMessageId.textContent = ''; // 통과 시 메세지 지우기
     }
 }
 
 // 페이지 이동
 const loginToMain = () => {
-    alert('가입을 환영합니다 !')
+    alert('피자나라 치킨공주 !!')
     location.replace('../../HTML/mainpage/main.html');
 }
 

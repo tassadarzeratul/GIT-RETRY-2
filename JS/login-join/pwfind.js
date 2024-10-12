@@ -11,12 +11,10 @@ pwfindPic.addEventListener('click', pwfindToLogo);
 
 const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
-const loginBtn = document.getElementById('btnpwfind');
+const pwfindBtn = document.getElementById('btnpwfind');
 
 const emailWarning = document.getElementById('emailWarning');
 const pwdWarning = document.getElementById('pwdWarning');
-const resultMessageId = document.getElementById('resultMessageId');
-const resultMessageCopy = document.getElementById('resultMessageCopy');
 
 const pwfind_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
@@ -28,24 +26,23 @@ const pwfind_user = () => {
     // 이메일 검사 (@ 포함)
     if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
         emailWarning.textContent = '이메일에는 @가 포함되어야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
+        pwfindBtn.style.backgroundColor = 'rgb(252, 146, 146)';
+        pwfindBtn.disabled = true;
         isValid = false;
     }
 
     // 비밀번호 검사 (8~16자)
     else if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
         pwdWarning.textContent = '비밀번호는 8~16자여야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
+        pwfindBtn.style.backgroundColor = 'rgb(252, 146, 146)';
+        pwfindBtn.disabled = true;
         isValid = false;
     }
 
     // 모든 조건을 통과했을 경우
     if (isValid) {
-        loginBtn.style.backgroundColor = "#0095F6";
-        loginBtn.disabled = false;
-        resultMessageId.textContent = ''; // 통과 시 메세지 지우기
+        pwfindBtn.style.backgroundColor = "#0095F6";
+        pwfindBtn.disabled = false;
     }
 }
 
@@ -55,10 +52,11 @@ const pwfindToMain = () => {
 }
 
 // 로그인 버튼 클릭
-loginBtn.addEventListener('click', (event) => {
+pwfindBtn.addEventListener('click', (event) => {
     event.preventDefault(); // 기본 동작 방지
+    console.log('비밀번호 찾기')
     pwfind_user(); // 입력검사 호출
-    if (!loginBtn.disabled) { // 버튼이 활성화된 경우에만 이동
+    if (!pwfindBtn.disabled) { // 버튼이 활성화된 경우에만 이동
         pwfindToMain();
     }
 });
