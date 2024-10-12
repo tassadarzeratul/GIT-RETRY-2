@@ -45,6 +45,8 @@
 const mainToGo = (url) => {
     window.open(url);
 }
+// 로고
+$('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
@@ -61,8 +63,10 @@ $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.html'));
 // 검색어입력 돋보기
 $('#searchI').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
-
-
+// 서브 사진
+$('.pic_container').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+// 오른쪽 사진
+$('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 
 
 // main slider 동작구현 =================================================================
