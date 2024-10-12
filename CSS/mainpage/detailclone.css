@@ -445,3 +445,11 @@ body{
   }
 
 }
+
+.detailclone .line{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+  position: relative;
+  top:10px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
