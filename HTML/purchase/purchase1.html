@@ -9,7 +9,7 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel ="stylesheet" href="../../CSS/purchase/purchase1.css">
-        <title></title>
+        <title>작품 구매</title>
     </head>
     <body>
         <!-- PortFolio -->
@@ -21,22 +21,32 @@
                 <main>
                   <header class="header">
                     <div class="top">
-                      <div class="logo_pic" id="logo_picMain">
-                        <img src="../../img/withDreamLogo2.png" alt="logo" />
-                      </div>
+                      <a class="logo_pic" id="logo_picMain" 
+                      onclick="window.open('../../HTML/mainpage/main.html')">
+                        <img src="../../img/withDreamLogo2.png" alt="logo">
+                      </a>
                       <div class="jlmToBtn">
-                        <button type="button" id="joinBtn">Join</button>
-                        <button type="button" id="loginBtn">Login</button>
-                        <button type="button" id="myPageBtn">MyPage</button>
+                        <button type="button" id="joinBtn" 
+                        onclick="window.open('../../HTML/login-join/join.html')">Join</button>
+                        <button type="button" id="loginBtn"
+                        onclick="window.open('../../HTML/login-join/login.html')">Login</button>
+                        <button type="button" id="myPageBtn"
+                        onclick="window.open('../../HTML/mypage/김건우_mypage.html')">MyPage</button>
                       </div>
                     </div>
                     <div class="scroll">
                       <div class="menu">
                         <ul class="menu_inner">
-                          <li id="mainToHome">홈</li>
-                          <li id="mainToRegister">펀딩 등록</li>
-                          <li id="mainToend">종료 펀딩</li>
-                          <li id="mainTopurchase_1">작품 구매</li>
+
+                          <a href="../../HTML/mypage/김건우_mypage.html"></a>
+
+                          <li id="mainToHome" onclick="window.open('../../HTML/mainpage/main.html')">홈</li>
+                          
+                          <li id="mainToRegister" onclick="window.open('../../HTML/register/김건우_register.html')">펀딩 등록</li>
+
+                          <li id="mainToend" onclick="window.open('../../HTML/register/end.html')">종료 펀딩</li>
+
+                          <li id="mainTopurchase_1" onclick="window.open('../../HTML/purchase/purchase1.html')">작품 구매</li>
                         </ul>
                       </div>
                       <div class="search">
@@ -173,12 +183,18 @@
     이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.</p>
   <p class="companyx">
     직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+<<<<<<< HEAD
     
-    직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+    직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+=======
+    직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.
+후원은 창작자의 전시회 개최를 지원하는 일입니다.
+따라서 텀블벅에서의 후원은 전시회개최가 성공적으로 나올수 있지만 진행과정에서 계획이 지연되거나 변경, 또는 계획이 무산될수있습니다. 
+>>>>>>> 9eff6b4531ac39a35ed644a3a9019c7f3220b57d
 
 </div>
 
         <!-- //end PortFolio -->
         <script src="../../JS/purchase/purchase1.js"></script>
-      </body>
-      </html>
+</body>
+</html>
