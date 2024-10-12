@@ -129,13 +129,15 @@ li {
   cursor: pointer;
   font-size: 22px;
   font-family: "Gowun Dodum", sans-serif;
+  
 }
 
 /* title */
-.detail_1 .title {
+.title {
   text-align: center;
   font-size: 50px;
-  padding: 50px 0px 50px 0px;
+  padding: 150px 0px 50px 0px;
+  padding: ;
 }
 
 .detail_1 .guide .comment {
@@ -151,31 +153,50 @@ li {
   font-size: 26px;
 }
 
-.detail_1 .guide .list {
+
+
+/* sticky 화면 고정 */
+
+.sticky {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
   padding: 30px 0px 30px 0px;
+  color: black;
+  position: sticky;
+  top: 0;
+  padding-left:80px;
 }
 
-.detail_1 .list ul {
-  width: 50%;
-  display: flex;
-  text-align: center;
+.sticky ul {
+  list-style-type: none;
+  padding: 0;
   font-size: 26px;
+  text-align: center;
 }
 
-.detail_1 .list ul li {
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 15px;
-  padding: 10px;
-  margin: 0px 10px 0px 10px;
-  cursor: pointer;
-  background-color: rgb(215, 223, 224);
+.sticky li {
+  display: inline-block;
+  margin-left: 60px;
+  font-size: 26px;
+  font-weight: bold;
 }
+
+.sticky .one1:hover{
+  color: #2d50c5;
+}
+
+.sticky .one2:hover{
+  color: #2d50c5;
+}
+
+.sticky .one3:hover{
+  color: #2d50c5;
+}
+
+/* sticky 화면 고정끝 */
+
+
 
 /* detail_2 */
 
