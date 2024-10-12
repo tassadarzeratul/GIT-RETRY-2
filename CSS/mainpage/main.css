@@ -206,6 +206,7 @@ main sub .pic_container .pic_list img {
   border-radius: 5px;
   background-size: cover;
   position: absolute;
+  cursor: pointer;
 }
 
 /* 서브 슬라이드 버튼 */
