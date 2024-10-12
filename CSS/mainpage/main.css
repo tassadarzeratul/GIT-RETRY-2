@@ -273,7 +273,7 @@ main .mainBox .right .pic .rightPic {
 /* 메인 오른쪽 이미지 크기 */
 main .mainBox .right .pic .rightPic img {
   width: 40%;
-  height: 120px;
+  height: 118px;
   border-radius: 15px;
   cursor: pointer;
 }
