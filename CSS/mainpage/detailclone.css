@@ -166,6 +166,7 @@ li {
   position: sticky;
   top: 0;
   padding-left:80px;
+  background-color: white;
 }
 
 .sticky ul {
