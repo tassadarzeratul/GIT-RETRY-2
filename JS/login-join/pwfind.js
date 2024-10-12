@@ -4,8 +4,7 @@
 const pwfindToLogo = () => {
     window.location.replace('../../HTML/mainpage/main.html');
 }
-loginPic.addEventListener('click', pwfindToLogo);
-
+pwfindPic.addEventListener('click', pwfindToLogo);
 // =============================================================================
 
 // 입력창 유효성 검사 
@@ -52,7 +51,6 @@ const pwfind_user = () => {
 
 // 페이지 이동
 const pwfindToMain = () => {
-    alert('가입을 환영합니다 !')
     location.replace('../../HTML/mainpage/main.html');
 }
 
@@ -65,6 +63,6 @@ loginBtn.addEventListener('click', (event) => {
     }
 });
 
-// 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
+// 각 입력 필드에서 입력이 변경될 때마다 pwfind_user 호출
 inputEmailId.addEventListener('input', pwfind_user);
 inputEmailPwd.addEventListener('input', pwfind_user);
