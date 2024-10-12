@@ -1,41 +1,22 @@
 // 화면 이동 
+
 // 로고
-const loginToLogo = () => {
+const pwfindToLogo = () => {
     window.location.replace('../../HTML/mainpage/main.html');
 }
-loginPic.addEventListener('click', loginToLogo);
-
-// // 회원가입 하기
-// const loginToJoin = () => {
-//     window.location.replace('../../HTML/mainpage/main.html');
-// }
-// loginToJoin.addEventListener('click', loginToJoin);
-
-// // 아이디 찾기
-// const loginToId = () => {
-//     window.location.replace('../../HTML/mainpage/main.html');
-// }
-// loginToId.addEventListener('click', loginToId);
-
-// // 비밀번호 찾기
-// const loginToPw = () => {
-//     window.location.replace('../../HTML/mainpage/main.html');
-// }
-// loginToPw.addEventListener('click', loginToPw);
-
-
+pwfindPic.addEventListener('click', pwfindToLogo);
 // =============================================================================
 
 // 입력창 유효성 검사 
 
 const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
-const loginBtn = document.getElementById('btnlogin');
+const pwfindBtn = document.getElementById('btnpwfind');
 
 const emailWarning = document.getElementById('emailWarning');
 const pwdWarning = document.getElementById('pwdWarning');
 
-const login_user = () => {
+const pwfind_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
 
     // 경고 메시지 초기화
@@ -45,42 +26,41 @@ const login_user = () => {
     // 이메일 검사 (@ 포함)
     if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
         emailWarning.textContent = '이메일에는 @가 포함되어야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
+        pwfindBtn.style.backgroundColor = 'rgb(252, 146, 146)';
+        pwfindBtn.disabled = true;
         isValid = false;
     }
 
     // 비밀번호 검사 (8~16자)
     else if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
         pwdWarning.textContent = '비밀번호는 8~16자여야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
+        pwfindBtn.style.backgroundColor = 'rgb(252, 146, 146)';
+        pwfindBtn.disabled = true;
         isValid = false;
     }
 
     // 모든 조건을 통과했을 경우
     if (isValid) {
-        loginBtn.style.backgroundColor = "#0095F6";
-        loginBtn.disabled = false;
+        pwfindBtn.style.backgroundColor = "#0095F6";
+        pwfindBtn.disabled = false;
     }
 }
 
 // 페이지 이동
-const loginToMain = () => {
-    alert('피자나라 치킨공주 !!')
+const pwfindToMain = () => {
     location.replace('../../HTML/mainpage/main.html');
 }
 
 // 로그인 버튼 클릭
-loginBtn.addEventListener('click', (event) => {
+pwfindBtn.addEventListener('click', (event) => {
     event.preventDefault(); // 기본 동작 방지
-    login_user(); // 입력검사 호출
-    if (!loginBtn.disabled) { // 버튼이 활성화된 경우에만 이동
-        loginToMain();
+    console.log('비밀번호 찾기')
+    pwfind_user(); // 입력검사 호출
+    if (!pwfindBtn.disabled) { // 버튼이 활성화된 경우에만 이동
+        pwfindToMain();
     }
 });
 
-// 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
-inputEmailId.addEventListener('input', login_user);
-inputEmailPwd.addEventListener('input', login_user);
-
+// 각 입력 필드에서 입력이 변경될 때마다 pwfind_user 호출
+inputEmailId.addEventListener('input', pwfind_user);
+inputEmailPwd.addEventListener('input', pwfind_user);
