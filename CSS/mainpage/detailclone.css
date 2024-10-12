@@ -349,9 +349,7 @@ a:visited {
 
 /* detail 3 끝 */
 
-/* detail 4 시작 */
 
-/* detail 4 끝 */
 
 
 
@@ -397,6 +395,16 @@ body{
 }
 /* detail 5 끝 */
 
+/* detail 4 시작  */
+
+.detail_4 h2{
+  padding-top: 180px;
+  padding-bottom: 30px;
+}
+
+
+
+/* detail 4 끝 */
 
 /* 미디어 쿼리 */
 /* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
