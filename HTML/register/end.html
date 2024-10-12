@@ -1,79 +1,134 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet" href="../../CSS/register/end.css">
-        <title></title>
-    </head>
-    <body>
-        <!-- PortFolio -->
-        <section id="portfolio" class="portfolio">
-          <div class="container">
-            <main>
-              <div class="maindan">
-              <header class="header">
-                  <div class="container1">
-                      <div class="logo">
-                          <div class="logo_pic" id="logo_picMain">
-                          </div>
-                      </div>
-                      <ul class="menu">
-                          <li id="logo_picMainHome">홈</li>
-                          <li>펀딩등록</li>
-                          <li>종료펀딩</li>
-                          <li>작품구매</li>
-                      </ul>
-                  </div>
-                  <div class="login">
-                      <button type="button" id="joinBtn">Join</button>
-                      <button type="button" id="loginBtn">Login</button>
-                      <button type="button" id="myPageBtn">MyPage</button>
-                  </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/register/end.css">
+</head>
+
+<body>
+    <!--admain 화면 시작-->
+    <div class="end">
+        <header class="header">
+            <div class="top">
+                <div class="logo_pic" id="logo_picMain">
+                    <img src="../../img/withDreamLogo2.png" alt="logo">
                 </div>
-            <div class="portfolio-me">
-
-              <div class="portfolio-inner">
-                <img src="../../img/credit-card-8708087_1280.png" alt="">
-                <strong>작가명1</strong>
-                <strong>펀딩주제</strong>
-              </div>
-
-              <div class="portfolio-inner">
-                <img src="../../img/credit-card-8708087_1280.png" alt="">
-                <strong>작가명1</strong>
-                <strong>펀딩주제</strong>
-              </div>
-
-              <div class="portfolio-inner">
-                <img src="../../img/credit-card-8708087_1280.png" alt="">
-                <strong>작가명1</strong>
-                <strong>펀딩주제</strong>
-              </div>
-
-              <div class="portfolio-inner">
-                <img src="../../img/credit-card-8708087_1280.png" alt="">
-                <strong>작가명1</strong>
-                <strong>펀딩주제</strong>
-              </div>
-
-              <div class="portfolio-inner">
-                <img src="../../img/credit-card-8708087_1280.png" alt="">
-                <strong>작가명1</strong>
-                <strong>펀딩주제</strong>
-              </div>
-
-              <div class="portfolio-inner">
-                <img src="../../img/credit-card-8708087_1280.png" alt="">
-                <strong>작가명1</strong>
-                <strong>펀딩주제</strong>
-              </div>
-              
-              </div>
+                <div class="jlmToBtn">
+                    <button type="button" id="endToJoin">Join</button>
+                    <button type="button" id="endToLogin">Login</button>
+                    <button type="button" id="endToMyPage">MyPage</button>
+                </div>
             </div>
-          </div>
+            <div class="scroll">
+                <div class="menu">
+                    <ul class="menu_inner">
+                        <li id="endToHome">홈</li>
+                        <li id="endToRegister">펀딩 등록</li>
+                        <li id="endToend">종료 펀딩 </li>
+                        <li id="endTopurchase_1">작품 구매</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" id="searchBox" placeholder="검색어를 입력해주세요">
+                    <i class="fa-solid fa-magnifying-glass" id="adminToSearch"></i>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="pic_container">
+                <div class="maindComment">펀딩성공을 축하합니다 !</div>
+                <nav class="navFilter">
+                    <div class="nav">
+                        <div class="subComment">76개의 펀딩이 있습니다.</div>
+                    </div>
+                </nav>
+                <div class="pic_list">
+                    <div class="inner" id="endPic_1">
+                        <img src="../../img/배경29.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 여행단</div>
+                            <div class="title">내 방 한 구석의 여행지,</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_2">
+                        <img src="../../img/배경2.jpeg" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 링크</div>
+                            <div class="title">창작자용 찐만능 필터 2탄!!</div>
+
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_3">
+                        <img src="../../img/배경25.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">humanJackson</div>
+                            <div class="title">[SPAIN: LOVE AND OURAGE]</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_4">
+                        <img src="../../img/배경18.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 스튜디오</div>
+                            <div class="title">영화 속 한 장면이 되는 여행</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_5">
+                        <img src="../../img/배경30.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 시간</div>
+                            <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_6">
+                        <img src="../../img/배경23.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 스케르</div>
+                            <div class="title">힙하고 한국적인, 나다운 프로필촬영</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_7">
+                        <img src="../../img/배경21.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 스튜디오</div>
+                            <div class="title">사적이고 친밀한 우리들의 이야기</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_8">
+                        <img src="../../img/배경11.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 빌런</div>
+                            <div class="title">모르는 시절 Unknowm Birth</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_9">
+                        <img src="../../img/배경27.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 시간</div>
+                            <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
         </section>
-        <!-- //end PortFolio -->
-      </body>
-      </html>
+    </div>
+    <!--admain 화면 끝-->
+    <script src="../../js/register/end.js"></script>
+</body>
+
+</html>
