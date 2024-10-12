@@ -431,6 +431,8 @@ body{
   font-weight:bold;
   font-family: "Gowun Dodum", sans-serif;
   border: transparent;
+  display:flex;
+  text-align: left;
 }
 
 /* detail 5 끝 */
@@ -465,4 +467,14 @@ body{
     margin: 150px 250px 250px 200px;
   }
 
+}
+
+
+/* 구분라인 */
+.detailclone .line{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+  position: relative;
+  top:10px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
