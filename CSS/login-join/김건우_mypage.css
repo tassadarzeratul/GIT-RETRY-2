@@ -226,23 +226,6 @@ li {
 
 /* header */
 
-.mypage header .container {
-  width: 75%;
-  display: column;
-}
-
-.mypage header .logo {
-  width: 100%;
-  height: 90px;
-}
-
-.mypage header .logo div#logo_picId {
-  width: 100%;
-  height: 100%;
-  background-image: url(../../img/jikbakguri2.png);
-  background-repeat: no-repeat;
-}
-
 .mypage header .menu {
   width: 90%;
   height: 50px;
@@ -328,10 +311,28 @@ li {
   color: rgb(75, 90, 105);
 }
 
-.mypage section .pic_container .pic_list .inner .line {
+/* .mypage section .pic_container .pic_list .inner .line {
   border-bottom: 2px solid black;
   position: relative;
   top: 10px;
+} */
+
+/* .mypage section .pic_container .maindComment .pic_list .line {
+  border-bottom: 2px solid black;
+  position: relative;
+  top: 10px;
+} */
+
+/* .mypage section .pic_list{
+  border-bottom: 2px solid black;
+  position: relative;
+  bottom: 10px;
+} */
+
+.line{
+  border-bottom: 2px solid black;
+  position: relative;
+  bottom: 20px;
 }
 
 .mypage section .pic_container .pic_list img {
