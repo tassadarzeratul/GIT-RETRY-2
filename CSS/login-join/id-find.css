@@ -137,8 +137,6 @@ li {
     letter-spacing: 5px;
     cursor: pointer;
     display: inline-block;
-    /* box-shadow: 0 0 40px 40px #4d4bc4 inset; */
-    /* transition: all 250ms ease-in-out; */
     transition:0.5s
 }
 
