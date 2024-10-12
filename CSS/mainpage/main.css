@@ -245,13 +245,13 @@ main .mainBox .right {
 main .mainBox .right .title {
   display: flex;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 20px;
   margin: -10px 0px 15px 0px;
 }
 
 /* 메인 오른쪽 타이틀 전체보기 */
 main .mainBox .right .title div {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: normal;
   cursor: pointer;
 }
