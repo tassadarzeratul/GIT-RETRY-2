@@ -18,23 +18,23 @@ li {
     list-style: none;
 }
 
-.left{
+.left {
     float: left;
     width: 50%;
-
 }
-.right{
+
+.right {
     float: right;
     width: 50%;
 }
 
-.right img{
+.right img {
     height: 900px;
 }
 
-.inputput{
+.inputput {
     margin-top: 20%;
-    margin-bottom:10%;
+    margin-bottom: 10%;
 }
 
 
@@ -79,7 +79,7 @@ li {
     width: 100%;
     border: none;
     border-bottom: solid 1px #aaaaaa;
-    padding:5px;
+    padding: 5px;
     font-size: 16px;
     color: #222;
     outline: none;
@@ -137,7 +137,7 @@ li {
     letter-spacing: 5px;
     cursor: pointer;
     display: inline-block;
-    transition:0.5s
+    transition: 0.5s
 }
 
 /* 버튼 스타일 후버 */
@@ -169,4 +169,18 @@ li {
 
 .idfindPage form fieldset div.inputBox .warning {
     position: absolute;
+}
+
+
+
+/* 미디어 쿼리 */
+/* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
+@media only all and (min-width: 1800px) {
+    .left {
+        padding-left: 200px;
+    }
+
+    .right img {
+        width: 89.5%;
+    }
 }
