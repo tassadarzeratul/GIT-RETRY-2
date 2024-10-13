@@ -173,6 +173,8 @@ li {
   top: 0;
   padding-left: 80px;
   background-color: white;
+  font-family: "Gowun Dodum", sans-serif;
+
 }
 
 .sticky ul {
@@ -307,6 +309,8 @@ li {
   padding: 100px;
   display: flex;
   justify-content: space-between;
+  font-family: "Gowun Dodum", sans-serif;
+
 }
 
 .detail3 .bigbox .left {
@@ -334,6 +338,7 @@ li {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  
 }
 
 .detail3 .bigbox .right .descriptiontext {
@@ -352,6 +357,8 @@ li {
   transition: all 0.2s;
   cursor: pointer;
   border-color: transparent;
+  font-family: "Gowun Dodum", sans-serif;
+
 }
 
 .detail3 .bigbox .right .product:hover {
