@@ -131,66 +131,80 @@ li {
     font-size: 22px;
     font-family: "Gowun Dodum", sans-serif;
   }
+/* 상단 공통 로고 및 메뉴 */
 
-.endPage div.up {
-    display: flex;
-    margin-top: 10px;
+.endPage table {
+  font-size: 20px;
+  border-spacing: 15px;
+}
+/* 테이블 공통 스타일 */
+
+.endPage div.infoLeft {
+    display: inline-block;
+    width: 45%;
 }
 
-/* 전시회 정보 */
-.endPage div.exhibitionInformation {
-    display: inline-block;
-    width: 40%;
-    border: solid black 2px;
-    margin-right: 5%;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 200%;
-    text-indent: 3%;
-    margin: 10px 15px 15px 10px;
+.endPage div.exhibition {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
+}
 
+
+.endPage table.exhibitionInfo th {
+  width: 200px;
+  vertical-align: top;
+}
+/* 전시회 정보 */
+
+.endPage div.infoRight {
+  display: inline-block;
+  width: 45%;
     
 }
 
-/* 창작자 정보 */
-.endPage div.creatorProfile {
-    display: inline-block;
-    width: 40%;
-    border: solid black 2px;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 200%;
-    text-indent: 3%;
-    margin: 10px 0px 15px 0px;
-
+.endPage div.creator {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px auto;
 }
 
+.endPage table.creatorInfo th {
+  width: 200px;
+  vertical-align: top;
+}
+/* 창작자 정보 */
+
+.endPage div.useAmount {
+  width: 9%;
+  display: inline-block
+  
+}
+
+.endPage div.useAmount button {
+  width: 9%;
+  height: 250px;
+  border: 1px solid;
+  border-radius: 15px;
+  position: absolute;
+  background-color: rgb(52, 99, 255);
+  color: white;
+  font-size: 34px;
+  writing-mode: vertical-rl;
+  cursor: pointer;
+  transition: 0.5s;
+}
+  
+  /* registerPop 버튼기능 */
+.endPage div.useAmount button:hover {
+  background-color: rgb(0, 26, 111);
+}
 /* 금액사용내역 버튼 */
 
-.endPage .up .useAmount button {
-    width: 100px;
-    height: 350px;
-    margin: 30% 20% 20% 20%;
-    background-color: rgb(52, 99, 255);
-    color: white;
-    box-shadow: 0px 5px 0px 0px #000000;
-    border-radius: 15px;
-    transition: all 0.2s;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 50px;
-  }
-  
-.endPage .up .useAmount button:hover {
-    background: #073ef5;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
 
-
-/* 커뮤니티 댓글창 */
-.endPage footer .comment {
+.endPage div.community .comment {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -200,24 +214,24 @@ li {
 
 }
 
-.endPage footer .comment > li {
+.endPage div.community .comment > li {
     margin-top: 20px;
 
 }
 
-.endPage footer .comment > li:nth-child(1) {
+.endPage div.community .comment > li:nth-child(1) {
     margin: 0px;
 
 }
 
-.endPage footer .comment-row {
+.endPage div.community .comment-row {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 
 }
 
-.endPage footer .comment-row > li:nth-child(2) {
+.endPage div.community .comment-row > li:nth-child(2) {
     flex-shrink: 0;
     flex-grow: 1;
     padding-left: 25px;
@@ -226,12 +240,12 @@ li {
 
 }
 
-.endPage footer .comment-row > li:nth-child(2) {
+.endPage div.community .comment-row > li:nth-child(2) {
     width: 85px;
 
 }
 
-.endPage footer .comment-form > form {
+.endPage div.community .comment-form > form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -239,20 +253,20 @@ li {
     
 }
 
-.endPage footer .comment-form > form > h4 {
+.endPage div.community .comment-form > form > h4 {
     width: 100%;
     margin: 14px 0 14px 0;
     
 }
 
-.endPage footer .comment-content {
+.endPage div.community .comment-content {
     cursor: pointer;
     word-break: break-all;
     padding-right: 25px;
     
 }
 
-.endPage footer .ps_box {
+.endPage div.community .ps_box {
     display: block;
     position: relative;
     width: 80%;
@@ -264,12 +278,12 @@ li {
     
 }
 
-.endPage footer .ps_box > input {
+.endPage div.community .ps_box > input {
     outline: none;
     
 }
 
-.endPage footer .int {
+.endPage div.community .int {
     display: block;
     position: relative;
     width: 100%;
@@ -284,7 +298,7 @@ li {
     
 }
 
-.endPage footer .btn {
+.endPage div.community .btn {
     width: 18%;
     padding: 18px 0 16px;
     text-align: center;
@@ -312,7 +326,61 @@ li {
     outline: none;
     
 }
+/* 커뮤니티 댓글창 */
 
+.endPage .reviewImg .button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(52, 99, 255);
+  color: white;
+  border: transparent;
+  border-radius: 10px;
+  position: relative;
+  left: 35px;
+}
+
+.endPage .reviewImg .button:hover {
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+  color: white;
+}
+
+
+.endPage .reviewImg .upload-btn-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  left: 25px;
+}
+
+.endPage .reviewImg .upload-btn-wrapper .btn {
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(52, 99, 255);
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.endPage .reviewImg .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.endPage .reviewImg .tip {
+  margin-bottom: 20px;
+}
+
+.endPage .announcement {
+  font-size: 24px;
+  font-weight: bold;
+}
 
 
 
