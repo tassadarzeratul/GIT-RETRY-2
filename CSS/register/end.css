@@ -36,6 +36,7 @@ li {
 
 .end header .logo_pic {
   width: 65%;
+  cursor: pointer;
 }
 
 .end header .logo_pic img {
@@ -166,7 +167,7 @@ li {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  
+
 }
 
 .end section .pic_container .pic_list .inner {
@@ -222,6 +223,11 @@ li {
   .end header .logo_pic img {
     position: relative;
     top: -20px;
+  }
+
+  /* 우측 서치부분 */
+  .end header .search {
+    width: 30%;
   }
 
   /* section 멘트 */

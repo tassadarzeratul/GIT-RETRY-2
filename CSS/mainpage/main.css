@@ -353,7 +353,7 @@ main .other .otherRight {
 
 main .other .otherRight .otherOne {
   display: flex;
-  
+
 }
 
 main .other .otherRight .otherPic_container {
@@ -381,8 +381,6 @@ main .other .otherRight .otherPic_container .inner .comment {
   word-break: break-all;
   cursor: pointer;
 }
-
-
 
 
 
@@ -422,6 +420,11 @@ main .other .otherRight .otherPic_container .inner .comment {
   /* 서브 슬라이드 사진 */
   main sub .pic_container .pic_list img {
     height: 200px;
+  }
+
+  /* 우측 서치부분 */
+  main header .search {
+    width: 30%;
   }
 
   /* 메인 오른쪽 타이틀 전체보기 */
