@@ -248,7 +248,7 @@ main .mainBox .right {
 main .mainBox .right .title {
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 22px;
   margin: -10px 0px 15px 0px;
 }
 

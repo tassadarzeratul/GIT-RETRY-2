@@ -1,47 +1,4 @@
 // main 화면으로 이동
-// const mainToMain_1 = () => {
-//     window.open('../../HTML/mainpage/main.html')
-// }
-// $('#logo_picMainHome').on('click', mainToMain_1)
-
-// // Join 화면으로 이동
-// const mainToJoin = () => {
-//     window.open('../../HTML/login-join/join.html');
-// }
-// $('#joinBtn').on('click', mainToJoin)
-
-// // Login 화면으로 이동
-// const mainToLogin = () => {
-//     window.open('../../HTML/login-join/login.html');
-// }
-// $('#loginBtn').on('click', mainToLogin)
-
-// // Mapage 화면으로 이동
-// const mainToMypage = () => {
-//     window.open('../../HTML/mypage/김건우_mypage.html');
-// }
-// $('#myPageBtn').on('click', mainToMypage)
-
-// // 펀딩등록 화면으로 이동
-// const mainToRegister = () => {
-//     window.open('../../HTML/register/김건우_register.html');
-// }
-// $('#register').on('click', mainToRegister)
-
-// // 종료펀딩 화면으로 이동
-// const mainToEnd = () => {
-//     window.open('../../HTML/register/end.html');
-// }
-// $('#end').on('click', mainToEnd)
-
-// // 작품구매 화면으로 이동
-// const mainToPurchase_1 = () => {
-//     window.open('../../HTML/register/purchase_1.html');
-// }
-// $('#purchase_1').on('click', mainToPurchase_1);
-// $('#allPic').on('click', mainToPurchase_1);
-
-
 const mainToGo = (url) => {
     window.open(url);
 }
