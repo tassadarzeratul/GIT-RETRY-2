@@ -134,34 +134,23 @@ li {
 
 /* 메인 */
 
-.purchasePage .mainContainer {
+.purchasePage div.creationName {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    margin: 30px auto;
 }
 
 /* 메인 왼쪽 부분 */
-.purchasePage .mainContainer .left {
-    width: 60%;
-}
-
-.purchasePage .creationName {
-    width: 95%;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.purchasePage section {
-    width: 95%;
-    height: 500px;
-    border-radius: 5px;
-    margin: 0px 0px 20px;
-    overflow: hidden;
+.purchasePage div.left {
+  width: 55%;
+  display: inline-block
+    
 }
 
 
-/* 메인 이미지 */
-.purchasePage section .CreationImgView img {
+
+/* 창작물 이미지 */
+.purchasePage div.CreationImgView img {
     width: 100%;
     height: 500px;
     flex-shrink: 0;
@@ -170,19 +159,21 @@ li {
 
 
 /* 메인 오른쪽 부분 */
-.purchasePage .mainContainer .right {
-    width: 40%;
+.purchasePage div.right {
+  width: 44%;
+  display: inline-block
+    
 }
 
-.purchasePage .mainContainer .right .creatorInformation {
-    display: flex;
-    justify-content: space-between;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 400%;
-    margin: 10px 0px 15px 0px;
+.purchasePage table.creatorInformation {
+  font-size: 20px;
+  border-spacing: 40px;
 }
 
+.purchasePage table.creatorInformation th {
+  width: 100px;
+  vertical-align: top;
+}
 
 .purchasePage .down {
     display: flex;
@@ -190,21 +181,25 @@ li {
     
 }
 
-.purchasePage .down button {
-    width: 35%;
-    height: 80px;
-    font-size: 30px;
+
+
+  .purchasePage div.down button {
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 15px;
+    position: relative;
+    top: 50px;
     background-color: rgb(52, 99, 255);
     color: white;
-    box-shadow: 0px 5px 0px 0px #000000;
-    border-radius: 15px;
-    margin: 10px 0px 20px 0px;
-    transition: all 0.2s;
+    font-size: 20px;
+    letter-spacing: 5px;
     cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
   }
   
-.purchasePage .down button:hover {
-    background: #073ef5;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  /* registerPop 버튼기능 */
+  .purchasePage div.down button:hover {
+    background-color: rgb(0, 26, 111);
   }
