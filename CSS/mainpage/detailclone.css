@@ -117,7 +117,7 @@ li {
 
 .detail_1 header .search i {
   position: relative;
-  right: 30px;
+  right: 20px;
   font-size: 18px;
   cursor: pointer;
 }
@@ -129,15 +129,23 @@ li {
   cursor: pointer;
   font-size: 22px;
   font-family: "Gowun Dodum", sans-serif;
-  
+
 }
 
 /* title */
-.title {
+.detail_1 .title {
   text-align: center;
   font-size: 50px;
   padding: 150px 0px 50px 0px;
-  padding: ;
+}
+
+/* 구분라인 */
+.detailclone .line {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+  position: relative;
+  top: 10px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .detail_1 .guide .comment {
@@ -154,18 +162,16 @@ li {
 }
 
 
-
 /* sticky 화면 고정 */
 
 .sticky {
   width: 100%;
   display: flex;
-  
   padding: 30px 0px 30px 0px;
   color: black;
   position: sticky;
   top: 0;
-  padding-left:80px;
+  padding-left: 80px;
   background-color: white;
 }
 
@@ -183,15 +189,15 @@ li {
   font-weight: bold;
 }
 
-.sticky .one1:hover{
+.sticky .one1:hover {
   color: #2d50c5;
 }
 
-.sticky .one2:hover{
+.sticky .one2:hover {
   color: #2d50c5;
 }
 
-.sticky .one3:hover{
+.sticky .one3:hover {
   color: #2d50c5;
 }
 
@@ -296,20 +302,6 @@ li {
 
 /* detail_3  */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Gowun Dodum", sans-serif;
-}
-
-a,
-a:link,
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
 .detail3 .bigbox {
   width: 100%;
   padding: 100px;
@@ -359,81 +351,56 @@ a:visited {
   margin: 20px 0px 20px 0px;
   transition: all 0.2s;
   cursor: pointer;
-  border-color:transparent;    
+  border-color: transparent;
 }
 
 .detail3 .bigbox .right .product:hover {
   /* background-color: rgb(49, 74, 156); */
   background-color: #2d50c5;
   border-color: rgb(0, 0, 0);
-  border-style:solid;
+  border-style: solid;
 }
 
 /* detail 3 끝 */
 
 /* detail 4 시작  */
 
-.detail_4{
-  padding-left:  130px;
+.detail_4 {
+  padding-left: 130px;
   padding-bottom: 60px
 }
 
-
-.detail_4 h2{
+.detail_4 h2 {
   padding-top: 130px;
   padding-bottom: 50px;
 }
-
-
 
 /* detail 4 끝 */
 
 
 
-
-
 /* detail 5 시작 */
-*{
-  box-sizing:border-box;
-/*   -webkit-box-sizing:border-box; */
-  -moz-box-sizing:border-box;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-a,
-a:link,
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-body{
-  padding:0;
-  margin:0;
-  background: white;
-}
-
-.detail_5 #copyright{
-  width:80%;
-  margin:50px auto;
+.detail_5 #copyright {
+  width: 80%;
+  margin: 50px auto;
   font-family: "Gowun Dodum", sans-serif;
 }
-.detail_5 #textarea_id{
+
+.detail_5 #textarea_id {
   width: 100%;
   height: 600px;
   font-size: 14px;
   margin-top: 30px;
-  font-weight:bold;
+  font-weight: bold;
   font-family: "Gowun Dodum", sans-serif;
   border: transparent;
-  display:flex;
+  display: flex;
   text-align: left;
+}
+
+.detailclone .detail_5 .explain {
+  margin: 100px 150px;
 }
 
 /* detail 5 끝 */
@@ -441,41 +408,67 @@ body{
 /* 미디어 쿼리 */
 /* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
 @media only all and (min-width: 1800px) {
-  /* detail1 시작  */
 
+  /* detail1 시작  */
   .detail_1 {
     margin: 20px 150px;
   }
 
+  /* 상단 로고 */
+  .detail_1 header .logo_pic img {
+    position: relative;
+    top: -20px;
+  }
+
+  /* 우측 서치부분 */
+  .detail_1 header .search {
+    width: 30%;
+  }
+
   /* title */
   .detail_1 .title {
-    margin: 100px 0px 100px 0px;
-  }
-
-  .detail_1 .guide .comment {
-    width: 100%;
-    height: 500px;
-  }
-
-  .detail_1 .guide .list {
-    width: 100%;
-    height: 200px;
+    margin-top: 100px;
   }
 
   /* detail_2 */
-
   .detail_2 {
-    margin: 150px 250px 250px 200px;
+    margin: 0px 100px 100px 100px;
+    padding-top: 0px;
   }
 
-}
+  /* detail_3 */
+  .detail3 {
+    margin: 50px 200px;
+  }
 
+  .detail3 .bigbox {
+    padding: 10px;
+  }
 
-/* 구분라인 */
-.detailclone .line{
-  border-bottom: 2px solid rgba(0, 0, 0, 0.192);
-  position: relative;
-  top:10px;
-  margin-left: 120px;
-  margin-right: 120px;
+  .detail3 .left .left_inner div {
+    margin: 50px 0px;
+  }
+
+  .detail3 .left .descriptiontext {
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+
+  .detail3 .left div h4 {
+    font-size: 23px;
+  }
+
+  .detail3 .right .descriptiontext {
+    position: sticky;
+    top: 0;
+    padding-top: 100px;
+  }
+
+  .detail3 .right .descriptiontext .product {
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
