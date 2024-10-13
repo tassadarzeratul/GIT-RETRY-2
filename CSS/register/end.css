@@ -167,7 +167,6 @@ li {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-
 }
 
 .end section .pic_container .pic_list .inner {
@@ -176,8 +175,8 @@ li {
 
 /* section pic 사진 */
 .end section .pic_container .pic_list img {
-  width: 320px;
-  height: 250px;
+  width: 350px;
+  height: 270px;
   background-size: cover;
   cursor: pointer;
   position: relative;
@@ -230,22 +229,34 @@ li {
     width: 30%;
   }
 
+  .end section .pic_container {
+    margin-top: 50px;
+    padding: 30px;
+  }
+
   /* section 멘트 */
   .end section .pic_container .maindComment {
     margin-top: 30px;
   }
 
-  .end section .pic_container .pic_list {
-    justify-content: left;
-  }
-
-  .end section .pic_container .pic_list .inner {
+  /* .end section .pic_container .pic_list .inner {
     margin-right: 38px;
+  } */
+
+  /* section pic 작가부분 */
+  .end section .pic_container .pic_list .inner .author {
+    font-size: 16px;
   }
 
-  .end section .pic_container .pic_list .inner:nth-of-type(5n + 5) {
-    margin-right: 0px;
+  /* section pic 제목부분 */
+  .end section .pic_container .pic_list .inner .title {
+    font-size: 20px;
+    font-weight: bold;
   }
+
+  /* .end section .pic_container .pic_list .inner:nth-of-type(5n + 5) {
+    margin-right: 0px;
+  } */
 }
 
 /* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */

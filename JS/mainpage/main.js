@@ -64,7 +64,7 @@ $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.h
 // 검색어입력 돋보기
 $('#searchI').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // 서브 사진
-$('.pic_container').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+$('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 // 오른쪽 사진
 $('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 
