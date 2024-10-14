@@ -45,6 +45,31 @@
                     </div>
                     <button class="button" type="submit" id="registerBtn" onclick="showPopup();" />등록하기</button>
                 </div>
+
+                <textarea class="details" placeholder="펀딩 설명을 작성해주세요"></textarea>
+                <div class="buttons">
+                    <div class="tip">
+                        <h4>주의 : 업로드할 파일은 이미지 (jpg, jpeg, png, gif 등)만 가능하며, 이미지 이외의 파일은 올릴 수 없습니다.</h4>
+                        <h4>※가이드라인에 맞지 않는 이미지는 임의로 수정될 수 있습니다.</h4>
+                        <!-- 클릭시 팝업 -->
+                    </div>
+                    <div class="upload-btn-wrapper">
+                        <button class="btn">파일 업로드
+                            <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);"
+                                multiple />
+                        </button>
+                        <div id="image_container"></div>
+                    </div>
+                    <button class="button" type="submit" id="registerBtn" onclick="showPopup();" />등록하기</button>
+                </div>
+
+                <div class="selectNumber">
+                    <h2>※선택 상품 구성 입력</h2>
+                    <input class="submitNumber" placeholder="수량 입력">
+                    <input class="submitProductname" placeholder="상품명 입력">
+                    <input class="submitDetailed" placeholder="상품 구성 상세 입력">
+                </div>
+
                 <!-- 회사정책 구분선 -->
                 <div class="explain">
                     <div class="line"></div>
