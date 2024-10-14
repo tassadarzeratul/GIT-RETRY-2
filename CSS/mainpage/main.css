@@ -70,8 +70,8 @@ main header .scroll {
   width: 100%;
   display: flex;
   border-bottom: 2px solid rgb(184, 181, 181);
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   background-color: white;
 }
 

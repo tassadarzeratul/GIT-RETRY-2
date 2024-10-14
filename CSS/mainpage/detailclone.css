@@ -345,6 +345,9 @@ li {
   width: 300px;
   margin-top: 20px;
   font-size: 30px;
+  position: sticky;
+  top: 0;
+  padding-top: 30px;
 }
 
 .detail3 .bigbox .right .product {
