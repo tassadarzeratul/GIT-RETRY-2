@@ -76,7 +76,7 @@ main header .scroll {
 }
 
 main header .scroll .menu {
-  width: 100%;
+  width: 80%;
 }
 
 main header .scroll .menu .menu_inner {
@@ -93,7 +93,7 @@ main header .menu li {
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 main header .menu li:hover {
@@ -366,7 +366,6 @@ main .other .otherRight {
 
 main .other .otherRight .otherOne {
   display: flex;
-
 }
 
 main .other .otherRight .otherPic_container {
@@ -452,8 +451,8 @@ main .close .container .left .comment .title {
 
 
 /* 미디어 쿼리 */
-/* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용)  */
-@media only all and (min-width: 1200px) {
+/* 큰화면 데스크탑 (가로 해상도가 1300px 보다 큰 화면에 적용)  */
+@media only all and (min-width: 1300px) {
 
   /* Main 시작  */
   main {
@@ -642,16 +641,209 @@ main .close .container .left .comment .title {
   }
 }
 
-/* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
+/* 데스크탑 (가로 해상도가 992px보다 크고 1299px 보다 작은 화면에 적용)  */
 @media only all and (min-width: 992px) and (max-width: 1199px) {
   main header .search {
     width: 50%;
   }
 
+  main header .scroll .menu {
+    width: 80%;
+  }
+
+  main header .scroll .menu .menu_inner {
+    width: 130%;
+    height: 70px;
+  }
+
+  main header .menu li {
+    font-size: 18px;
+  }
+
+  main header .jlmToBtn {
+    width: 25%;
+  }
+
+  main header .jlmToBtn button {
+    font-size: 18px;
+  }
+
+  /* 메인 오른쪽 타이틀 */
+  main .mainBox .right .title {
+    font-size: 15px;
+  }
+
+  /* 메인 오른쪽 타이틀 전체보기 */
+  main .mainBox .right .title div {
+    font-size: 13px;
+  }
+
+  /* 메인 오른쪽  사진공간 */
+  main .mainBox .right .pic .rightPic {
+    margin-bottom: 10px;
+  }
+
+  /* 메인 오른쪽 이미지 크기 */
+  main .mainBox .right .pic .rightPic img {
+    width: 50%;
+  }
+
+  /* 메인 오른쪽 이미지 옆 번호 */
+  main .mainBox .right .pic .rightPic .num {
+    font-size: 16px;
+  }
+
+  /* 메인 오른쪽 이미지 옆 번호 옆 멘트 */
+  main .mainBox .right .pic .rightPic .comment {
+    font-size: 13px;
+  }
+
+  /* 메인 오른쪽 멘트 상단 문구 */
+  main .mainBox .right .pic .rightPic .comment dt {
+    font-size: 13px;
+  }
+
+  /* 메인 오른쪽 멘트 하단 문구 */
+  main .mainBox .right .pic .rightPic .comment dd {
+    font-size: 12px;
+  }
+
+  /* 서브 코멘트 */
+  main .subPicComment {
+    font-size: 18px;
+    margin: 30px 0px 5px 0px;
+    font-weight: bold;
+  }
+
+  /* 서브 배열 */
+  main sub {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  /* 서브 슬라이드 사진 간격 */
+  main sub div {
+    height: 120px;
+  }
+
+  /* 서브 슬라이드 사진 */
+  main sub .pic_container .pic_list img {
+    height: 120px;
+  }
+  
+
+  /* other */
+
+  /* other 코멘트 */
+  main .otherPicComment {
+    font-size: 18px;
+  }
+
+  main .other .otherLeft {
+    width: 40%;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  main .other .otherLeft .inner {
+    width: 100%;
+    height: 800px;
+  }
+
+  main .other .otherLeft .inner img {
+    width: 80%;
+    height: 250px;
+    border-radius: 15px;
+  }
+
+  main .other .otherLeft .author {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px;
+  }
+
+  main .other .otherLeft .title {
+    font-size: 16px;
+    padding-right: 50px;
+  }
+
+
+  /* otherRight */
+
+  main .other .otherRight {
+    width: 50%;
+  }
+
+  main .other .otherRight .otherOne {
+    flex-wrap: wrap;
+  }
+
+  main .other .otherRight .otherPic_container {
+    width: 33%;
+  }
+
+  main .other .otherRight .otherPic_container .inner {
+    width: 100%;
+  }
+
+  main .other .otherRight .otherPic_container .inner img {
+    width: 120px;
+    height: 120px;
+  }
+
+  main .other .otherRight .otherPic_container .inner .comment {
+    height: 80px;
+  }
+
+  main .other .otherRight .author {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  main .other .otherRight .title {
+    font-size: 13px;
+  }
+
+  main .close {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    /* margin-top: 150px; */
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+
+  main .close .container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+  }
+
+  main .close .container .left {
+    width: 50%;
+    padding: 0px;
+  }
+
+  main .close .container .right {
+    width: 100%;
+  }
+
+  main .close .container .left .comment .author {
+    font-size: 13px;
+  }
+
+  main .close .container .left .comment .title {
+    font-size: 18px;
+  }
+
 }
 
 /*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
-@media only all and (min-width: 768px) and (max-width: 991px) {}
+/* @media only all and (min-width: 768px) and (max-width: 991px) {} */
 
 /* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 767px 보다 작은 화면에 적용)  */
-@media only all and (min-width: 576px) and (max-width: 767px) {}
+/* @media only all and (min-width: 576px) and (max-width: 767px) {} */
