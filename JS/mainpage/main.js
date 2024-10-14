@@ -83,3 +83,9 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
 });
 
 // sub slider 동작구현 끝 =================================================================
+
+function displayCurrentTime() {
+    let now = new Date();
+    document.getElementById("timeDisplay").innerText = now.toLocaleString();
+}
+setInterval(displayCurrentTime, 1000); // 1초마다 갱신
