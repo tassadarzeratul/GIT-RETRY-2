@@ -177,8 +177,7 @@ li {
 
 
 /* 미디어 쿼리 */
-@media only all and (max-width:425px){
-
+@media only all and (min-width: 768px) and (max-width: 991px) {
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
 * {
@@ -254,10 +253,11 @@ li {
 .pwfindPage form fieldset div.inputBox {
     position: relative;
     margin-top: 60px;
+    
 }
 
 .pwfindPage form fieldset div.inputBox input {
-    width: 100%;
+    width: 50%;
     border: none;
     border-bottom: solid 1px #aaaaaa;
     padding: 5px;
@@ -268,9 +268,9 @@ li {
 
 /* 레이블 스타일 */
 .pwfindPage form fieldset div.inputBox label {
-    position: absolute;
+    position: relative;
     color: #aaa;
-    left: 10px;
+    left: 0px;
     font-size: 20px;
     transition: all .3s;
 }
@@ -287,7 +287,7 @@ li {
 /* span 강조선 스타일 */
 .pwfindPage form fieldset div.inputBox span {
     display: block;
-    position: absolute;
+    position: relative;
     background-color: #706f6f;
     width: 0;
     height: 2px;
@@ -304,7 +304,7 @@ li {
 /* 버튼 스타일 */
 .pwfindPage form fieldset div.pwfindBtn button {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: 50px;
     border: 1px solid white;
     border-radius: 30px;
