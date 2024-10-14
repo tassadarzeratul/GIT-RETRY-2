@@ -33,7 +33,7 @@ const idfind_user = () => {
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
         isValid = false;
-    }  
+    }
     // 이름 검사 (2~10자)
     else if (inputName.value.length < 2 || inputName.value.length > 10 || /\s/.test(inputName.value)) {
         nameWarning.textContent = '이름은 2~10자이며 공백을 포함할 수 없습니다.';

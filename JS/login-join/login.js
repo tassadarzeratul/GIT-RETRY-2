@@ -5,25 +5,6 @@ const loginToLogo = () => {
 }
 loginPic.addEventListener('click', loginToLogo);
 
-// // 회원가입 하기
-// const loginToJoin = () => {
-//     window.location.replace('../../HTML/mainpage/main.html');
-// }
-// loginToJoin.addEventListener('click', loginToJoin);
-
-// // 아이디 찾기
-// const loginToId = () => {
-//     window.location.replace('../../HTML/mainpage/main.html');
-// }
-// loginToId.addEventListener('click', loginToId);
-
-// // 비밀번호 찾기
-// const loginToPw = () => {
-//     window.location.replace('../../HTML/mainpage/main.html');
-// }
-// loginToPw.addEventListener('click', loginToPw);
-
-
 // =============================================================================
 
 // 입력창 유효성 검사 
