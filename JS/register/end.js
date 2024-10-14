@@ -22,3 +22,17 @@ $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'
 $('.inner').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 
 // ============================================================================
+
+let currentIndex = 0;
+
+function slideImg () {
+    const slider = document.querySelector('sub');
+    const totalList = document.querySelector('pic_container').length;
+    currentIndex++;
+    document.querySelector('.prevBtn').addEventListener('click', () => {
+
+    });
+    document.querySelector('.nextBtn').addEventListener('click', () => {
+
+    }); 
+};
