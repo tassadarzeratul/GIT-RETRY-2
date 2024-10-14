@@ -248,7 +248,7 @@ main .mainBox .right {
 main .mainBox .right .title {
   display: flex;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 18px;
   margin: -10px 0px 15px 0px;
 }
 
@@ -278,7 +278,7 @@ main .mainBox .right .pic .rightPic {
 main .mainBox .right .pic .rightPic img {
   width: 40%;
   height: 118px;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -343,7 +343,7 @@ main .other .otherLeft .inner {
 main .other .otherLeft .inner img {
   width: 100%;
   height: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 main .other .otherLeft .author {
@@ -383,7 +383,7 @@ main .other .otherRight .otherPic_container .inner {
 main .other .otherRight .otherPic_container .inner img {
   width: 170px;
   height: 170px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-size: cover;
   cursor: pointer;
 }
@@ -413,7 +413,7 @@ main .close {
   margin: auto;
   /* margin-top: 150px; */
   margin-bottom: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   /* background-color: #b0328a; */
@@ -554,7 +554,7 @@ main .close .container .left .comment .title {
   main .other .otherLeft .inner img {
     width: 90%;
     height: 350px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   main .other .otherLeft .author {
@@ -605,7 +605,7 @@ main .close .container .left .comment .title {
     margin: auto;
     /* margin-top: 150px; */
     margin-bottom: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     /* background-color: #b0328a; */
@@ -757,7 +757,7 @@ main .close .container .left .comment .title {
   main .other .otherLeft .inner img {
     width: 80%;
     height: 250px;
-    border-radius: 15px;
+    border-radius: 5px;
   }
 
   main .other .otherLeft .author {
@@ -814,7 +814,7 @@ main .close .container .left .comment .title {
     margin: auto;
     /* margin-top: 150px; */
     margin-bottom: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   main .close .container {

@@ -176,8 +176,8 @@ li {
 
 /* section pic 사진 */
 .end section .pic_container .pic_list img {
-  width: 350px;
-  height: 270px;
+  width: 320px;
+  height: 250px;
   background-size: cover;
   cursor: pointer;
   position: relative;
@@ -195,13 +195,13 @@ li {
 
 /* section pic 작가, 제목부분 */
 .end section .pic_container .pic_list .inner .comment {
-  width: 280px;
+  width: 300px;
   height: 100px;
 }
 
 /* section pic 작가부분 */
 .end section .pic_container .pic_list .inner .author {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* section pic 제목부분 */
