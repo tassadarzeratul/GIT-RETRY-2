@@ -451,8 +451,8 @@ main .close .container .left .comment .title {
 
 
 /* 미디어 쿼리 */
-/* 큰화면 데스크탑 (가로 해상도가 1300px 보다 큰 화면에 적용)  */
-@media only all and (min-width: 1300px) {
+/* 큰화면 데스크탑 (가로 해상도가 1500px 보다 큰 화면에 적용)  */
+@media only all and (min-width: 1500px) {
 
   /* Main 시작  */
   main {
@@ -552,12 +552,12 @@ main .close .container .left .comment .title {
 
   main .other .otherLeft .inner img {
     width: 90%;
-    height: 350px;
+    height: 250px;
     border-radius: 5px;
   }
 
   main .other .otherLeft .author {
-    font-size: 27px;
+    font-size: 24px;
     font-weight: bold;
     padding: 10px 0px;
   }
@@ -583,7 +583,7 @@ main .close .container .left .comment .title {
 
   main .other .otherRight .otherPic_container .inner img {
     width: 100%;
-    height: 250px;
+    height: 200px;
   }
 
   main .other .otherRight .author {
@@ -599,32 +599,21 @@ main .close .container .left .comment .title {
   /* close */
 
   main .close {
-    width: 90%;
     height: 200px;
-    margin: auto;
-    /* margin-top: 150px; */
-    margin-bottom: 50px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    /* background-color: #b0328a; */
-    color: black;
+    margin-bottom: 150px;
   }
 
   main .close .container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
+    padding: 0px;
   }
 
   main .close .container .left {
-    width: 50%;
+    width: 45%;
     padding: 0px 60px;
   }
 
   main .close .container .right {
-    width: 60%;
+    width: 65%;
     background-image: url(../../img/withDreamLogo2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -782,15 +771,15 @@ main .close .container .left .comment .title {
   }
 
   main .other .otherRight .otherPic_container {
-    width: 33%;
+    width: 50%;
   }
 
   main .other .otherRight .otherPic_container .inner {
-    width: 100%;
+    width: 90%;
   }
 
   main .other .otherRight .otherPic_container .inner img {
-    width: 120px;
+    width: 100%;
     height: 120px;
   }
 
@@ -916,7 +905,6 @@ main .close .container .left .comment .title {
 
   main .other .otherLeft {
     width: 100%;
-    /* display: flex; */
     margin-right: 0px;
   }
 
@@ -948,22 +936,24 @@ main .close .container .left .comment .title {
 
   main .other .otherRight .otherOne {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
   }
 
   main .other .otherRight .otherPic_container {
-    width: 100%;
+    width: 40%;
   }
 
   main .other .otherRight .otherPic_container .inner {
-    width: 90%;
+    width: 100%;
     white-space: normal;
     word-break: break-all;
     cursor: pointer;
   }
 
   main .other .otherRight .otherPic_container .inner img {
-    width: 170px;
+    width: 100%;
     height: 170px;
     border-radius: 5px;
     background-size: cover;
@@ -1003,15 +993,12 @@ main .close .container .left .comment .title {
   }
 
   main .close .container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
+    padding: 0px;
   }
 
   main .close .container .left {
     width: 40%;
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
   main .close .container .right {
@@ -1022,15 +1009,14 @@ main .close .container .left .comment .title {
   }
 
   main .close .container .left .comment .author {
-    font-size: 20px;
-    padding: 10px 0px;
+    font-size: 14px;
+    padding: 0px;
   }
 
   main .close .container .left .comment .title {
-    font-size: 25px;
+    font-size: 16px;
     font-weight: bold;
   }
-
 }
 
 
