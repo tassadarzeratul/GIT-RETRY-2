@@ -136,11 +136,6 @@ li {
 
 /* section */
 
-.end section .pic_container {
-  width: 100%;
-  margin-top: 50px;
-}
-
 /* section 멘트 */
 .end section .pic_container .maindComment {
   font-size: 30px;
@@ -168,6 +163,7 @@ li {
   overflow: hidden;
 }
 
+
 .end section .pic_container .pic_list {
   width: 100%;
   display: flex;
@@ -177,12 +173,13 @@ li {
 }
 
 .end section .pic_container .pic_list .inner {
+  width: 30%;
   margin-bottom: 20px;
 }
 
 /* section pic 사진 */
 .end section .pic_container .pic_list img {
-  width: 320px;
+  width: 100%;
   height: 250px;
   background-size: cover;
   cursor: pointer;
@@ -226,12 +223,12 @@ li {
 }
 
 /* 슬라이드 왼쪽 버튼 위치 */
-.end .btn_container .btn1 {
+.end .btn_container .prevBtn {
   left: 400px;
 }
 
 /* 서브 슬라이드 오른쪽 버튼 위치 */
-.end .btn_container .btn2 {
+.end .btn_container .nextBtn {
   left: 600px;
 }
 
