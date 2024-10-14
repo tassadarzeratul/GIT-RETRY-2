@@ -18,12 +18,13 @@ $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
 $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.html'));
-// 검색어입력 돋보기
-$('#searchI').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // 서브 사진
 $('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 // 오른쪽 사진
 $('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+// 아래쪽 사진
+$('.otherRight img').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+
 
 
 // main slider 동작구현 =================================================================
@@ -68,6 +69,7 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
             liIndex[i].style.display = "none";
         }
         liIndex[currentIndex].style.display = "block";
+
     });
 
     container.querySelector('.nextBtn').addEventListener('click', () => {
@@ -81,3 +83,9 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
 });
 
 // sub slider 동작구현 끝 =================================================================
+
+function displayCurrentTime() {
+    let now = new Date();
+    document.getElementById("timeDisplay").innerText = now.toLocaleString();
+}
+setInterval(displayCurrentTime, 1000); // 1초마다 갱신

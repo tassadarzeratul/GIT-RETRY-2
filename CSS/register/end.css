@@ -140,20 +140,19 @@ li {
   overflow: hidden;
 }
 
-.end .maindComment{
+.end .maindComment {
   text-align: center;
   font-size: 36px;
   margin: 50px 0px;
 }
 
-.end .subComment{
+.end .subComment {
   font-size: 18px;
 }
 
 .end section {
   width: 200%;
   display: flex;
-  overflow: hidden;
 }
 
 /* section 멘트 */
@@ -178,22 +177,27 @@ li {
 
 /* section pic 화면구성 */
 .end section .pic_container {
-  width: 100%;
-  height: 1100px;
+  width: 200%;
+  height: 1600px;
 }
 
 
 .end section .pic_container .pic_list {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+
 }
 
 .end section .pic_container .pic_list .inner {
   width: 30%;
+  flex: 0 0 30%;
   margin-bottom: 20px;
+  padding-top: 10px;
+  background-color: #f8f8f8;
+  margin-right: 10px;
 }
 
 /* section pic 사진 */
@@ -203,16 +207,11 @@ li {
   background-size: cover;
   cursor: pointer;
   position: relative;
-}
-
-/* section pic 사진 동작구현 */
-.end section .pic_container .pic_list .inner img {
-  transform: rotate(0) scale(1);
-  transition: 0.3s ease-in-out;
+  transition-duration: 0.3s;
 }
 
 .end section .pic_container .pic_list .inner:hover img {
-  transform: rotate(1.5deg) scale(1);
+  transform: scale(1.05);
 }
 
 /* section pic 작가, 제목부분 */
@@ -232,10 +231,25 @@ li {
   font-weight: bold;
 }
 
+/* section pic 제목부분 */
+.end section .pic_container .pic_list .inner .buying {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  text-align: right;
+  margin-top: 10px;
+  /* left: 240px; */
+  color: blue;
+  cursor: pointer;
+}
+
 /* 슬라이드 버튼 */
+
 .end .btn_container button {
   all: unset;
   position: relative;
+  bottom: 200px;
   color: black;
   cursor: pointer;
   font-size: 22px;
@@ -301,7 +315,7 @@ li {
 
 /* 미디어쿼리 */
 
-@media only all and (min-width: 1300px) {
+@media only all and (min-width: 1500px) {
   .end {
     margin: 20px 150px;
   }
@@ -314,7 +328,19 @@ li {
 
   /* 우측 서치부분 */
   .end header .search {
-    width: 30%;
+    width: 35%;
+  }
+
+  .end .maindComment {
+    font-size: 40px;
+    margin: 100px 0px;
+  }
+
+  .end .subComment {
+    font-size: 22px;
+    position: relative;
+    top: 70px;
+    left: 30px;
   }
 
   .end section .pic_container {
@@ -322,14 +348,19 @@ li {
     padding: 30px;
   }
 
+  .end section .pic_container .pic_list img {
+    height: 300px;
+  }
+
   /* section 멘트 */
   .end section .pic_container .maindComment {
     margin-top: 30px;
   }
 
-  /* .end section .pic_container .pic_list .inner {
-    margin-right: 38px;
-  } */
+  /* section pic */
+  .end section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
 
   /* section pic 작가부분 */
   .end section .pic_container .pic_list .inner .author {
@@ -342,15 +373,42 @@ li {
     font-weight: bold;
   }
 
+  /* section pic 작품구매 */
+  .end section .pic_container .pic_list .inner .buying {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  /* 슬라이드 버튼 */
+
+  .end .btn_container {
+    width: 95%;
+    text-align: center;
+    position: relative;
+    bottom: 220px;
+  }
+
+  .end .btn_container button {
+    bottom: 0px;
+  }
+
+  /* 슬라이드 왼쪽 버튼 위치 */
+  .end .btn_container .prevBtn {
+    left: 0px;
+  }
+
+  /* 서브 슬라이드 오른쪽 버튼 위치 */
+  .end .btn_container .nextBtn {
+    left: 100px;
+  }
+
+
+
   /* close */
 
   .end .close {
-    width: 90%;
-    height: 200px;
     margin: auto;
-    /* margin-top: 150px; */
-    margin-bottom: 50px;
-    border-radius: 5px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: center;
     /* background-color: #b0328a; */
@@ -358,19 +416,16 @@ li {
   }
 
   .end .close .container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
+    padding: 0px;
   }
 
   .end .close .container .left {
-    width: 50%;
+    width: 45%;
     padding: 0px 60px;
   }
 
   .end .close .container .right {
-    width: 60%;
+    width: 65%;
     background-image: url(../../img/withDreamLogo2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -387,11 +442,209 @@ li {
   }
 }
 
-/* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* .end section .pic_container .pic_list .inner:nth-of-type(5n + 5) {
-    margin-right: 38px; */
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+  .end header .search {
+    width: 50%;
+  }
+
+  .end header .scroll .menu {
+    width: 80%;
+  }
+
+  .end header .scroll .menu .menu_inner {
+    width: 130%;
+    height: 70px;
+  }
+
+  .end header .menu li {
+    font-size: 18px;
+  }
+
+  .end header .jlmToBtn {
+    width: 25%;
+  }
+
+  .end header .jlmToBtn button {
+    font-size: 18px;
+  }
+
+  .end .maindComment {
+    font-size: 30px;
+  }
+
+  /* section pic 화면구성 */
+  .end section .pic_container {
+    width: 100%;
+    height: 1200px;
+  }
+
+  .end section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  .end section .pic_container .pic_list .inner .title {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .end section .pic_container .pic_list .inner .buying {
+    width: 100%;
+  }
+
+  /* 슬라이드 버튼 */
+
+  .end .btn_container button {
+    bottom: 20px;
+    font-size: 18px;
+  }
+
+  /* 슬라이드 왼쪽 버튼 위치 */
+  .end .btn_container .prevBtn {
+    left: 350px;
+  }
+
+  /* 서브 슬라이드 오른쪽 버튼 위치 */
+  .end .btn_container .nextBtn {
+    left: 450px;
+  }
+
+
+
+  .end .close {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    /* margin-top: 150px; */
+    margin-bottom: 50px;
+    border-radius: 5px;
+  }
+
+  .end .close .container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+  }
+
+  .end .close .container .left {
+    width: 50%;
+    padding: 0px;
+  }
+
+  .end .close .container .right {
+    width: 100%;
+  }
+
+  .end .close .container .left .comment .author {
+    font-size: 13px;
+  }
+
+  .end .close .container .left .comment .title {
+    font-size: 18px;
+  }
+
 }
 
+
 /*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
-/* @media (min-width: 768px) and (max-width: 991px) {...}  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .end header .jlmToBtn button {
+    font-size: 16px;
+  }
+
+  .end header .menu li {
+    width: 25%;
+    font-size: 15px;
+  }
+
+  .end header .search {
+    width: 87%;
+    display: flex;
+    align-items: center;
+  }
+
+  .end header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  .end header .search i {
+    right: 20px;
+    font-size: 15px;
+  }
+
+  /* section pic 화면구성 */
+  .end section .pic_container {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .end section .pic_container .pic_list img {
+    height: 180px;
+  }
+
+  .end section .pic_container .pic_list .inner .comment {
+    width: 100%;
+  }
+
+  .end section .pic_container .pic_list .inner .author {
+    font-size: 13px;
+  }
+
+  .end section .pic_container .pic_list .inner .title {
+    font-size: 17px;
+  }
+
+  .end section .pic_container .pic_list .inner .buying {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  /* 슬라이드 버튼 */
+
+  .end .btn_container button {
+    bottom: 20px;
+    font-size: 16px;
+  }
+
+  /* 슬라이드 왼쪽 버튼 위치 */
+  .end .btn_container .prevBtn {
+    left: 260px;
+  }
+
+  /* 서브 슬라이드 오른쪽 버튼 위치 */
+  .end .btn_container .nextBtn {
+    left: 340px;
+  }
+
+  /* close */
+
+  .end .close .container {
+    padding: 0px;
+  }
+
+  .end .close .container .left {
+    width: 40%;
+    padding-left: 0px;
+  }
+
+  .end .close .container .right {
+    width: 60%;
+  }
+
+  .end .close .container .left .comment .author {
+    font-size: 14px;
+    padding: 0px;
+  }
+
+  .end .close .container .left .comment .title {
+    font-size: 18px;
+  }
+
+}
