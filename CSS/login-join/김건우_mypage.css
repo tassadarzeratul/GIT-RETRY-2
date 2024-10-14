@@ -150,23 +150,17 @@ li {
 .displaytextbox {
   position: flex;
   margin-top: 40px;
-  margin-bottom: 70px;
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align: center;
-  /* border:1px solid black; */
 }
 
 /* 마이페이지 텍스트 */
 .displaytextbox .displaytext {
-  text-align: center;
+  justify-content: left;
   color: black;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .buttons {
-  /* border:1px solid black; */
   margin-bottom: 20px;
   padding: 0px;
 }
@@ -311,26 +305,14 @@ li {
   color: rgb(75, 90, 105);
 }
 
-/* .mypage section .pic_container .pic_list .inner .line {
-  border-bottom: 2px solid black;
+.picline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.192);
   position: relative;
-  top: 10px;
-} */
+  bottom: 20px;
+}
 
-/* .mypage section .pic_container .maindComment .pic_list .line {
-  border-bottom: 2px solid black;
-  position: relative;
-  top: 10px;
-} */
-
-/* .mypage section .pic_list{
-  border-bottom: 2px solid black;
-  position: relative;
-  bottom: 10px;
-} */
-
-.line {
-  border-bottom: 2px solid black;
+.bottomline {
+  border-bottom: 1px solid black;
   position: relative;
   bottom: 20px;
 }
