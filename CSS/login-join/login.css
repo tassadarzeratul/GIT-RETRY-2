@@ -202,12 +202,13 @@ li {
      
     .left, .right {
         width: 50%;
+        
     }
 
     
     .right img {
         width: 100%;  
-        height: auto;
+        height: 650px;
     }
 
     
