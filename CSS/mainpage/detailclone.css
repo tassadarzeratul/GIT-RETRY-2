@@ -863,9 +863,6 @@ li {
   text-align: center;
 }
 
-
-
-
 .detail3 .bigbox .left .descriptiontext {
   padding: 20px;
   font-size: 30px;
@@ -890,12 +887,14 @@ li {
 }
 
 .detail3 .bigbox .right .descriptiontext {
-  width: 300px;
+  width: 200px;
   margin-top: 20px;
-  font-size: 30px;
-  position: sticky;
-  top: 0;
+  font-size: 15px;
+  /* position: sticky;
+  top: 0; */
   padding-top: 30px;
+  background-color: white;
+  z-index: 2;
 }
 
 .detail3 .bigbox .right .product {
@@ -952,20 +951,19 @@ li {
 }
 .projectext0 #photoname2  {
   color: rgba(0, 119, 255, 0.596);
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
   
 }
 .projectext0 #photoname3  {
   color: gray;
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
+  font-weight: bold;
 }
 .descriptiontext #explainex{
   margin-top: 90px;
 }
-
-
 
 
 /* detail3 추가 끝 */
