@@ -93,7 +93,7 @@ main header .menu li {
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 main header .menu li:hover {
@@ -103,7 +103,7 @@ main header .menu li:hover {
 
 /* 우측 서치부분 */
 main header .search {
-  width: 40%;
+  width: 32%;
   display: flex;
   align-items: center;
 }
@@ -733,7 +733,7 @@ main .close .container .left .comment .title {
   main sub .pic_container .pic_list img {
     height: 120px;
   }
-  
+
 
   /* other */
 
