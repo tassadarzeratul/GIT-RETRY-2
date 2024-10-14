@@ -20,5 +20,4 @@ $('#endToMyPage').on('click', () => endToGo('../../HTML/mypage/김건우_mypage.
 $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // 사진 클릭
 $('.inner').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
-
 // ============================================================================
