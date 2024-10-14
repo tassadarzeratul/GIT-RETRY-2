@@ -140,14 +140,18 @@ li {
     margin-right: 0px;
 }
 
-.detailclone .line {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.192);
-    position: relative;
-    top: 10px;
-    margin-left: 120px;
-    margin-right: 120px;
-  }
 
+
+.register .content .description .add .addbutton{
+    background-color: rgba(0, 0, 255, 0.406);
+    border-radius: 3px;
+    border-color:transparent;
+    color:white;
+    width:120px;
+    height:30px;
+    margin-top: 0px;
+    margin-bottom:50px;
+}
 
 
 /* 미디어 쿼리 */
