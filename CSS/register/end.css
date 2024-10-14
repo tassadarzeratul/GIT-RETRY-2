@@ -178,7 +178,7 @@ li {
 /* section pic 화면구성 */
 .end section .pic_container {
   width: 200%;
-  height: 1600px;
+  height: 1200px;
 }
 
 
@@ -246,10 +246,13 @@ li {
 
 /* 슬라이드 버튼 */
 
+.end .btn_container {
+  position: relative;
+}
+
 .end .btn_container button {
   all: unset;
   position: relative;
-  bottom: 200px;
   color: black;
   cursor: pointer;
   font-size: 22px;
