@@ -153,7 +153,6 @@ li {
 .end section {
   width: 200%;
   display: flex;
-  overflow: hidden;
 }
 
 /* section 멘트 */
@@ -178,24 +177,27 @@ li {
 
 /* section pic 화면구성 */
 .end section .pic_container {
-  width: 100%;
+  width: 200%;
   height: 1600px;
 }
 
 
 .end section .pic_container .pic_list {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+
 }
 
 .end section .pic_container .pic_list .inner {
   width: 30%;
+  flex: 0 0 30%;
   margin-bottom: 20px;
   padding-top: 10px;
   background-color: #f8f8f8;
+  margin-right: 10px;
 }
 
 /* section pic 사진 */

@@ -22,6 +22,9 @@ $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.h
 $('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 // 오른쪽 사진
 $('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+// 아래쪽 사진
+$('.otherRight img').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+
 
 
 // main slider 동작구현 =================================================================
@@ -66,6 +69,7 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
             liIndex[i].style.display = "none";
         }
         liIndex[currentIndex].style.display = "block";
+
     });
 
     container.querySelector('.nextBtn').addEventListener('click', () => {
