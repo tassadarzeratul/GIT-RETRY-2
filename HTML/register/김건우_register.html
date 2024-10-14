@@ -70,6 +70,15 @@
                     <input class="submitDetailed" placeholder="상품 구성 상세 입력">
                 </div>
 
+                <div id='test' class='red-border'>
+                    <div> 만나서 반가워요 </div>
+                  </div>
+                  <input 
+                        type='button' 
+                        value='추가하기' 
+                        onclick='copyDiv()'
+                  />
+
                 <!-- 회사정책 구분선 -->
                 <div class="explain">
                     <div class="line"></div>
@@ -88,6 +97,21 @@
     </div>
     <script src="../../JS/register/김건우_upload.js"></script>
     <script src="../../JS/register/김건우_register.js"></script>
+
+<script>function copyDiv()  {
+    // 'test' node 선택
+    const testDiv = document.getElementById('test');
+    
+    // 노드 복사하기
+    const newNode = testDiv.cloneNode();
+    
+    // 복사된 Node id 변경하기
+    newNode.id = 'copyNode';
+  
+    // 복사한 노드 붙여넣기
+    testDiv.after(newNode);
+  }</script>
+
 </body>
 
 <!-- 김건우 register 끝 -->

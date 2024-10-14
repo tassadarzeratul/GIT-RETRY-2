@@ -18,8 +18,6 @@ $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
 $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.html'));
-// 검색어입력 돋보기
-$('#searchI').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // 서브 사진
 $('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 // 오른쪽 사진
