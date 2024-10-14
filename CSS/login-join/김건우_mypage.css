@@ -771,67 +771,349 @@ li {
   }
 }
 
+/* 태블릿 쿼리 */
+@media only all and (min-width: 768px) and (max-width: 991px) {
 
-/* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
-@media only all and (min-width: 1800px) {
+  @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
 
-  /* Main 시작  */
-  .mypage {
-    margin: 20px 150px;
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gowun Dodum", sans-serif;
   }
 
-  /* 상단 로고 */
-  .mypage header .logo_pic img {
-    position: relative;
-    top: -20px;
-  }
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
 
-  .mypage .sub {
-    margin: 80px;
-  }
+li {
+  list-style: none;
+}
 
-  /* 마이페이지 텍스트 */
-  .displaytextbox .displaytext {
-    font-size: 40px;
-    margin-top: 60px;
-  }
+/* mypage 시작 */
 
-  .profilemenu {
-    font-size: 30px;
-  }
+.mypage {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
 
-  .area {
-    margin-bottom: 70px;
-  }
+/* 상단 로고 */
+.mypage .header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .mypage section .pic_container .pic_list {
-    justify-content: flex-start;
-  }
-
-  .mypage section .pic_container .pic_list .inner {
-    margin-right: 50px;
-  }
-
-  .mypage section .pic_container .pic_list .inner .comment {
-    width: 280px;
-    height: 140px;
-  }
-
-  .mypage section .pic_container .pic_list .inner .author {
-    font-size: 15px;
-  }
-
-  .mypage section .pic_container .pic_list .inner .title {
-    font-size: 18px;
-  }
-
-  .mypage section .pic_container .pic_list .inner .description {
-    font-size: 15px;
-  }
-
-  .line {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+.mypage .header .logo_pic {
+  width: 65%;
+  top:50px;
+  margin-top:10px;
 
 }
+
+.mypage .header .logo_pic img {
+  width: 50%;
+}
+
+.mypage .header .jlmToBtn {
+  width: 25%;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+
+.mypage .header .jlmToBtn button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.mypage .header .jlmToBtn button:hover {
+  color: orange;
+}
+
+
+/* nmenu */
+
+.mypage .header .scroll {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
+.mypage .header .scroll .menu {
+  width: 100%;
+}
+
+.mypage .header .scroll .menu .menu_inner {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+.mypage .header .menu li {
+  width: 20%;
+  background:transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.mypage .header .menu li:hover {
+  color: orange;
+}
+
+/* 우측 서치부분 */
+.mypage .header .search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.mypage .header .search input {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  margin-left: 100px;
+  background-color: rgb(243, 243, 243);
+  outline: none;
+}
+
+.mypage .header .search i {
+  position: relative;
+  right: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mypage .header .login button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 메인 */
+
+.mypage .header .mainBox {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 메인 왼쪽 부분 */
+.mypage .header .mainBox .left {
+  width: 75%;
+}
+
+.displaytextbox {
+  position: flex;
+  margin-top: 40px;
+}
+
+/* 마이페이지 텍스트 */
+.displaytextbox .displaytext {
+  justify-content: left;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+
+.buttons .home {
+  outline: none !important;
+  box-shadow: none !important;
+  width: 150px;
+  background-color: rgb(52, 99, 255);
+  margin-right: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border-color: transparent;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+
+.profilemenu {
+  text-align: left;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.area {
+  padding-top: 0px;
+  text-align: left;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.area .registered {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-inline: 30px;
+}
+
+.area .paid {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-inline: 30px;
+}
+
+/* mypage 시작  */
+
+/* header */
+
+.mypage header .menu {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  background: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
+.mypage header .menu li {
+  width: 15%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* navFilter */
+
+.mypage .navFilter .nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.mypage .navFilter .nav .subComment .filter {
+  font-size: 20px;
+}
+
+/* section */
+
+.mypage section .pic_container {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.mypage section .pic_container .maindComment {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mypage section .pic_container .pic_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 30px;
+
+}
+
+
+.mypage section .pic_container .pic_list .inner {
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.mypage section .pic_container .pic_list .inner .comment {
+  width: 280px;
+  height: 100px;
+}
+
+.mypage section .pic_container .pic_list .inner .author {
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.mypage section .pic_container .pic_list .inner .title {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+}
+
+.mypage section .pic_container .pic_list .inner .description {
+  font-size: 12px;
+  position: relative;
+  top: 18px;
+  color: rgb(75, 90, 105);
+}
+
+.picline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+  position: relative;
+  bottom: 20px;
+}
+
+.bottomline {
+  border-bottom: 1px solid black;
+  position: relative;
+  bottom: 20px;
+}
+
+
+.mypage section .pic_container .pic_list img {
+  width: 280px;
+  height: 180px;
+  border-radius: 0px;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* 사진 이동 */
+.mypage section .pic_container .pic_list .inner img {
+  transition-duration: 0.3s;
+}
+
+.mypage section .pic_container .pic_list .inner:hover img {
+  transform: scale(1.1);
+}
+
+} 
