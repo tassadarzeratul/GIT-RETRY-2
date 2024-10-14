@@ -122,7 +122,7 @@ li {
   right: 20px;
   font-size: 18px;
   cursor: pointer;
-  
+
 }
 
 .end header .login button {
@@ -136,9 +136,24 @@ li {
 
 /* section */
 
-.end section .pic_container {
-  width: 100%;
-  margin-top: 50px;
+.end {
+  overflow: hidden;
+}
+
+.end .maindComment{
+  text-align: center;
+  font-size: 36px;
+  margin: 50px 0px;
+}
+
+.end .subComment{
+  font-size: 18px;
+}
+
+.end section {
+  width: 200%;
+  display: flex;
+  overflow: hidden;
 }
 
 /* section 멘트 */
@@ -162,6 +177,12 @@ li {
 }
 
 /* section pic 화면구성 */
+.end section .pic_container {
+  width: 100%;
+  height: 1100px;
+}
+
+
 .end section .pic_container .pic_list {
   width: 100%;
   display: flex;
@@ -171,13 +192,14 @@ li {
 }
 
 .end section .pic_container .pic_list .inner {
+  width: 30%;
   margin-bottom: 20px;
 }
 
 /* section pic 사진 */
 .end section .pic_container .pic_list img {
-  width: 350px;
-  height: 270px;
+  width: 100%;
+  height: 250px;
   background-size: cover;
   cursor: pointer;
   position: relative;
@@ -195,13 +217,13 @@ li {
 
 /* section pic 작가, 제목부분 */
 .end section .pic_container .pic_list .inner .comment {
-  width: 280px;
+  width: 300px;
   height: 100px;
 }
 
 /* section pic 작가부분 */
 .end section .pic_container .pic_list .inner .author {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* section pic 제목부분 */
@@ -209,6 +231,71 @@ li {
   font-size: 18px;
   font-weight: bold;
 }
+
+/* 슬라이드 버튼 */
+.end .btn_container button {
+  all: unset;
+  position: relative;
+  color: black;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* 슬라이드 왼쪽 버튼 위치 */
+.end .btn_container .prevBtn {
+  left: 400px;
+}
+
+/* 서브 슬라이드 오른쪽 버튼 위치 */
+.end .btn_container .nextBtn {
+  left: 600px;
+}
+
+/* close */
+
+.end .close {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  /* background-color: #b0328a; */
+  color: black;
+}
+
+.end .close .container {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+}
+
+.end .close .container .left {
+  width: 40%;
+  padding-left: 20px;
+}
+
+.end .close .container .right {
+  width: 60%;
+  background-image: url(../../img/withDreamLogo2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.end .close .container .left .comment .author {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.end .close .container .left .comment .title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
 
 
 
@@ -255,9 +342,49 @@ li {
     font-weight: bold;
   }
 
-  /* .end section .pic_container .pic_list .inner:nth-of-type(5n + 5) {
-    margin-right: 0px;
-  } */
+  /* close */
+
+  .end .close {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    /* margin-top: 150px; */
+    margin-bottom: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #b0328a; */
+    color: black;
+  }
+
+  .end .close .container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+  }
+
+  .end .close .container .left {
+    width: 50%;
+    padding: 0px 60px;
+  }
+
+  .end .close .container .right {
+    width: 60%;
+    background-image: url(../../img/withDreamLogo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .end .close .container .left .comment .author {
+    font-size: 22px;
+    padding: 10px 0px;
+  }
+
+  .end .close .container .left .comment .title {
+    font-size: 33px;
+    font-weight: bold;
+  }
 }
 
 /* 데스크탑 (가로 해상도가 992px보다 크고 1199px 보다 작은 화면에 적용)  */

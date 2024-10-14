@@ -304,6 +304,7 @@ li {
 
 /* detail_3  */
 
+
 .detail3 .bigbox {
   width: 100%;
   padding: 100px;
@@ -317,6 +318,9 @@ li {
   width: 60%;
   text-align: center;
 }
+
+
+
 
 .detail3 .bigbox .left .descriptiontext {
   padding: 20px;
@@ -345,6 +349,9 @@ li {
   width: 300px;
   margin-top: 20px;
   font-size: 30px;
+  position: sticky;
+  top: 0;
+  padding-top: 30px;
 }
 
 .detail3 .bigbox .right .product {
@@ -367,6 +374,57 @@ li {
   border-color: rgb(0, 0, 0);
   border-style: solid;
 }
+
+/* detail3 추가 */
+
+.projectext0{
+  background-color:pink;
+  padding-bottom: 30px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+
+.projectext0 .phototitle {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  
+  
+}
+
+
+.projectext0 #photoname  {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  
+  
+}
+
+.projectext0 #photoname1  {
+  font-size: 15px;
+  text-align: center;
+  
+ 
+}
+.projectext0 #photoname2  {
+  color: rgba(0, 119, 255, 0.596);
+  font-size: 35px;
+  text-align: center;
+  
+}
+.projectext0 #photoname3  {
+  color: gray;
+  font-size: 15px;
+  text-align: center;
+}
+.descriptiontext #explainex{
+  margin-top: 90px;
+}
+
+
+
+
+/* detail3 추가 끝 */
 
 /* detail 3 끝 */
 

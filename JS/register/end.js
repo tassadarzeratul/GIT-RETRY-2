@@ -18,3 +18,21 @@ $('#endToLogin').on('click', () => endToGo('../../HTML/login-join/login.html'));
 $('#endToMyPage').on('click', () => endToGo('../../HTML/mypage/김건우_mypage.html'));
 // 검색어입력 돋보기
 $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
+// 사진 클릭
+$('.inner').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
+
+// ============================================================================
+
+let currentIndex = 0;
+
+function slideImg () {
+    const slider = document.querySelector('sub');
+    const totalList = document.querySelector('pic_container').length;
+    currentIndex++;
+    document.querySelector('.prevBtn').addEventListener('click', () => {
+
+    });
+    document.querySelector('.nextBtn').addEventListener('click', () => {
+
+    }); 
+};
