@@ -1,10 +1,16 @@
 /* login */
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+.body{
+    width: 768px;
 }
 
 a,
@@ -47,6 +53,12 @@ li {
     align-items: center;
     text-align: center;
     font-family: "Gowun Dodum", sans-serif;
+    
+}
+
+.comment{
+    max-width: 600px;
+   
 }
 
 /* 링크 색깔 */
@@ -176,13 +188,49 @@ li {
 
 
 /* 미디어 쿼리 */
-/* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
-@media only all and (min-width: 1800px) {
-    .left {
-        padding-left: 200px;
+
+/*모바일 가로, 세로 : -767px*/
+@media all and (max-width:767px){
+	/* login */
+
+
+
+
+ /* 모바일 화면을 위한 미디어 쿼리 적용 (화면 크기가 768px 이하일 때)  */
+@media only screen and (max-width: 768px) {
+
+     
+    .left, .right {
+        width: 50%;
     }
 
+    
     .right img {
-        width: 89.5%;
+        width: 100%;  
+        height: auto;
     }
+
+    
+    .loginPage form fieldset {
+        width: 100%; 
+    }
+
+   
+    .loginPage form fieldset div.loginBtn button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+}
+
+input 유효성 확인 멘트 스타일
+.loginPage form fieldset div.warning {
+    margin-top: 5px;
+    color: rgb(230, 35, 35);
+}
+
+.loginPage form fieldset div.inputBox .warning {
+    position: absolute;
+}
+
 }
