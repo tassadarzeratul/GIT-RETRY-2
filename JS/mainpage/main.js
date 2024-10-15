@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const joinBtn = document.getElementById('joinBtn');
     const loginBtn = document.getElementById('loginBtn');
     const logoutBtn = document.getElementById('logoutBtn');
+    const mypageBtn = document.getElementById('myPageBtn');
 
     // 로그인 상태 확인
     const isLoggedIn = localStorage.getItem('isLoggedIn');
@@ -116,10 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
         joinBtn.style.display = 'none';
         loginBtn.style.display = 'none';
         logoutBtn.style.display = 'block';
+        mypageBtn.style.display = 'block';
     } else {
         joinBtn.style.display = 'block';
         loginBtn.style.display = 'block';
-        logoutBtn.style.display = 'none';  // 로그인 안되어 있을 때는 로그아웃 버튼 숨기기
+        logoutBtn.style.display = 'none';
+        mypageBtn.style.display = 'none';
     }
 });
 
