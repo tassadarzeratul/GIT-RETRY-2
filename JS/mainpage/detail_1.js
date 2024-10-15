@@ -42,3 +42,15 @@ document.getElementById("searchI").addEventListener("click", function() {
         alert("검색어를 입력해주세요.");
     }
 });
+
+// 스크롤
+document.querySelectorAll(".scroll_move").forEach(function(button) {
+    button.addEventListener("click", function() {
+        const targetId = button.getAttribute("data-target");
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+});
