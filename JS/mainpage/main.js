@@ -101,3 +101,48 @@ document.getElementById("searchI").addEventListener("click", function() {
     }
 });
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+//로그인시 마이페이지 표시
+// main.js
+
+// $(document).ready(function() {
+//     // 로그인 상태 확인
+//     const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+//     if (isLoggedIn === 'true') {
+//         // "MyPage" 버튼 표시
+//         $('#myPageBtn').show();
+
+//         // "Join" 및 "Login" 버튼 숨기기
+//         $('#joinBtn').hide();
+//         $('#loginBtn').hide();
+//     } else {
+//         // "MyPage" 버튼 숨기기
+//         $('#myPageBtn').hide();
+
+//         // "Join" 및 "Login" 버튼 표시
+//         $('#joinBtn').show();
+//         $('#loginBtn').show();
+//     }
+
+//     // 로그아웃 기능 추가 (선택 사항)
+//     $('#myPageBtn').click(function() {
+//         // 로그아웃 시 로그인 상태 제거
+//         localStorage.removeItem('isLoggedIn');
+//         localStorage.removeItem('userEmail');
+
+//         // 페이지 새로고침
+//         location.reload();
+//     });
+// });
+>>>>>>> 9b11a2e6406000ad1294cf3ad8cf72acec12eef9
