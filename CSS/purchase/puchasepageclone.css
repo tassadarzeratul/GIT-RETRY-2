@@ -42,6 +42,7 @@ li {
 
 .purchasePage header .logo_pic img {
   width: 50%;
+  cursor: pointer;
 }
 
 .purchasePage header .jlmToBtn {
@@ -63,6 +64,7 @@ li {
 
 .purchasePage header .jlmToBtn button:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* nmenu */
@@ -97,6 +99,7 @@ li {
 
 .purchasePage header .menu li:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* 우측 서치부분 */
@@ -283,3 +286,11 @@ li {
   background: orange;
   color: black;
 }
+
+.explain {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+

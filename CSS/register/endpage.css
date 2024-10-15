@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -180,6 +182,9 @@ li {
 .endPage div.useAmount {
   width: 9%;
   display: inline-block
+  
+  
+  
   
 }
 
@@ -382,21 +387,496 @@ li {
   font-weight: bold;
 }
 
-/* 팝업버튼 */
-.endPage .useAmount .popup{
-  background-color: rgb(125, 125, 243);
-  border:transparent;
-  border-radius:10px;
-  width:100px;
-  height:50px;
-  cursor:pointer;
-  color:white;
-  font-family: "Gowun Dodum", sans-serif;
-}
+/* 미디어 쿼리 */
+/* 큰화면 데스크탑 (가로 해상도가 1500px 보다 큰 화면에 적용)  */
+@media only all and (min-width: 1500px) {
 
-.endPage .useAmount .popup:hover{
-  transition:0.4s;
-  background-color: black;
 }
 
 
+/* 데스크탑 (가로 해상도가 992px보다 크고 1299px 보다 작은 화면에 적용)  */
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+/* Main  */
+/* detail1 시작  */
+
+  .endPage {
+    height: auto;
+    margin: 20px 50px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  /* 상단 로고 */
+
+  .endPage header .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .endPage header .logo_pic {
+    width: 65%;
+  }
+
+  .endPage header .logo_pic img {
+    width: 50%;
+  }
+
+  .endPage header .jlmToBtn {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  /* join, loing, mypage */
+  .endPage header .jlmToBtn button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  .endPage header .jlmToBtn button:hover {
+    color: orange;
+  }
+
+  /* nmenu */
+
+  .endPage header .scroll {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(184, 181, 181);
+  }
+
+  .endPage header .scroll .menu {
+    width: 100%;
+  }
+
+  .endPage header .scroll .menu .menu_inner {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background: white;
+    border: none;
+    align-items: center;
+    text-align: center;
+  }
+
+  .endPage header .menu li {
+    width: 15%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  .endPage header .menu li:hover {
+    color: orange;
+  }
+
+  /* 우측 서치부분 */
+  .endPage header .search {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  .endPage header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  .endPage header .search i {
+    position: relative;
+    right: 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .endPage header .login button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+  /* 상단 공통 로고 및 메뉴 */
+
+  .endPage table {
+  font-size: 20px;
+  border-spacing: 15px;
+  }
+  /* 테이블 공통 스타일 */
+
+  .endPage div.infoLeft {
+    display: inline-block;
+    width: 42.5%;
+  }
+
+  .endPage div.exhibition {
+  font-size: 2rem;
+  }
+
+  .endPage table.exhibitionInfo {
+    font-size: 1.2rem;
+    }
+
+  .endPage table.exhibitionInfo th {
+  width: 30%;
+  }
+  /* 전시회 정보 */
+
+  .endPage div.infoRight {
+  display: inline-block;
+  width: 42.5%;
+    
+  }
+
+  .endPage div.creator {
+  font-size: 2rem;
+  }
+
+  .endPage table.creatorInfo {
+    font-size: 1.2rem;
+    }
+
+  .endPage table.creatorInfo th {
+  width: 30%;
+  }
+  /* 창작자 정보 */
+
+  .endPage div.useAmount {
+  width: 9%;
+  display: inline-block
+
+  }
+
+  .endPage div.useAmount button {
+  width: 9%;
+  height: 25%;
+  font-size: 2rem;
+  }
+
+  .endPage .reviewImg .upload-btn-wrapper .btn {
+  font-size: 1.4rem;
+  }
+
+
+  .endPage .reviewImg .tip {
+  margin-bottom: 20px;
+  }
+
+  .endPage .announcement {
+  font-size: 1.4rem;
+  }
+}
+
+/*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
+@media only all and (min-width: 768px) and (max-width: 991px) {
+/* Main  */
+/* detail1 시작  */
+
+  .endPage {
+    margin: 20px 50px;
+  }
+
+  /* 상단 로고 */
+
+  .endPage header .jlmToBtn button {
+    font-size: 16px;
+  }
+
+  .endPage header .menu li {
+    width: 25%;
+    font-size: 15px;
+  }
+
+  .endPage header .search {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .endPage header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  .endPage header .search i {
+    right: 20px;
+    font-size: 15px;
+  }
+
+  .endPage .mainBox {
+    width: 100%;
+    height: 700px;
+    margin-top: 30px;
+    display: flex;
+  }
+  /* 상단 공통 로고 및 메뉴 */
+
+  .endPage table {
+  font-size: 0.9rem;
+  border-spacing: 15px;
+  }
+  /* 테이블 공통 스타일 */
+
+  .endPage div.infoLeft {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .endPage div.exhibition {
+  font-size: 1.4rem;
+  }
+
+
+  .endPage table.exhibitionInfo th {
+  width: 35%;
+  }
+  /* 전시회 정보 */
+
+  .endPage div.infoRight {
+  display: inline-block;
+  width: 44%;
+    
+  }
+
+  .endPage div.creator {
+  font-size: 1.4rem;
+
+  }
+
+  .endPage table.creatorInfo th {
+  width: 35%;
+
+  }
+  /* 창작자 정보 */
+
+  .endPage div.useAmount {
+  display: inline-block
+
+  }
+
+  .endPage div.useAmount button {
+  width: 9%;
+  height: 20%;
+  font-size: 1.6rem;
+  }
+
+  .endPage .reviewImg .upload-btn-wrapper .btn {
+  font-size: 1.4rem;
+  }
+
+
+  .endPage .reviewImg .tip {
+  margin-bottom: 20px;
+  }
+
+  .endPage .announcement {
+  font-size: 1.3rem;
+  }
+
+/* 전시회 후기 댓글 */
+  .endPage div.community .comment {
+    width: 60%;
+
+  }
+
+  .endPage div.community .comment > li {
+    margin-top: 2%;
+
+  }
+
+  .endPage div.community .ps_box {
+    width: 80%;
+    height: 51px;
+      
+  }
+
+  .endPage div.community .int {
+    width: 100%;
+    height: 29px;
+    font-size: 0.8rem;
+      
+  }
+
+  .endPage div.community .btn {
+    width: 18%;
+    font-size: 0.8rem;
+      
+  }
+
+  .endPage .comment-update-input {
+    font-size: 1.2rem;
+      
+  }
+
+}
+
+/* 가로모드 모바일 디바이스 (가로 해상도가 576px보다 크고 767px 보다 작은 화면에 적용)  */
+@media only all and (min-width: 576px) and (max-width: 767px) {
+
+  /* Main  */
+/* detail1 시작  */
+
+  .endPage {
+    margin: 20px 50px;
+  }
+
+  /* 상단 로고 */
+
+  .endPage header .jlmToBtn button {
+    font-size: 16px;
+  }
+
+  .endPage header .menu li {
+    width: 25%;
+    font-size: 15px;
+  }
+
+  .endPage header .search {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .endPage header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
+
+  .endPage header .search i {
+    right: 20px;
+    font-size: 15px;
+  }
+
+  .endPage .mainBox {
+    width: 100%;
+    height: 700px;
+    margin-top: 30px;
+    display: flex;
+  }
+  /* 상단 공통 로고 및 메뉴 */
+
+  .endPage table {
+  font-size: 0.7rem;
+  border-spacing: 15px;
+  }
+  /* 테이블 공통 스타일 */
+
+  .endPage div.infoLeft {
+    display: inline-block;
+    width: 44%;
+  }
+
+  .endPage div.exhibition {
+  font-size: 1rem;
+  }
+
+
+  .endPage table.exhibitionInfo th {
+  width: 35%;
+  }
+  /* 전시회 정보 */
+
+  .endPage div.infoRight {
+  display: inline-block;
+  width: 44%;
+    
+  }
+
+  .endPage div.creator {
+  font-size: 1rem;
+
+  }
+
+  .endPage table.creatorInfo th {
+  width: 35%;
+
+  }
+  /* 창작자 정보 */
+
+  .endPage div.useAmount {
+  display: inline-block
+
+  }
+
+  .endPage div.useAmount button {
+  width: 8%;
+  height: 20%;
+  font-size: 1.4rem;
+  }
+
+  .endPage .reviewImg .upload-btn-wrapper .btn {
+  font-size: 1.4rem;
+  }
+
+
+  .endPage .reviewImg .tip {
+  margin-bottom: 20px;
+  }
+
+  .endPage .announcement {
+  font-size: 1.2rem;
+  }
+
+  /* 전시회 후기 댓글 */
+  .endPage div.community .comment {
+    width: 60%;
+
+  }
+
+  .endPage div.community .comment > li {
+    margin-top: 2%;
+
+  }
+
+  .endPage div.community .ps_box {
+    width: 80%;
+    height: 51px;
+      
+  }
+
+  .endPage div.community .int {
+    width: 100%;
+    height: 29px;
+    font-size: 0.8rem;
+      
+  }
+
+  .endPage div.community .btn {
+    width: 18%;
+    font-size: 0.8rem;
+      
+  }
+
+  .endPage .comment-update-input {
+    font-size: 1.2rem;
+      
+  }
+
+
+}
