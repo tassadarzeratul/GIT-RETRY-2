@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const joinBtn = document.getElementById('joinBtn');
     const loginBtn = document.getElementById('loginBtn');
+    const mypageBtn = document.getElementById('mypageBtn');
     const logoutBtn = document.getElementById('logoutBtn');
-    const mypageBtn = document.getElementById('myPageBtn');
 
     // 로그인 상태 확인
     const isLoggedIn = localStorage.getItem('isLoggedIn');
