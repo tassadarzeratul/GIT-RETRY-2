@@ -19,7 +19,12 @@ $('#endToMyPage').on('click', () => endToGo('../../HTML/mypage/김건우_mypage.
 // 검색어입력 돋보기
 $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // 사진 클릭
-$('.inner').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
+$('.buying').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
+// 작품 구매
+$('.inner img').on('click', () => endToGo('../../HTML/register/endpage.html'));
+
+
+
 
 
 // ============================================================================

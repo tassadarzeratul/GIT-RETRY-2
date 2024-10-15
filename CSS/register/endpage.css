@@ -382,6 +382,21 @@ li {
   font-weight: bold;
 }
 
+/* 팝업버튼 */
+.endPage .useAmount .popup{
+  background-color: rgb(125, 125, 243);
+  border:transparent;
+  border-radius:10px;
+  width:100px;
+  height:50px;
+  cursor:pointer;
+  color:white;
+  font-family: "Gowun Dodum", sans-serif;
+}
 
+.endPage .useAmount .popup:hover{
+  transition:0.4s;
+  background-color: black;
+}
 
 

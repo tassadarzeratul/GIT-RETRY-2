@@ -248,6 +248,7 @@ li {
 
 .end .btn_container {
   position: relative;
+  bottom: 50px;
 }
 
 .end .btn_container button {

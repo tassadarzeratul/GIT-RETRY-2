@@ -253,7 +253,7 @@ main .mainBox .right .title {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  margin: -10px 0px 15px 0px;
+  margin: -10px 0px 5px 0px;
 }
 
 /* 메인 오른쪽 타이틀 전체보기 */
@@ -261,6 +261,11 @@ main .mainBox .right .title div {
   font-size: 15px;
   font-weight: normal;
   cursor: pointer;
+}
+
+/* 메인 오른쪽 시간 */
+main .mainBox .right div#timeDisplay {
+  margin-bottom: 10px;
 }
 
 /* 메인 오른쪽 전체공간 */
@@ -281,7 +286,7 @@ main .mainBox .right .pic .rightPic {
 /* 메인 오른쪽 이미지 크기 */
 main .mainBox .right .pic .rightPic img {
   width: 40%;
-  height: 118px;
+  height: 112px;
   border-radius: 10px;
   cursor: pointer;
 }
