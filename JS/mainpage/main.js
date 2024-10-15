@@ -7,7 +7,7 @@ $('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/register.html'));
+$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/김건우_register copy.html'));
 // 펀딩리스트
 $('#mainToList').on('click', () => mainToGo('../../HTML/register/register.html'));
 // 종료펀딩
