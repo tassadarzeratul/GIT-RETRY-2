@@ -249,21 +249,21 @@ li {
     width: 35%;
   }
 
-  .pagelist .maindComment {
-    font-size: 40px;
-    margin: 100px 0px;
-  }
-
   .pagelist .subComment {
     font-size: 22px;
     position: relative;
     top: 70px;
-    left: 30px;
+    left: 50px;
   }
 
   .pagelist section .pic_container {
     margin-top: 50px;
     padding: 30px;
+  }
+
+  .pagelist section .pic_container .pic_list .inner {
+    margin-left: 30px;
+    background-color: #f8f8f8;
   }
 
   .pagelist section .pic_container .pic_list img {
@@ -303,7 +303,6 @@ li {
     width: 95%;
     text-align: center;
     position: relative;
-    bottom: 220px;
   }
 
   .pagelist .btn_container button {
@@ -319,46 +318,9 @@ li {
   .pagelist .btn_container .nextBtn {
     left: 100px;
   }
-
-
-
-  /* close */
-
-  .pagelist .close {
-    margin: auto;
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: center;
-    /* background-color: #b0328a; */
-    color: black;
-  }
-
-  .pagelist .close .container {
-    padding: 0px;
-  }
-
-  .pagelist .close .container .left {
-    width: 45%;
-    padding: 0px 60px;
-  }
-
-  .pagelist .close .container .right {
-    width: 65%;
-    background-image: url(../../img/withDreamLogo2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .pagelist .close .container .left .comment .author {
-    font-size: 22px;
-    padding: 10px 0px;
-  }
-
-  .pagelist .close .container .left .comment .title {
-    font-size: 33px;
-    font-weight: bold;
-  }
 }
+
+
 
 @media only all and (min-width: 992px) and (max-width: 1200px) {
   .pagelist header .search {
