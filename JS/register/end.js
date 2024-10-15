@@ -8,7 +8,7 @@ $('#logo_picMain').on('click', () => endToGo('../../HTML/mainpage/main.html'));
 // 홈 화면 이동
 $('#endToHome').on('click', () => endToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#endToRegister').on('click', () => endToGo('../../HTML/register/김건우_register.html'));
+$('#endToRegister').on('click', () => endToGo('../../HTML/register/register.html'));
 // 종료펀딩
 $('#endToend').on('click', () => endToGo('../../HTML/register/end.html'));
 // 작품구매
@@ -18,7 +18,7 @@ $('#endToJoin').on('click', () => endToGo('../../HTML/login-join/join.html'));
 // Login
 $('#endToLogin').on('click', () => endToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#endToMyPage').on('click', () => endToGo('../../HTML/mypage/김건우_mypage.html'));
+$('#endToMyPage').on('click', () => endToGo('../../HTML/mypage/mypage.html'));
 // 검색어입력 돋보기
 $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // 사진 클릭
