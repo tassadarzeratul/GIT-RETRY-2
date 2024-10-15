@@ -308,6 +308,21 @@ li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
+.endpage .popop1{
+  width: 300px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 25px;
+  position: relative;
+  background-color: rgb(52, 99, 255);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+  margin-left: 560px;
+
+} 
+
 /* endpage line */
 .endpage .line {
   border-bottom: 2px solid rgba(0, 0, 0, 0.301);
