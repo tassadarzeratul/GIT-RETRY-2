@@ -135,32 +135,39 @@ li {
 
 /* test */
 .register .content .upload-btn-wrapper {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+}
+
+.register .content .upload-btn-wrapper .file-message {
+  margin-top: 10px; /* 메시지와 버튼 간격 */
+  font-size: 16px;
+  color: rgb(130, 160, 250); /* 메시지 색상 */
 }
 
 .register .content .upload-btn-wrapper .btn {
   border: 2px solid rgb(0, 0, 0);
-  color: white; /* 텍스트 색상 */
-  background-color: rgb(52, 99, 255); /* 버튼 배경색 */
-  padding: 10px 20px; /* 패딩 조정 */
-  border-radius: 10px; /* 둥근 모서리 */
+  color: white;
+  background-color: rgb(52, 99, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* 부드러운 전환 효과 */
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .register .content .upload-btn-wrapper .btn:hover {
-  background-color: rgb(30, 60, 255); /* 호버 시 색상 변경 */
-  transform: scale(1.05); /* 호버 시 약간 커지는 효과 */
+  background-color: rgb(30, 60, 255);
+  transform: scale(1.05);
 }
 
 .register .content .upload-btn-wrapper .btn:active {
-  transform: scale(0.95); /* 클릭 시 작아지는 효과 */
+  transform: scale(0.95);
 }
+
+/* test 끝 */
 
 .register .content .upload-btn-wrapper input[type=file] {
   font-size: 100px;
