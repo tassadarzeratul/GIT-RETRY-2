@@ -996,5 +996,78 @@ li {
 
 /* detail 5 끝 */
 
+/* 태블릿쿼리 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .detail_1 {
+    margin: 20px 50px;
+  }
+
+  .detail_1 header .logo_pic img {
+    width: 50%;
+  }
+
+  .detail_1 header .jlmToBtn {
+    width: 35%;
+  }
+
+  .detail_1 header .scroll .menu .menu_inner {
+    width: 100%;
+  }
+
+  .detail_1 header .scroll .menu li {
+    width: 20%;
+    font-size: 18px;
+  }
+
+  .detail_1 header .search {
+    width: 30%;
+  }
+
+  .detail_1 .title {
+    font-size: 30px;
+  }
+
+  .detail_2 .container .left img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .detail_2 .container .right {
+    width: 400px;
+    height: 400px;
+  }
+
+  .detail3 .bigbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail3 .bigbox .left {
+    width: 90%;
+  }
+
+  .detail3 .bigbox .right {
+    width: 90%;
+  }
+
+  .detail_4 {
+    padding-left: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right:10%;
+  }
+
+  .detail_4 h2 {
+    font-size: 28px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .detail_5{
+    margin-left: 10%;
+    margin-right:10%;
+  }
+}
 
 /* 태블릿 끝 */

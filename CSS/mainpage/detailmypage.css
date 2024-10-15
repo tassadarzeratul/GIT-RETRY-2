@@ -530,7 +530,7 @@ li {
   }
 }
 
-/* 태블릿 쿼리 */
+/* 태블릿 */
 @media only all and (min-width: 768px) and (max-width: 991px) {
   * {
     margin: 0;
@@ -954,13 +954,17 @@ li {
   /* detail 4 시작  */
 
   .detail_4 {
-    padding-left: 130px;
-    padding-bottom: 60px
+    padding-left: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right:10%;
   }
 
   .detail_4 h2 {
-    padding-top: 130px;
-    padding-bottom: 50px;
+    font-size: 28px;
+    padding-top: 80px;
+    padding-bottom: 30px;
   }
 
   /* detail 4 끝 */
@@ -968,6 +972,10 @@ li {
 
 
   /* detail 5 시작 */
+  .detail_5{
+    margin-left: 10%;
+    margin-right:10%;
+  }
 
   .detail_5 #copyright {
     width: 80%;
