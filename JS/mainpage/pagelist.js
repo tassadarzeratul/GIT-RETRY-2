@@ -29,7 +29,7 @@ $('.otherRight img').on('click', () => pagelistToGo('../../HTML/mainpage/detail.
 
 
 // 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
-document.getElementById("searchI").addEventListener("click", function() {
+document.getElementById("searchI").addEventListener("click", function () {
     const query = document.getElementById("searchBox").value;
     if (query) {
         window.location.href = `../../HTML/mainpage/detailclone.html`;
@@ -37,4 +37,33 @@ document.getElementById("searchI").addEventListener("click", function() {
         alert("검색어를 입력해주세요.");
     }
 });
+
+
+let currentSlide = 0;
+const slidesToShow = 4;  // 한 번에 보여줄 슬라이드 수
+const totalSlides = document.querySelectorAll('.pic_list .inner').length;
+const slideWidth = document.querySelector('.pic_container').offsetWidth;
+const sliderWrapper = document.querySelector('.pic_list');
+
+// 오른쪽 버튼 클릭 시 슬라이드를 다음으로 이동
+document.querySelector('.nextBtn').addEventListener('click', function () {
+    if (currentSlide < totalSlides / slidesToShow - 1) {
+        currentSlide++;
+        updateSliderPosition();
+    }
+});
+
+// 왼쪽 버튼 클릭 시 슬라이드를 이전으로 이동
+document.querySelector('.prevBtn').addEventListener('click', function () {
+    if (currentSlide > 0) {
+        currentSlide--;
+        updateSliderPosition();
+    }
+});
+
+// 슬라이드 위치 업데이트
+function updateSliderPosition() {
+    const slideMove = currentSlide * slideWidth;
+    sliderWrapper.style.transform = `translateX(-${slideMove}px)`;
+}
 

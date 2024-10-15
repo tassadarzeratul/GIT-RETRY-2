@@ -306,6 +306,7 @@ li {
   top: 10px;
 }
 
+
 .mypage section .pic_container .pic_list .inner .description {
   font-size: 12px;
   position: relative;
@@ -317,6 +318,8 @@ li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.192);
   position: relative;
   bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .bottomline {
@@ -597,7 +600,7 @@ li {
 
     justify-content: center;
   }
-
+  
   .mypage section .pic_container .pic_list {
     width: 100%;
     display: flex;
@@ -637,6 +640,7 @@ li {
     text-align: center;
   }
   
+
   .mypage section .pic_container .pic_list .inner .comment {
     width: 280px;
     height: 100px;
