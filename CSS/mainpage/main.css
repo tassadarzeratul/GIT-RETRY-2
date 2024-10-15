@@ -156,6 +156,7 @@ main section {
   overflow: hidden;
 }
 
+
 /* 메인 슬라이더 */
 main section .pic_slider {
   display: flex;
