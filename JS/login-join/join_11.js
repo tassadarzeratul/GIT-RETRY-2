@@ -59,7 +59,6 @@ const join_user = () => {
         isValid = false;
     }
 
-    // 전화번호 검사 (11자)
     else if (inputPhone.value.length !== 11 || /\s/.test(inputPhone.value)) {
         phoneWarning.textContent = '전화번호는 11자리여야 하며 공백을 포함할 수 없습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
@@ -67,7 +66,6 @@ const join_user = () => {
         isValid = false;
     }
 
-    // 이메일 검사 (@ 포함)
     else if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
         emailWarning.textContent = '이메일에는 @가 포함되어야 하며 공백을 포함할 수 없습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
@@ -75,7 +73,6 @@ const join_user = () => {
         isValid = false;
     }
 
-    // 비밀번호 검사 (8~16자)
     else if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
         pwdWarning.textContent = '비밀번호는 8~16자여야 하며 공백을 포함할 수 없습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
@@ -83,7 +80,6 @@ const join_user = () => {
         isValid = false;
     }
 
-    // 비밀번호 확인 검사 (일치 여부)
     else if (inputEmailPwd.value !== inputEmailPwdCk.value) {
         pwdChWarning.textContent = '비밀번호가 일치하지 않습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
@@ -163,3 +159,5 @@ copyCk.addEventListener('change', join_user);
 
 
 // =============================================================================
+
+

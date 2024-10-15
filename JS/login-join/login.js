@@ -48,7 +48,7 @@ const login_user = () => {
 
 // 페이지 이동
 const loginToMain = () => {
-    alert('피자나라 치킨공주 !!')
+    alert(`환영합니다 !`);
     location.replace('../../HTML/mainpage/main.html');
 }
 
