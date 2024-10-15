@@ -17,7 +17,7 @@ $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
 $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.html'));
+$('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
 // 서브 사진
 $('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 // 오른쪽 사진
