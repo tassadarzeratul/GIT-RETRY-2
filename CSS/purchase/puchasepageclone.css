@@ -286,3 +286,11 @@ li {
   background: orange;
   color: black;
 }
+
+.explain {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+
