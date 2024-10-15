@@ -21,6 +21,29 @@ li {
 }
 
 /* purchase1  */
+.purchase1 {
+  height: auto;
+  margin: 30px 100px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+main header .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin: 20px;
+}
+
+
+
 
 
 /* 상단 로고 */
@@ -37,6 +60,17 @@ main header .top {
   justify-content: space-between;
   align-items: center;
 }
+
+
+/* main header .logo_pic img {
+  max-width: 150px;
+}
+
+.jlmToBtn {
+  display: flex;
+  gap: 10px;
+} */
+
 
 main header .logo_pic {
   width: 65%;
@@ -270,13 +304,13 @@ main .mainBox .left {
 /* 작품구매창 */
 
 .purchase1 section.portfolio .portfolio-inner {
-  width: 265px;
-  /* margin-top: 1px; */
-  /* padding:1rem 1rem 1.5rem 0rem; */
+  width: 20%;
   float: left;
   background-color: #f8f8f8;
-  margin-bottom: 4rem;
-  margin-right: 1px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
@@ -706,3 +740,97 @@ main .mainBox .left {
 }
 
 }
+
+/* 미디어쿼리 */
+
+ /* 데스크톱 */
+@media (min-width: 1024px) {
+  .portfolio-inner {
+    width: 20%;
+  }
+
+  .purchase1 {
+    margin: 30px 100px;
+  }
+  
+  /* main header .top {
+    justify-content: space-between;
+  } */
+}
+
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .portfolio-inner {
+    width: 40%;
+  }
+
+  .purchase1 {
+    margin: 20px 50px;
+  }
+
+  header .top {
+    flex-direction: column;
+    /* flex-direction: row; */
+    align-items: flex-start;
+    /* justify-content: space-between; */
+  }
+  /* header .logo_pic img {
+    max-width: 130px;
+  }
+  
+  .jlmToBtn {
+    gap: 5px;
+   */
+  
+}
+
+
+
+/* 모바일 */
+@media (max-width: 767px) {
+  .portfolio-inner {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .purchase1 {
+    margin: 10px 20px;
+  }
+
+  header .top {
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  /* header .logo_pic img {
+    max-width: 100px;
+  } */
+
+  .menu_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu_inner li {
+    margin: 10px 0;
+  }
+
+  
+/* .jlmToBtn {
+  flex-direction: column;
+  gap: 10px;
+} */
+
+}
+
+
+
+
+
+
+
+
+
