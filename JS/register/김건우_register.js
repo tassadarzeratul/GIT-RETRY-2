@@ -4,6 +4,12 @@
 // }
 
 // 
+
+const container = document.getElementById('add')
+
+
+// 
+
 const registerTheme = document.getElementsByClassName('theme');
 const registerDetails = document.getElementsByClassName('details');
 const registerBt = document.getElementsByClassName('button');

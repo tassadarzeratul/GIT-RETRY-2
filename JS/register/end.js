@@ -2,6 +2,9 @@
 const endToGo = (url) => {
     window.open(url);
 }
+
+// 로고
+$('#logo_picMain').on('click', () => endToGo('../../HTML/mainpage/main.html'));
 // 홈 화면 이동
 $('#endToHome').on('click', () => endToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
@@ -19,10 +22,20 @@ $('#endToMyPage').on('click', () => endToGo('../../HTML/mypage/김건우_mypage.
 // 검색어입력 돋보기
 $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // 사진 클릭
-$('.inner').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
+$('.buying').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
+// 작품 구매
+$('.inner img').on('click', () => endToGo('../../HTML/register/endpage.html'));
 
 
 // ============================================================================
 
-
+// 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
+document.getElementById("searchI").addEventListener("click", function() {
+    const query = document.getElementById("searchBox").value;
+    if (query) {
+        window.location.href = `../../HTML/mainpage/detailclone.html`;
+    } else {
+        alert("검색어를 입력해주세요.");
+    }
+});
 

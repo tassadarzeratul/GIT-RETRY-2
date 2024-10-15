@@ -197,15 +197,14 @@ main sub {
 main sub div {
   width: 24%;
   position: relative;
-
 }
 
 /* 서브 슬라이드 사진리스트*/
 main sub .pic_container .pic_list {
   display: flex;
-  width: 100vw;
+  width: 100%;
+  height: 150px;
   transition: transform 0.5s ease-in-out;
-
 }
 
 /* 서브 슬라이드 사진 */
@@ -254,7 +253,7 @@ main .mainBox .right .title {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  margin: -10px 0px 15px 0px;
+  margin: -10px 0px 5px 0px;
 }
 
 /* 메인 오른쪽 타이틀 전체보기 */
@@ -262,6 +261,11 @@ main .mainBox .right .title div {
   font-size: 15px;
   font-weight: normal;
   cursor: pointer;
+}
+
+/* 메인 오른쪽 시간 */
+main .mainBox .right div#timeDisplay {
+  margin-bottom: 10px;
 }
 
 /* 메인 오른쪽 전체공간 */
@@ -282,9 +286,14 @@ main .mainBox .right .pic .rightPic {
 /* 메인 오른쪽 이미지 크기 */
 main .mainBox .right .pic .rightPic img {
   width: 40%;
-  height: 118px;
+  height: 112px;
   border-radius: 10px;
   cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+main .mainBox .right .pic .rightPic:hover img {
+  transform: scale(1.05);
 }
 
 /* 메인 오른쪽 이미지 옆 번호 */
@@ -391,7 +400,13 @@ main .other .otherRight .otherPic_container .inner img {
   border-radius: 5px;
   background-size: cover;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
+
+main .other .otherRight .otherPic_container .inner:hover img {
+  transform: scale(1.05);
+}
+
 
 main .other .otherRight .otherPic_container .inner .comment {
   height: 120px;
@@ -409,51 +424,6 @@ main .other .otherRight .title {
   font-size: 15px;
   padding-top: 10px;
 }
-
-/* close */
-
-main .close {
-  width: 100%;
-  height: 200px;
-  margin: auto;
-  /* margin-top: 150px; */
-  margin-bottom: 50px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  /* background-color: #b0328a; */
-  color: black;
-}
-
-main .close .container {
-  width: 100%;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-}
-
-main .close .container .left {
-  width: 40%;
-  padding-left: 20px;
-}
-
-main .close .container .right {
-  width: 60%;
-  background-image: url(../../img/withDreamLogo2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-main .close .container .left .comment .author {
-  font-size: 20px;
-  padding: 10px 0px;
-}
-
-main .close .container .left .comment .title {
-  font-size: 25px;
-  font-weight: bold;
-}
-
 
 
 /* 미디어 쿼리 */

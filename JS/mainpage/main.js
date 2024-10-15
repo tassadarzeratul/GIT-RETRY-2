@@ -51,10 +51,8 @@ function slideImages() {
 
 setInterval(slideImages, 3000);
 
-// main slider 동작구현 끝 =================================================================
 
 // sub slider 동작구현 =================================================================
-
 document.querySelectorAll('sub .pic_container').forEach(container => {
     // 각 슬라이드 영역의 클래스명 pic_container
     const picList = container.querySelector('.pic_list');
@@ -82,10 +80,22 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
     });
 });
 
-// sub slider 동작구현 끝 =================================================================
 
-function displayCurrentTime() {
+// 현재날짜,시간 표시 =================================================================
+function displayTime() {
     let now = new Date();
     document.getElementById("timeDisplay").innerText = now.toLocaleString();
 }
-setInterval(displayCurrentTime, 1000); // 1초마다 갱신
+setInterval(displayTime, 1000); // 1초마다 갱신
+
+
+// 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
+document.getElementById("searchI").addEventListener("click", function() {
+    const query = document.getElementById("searchBox").value;
+    if (query) {
+        window.location.href = `../../HTML/mainpage/detailclone.html`;
+    } else {
+        alert("검색어를 입력해주세요.");
+    }
+});
+
