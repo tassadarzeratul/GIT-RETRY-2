@@ -174,8 +174,6 @@ li {
     position: absolute;
 }
 
-
-
 /* 태블릿 미디어 쿼리 */
 @media only all and (min-width: 768px) and (max-width: 991px) {
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
