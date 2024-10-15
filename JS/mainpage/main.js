@@ -7,9 +7,9 @@ $('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/김건우_register copy.html'));
+$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/register copy.html'));
 // 펀딩리스트
-$('#mainToList').on('click', () => mainToGo('../../HTML/register/register.html'));
+$('#mainToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩
 $('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
