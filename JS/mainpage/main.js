@@ -19,7 +19,7 @@ $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
 $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
 // 서브 사진
-$('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+$('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 오른쪽 사진
 $('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 아래쪽 사진
