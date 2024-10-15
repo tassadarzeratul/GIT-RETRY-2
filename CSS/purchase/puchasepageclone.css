@@ -46,7 +46,7 @@ li {
 }
 
 .purchasePage header .jlmToBtn {
-  width: 25%;
+  width: 15%;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -57,7 +57,7 @@ li {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 22px;
+  font-size: 25px;
   cursor: pointer;
   font-family: "Gowun Dodum", sans-serif;
 }
@@ -295,33 +295,33 @@ li {
 
 fieldset {
   border: none;
-  border-radius:3px;
+  border-radius: 3px;
   color: black;
 
 }
+
 label {
-  display:table;
-  vertical-align:baseline;
+  display: table;
+  vertical-align: baseline;
 }
 
 
-label:hover, input:hover {
-  cursor:pointer;
+label:hover,
+input:hover {
+  cursor: pointer;
 }
 
-#sum
-{
-  margin-top:31px;
-  margin-left:5px;
+#sum {
+  margin-top: 31px;
+  margin-left: 5px;
   font-size: 35px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-#sum strong
-{
+#sum strong {
   /* required for the animation */
-  display:inline-block;
-  position:relative;
+  display: inline-block;
+  position: relative;
 }
 
 .explain {
@@ -329,5 +329,3 @@ label:hover, input:hover {
   margin: 30px 100px;
   font-family: "Gowun Dodum", sans-serif;
 }
-
-

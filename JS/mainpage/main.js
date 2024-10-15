@@ -103,32 +103,32 @@ document.getElementById("searchI").addEventListener("click", function () {
 
 // 로그인 정보 =================================================================
 
-document.addEventListener('DOMContentLoaded', () => {
-    const joinBtn = document.getElementById('joinBtn');
-    const loginBtn = document.getElementById('loginBtn');
-    const logoutBtn = document.getElementById('logoutBtn');
-    const mypageBtn = document.getElementById('myPageBtn');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const joinBtn = document.getElementById('joinBtn');
+//     const loginBtn = document.getElementById('loginBtn');
+//     const logoutBtn = document.getElementById('logoutBtn');
+//     const mypageBtn = document.getElementById('myPageBtn');
 
-    // 로그인 상태 확인
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
+//     // 로그인 상태 확인
+//     const isLoggedIn = localStorage.getItem('isLoggedIn');
 
-    // 로그인되어 있으면 Join과 Login 버튼 숨기기
-    if (isLoggedIn === 'true') {
-        joinBtn.style.display = 'none';
-        loginBtn.style.display = 'none';
-        logoutBtn.style.display = 'block';
-        mypageBtn.style.display = 'block';
-    } else {
-        joinBtn.style.display = 'block';
-        loginBtn.style.display = 'block';
-        logoutBtn.style.display = 'none';
-        mypageBtn.style.display = 'none';
-    }
-});
+//     // 로그인되어 있으면 Join과 Login 버튼 숨기기
+//     if (isLoggedIn === 'true') {
+//         joinBtn.style.display = 'none';
+//         loginBtn.style.display = 'none';
+//         logoutBtn.style.display = 'block';
+//         mypageBtn.style.display = 'block';
+//     } else {
+//         joinBtn.style.display = 'block';
+//         loginBtn.style.display = 'block';
+//         logoutBtn.style.display = 'none';
+//         mypageBtn.style.display = 'none';
+//     }
+// });
 
-document.getElementById('logoutBtn').addEventListener('click', () => {
-    localStorage.setItem('isLoggedIn', 'false'); // 로그인 상태 해제
-    location.reload(); // 페이지 새로고침
-});
+// document.getElementById('logoutBtn').addEventListener('click', () => {
+//     localStorage.setItem('isLoggedIn', 'false'); // 로그인 상태 해제
+//     location.reload(); // 페이지 새로고침
+// });
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../CSS/purchase/puchasepage.css">
 </head>
+
 <body>
     <!--main 화면 시작-->
     <div class="purchasePage">
@@ -22,7 +24,8 @@
                 <div class="jlmToBtn">
                     <button type="button" id="detail1ToJoin">Join</button>
                     <button type="button" id="detail1Tologin">Login</button>
-                    <button type="button" id="detail1ToMyPagen">MyPage</button>
+                    <button type="button" id="myPageBtn" style="display:none;">MyPage</button>
+                    <button type="button" id="logoutBtn" style="display:none;">Logout</button>
                 </div>
             </div>
             <div class="scroll">
@@ -30,6 +33,7 @@
                     <ul class="menu_inner">
                         <li id="detail1ToHome">홈</li>
                         <li id="detail1ToRegister">펀딩 등록</li>
+                        <li id="detail1ToList">펀딩 리스트</li>
                         <li id="detail1ToEnd">종료 펀딩</li>
                         <li id="detail1Topurchase_1">작품 구매</li>
                     </ul>
@@ -83,5 +87,7 @@
         </purchasePage>
         <!--Main 화면 끝-->
         <script src="../../js/mainpage/main.js"></script>
+        <script src="../../JS/common.js"></script>
 </body>
+
 </html>
