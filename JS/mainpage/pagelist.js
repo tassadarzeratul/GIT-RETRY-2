@@ -39,31 +39,3 @@ document.getElementById("searchI").addEventListener("click", function () {
 });
 
 
-let currentSlide = 0;
-const slidesToShow = 4;  // 한 번에 보여줄 슬라이드 수
-const totalSlides = document.querySelectorAll('.pic_list .inner').length;
-const slideWidth = document.querySelector('.pic_container').offsetWidth;
-const sliderWrapper = document.querySelector('.pic_list');
-
-// 오른쪽 버튼 클릭 시 슬라이드를 다음으로 이동
-document.querySelector('.nextBtn').addEventListener('click', function () {
-    if (currentSlide < totalSlides / slidesToShow - 1) {
-        currentSlide++;
-        updateSliderPosition();
-    }
-});
-
-// 왼쪽 버튼 클릭 시 슬라이드를 이전으로 이동
-document.querySelector('.prevBtn').addEventListener('click', function () {
-    if (currentSlide > 0) {
-        currentSlide--;
-        updateSliderPosition();
-    }
-});
-
-// 슬라이드 위치 업데이트
-function updateSliderPosition() {
-    const slideMove = currentSlide * slideWidth;
-    sliderWrapper.style.transform = `translateX(-${slideMove}px)`;
-}
-

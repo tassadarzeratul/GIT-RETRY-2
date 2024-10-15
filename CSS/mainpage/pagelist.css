@@ -136,18 +136,18 @@ li {
 .pagelist .subComment {
   margin-top: 80px;
   margin-bottom: 10px;
+  padding-left: 20px;
   font-size: 18px;
 }
 
 /* section */
 
-.pagelist section  {
+/* .pagelist section  {
   overflow: hidden;
-}
-
+} */
 
 .pagelist section .pic_container {
-  width: 250%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -155,7 +155,7 @@ li {
 }
 
 .pagelist section .pic_container .pic_list {
-  width: 100%;
+  width: 250%;
   display: flex;
   transition: transform 0.1s ease-in-out;
 }
