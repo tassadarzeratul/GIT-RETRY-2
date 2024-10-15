@@ -7,9 +7,9 @@ $('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/김건우_register copy.html'));
+$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/register copy.html'));
 // 펀딩리스트
-$('#mainToList').on('click', () => mainToGo('../../HTML/register/register.html'));
+$('#mainToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩
 $('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
@@ -101,45 +101,3 @@ document.getElementById("searchI").addEventListener("click", function() {
     }
 });
 
-
-
-
-
-
-
-
-
-
-//로그인시 마이페이지 표시
-// main.js
-
-// $(document).ready(function() {
-//     // 로그인 상태 확인
-//     const isLoggedIn = localStorage.getItem('isLoggedIn');
-
-//     if (isLoggedIn === 'true') {
-//         // "MyPage" 버튼 표시
-//         $('#myPageBtn').show();
-
-//         // "Join" 및 "Login" 버튼 숨기기
-//         $('#joinBtn').hide();
-//         $('#loginBtn').hide();
-//     } else {
-//         // "MyPage" 버튼 숨기기
-//         $('#myPageBtn').hide();
-
-//         // "Join" 및 "Login" 버튼 표시
-//         $('#joinBtn').show();
-//         $('#loginBtn').show();
-//     }
-
-//     // 로그아웃 기능 추가 (선택 사항)
-//     $('#myPageBtn').click(function() {
-//         // 로그아웃 시 로그인 상태 제거
-//         localStorage.removeItem('isLoggedIn');
-//         localStorage.removeItem('userEmail');
-
-//         // 페이지 새로고침
-//         location.reload();
-//     });
-// });
