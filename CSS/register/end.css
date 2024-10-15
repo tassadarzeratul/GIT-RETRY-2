@@ -135,11 +135,6 @@ li {
 }
 
 /* section */
-
-.end {
-  overflow: hidden;
-}
-
 .end .maindComment {
   text-align: center;
   font-size: 36px;
@@ -176,13 +171,13 @@ li {
 }
 
 /* section pic 화면구성 */
+
 .end section .pic_container {
+  width: 100%;
   display: flex;
-  width: 200%;
   height: 1250px;
   overflow: hidden;
 }
-
 
 .end section .pic_container .pic_list {
   width: 100%;
@@ -190,12 +185,11 @@ li {
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-
+  transition: transform 0.5s ease-in-out;
 }
 
 .end section .pic_container .pic_list .inner {
   width: 30%;
-  flex: 0 0 30%;
   margin-bottom: 20px;
   padding-top: 10px;
   background-color: #f8f8f8;
@@ -209,7 +203,6 @@ li {
   background-size: cover;
   cursor: pointer;
   position: relative;
-  transition-duration: 0.3s;
 }
 
 .end section .pic_container .pic_list .inner:hover img {
