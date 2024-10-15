@@ -26,19 +26,32 @@
     background: white;
   }
   
-  .detail_5 #copyright{
-    width:80%;
-    margin:50px auto;
-    font-family: "Gowun Dodum", sans-serif;
-  }
-  .detail_5 #textarea_id{
-    width: 100%;
-    height: 400px;
-    font-size: 14px;
-    margin-top: 30px;
-    font-family: "Gowun Dodum", sans-serif;
-  }
-  
+  /* detail 5 시작 */
+
+.detail_5 #copyright {
+  width: 80%;
+  margin: 130px auto;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.detail_5 #textarea_id {
+  width: 100%;
+  height: 600px;
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: "Gowun Dodum", sans-serif;
+  border: transparent;
+  display: flex;
+  text-align: left;
+}
+
+.detailclone .detail_5 .explain {
+  margin: 100px 150px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* detail 5 끝 */
   
   
   
