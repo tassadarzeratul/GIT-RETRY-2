@@ -2,7 +2,6 @@ const commentBtn = document.querySelector("#commentFrm");
 const commentList = document.querySelector("#comment-list");
 const total = document.querySelector("h4 > span");
 const list = [];
-// console.log(commentList);
 
 class Comment {
     constructor(content) {
@@ -46,22 +45,8 @@ function totalRecord() {
     total.innerHTML = `(${list.length})`;
 }
 
-// console.log(commentBtn);
-
 function commentBtnHandler(e) {
     e.preventDefault();
-    // console.dir(e.target);
-    // console.log(e.target[0]);
-    // console.log(e.target[0].value);
-    // console.log(e.target.elements[0]);
-    // console.log(e.target.elements[0].value);
-    // console.log(e.target.elements.content);
-    // console.log(e.target.elements.content.value);
-    // console.log(e.target.content);
-    // console.log(e.target.content.value);
-
-    // list.push(e.target.content.value);
-    // return console.log(list);
 
     const input = e.target.content;
     if (input.value ==="") {
