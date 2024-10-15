@@ -300,7 +300,7 @@ li {
 
 /* detail_2 오른쪽 후원버튼 기능 */
 .detail_2 .container .right button.scroll_move:hover {
-  background-color:  #2d50c5;
+  background-color: #2d50c5;
 }
 
 
@@ -371,8 +371,8 @@ li {
 
 /* detail3 추가 */
 
-.projectext0{
-  background-color:pink;
+.projectext0 {
+  background-color: pink;
   padding-bottom: 30px;
   font-family: "Gowun Dodum", sans-serif;
 }
@@ -383,36 +383,32 @@ li {
   font-size: 70px;
 }
 
-.projectext0 #photoname  {
+.projectext0 #photoname {
   color: black;
   font-weight: bold;
   font-size: 15px;
-  
-  
 }
 
-.projectext0 #photoname1  {
+.projectext0 #photoname1 {
   font-size: 15px;
   text-align: center;
-  
- 
 }
-.projectext0 #photoname2  {
+
+.projectext0 #photoname2 {
   color: rgba(0, 119, 255, 0.596);
   font-size: 35px;
   text-align: center;
-  
 }
-.projectext0 #photoname3  {
+
+.projectext0 #photoname3 {
   color: gray;
   font-size: 15px;
   text-align: center;
 }
-.descriptiontext #explainex{
+
+.descriptiontext #explainex {
   margin-top: 90px;
 }
-
-
 
 
 /* detail3 추가 끝 */
@@ -433,7 +429,6 @@ li {
 }
 
 /* detail 4 끝 */
-
 
 
 /* detail 5 시작 */
@@ -462,6 +457,9 @@ li {
 }
 
 /* detail 5 끝 */
+
+
+
 
 /* 미디어 쿼리 */
 /* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
@@ -533,472 +531,466 @@ li {
 
 /* 태블릿 쿼리 */
 @media only all and (min-width: 768px) and (max-width: 991px) {
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-a,
-a:link,
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
+  a,
+  a:link,
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
 
-li {
-  list-style: none;
-}
+  li {
+    list-style: none;
+  }
 
-/* detail1 시작  */
+  /* detail1 시작  */
 
-.detail_1 {
-  height: auto;
-  margin: 20px 50px;
-  font-family: "Gowun Dodum", sans-serif;
-}
+  .detail_1 {
+    height: auto;
+    margin: 20px 50px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
 
-/* 상단 로고 */
+  /* 상단 로고 */
 
-.detail_1 header .top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .detail_1 header .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.detail_1 header .logo_pic {
-  width: 65%;
-  top:10px;
-}
+  .detail_1 header .logo_pic {
+    width: 65%;
+    top: 10px;
+  }
 
-.detail_1 header .logo_pic img {
-  width: 50%;
-  top:10px;
-}
+  .detail_1 header .logo_pic img {
+    width: 50%;
+    top: 10px;
+  }
 
-.detail_1 header .jlmToBtn {
-  width: 25%;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
+  .detail_1 header .jlmToBtn {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
 
-/* join, loing, mypage */
-.detail_1 header .jlmToBtn button {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-size: 18px;
-  cursor: pointer;
-  font-family: "Gowun Dodum", sans-serif;
-}
+  /* join, loing, mypage */
+  .detail_1 header .jlmToBtn button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+  }
 
-.detail_1 header .jlmToBtn button:hover {
-  color: orange;
-}
+  .detail_1 header .jlmToBtn button:hover {
+    color: orange;
+  }
 
-/* nmenu */
+  /* nmenu */
 
-.detail_1 header .scroll {
-  width: 100%;
-  display: flex;
-  border-bottom: 2px solid rgb(184, 181, 181);
-}
+  .detail_1 header .scroll {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(184, 181, 181);
+  }
 
-.detail_1 header .scroll .menu {
-  width: 100%;
-}
+  .detail_1 header .scroll .menu {
+    width: 100%;
+  }
 
-.detail_1 header .scroll .menu .menu_inner {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  background: white;
-  border: none;
-  align-items: center;
-  text-align: center;
-}
+  .detail_1 header .scroll .menu .menu_inner {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background: white;
+    border: none;
+    align-items: center;
+    text-align: center;
+  }
 
-.detail_1 header .menu li {
-  width: 15%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 22px;
-}
+  .detail_1 header .menu li {
+    width: 15%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+  }
 
-.detail_1 header .menu li:hover {
-  color: orange;
-}
+  .detail_1 header .menu li:hover {
+    color: orange;
+  }
 
-/* 우측 서치부분 */
-.detail_1 header .search {
-  width: 40%;
-  display: flex;
-  align-items: center;
-}
+  /* 우측 서치부분 */
+  .detail_1 header .search {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
 
-.detail_1 header .search input {
-  width: 100%;
-  height: 35px;
-  border-radius: 10px;
-  border: none;
-  padding: 15px;
-  margin-left: 100px;
-  background-color: rgb(243, 243, 243);
-  outline: none;
-}
+  .detail_1 header .search input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+  }
 
-.detail_1 header .search i {
-  position: relative;
-  right: 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
+  .detail_1 header .search i {
+    position: relative;
+    right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
 
-.detail_1 header .login button {
-  width: 100%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 22px;
-  font-family: "Gowun Dodum", sans-serif;
+  .detail_1 header .login button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Gowun Dodum", sans-serif;
 
-}
+  }
 
-/* 펀딩 제목 */
-.detail_1 .title {
-  text-align: center;
-  font-size: 30px;
-  padding: 150px 0px 50px 0px;
-}
+  /* 펀딩 제목 */
+  .detail_1 .title {
+    text-align: center;
+    font-size: 30px;
+    padding: 150px 0px 50px 0px;
+  }
 
-/* 구분라인 */
-.detailclone .line {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.192);
-  position: relative;
-  top: 10px;
-  margin-left: 120px;
-  margin-right: 120px;
-}
+  /* 구분라인 */
+  .detailclone .line {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+    position: relative;
+    top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 
-.detail_1 .guide .comment {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-}
+  .detail_1 .guide .comment {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
 
-.detail_1 .guide .comment .inner {
-  width: 70%;
-  font-size: 26px;
-}
-
-
-/* sticky 화면 고정 */
-
-.sticky {
-  width: 100%;
-  display: flex;
-  padding: 30px 0px 30px 0px;
-  color: black;
-  position: sticky;
-  top: 0;
-  padding-left: 80px;
-  background-color: white;
-  font-family: "Gowun Dodum", sans-serif;
-
-}
-
-.sticky ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 26px;
-  text-align: center;
-}
-
-.sticky li {
-  display: inline-block;
-  margin-left: 60px;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.sticky .one1:hover {
-  color: #2d50c5;
-}
-
-.sticky .one2:hover {
-  color: #2d50c5;
-}
-
-.sticky .one3:hover {
-  color: #2d50c5;
-}
-
-/* sticky 화면 고정끝 */
+  .detail_1 .guide .comment .inner {
+    width: 70%;
+    font-size: 26px;
+  }
 
 
+  /* sticky 화면 고정 */
 
-/* detail_2 */
+  .sticky {
+    width: 100%;
+    display: flex;
+    padding: 30px 0px 30px 0px;
+    color: black;
+    position: sticky;
+    top: 0;
+    padding-left: 80px;
+    background-color: white;
+    font-family: "Gowun Dodum", sans-serif;
+  }
 
-.detail_2 {
-  height: auto;
-  /* margin: 150px 250px 250px 200px; */
-  padding: 100px;
-  font-family: "Gowun Dodum", sans-serif;
-}
+  .sticky ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 26px;
+    text-align: center;
+  }
 
-.detail_2 .container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
+  .sticky li {
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 26px;
+    font-weight: bold;
+  }
 
-/* detail_2 왼쪽 사진부분 */
-.detail_2 .container .left {
-  width: 100%;
-  height: 600px;
-}
+  .sticky .one1:hover {
+    color: #2d50c5;
+  }
 
-/* detail_2 왼쪽 사진*/
-.detail_2 .container .left img {
-  width: 400px;
-  height: 400px;
-  border-radius: 15px;
-}
+  .sticky .one2:hover {
+    color: #2d50c5;
+  }
 
-/* detail_2 오른쪽 구성 */
-.detail_2 .container .right {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 12px;
-  position: relative;
-}
+  .sticky .one3:hover {
+    color: #2d50c5;
+  }
 
-.detail_2 .container .right div strong {
-  font-size: 25px;
-}
-
-/* detail_2 오른쪽 하트 버튼 */
-
-.detail_2 .container .right .spoBtn {
-  display: flex;
-  align-items: center;
-}
-
-.detail_2 .container .right button.love {
-  width: 70px;
-  height: 70px;
-  border: 1px solid rgb(52, 99, 255);
-  border-radius: 15px;
-  margin-right: 10px;
-  background-color: white;
-}
-
-.detail_2 .container .right button.love .loveBtn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 18px;
-  color: rgb(52, 99, 255);
-  background-color: white;
-  cursor: pointer;
-}
-
-.detail_2 .container .right button.love .loveBtn i {
-  margin-bottom: 5px;
-}
-
-/* detail_2 오른쪽 후원버튼 */
-.detail_2 .container .right button.sponsor {
-  width: 70%;
-  height: 70px;
-  border: 1px solid;
-  border-radius: 15px;
-  font-size: 10px;
-  font-weight: bold;
-  color: white;
-  background-color: rgb(52, 99, 255);
-  cursor: pointer;
-  transition: 0.5s;
-  font-family: "Gowun Dodum", sans-serif;
-}
-
-/* detail_2 오른쪽 후원버튼 기능 */
-.detail_2 .container .right button.sponsor:hover {
-  background-color: rgb(0, 26, 111);
-}
+  /* sticky 화면 고정끝 */
 
 
-/* detail_3  */
+
+  /* detail_2 */
+
+  .detail_2 {
+    height: auto;
+    /* margin: 150px 250px 250px 200px; */
+    padding: 100px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  .detail_2 .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /* detail_2 왼쪽 사진부분 */
+  .detail_2 .container .left {
+    width: 100%;
+    height: 600px;
+  }
+
+  /* detail_2 왼쪽 사진*/
+  .detail_2 .container .left img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+  }
+
+  /* detail_2 오른쪽 구성 */
+  .detail_2 .container .right {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 12px;
+    position: relative;
+  }
+
+  .detail_2 .container .right div strong {
+    font-size: 25px;
+  }
+
+  /* detail_2 오른쪽 하트 버튼 */
+
+  .detail_2 .container .right .spoBtn {
+    display: flex;
+    align-items: center;
+  }
+
+  .detail_2 .container .right button.love {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(52, 99, 255);
+    border-radius: 15px;
+    margin-right: 10px;
+    background-color: white;
+  }
+
+  .detail_2 .container .right button.love .loveBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    color: rgb(52, 99, 255);
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .detail_2 .container .right button.love .loveBtn i {
+    margin-bottom: 5px;
+  }
+
+  /* detail_2 오른쪽 후원버튼 */
+  .detail_2 .container .right button.sponsor {
+    width: 70%;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(52, 99, 255);
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Gowun Dodum", sans-serif;
+  }
+
+  /* detail_2 오른쪽 후원버튼 기능 */
+  .detail_2 .container .right button.sponsor:hover {
+    background-color: rgb(0, 26, 111);
+  }
 
 
-.detail3 .bigbox {
-  width: 100%;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Gowun Dodum", sans-serif;
+  /* detail_3  */
 
-}
 
-.detail3 .bigbox .left {
-  width: 60%;
-  text-align: center;
-}
+  .detail3 .bigbox {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Gowun Dodum", sans-serif;
+  }
 
-.detail3 .bigbox .left .descriptiontext {
-  padding: 20px;
-  font-size: 30px;
-}
+  .detail3 .bigbox .left {
+    width: 60%;
+    text-align: center;
+  }
 
-.detail3 .bigbox .left .descriptiontext p {
-  font-size: 16px;
-}
+  .detail3 .bigbox .left .descriptiontext {
+    padding: 20px;
+    font-size: 30px;
+  }
 
-.detail3 .bigbox .left .left_inner img {
-  width: 100%;
-  padding: 20px;
-}
+  .detail3 .bigbox .left .descriptiontext p {
+    font-size: 16px;
+  }
 
-.detail3 .bigbox .right {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  
-}
+  .detail3 .bigbox .left .left_inner img {
+    width: 100%;
+    padding: 20px;
+  }
 
-.detail3 .bigbox .right .descriptiontext {
-  width: 200px;
-  margin-top: 20px;
-  font-size: 15px;
-  /* position: sticky;
+  .detail3 .bigbox .right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail3 .bigbox .right .descriptiontext {
+    width: 200px;
+    margin-top: 20px;
+    font-size: 15px;
+    /* position: sticky;
   top: 0; */
-  padding-top: 30px;
-  background-color: white;
-  z-index: 2;
-}
+    padding-top: 30px;
+    background-color: white;
+    z-index: 2;
+  }
 
-.detail3 .bigbox .right .product {
-  width: 100%;
-  height: 100px;
-  background-color: #4a74ff;
-  color: white;
-  border-radius: 3px;
-  margin: 20px 0px 20px 0px;
-  transition: all 0.2s;
-  cursor: pointer;
-  border-color: transparent;
-  font-family: "Gowun Dodum", sans-serif;
+  .detail3 .bigbox .right .product {
+    width: 100%;
+    height: 100px;
+    background-color: #4a74ff;
+    color: white;
+    border-radius: 3px;
+    margin: 20px 0px 20px 0px;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-color: transparent;
+    font-family: "Gowun Dodum", sans-serif;
+  }
 
-}
+  .detail3 .bigbox .right .product:hover {
+    /* background-color: rgb(49, 74, 156); */
+    background-color: #2d50c5;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+  }
 
-.detail3 .bigbox .right .product:hover {
-  /* background-color: rgb(49, 74, 156); */
-  background-color: #2d50c5;
-  border-color: rgb(0, 0, 0);
-  border-style: solid;
-}
+  /* detail3 추가 */
 
-/* detail3 추가 */
-
-.projectext0{
-  background-color:pink;
-  padding-bottom: 30px;
-  font-family: "Gowun Dodum", sans-serif;
-}
-
-
-.projectext0 .phototitle {
-  color: rgb(255, 255, 255);
-  font-size: 70px;
-  
-  
-}
+  .projectext0 {
+    background-color: pink;
+    padding-bottom: 30px;
+    font-family: "Gowun Dodum", sans-serif;
+  }
 
 
-.projectext0 #photoname  {
-  color: black;
-  font-weight: bold;
-  font-size: 15px;
-  
-  
-}
-
-.projectext0 #photoname1  {
-  font-size: 15px;
-  text-align: center;
-  
- 
-}
-.projectext0 #photoname2  {
-  color: rgba(0, 119, 255, 0.596);
-  font-size: 25px;
-  text-align: center;
-  
-}
-.projectext0 #photoname3  {
-  color: gray;
-  font-size: 10px;
-  text-align: center;
-  font-weight: bold;
-}
-.descriptiontext #explainex{
-  margin-top: 90px;
-}
+  .projectext0 .phototitle {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+  }
 
 
-/* detail3 추가 끝 */
+  .projectext0 #photoname {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
 
-/* detail 3 끝 */
 
-/* detail 4 시작  */
+  }
 
-.detail_4 {
-  padding-left: 130px;
-  padding-bottom: 60px
-}
+  .projectext0 #photoname1 {
+    font-size: 15px;
+    text-align: center;
+  }
 
-.detail_4 h2 {
-  padding-top: 130px;
-  padding-bottom: 50px;
-}
+  .projectext0 #photoname2 {
+    color: rgba(0, 119, 255, 0.596);
+    font-size: 25px;
+    text-align: center;
+  }
 
-/* detail 4 끝 */
+  .projectext0 #photoname3 {
+    color: gray;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .descriptiontext #explainex {
+    margin-top: 90px;
+  }
+
+
+  /* detail3 추가 끝 */
+
+  /* detail 3 끝 */
+
+  /* detail 4 시작  */
+
+  .detail_4 {
+    padding-left: 130px;
+    padding-bottom: 60px
+  }
+
+  .detail_4 h2 {
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+
+  /* detail 4 끝 */
 
 
 
-/* detail 5 시작 */
+  /* detail 5 시작 */
 
-.detail_5 #copyright {
-  width: 80%;
-  margin: 50px auto;
-  font-family: "Gowun Dodum", sans-serif;
-}
+  .detail_5 #copyright {
+    width: 80%;
+    margin: 50px auto;
+    font-family: "Gowun Dodum", sans-serif;
+  }
 
-.detail_5 #textarea_id {
-  width: 100%;
-  height: 600px;
-  font-size: 14px;
-  margin-top: 30px;
-  font-weight: bold;
-  font-family: "Gowun Dodum", sans-serif;
-  border: transparent;
-  display: flex;
-  text-align: left;
-}
+  .detail_5 #textarea_id {
+    width: 100%;
+    height: 600px;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: "Gowun Dodum", sans-serif;
+    border: transparent;
+    display: flex;
+    text-align: left;
+  }
 
-.detailclone .detail_5 .explain {
-  margin: 100px 150px;
-}
+  .detailclone .detail_5 .explain {
+    margin: 100px 150px;
+  }
 
 }
 
