@@ -65,3 +65,35 @@ loginBtn.addEventListener('click', (event) => {
 inputEmailId.addEventListener('input', login_user);
 inputEmailPwd.addEventListener('input', login_user);
 
+
+//로그인시 마이페이지 표시
+
+// $(document).ready(function() {
+//     $('#btnlogin').click(function(event) {
+//         event.preventDefault(); // 폼의 기본 제출 동작 방지
+
+//         const email = $('#userEmail').val();
+//         const password = $('#userPwd').val();
+
+//         // 여기서 실제 로그인 인증 로직을 구현해야 합니다.
+//         // 예를 들어, AJAX를 사용하여 서버에 로그인 요청을 보낼 수 있습니다.
+//         // 여기서는 간단히 예시로 로그인 성공을 가정합니다.
+
+//         // 로그인 성공 시
+//         const isLoginSuccess = true; // 실제 인증 결과로 변경
+
+//         if (isLoginSuccess) {
+//             // 로그인 상태 저장
+//             localStorage.setItem('isLoggedIn', 'true');
+
+//             // 필요한 사용자 정보 저장 (예: 이메일)
+//             localStorage.setItem('userEmail', email);
+
+//             // main.html로 리디렉션
+//             window.location.href = '../../HTML/mainpage/main.html';
+//         } else {
+//             // 로그인 실패 시 경고 메시지 표시
+//             $('#emailWarning').text('이메일 또는 비밀번호가 일치하지 않습니다.');
+//         }
+//     });
+// });
