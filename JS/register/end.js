@@ -24,7 +24,7 @@ $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'
 // 사진 클릭
 $('.buying').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // 작품 구매
-$('.inner img').on('click', () => endToGo('../../HTML/register/endpage.html'));
+$('.inner img').on('click', () => endToGo('../../HTML/register/purchasepage.html'));
 
 
 // ============================================================================

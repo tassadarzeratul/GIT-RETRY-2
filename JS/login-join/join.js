@@ -113,9 +113,11 @@ const join_user = () => {
     }
 }
 
+
+
 // 페이지 이동
 const joinToMain = () => {
-    alert(inputName.value + `님 환영합니다 !`);
+    alert('가입을 환영합니다 !')
     location.replace('../../HTML/mainpage/main.html');
 }
 
