@@ -1,5 +1,4 @@
 // 화면 이동 
-
 // 로고
 const joinToLogin_1 = () => {
     window.location.replace('../../HTML/mainpage/main.html');
@@ -12,15 +11,7 @@ const joinToLogin = () => {
 }
 joinToJoin.addEventListener('click', joinToLogin);
 
-// // 회원가입
-// const joinTocopyRight = () => {
-//     window.open('../../HTML/login-join/login.html');
-// }
-// joinToJoin.addEventListener('click', joinTocopyRight);
-
-
 // =============================================================================
-// 입력창 유효성 검사 
 
 const inputName = document.getElementById('userName');
 const inputPhone = document.getElementById('userPhone');
@@ -39,129 +30,138 @@ const pwdChWarning = document.getElementById('pwdChWarning');
 const resultMessageId = document.getElementById('resultMessageId');
 const resultMessageCopy = document.getElementById('resultMessageCopy');
 
-const join_user = () => {
-    let isValid = true; // 모든사항이 유효한지 확인 변수
+// 이메일 중복 확인 함수
+const checkEmail = () => {
+    const existingUser = JSON.parse(localStorage.getItem('user'));
+    if (existingUser && existingUser.email === inputEmailId.value) {
+        resultMessageId.textContent = "이미 사용 중인 이메일입니다.";
+        return false;
+    }
+    resultMessageId.textContent = "";
+    return true;
+};
 
-    // 경고 메시지 초기화
-    nameWarning.textContent = '';
-    phoneWarning.textContent = '';
-    emailWarning.textContent = '';
-    pwdWarning.textContent = '';
-    pwdChWarning.textContent = '';
-    resultMessageId.textContent = '';
-    resultMessageCopy.textContent = '';
-
-    // 이름 검사 (2~10자)
+// 이름 유효성 검사
+const validateName = () => {
     if (inputName.value.length < 2 || inputName.value.length > 10 || /\s/.test(inputName.value)) {
         nameWarning.textContent = '이름은 2~10자이며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
-        isValid = false;
+        return false;
+    } else {
+        nameWarning.textContent = '';
+        return true;
     }
+};
 
-    // 전화번호 검사 (11자)
-    else if (inputPhone.value.length !== 11 || /\s/.test(inputPhone.value)) {
+// 전화번호 유효성 검사
+const validatePhone = () => {
+    if (inputPhone.value.length !== 11 || /\s/.test(inputPhone.value)) {
         phoneWarning.textContent = '전화번호는 11자리여야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
-        isValid = false;
+        return false;
+    } else {
+        phoneWarning.textContent = '';
+        return true;
     }
+};
 
-    // 이메일 검사 (@ 포함)
-    else if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
+// 이메일 유효성 검사
+const validateEmail = () => {
+    if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
         emailWarning.textContent = '이메일에는 @가 포함되어야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
-        isValid = false;
+        return false;
+    } else if (!checkEmail()) {
+        return false;
+    } else {
+        emailWarning.textContent = '';
+        return true;
     }
+};
 
-    // 비밀번호 검사 (8~16자)
-    else if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
+// 비밀번호 유효성 검사
+const validatePassword = () => {
+    if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
         pwdWarning.textContent = '비밀번호는 8~16자여야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
-        isValid = false;
+        return false;
+    } else {
+        pwdWarning.textContent = '';
+        return true;
     }
+};
 
-    // 비밀번호 확인 검사 (일치 여부)
-    else if (inputEmailPwd.value !== inputEmailPwdCk.value) {
+// 비밀번호 확인 유효성 검사
+const validatePasswordConfirm = () => {
+    if (inputEmailPwd.value !== inputEmailPwdCk.value) {
         pwdChWarning.textContent = '비밀번호가 일치하지 않습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
-        isValid = false;
+        return false;
+    } else {
+        pwdChWarning.textContent = '';
+        return true;
     }
+};
+
+// 전체 유효성 검사
+const validateInput = () => {
+    let isValid = true;
+
+    if (!validateName()) isValid = false;
+    if (!validatePhone()) isValid = false;
+    if (!validateEmail()) isValid = false;
+    if (!validatePassword()) isValid = false;
+    if (!validatePasswordConfirm()) isValid = false;
 
     if (!emailCk.checked) {
         resultMessageId.textContent = '이메일 중복확인을 체크해 주세요';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
         isValid = false;
+    } else {
+        resultMessageId.textContent = '';
     }
 
     if (!copyCk.checked) {
-        resultMessageCopy.textContent += (resultMessageCopy.textContent ? ' ' : '') + '약관에 동의해 주세요.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
+        resultMessageCopy.textContent = '약관에 동의해 주세요.';
         isValid = false;
+    } else {
+        resultMessageCopy.textContent = '';
     }
 
-    // 모든 조건을 통과했을 경우
-    if (isValid) {
-        loginBtn.style.backgroundColor = "#0095F6";
-        loginBtn.disabled = false;
-        resultMessageId.textContent = ''; // 통과 시 메세지 지우기
-    }
-}
+    return isValid;
+};
 
-
-
-// 페이지 이동
+// 페이지 이동 함수 (회원가입 성공 후 메인 페이지로 이동)
 const joinToMain = () => {
-    alert('가입을 환영합니다 !')
+    alert(inputName.value + '님 가입을 환영합니다!');
     location.replace('../../HTML/mainpage/main.html');
-}
+};
 
-// 로그인 버튼 클릭
+// 실시간으로 입력 필드의 유효성 검사를 수행 (해당 필드만 검사)
+inputName.addEventListener('input', validateName);
+inputPhone.addEventListener('input', validatePhone);
+inputEmailId.addEventListener('input', validateEmail);
+inputEmailPwd.addEventListener('input', validatePassword);
+inputEmailPwdCk.addEventListener('input', validatePasswordConfirm);
+emailCk.addEventListener('change', validateInput);
+copyCk.addEventListener('change', validateInput);
+
+// 로그인 버튼 클릭 이벤트
 loginBtn.addEventListener('click', (event) => {
-    event.preventDefault(); // 기본 동작 방지
-    join_user(); // 입력검사 호출
-    if (!loginBtn.disabled) { // 버튼이 활성화된 경우에만 이동
+    event.preventDefault();
+
+    const isFormValid = validateInput();
+
+    // 모든 조건이 충족되었을 경우에만 메인 페이지로 이동
+    if (isFormValid) {
+        saveUserData();
         joinToMain();
+    } else {
+        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
     }
 });
 
-// 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
-inputName.addEventListener('input', join_user);
-inputPhone.addEventListener('input', join_user);
-inputEmailId.addEventListener('input', join_user);
-inputEmailPwd.addEventListener('input', join_user);
-inputEmailPwdCk.addEventListener('input', join_user);
-emailCk.addEventListener('change', join_user);
-copyCk.addEventListener('change', join_user);
-
-
-// =============================================================================
-
-// 입력창 label 기능
-
-// $(document).ready(function () {
-//     $('.inputBox input').focus(function () {
-//         $(this).sibligns('label').addClass('active');
-//     });
-
-//     $('.inputBox input').on('input', function () {
-//         if ($(this).val().length > 0) {
-//             $(this).siblings('label').addClass('active');
-//         } else {
-//             $(this).siblings('label').removeClass('active');
-//         }
-//     });
-//     $('.inputBox input').blur(function () {
-//         if ($(this).val().lenght === 0) {
-//             $(this).siblings('label').removeClass('active');
-//         }
-//     });
-// });
-
-
-// =============================================================================
+// 사용자 정보 저장 함수 (LocalStorage에 저장)
+const saveUserData = () => {
+    const userData = {
+        name: inputName.value,
+        phone: inputPhone.value,
+        email: inputEmailId.value,
+        password: inputEmailPwd.value
+    };
+    localStorage.setItem('user', JSON.stringify(userData)); // LocalStorage에 저장
+};
