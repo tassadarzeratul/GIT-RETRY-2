@@ -2,6 +2,8 @@
 const detail1ToGo = (url) => {
     window.open(url);
 }
+// 로고
+$('#logo_picMain').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#detail1ToHome').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록

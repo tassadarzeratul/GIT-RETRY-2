@@ -40,6 +40,7 @@ li {
 
 .detail_1 header .logo_pic img {
   width: 50%;
+  cursor: pointer;
 }
 
 .detail_1 header .jlmToBtn {
