@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
 * {
   margin: 0;
@@ -189,17 +189,32 @@ li {
   height:30px;
   margin-top: 0px;
   margin-bottom:50px;
+  text-align: center;
+}
+
+.register .content .description .info .add .additional{
+  background-color: rgba(255, 0, 0, 0.406);
+  border-radius: 30px;
+  border-color:rgba(128, 128, 128, 0.301);
+  color:black;
+  width:200px;
+  height:30px;
+  margin-top: 0px;
+  margin-bottom:50px;
+  text-align: center;
 }
 
 .duplicate{
-  background-color: rgba(52, 16, 255, 0.406);
+  background-color: rgba(15, 51, 214, 0.712);
   border-radius: 3px;
   border-color:transparent;
-  color:black;
+  color:white;
   width:120px;
   height:30px;
   margin-top: 0px;
   margin-bottom:50px;
+  font-family: "Gowun Dodum", sans-serif;  
+
 }
 
 .duplicate:hover{
