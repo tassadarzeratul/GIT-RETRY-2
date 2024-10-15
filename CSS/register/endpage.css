@@ -215,7 +215,7 @@ li {
 /* 커뮤니티 댓글 기능 스타일 */
 
         /* 댓글 입력 영역 스타일 */
-.endPage .comment-form {
+/* .endPage .comment-form {
           margin-bottom: 20px;
       }
       .comment-form textarea {
@@ -235,7 +235,7 @@ li {
       }
 
       /* 댓글 리스트 스타일 */
-.endPage .comment-list {
+/* .endPage .comment-list {
           list-style: none;
           padding: 0;
       }
@@ -250,10 +250,10 @@ li {
       }
 .endPage .comment-item .text {
           margin-top: 5px;
-      }
+      } */
 
 
-/* .endPage div.community .comment {
+.endPage div.community .comment {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -374,7 +374,7 @@ li {
   color: #666;
   outline: none;
 
-} */
+}
 
 /* 커뮤니티 댓글창 */
 
