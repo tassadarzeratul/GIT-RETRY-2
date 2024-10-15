@@ -2,6 +2,9 @@
 const endToGo = (url) => {
     window.open(url);
 }
+
+// 로고
+$('#logo_picMain').on('click', () => endToGo('../../HTML/mainpage/main.html'));
 // 홈 화면 이동
 $('#endToHome').on('click', () => endToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록

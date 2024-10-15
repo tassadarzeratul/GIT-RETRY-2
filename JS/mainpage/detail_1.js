@@ -2,6 +2,8 @@
 const detail1ToGo = (url) => {
     window.open(url);
 }
+// 로고
+$('#logo_picMain').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#detail1ToHome').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
@@ -39,4 +41,16 @@ document.getElementById("searchI").addEventListener("click", function() {
     } else {
         alert("검색어를 입력해주세요.");
     }
+});
+
+// 스크롤
+document.querySelectorAll(".scroll_move").forEach(function(button) {
+    button.addEventListener("click", function() {
+        const targetId = button.getAttribute("data-target");
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+    });
 });
