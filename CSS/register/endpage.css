@@ -186,7 +186,7 @@ li {
   display: inline-block
 }
 
-.endPage div.useAmount button {
+.endPage div.useAmount .popup{
   width: 9%;
   height: 250px;
   border: 1px solid;
@@ -194,15 +194,16 @@ li {
   position: absolute;
   background-color: rgb(52, 99, 255);
   color: white;
-  font-size: 34px;
+  font-size: 15px;
   writing-mode: vertical-rl;
   cursor: pointer;
   transition: 0.5s;
 }
 
 /* registerPop 버튼기능 */
-.endPage div.useAmount button:hover {
+.endPage div.useAmount .popup:hover {
   background-color: rgb(0, 26, 111);
+
 }
 
 /* 금액사용내역 버튼 */

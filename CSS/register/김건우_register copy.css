@@ -211,3 +211,7 @@ li {
   margin-top: 0px;
   margin-bottom:50px;
 }
+
+.register .content .description .selectNumber .submitNumber{
+    width: 1000px;
+}
