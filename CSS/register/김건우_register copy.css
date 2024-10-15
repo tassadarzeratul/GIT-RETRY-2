@@ -133,12 +133,6 @@ li {
   outline: none;
 }
 
-.register .content .button:hover {
-  background-color: rgb(0, 0, 0);
-  transition: 0.5s;
-  color: white;
-}
-
 /* test */
 .register .content .upload-btn-wrapper {
   display: inline-block;
@@ -164,7 +158,6 @@ li {
   left: 0;
   top: 0;
   opacity: 0;
-
 }
 
 .register .content .tip {
@@ -192,25 +185,13 @@ li {
   text-align: center;
 }
 
-.register .content .description .info .add .additional{
-  background-color: rgba(255, 0, 0, 0.406);
-  border-radius: 30px;
-  border-color:rgba(128, 128, 128, 0.301);
-  color:black;
-  width:200px;
-  height:30px;
-  margin-top: 0px;
-  margin-bottom:50px;
-  text-align: center;
-}
-
 .duplicate{
   background-color: rgba(15, 51, 214, 0.712);
   border-radius: 3px;
   border-color:transparent;
   color:white;
-  width: 150px;;
-  height:30px;
+  width: 150px;
+  height:40px;
   margin-top: 0px;
   margin-bottom:50px;
   font-family: "Gowun Dodum", sans-serif;  

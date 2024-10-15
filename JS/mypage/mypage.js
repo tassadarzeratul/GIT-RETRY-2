@@ -5,7 +5,7 @@ const myPageToGo = (url) => {
 // 홈
 $('#myPageToHome').on('click', () => myPageToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#myPageToRegister').on('click', () => myPageToGo('../../HTML/register/김건우_register.html'));
+$('#myPageToRegister').on('click', () => myPageToGo('../../HTML/register/김건우_register copy.html'));
 // 종료펀딩
 $('#myPageToend').on('click', () => myPageToGo('../../HTML/register/end.html'));
 // 작품구매
@@ -15,7 +15,7 @@ $('#mypageTojoin').on('click', () => myPageToGo('../../HTML/login-join/join.html
 // Login
 $('#mypageTologin').on('click', () => myPageToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#mypageTomyPage').on('click', () => myPageToGo('../../HTML/mypage/김건우_mypage.html'));
+$('#mypageTomyPage').on('click', () => myPageToGo('../../HTML/mypage/mypage.html'));
 
 
 // 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
