@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagelist</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/mainpage/pagelist.css">
+</head>
+
+<body>
+    <!--pagelist 화면 시작-->
+    <div class="pagelist">
+        <header class="header">
+            <div class="top">
+                <div class="logo_pic" id="logo_picMain">
+                    <img src="../../img/withDreamLogo2.png" alt="logo">
+                </div>
+                <div class="jlmToBtn">
+                    <button type="button" id="pagelistToJoin">Join</button>
+                    <button type="button" id="pagelistToLogin">Login</button>
+                    <button type="button" id="pagelistToMyPage">MyPage</button>
+                </div>
+            </div>
+            <div class="scroll">
+                <div class="menu">
+                    <ul class="menu_inner">
+                        <li id="pagelistToHome">홈</li>
+                        <li id="pagelistToRegister">펀딩 등록</li>
+                        <li id="pagelistToList">펀딩 리스트</li>
+                        <li id="pagelistToend">종료 펀딩</li>
+                        <li id="pagelistTopurchase_1">작품 구매</li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" id="searchBox" placeholder="검색어를 입력해주세요">
+                    <i class="fa-solid fa-magnifying-glass" id="searchI"></i>
+                </div>
+            </div>
+        </header>
+        <div class="subComment">276개의 펀딩이 있습니다.</div>
+        <section>
+            <div class="pic_container">
+                <div class="pic_list">
+                    <div class="inner" id="endPic_1">
+                        <img src="../../img/배경29.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 여행단</div>
+                            <div class="title">내 방 한 구석의 여행지,</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_2">
+                        <img src="../../img/배경2.jpeg" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 링크</div>
+                            <div class="title">창작자용 찐만능 필터 2탄!!</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_3">
+                        <img src="../../img/배경25.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">humanJackson</div>
+                            <div class="title">[SPAIN: LOVE AND OURAGE]</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_4">
+                        <img src="../../img/배경18.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 스튜디오</div>
+                            <div class="title">영화 속 한 장면이 되는 여행</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_5">
+                        <img src="../../img/배경30.png" alt="img1"
+                            onclick="window.open('../../HTML/register/endpage.html')">
+                        <div class="comment">
+                            <div class="author">휴먼 시간</div>
+                            <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="inner" id="endPic_6">
+                        <img src="../../img/배경23.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 스케르</div>
+                            <div class="title">힙하고 한국적인, 나다운 프로필촬영</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_7">
+                        <img src="../../img/배경21.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 스튜디오</div>
+                            <div class="title">사적이고 친밀한 우리들의 이야기</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_8">
+                        <img src="../../img/배경11.jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 빌런</div>
+                            <div class="title">모르는 시절 Unknowm Birth</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_9">
+                        <img src="../../img/배경27.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 시간</div>
+                            <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_9">
+                        <img src="../../img/가로작품9 (4).jpg" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 시간</div>
+                            <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_9">
+                        <img src="../../img/집중.png" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 시간</div>
+                            <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+                        </div>
+                    </div>
+                    <div class="inner" id="endPic_9">
+                        <img src="../../img/산나비.avif" alt="img1">
+                        <div class="comment">
+                            <div class="author">휴먼 시간</div>
+                            <div class="title">사랑을 발견하는 가족사진 출장 촬영</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="explain">
+            <hr class="linee" width="100%" color="black">
+            <br><br>
+            <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
+                <br><br>
+                이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
+            </p>
+            <p class="companyx">
+                직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
+                직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
+        </div>
+    </div>
+    <!--admain 화면 끝-->
+    <script src="../../js/mainpage/pagelist.js"></script>
+</body>
+
+</html>
