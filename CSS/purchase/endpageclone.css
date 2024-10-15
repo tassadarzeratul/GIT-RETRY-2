@@ -248,6 +248,7 @@ li {
 .endpage div.infoLeft {
   display: inline-block;
   width: 45%;
+  margin-top: 60px;
 }
 
 .endpage div.exhibition {
@@ -268,7 +269,7 @@ li {
 .endpage div.infoRight {
   display: inline-block;
   width: 45%;
-
+  margin-top: 60px;
 }
 
 .endpage div.creator {
@@ -304,6 +305,15 @@ li {
   right:350px;
   top:310px;
   font-family: "Gowun Dodum", sans-serif;
+}
+
+/* endpage line */
+.endpage .line {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.301);
+  position: relative;
+  top: 10px;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 
 /* registerPop 버튼기능 */
