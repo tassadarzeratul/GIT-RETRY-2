@@ -149,10 +149,6 @@ li {
   padding-top: 30px;
 }
 
-/* .mySlides{
-    display: none;
-} */
-
 .prev,
 .next {
   cursor: pointer;
@@ -206,7 +202,6 @@ li {
   transition: background-color 0.6s ease;
 }
 
-
 .active,
 .dot:hover {
   background-color: #717171;
@@ -219,7 +214,6 @@ li {
   animation-duration: 1.5s;
 }
 
-
 @-webkit-keyframes fade {
   from {
     opacity: .4
@@ -229,7 +223,6 @@ li {
     opacity: 1
   }
 }
-
 
 @keyframes fade {
   from {
@@ -245,7 +238,6 @@ li {
 
 
 /* 상단 공통 로고 및 메뉴 */
-
 .endpage table {
   font-size: 20px;
   border-spacing: 15px;
