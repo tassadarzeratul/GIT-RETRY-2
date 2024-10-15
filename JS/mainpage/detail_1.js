@@ -18,3 +18,25 @@ $('#detail1Tologin').on('click', () => detail1ToGo('../../HTML/login-join/login.
 $('#detail1ToMyPagen').on('click', () => detail1ToGo('../../HTML/mypage/김건우_mypage.html'));
 // 검색어입력 돋보기
 $('#detail1SearchI').on('click', () => detail1ToGo('../../HTML/purchase/purchase1.html'));
+
+
+// join창에서 약관보기 클릭 시 저작권으로 이동
+const urlParams = new URLSearchParams(window.location.search);
+const scrollTo = urlParams.get('scrollTo');
+
+if (scrollTo) {
+    const targetElement = document.getElementById(scrollTo);
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
+document.getElementById("searchI").addEventListener("click", function() {
+    const query = document.getElementById("searchBox").value;
+    if (query) {
+        window.location.href = `../../HTML/mainpage/detailclone.html`;
+    } else {
+        alert("검색어를 입력해주세요.");
+    }
+});

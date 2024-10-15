@@ -12,6 +12,12 @@ const joinToLogin = () => {
 }
 joinToJoin.addEventListener('click', joinToLogin);
 
+// // 회원가입
+// const joinTocopyRight = () => {
+//     window.open('../../HTML/login-join/login.html');
+// }
+// joinToJoin.addEventListener('click', joinTocopyRight);
+
 
 // =============================================================================
 // 입력창 유효성 검사 
