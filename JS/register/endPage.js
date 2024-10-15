@@ -66,9 +66,6 @@ document.getElementById("searchI").addEventListener("click", function () {
 });
 
 
-
-
-
 // const commentBtn = document.querySelector("#commentFrm");
 // const commentList = document.querySelector("#comment-list");
 // // console.log(commentList);
