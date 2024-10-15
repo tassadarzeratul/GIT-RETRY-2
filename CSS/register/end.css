@@ -203,6 +203,7 @@ li {
   background-size: cover;
   cursor: pointer;
   position: relative;
+  transition: transform 0.5s ease-in-out;
 }
 
 .end section .pic_container .pic_list .inner:hover img {
