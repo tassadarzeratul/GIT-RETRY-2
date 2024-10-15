@@ -299,13 +299,12 @@ li {
 }
 
 /* detail_2 오른쪽 후원버튼 기능 */
-.detail_2 .container .right button.sponsor:hover {
-  background-color: rgb(0, 26, 111);
+.detail_2 .container .right button.scroll_move:hover {
+  background-color:  #2d50c5;
 }
 
 
 /* detail_3  */
-
 
 .detail3 .bigbox {
   width: 100%;
@@ -313,16 +312,12 @@ li {
   display: flex;
   justify-content: space-between;
   font-family: "Gowun Dodum", sans-serif;
-
 }
 
 .detail3 .bigbox .left {
   width: 60%;
   text-align: center;
 }
-
-
-
 
 .detail3 .bigbox .left .descriptiontext {
   padding: 20px;
@@ -344,7 +339,6 @@ li {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  
 }
 
 .detail3 .bigbox .right .descriptiontext {
@@ -367,14 +361,12 @@ li {
   cursor: pointer;
   border-color: transparent;
   font-family: "Gowun Dodum", sans-serif;
-
 }
 
 .detail3 .bigbox .right .product:hover {
-  /* background-color: rgb(49, 74, 156); */
   background-color: #2d50c5;
   border-color: rgb(0, 0, 0);
-  border-style: solid;
+  border: none;
 }
 
 /* detail3 추가 */
@@ -389,10 +381,7 @@ li {
 .projectext0 .phototitle {
   color: rgb(255, 255, 255);
   font-size: 70px;
-  
-  
 }
-
 
 .projectext0 #photoname  {
   color: black;
