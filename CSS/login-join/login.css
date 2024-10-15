@@ -188,50 +188,49 @@ li {
 
 
 /* 미디어 쿼리 */
-
-/*모바일 가로, 세로 : -767px*/
-@media all and (max-width:767px){
-	/* login */
-
-
-
-
- /* 모바일 화면을 위한 미디어 쿼리 적용 (화면 크기가 768px 이하일 때)  */
-@media only screen and (max-width: 768px) {
-
-     
-    .left, .right {
-        width: 50%;
-        
+@media only all and (min-width: 1500px) {
+    .body {
+        width: 1000px;
     }
 
-    
     .right img {
-        width: 100%;  
-        height: 650px;
+        height: 1000px;
     }
 
-    
-    .loginPage form fieldset {
-        width: 100%; 
+    .inputput {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+
+@media only all and (min-width: 992px) and (max-width: 1200px) {
+    .body {
+        width: 900px;
     }
 
-   
-    .loginPage form fieldset div.loginBtn button {
-        width: 100%;
-        font-size: 18px;
+    .right img {
+        height: 800px;
     }
 
+    .inputput {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
 }
 
-input 유효성 확인 멘트 스타일
-.loginPage form fieldset div.warning {
-    margin-top: 5px;
-    color: rgb(230, 35, 35);
-}
 
-.loginPage form fieldset div.inputBox .warning {
-    position: absolute;
-}
+@media only all and (min-width: 768px) and (max-width: 991px) {
+    .body {
+        width: 700px;
+    }
 
+    .right img {
+        height: 700px;
+    }
+
+    .inputput {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
 }
