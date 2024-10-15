@@ -7,7 +7,9 @@ $('#logo_picMain').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'
 // 홈
 $('#detail1ToHome').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#detail1ToRegister').on('click', () => detail1ToGo('../../HTML/register/김건우_register.html'));
+$('#detail1ToRegister').on('click', () => detail1ToGo('../../HTML/register/register.html'));
+// 펀딩 리스트
+$('#detail1ToList').on('click', () => detail1ToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩
 $('#detail1ToEnd').on('click', () => detail1ToGo('../../HTML/register/end.html'));
 // 작품구매
@@ -34,7 +36,7 @@ if (scrollTo) {
 }
 
 // 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
-document.getElementById("searchI").addEventListener("click", function() {
+document.getElementById("searchI").addEventListener("click", function () {
     const query = document.getElementById("searchBox").value;
     if (query) {
         window.location.href = `../../HTML/mainpage/detail.html`;
@@ -44,11 +46,11 @@ document.getElementById("searchI").addEventListener("click", function() {
 });
 
 // 스크롤
-document.querySelectorAll(".scroll_move").forEach(function(button) {
-    button.addEventListener("click", function() {
+document.querySelectorAll(".scroll_move").forEach(function (button) {
+    button.addEventListener("click", function () {
         const targetId = button.getAttribute("data-target");
         const targetSection = document.getElementById(targetId);
-        
+
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: "smooth" });
         }

@@ -44,7 +44,7 @@ li {
 }
 
 .detail_1 header .jlmToBtn {
-  width: 25%;
+  width: 15%;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -55,13 +55,14 @@ li {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 22px;
+  font-size: 25px;
   cursor: pointer;
   font-family: "Gowun Dodum", sans-serif;
 }
 
 .detail_1 header .jlmToBtn button:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* nmenu */
@@ -96,6 +97,7 @@ li {
 
 .detail_1 header .menu li:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* 우측 서치부분 */

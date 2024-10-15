@@ -1,160 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a,
 a:link,
 a:visited {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /* Main  */
 /* detail1 시작  */
 
 .purchasePage {
-    height: auto;
-    margin: 20px 50px;
-    font-family: "Gowun Dodum", sans-serif;
-  }
-  
-  /* 상단 로고 */
-  
+  height: auto;
+  margin: 20px 50px;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 상단 로고 */
+
 .purchasePage header .top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .purchasePage header .logo_pic {
-    width: 65%;
-  }
-  
+  width: 65%;
+}
+
 .purchasePage header .logo_pic img {
-    width: 50%;
-  }
-  
+  width: 50%;
+}
+
 .purchasePage header .jlmToBtn {
-    width: 25%;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  
-  /* join, loing, mypage */
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* join, loing, mypage */
 .purchasePage header .jlmToBtn button {
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 22px;
-    cursor: pointer;
-    font-family: "Gowun Dodum", sans-serif;
-  }
-  
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
 .purchasePage header .jlmToBtn button:hover {
-    color: orange;
-  }
-  
-  /* nmenu */
-  
+  color: orange;
+  font-weight: bold;
+}
+
+/* nmenu */
+
 .purchasePage header .scroll {
-    width: 100%;
-    display: flex;
-    border-bottom: 2px solid rgb(184, 181, 181);
-  }
-  
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid rgb(184, 181, 181);
+}
+
 .purchasePage header .scroll .menu {
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+
 .purchasePage header .scroll .menu .menu_inner {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    background: white;
-    border: none;
-    align-items: center;
-    text-align: center;
-  }
-  
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background: white;
+  border: none;
+  align-items: center;
+  text-align: center;
+}
+
 .purchasePage header .menu li {
-    width: 15%;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 22px;
-  }
-  
+  width: 15%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
 .purchasePage header .menu li:hover {
-    color: orange;
-  }
-  
-  /* 우측 서치부분 */
+  color: orange;
+  font-weight: bold;
+}
+
+/* 우측 서치부분 */
 .purchasePage header .search {
-    width: 40%;
-    display: flex;
-    align-items: center;
-  }
-  
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
 .purchasePage header .search input {
-    width: 100%;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    padding: 15px;
-    margin-left: 100px;
-    background-color: rgb(243, 243, 243);
-    outline: none;
-  }
-  
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  margin-left: 100px;
+  background-color: rgb(243, 243, 243);
+  outline: none;
+}
+
 .purchasePage header .search i {
-    position: relative;
-    right: 30px;
-    font-size: 18px;
-    cursor: pointer;
-  }
-  
+  position: relative;
+  right: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 .purchasePage header .login button {
-    width: 100%;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 22px;
-    font-family: "Gowun Dodum", sans-serif;
-  }
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Gowun Dodum", sans-serif;
+}
 
 /* 메인 */
 
 .purchasePage div.creationName {
-    width: 100%;
-    text-align: center;
-    margin: 30px auto;
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
 }
 
 /* 메인 왼쪽 부분 */
 .purchasePage div.left {
   width: 55%;
   display: inline-block
-    
 }
 
 
 
 /* 창작물 이미지 */
 .purchasePage div.CreationImgView img {
-    width: 100%;
-    height: 500px;
-    flex-shrink: 0;
-    background-size: cover;
+  width: 100%;
+  height: 500px;
+  flex-shrink: 0;
+  background-size: cover;
 }
 
 
@@ -162,7 +163,6 @@ li {
 .purchasePage div.right {
   width: 44%;
   display: inline-block
-    
 }
 
 .purchasePage table.creatorInformation {
@@ -176,30 +176,30 @@ li {
 }
 
 .purchasePage .down {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
+
 }
 
 
 
-  .purchasePage div.down button {
-    width: 50%;
-    height: 50px;
-    border: 1px solid;
-    border-radius: 15px;
-    position: relative;
-    top: 50px;
-    background-color: rgb(52, 99, 255);
-    color: white;
-    font-size: 20px;
-    letter-spacing: 5px;
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.5s;
-  }
-  
-  /* registerPop 버튼기능 */
-  .purchasePage div.down button:hover {
-    background-color: rgb(0, 26, 111);
-  }
+.purchasePage div.down button {
+  width: 50%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 15px;
+  position: relative;
+  top: 50px;
+  background-color: rgb(52, 99, 255);
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/* registerPop 버튼기능 */
+.purchasePage div.down button:hover {
+  background-color: rgb(0, 26, 111);
+}

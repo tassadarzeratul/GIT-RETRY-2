@@ -92,7 +92,7 @@ setInterval(displayTime, 1000); // 1초마다 갱신
 
 
 // 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
-document.getElementById("searchI").addEventListener("click", function() {
+document.getElementById("searchI").addEventListener("click", function () {
     const query = document.getElementById("searchBox").value;
     if (query) {
         window.location.href = `../../HTML/mainpage/detailclone.html`;
@@ -100,4 +100,35 @@ document.getElementById("searchI").addEventListener("click", function() {
         alert("검색어를 입력해주세요.");
     }
 });
+
+// 로그인 정보 =================================================================
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const joinBtn = document.getElementById('joinBtn');
+//     const loginBtn = document.getElementById('loginBtn');
+//     const logoutBtn = document.getElementById('logoutBtn');
+//     const mypageBtn = document.getElementById('myPageBtn');
+
+//     // 로그인 상태 확인
+//     const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+//     // 로그인되어 있으면 Join과 Login 버튼 숨기기
+//     if (isLoggedIn === 'true') {
+//         joinBtn.style.display = 'none';
+//         loginBtn.style.display = 'none';
+//         logoutBtn.style.display = 'block';
+//         mypageBtn.style.display = 'block';
+//     } else {
+//         joinBtn.style.display = 'block';
+//         loginBtn.style.display = 'block';
+//         logoutBtn.style.display = 'none';
+//         mypageBtn.style.display = 'none';
+//     }
+// });
+
+// document.getElementById('logoutBtn').addEventListener('click', () => {
+//     localStorage.setItem('isLoggedIn', 'false'); // 로그인 상태 해제
+//     location.reload(); // 페이지 새로고침
+// });
+
 

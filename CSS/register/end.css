@@ -44,7 +44,7 @@ li {
 }
 
 .end header .jlmToBtn {
-  width: 25%;
+  width: 15%;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -54,7 +54,7 @@ li {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 22px;
+  font-size: 25px;
   cursor: pointer;
   font-family: "Gowun Dodum", sans-serif;
 }
