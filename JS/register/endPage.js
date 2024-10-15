@@ -154,7 +154,7 @@ const handleResizeHeight = () => {
 };
 
 // 팝업창
-function showPopup() { window.open("김건우_endpop.html", "a", "width=700, height=700"); }
+function showPopup() { window.open("김건우_endpop.html", "a", "width=600, height=1800"); }
 
 
 
