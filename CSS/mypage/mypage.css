@@ -97,6 +97,7 @@ li {
 
 .mypage .header .menu li:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* 우측 서치부분 */
