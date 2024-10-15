@@ -32,7 +32,7 @@ function showSlides(n) {
 document.getElementById("searchI").addEventListener("click", function () {
     const query = document.getElementById("searchBox").value;
     if (query) {
-        window.location.href = `../../HTML/mainpage/detailclone.html`;
+        window.location.href = `../../HTML/mainpage/detail.html`;
     } else {
         alert("검색어를 입력해주세요.");
     }
