@@ -7,15 +7,6 @@
   font-family: "Gowun Dodum", sans-serif;
 }
 
-/* .wrapper {
-  width: 1000px;
-  height:500px;
-  margin: 40px auto;
-  padding: 10px;
-  border-radius: 5px;
-  background: white;
-  box-shadow: 0px 10px 40px 0px rgba(47,47,47,.1);
-} */
 
 /* 가져온 css */
 .register .content .description .wrapper .survey_options{
@@ -29,19 +20,23 @@
   resize: none;
   outline: none;
   text-align: top;
+  font-family: "Gowun Dodum", sans-serif;  
 }
 
 textarea:focus {
   outline: none;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 .controls {
   width: 294px;
   margin: 15px auto;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 #remove_fields {
   float: right;
+  font-family: "Gowun Dodum", sans-serif;
 }
 .controls a i.fa-minus {
   margin-right: 5px;
@@ -62,13 +57,6 @@ h1 {
 
 /* 추가된 기존 css */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Gowun Dodum", sans-serif;
-}
-
 a,
 a:link,
 a:visited {
@@ -84,6 +72,7 @@ li {
 .register {
   margin: 20px 120px;
   background-repeat: none;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 /* 이미지 사이즈 */
@@ -111,6 +100,7 @@ li {
   clear: both;
   display: inline-block;
   font-size: 15px;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 .register .content .description .wrapper .theme {
@@ -123,6 +113,7 @@ li {
   padding: 12px;
   resize: none;
   outline: none;
+  
 }
 
 .register .content .description .buttons {
@@ -169,10 +160,11 @@ li {
 
 .register .content .upload-btn-wrapper input[type=file] {
   font-size: 100px;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   opacity: 0;
+
 }
 
 .register .content .tip {
@@ -185,10 +177,22 @@ li {
   margin-top: 10px;
   margin-left: 0px;
   margin-right: 0px;
+  
 }
 
-.register .content .description .add .addbutton{
-  background-color: rgba(0, 0, 0, 0.406);
+.register .content .description .info .add .addbutton{
+  background-color: rgba(255, 255, 255, 0.406);
+  border-radius: 30px;
+  border-color:rgba(128, 128, 128, 0.301);
+  color:black;
+  width:200px;
+  height:30px;
+  margin-top: 0px;
+  margin-bottom:50px;
+}
+
+.duplicate{
+  background-color: rgba(52, 16, 255, 0.406);
   border-radius: 3px;
   border-color:transparent;
   color:black;
@@ -198,3 +202,8 @@ li {
   margin-bottom:50px;
 }
 
+.duplicate:hover{
+  background-color: rgb(18, 7, 59);
+  color:white;
+  font-family: "Gowun Dodum", sans-serif;  
+}
