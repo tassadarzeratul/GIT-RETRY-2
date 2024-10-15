@@ -240,6 +240,8 @@ li {
   font-weight: 400;
 }
 
+
+
 .purchasepopup #accordian .content .box {
   width: 450px;
   height: 50px;
@@ -277,9 +279,45 @@ li {
   background-color: rgb(52, 99, 255);
   font-size: 35px;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .purchasepopup .order:hover {
-  background: orange;
+  background: rgb(82, 111, 163);
+}
+
+/* 합계 금액 계산창 */
+
+
+fieldset {
+  border: none;
+  border-radius:3px;
   color: black;
+  font-size:30px;
+  width:20em;
+}
+label {
+  display:table;
+  vertical-align:baseline;
+}
+
+
+label:hover, input:hover {
+  cursor:pointer;
+}
+
+#sum
+{
+  margin-top:2px;
+  margin-left:5px;
+  font-size: 35px;
+  overflow:hidden;
+}
+
+#sum strong
+{
+  /* required for the animation */
+  display:inline-block;
+  position:relative;
 }
