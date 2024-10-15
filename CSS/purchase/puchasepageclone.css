@@ -330,4 +330,101 @@ label:hover, input:hover {
   font-family: "Gowun Dodum", sans-serif;
 }
 
+@media only all and (min-width: 1500px) {
+  .purchasePage {
+      margin: 30px 150px; 
+  }
+
+  .purchasePage .purchase .container .left {
+      width: 60%; 
+  }
+
+  .purchasePage .purchase .container .right {
+      width: 40%; 
+  }
+
+  .purchasePage .purchase .container .left img {
+      height: 700px; 
+  }
+
+  .purchasePage header .logo_pic img {
+      width: 40%; 
+  }
+
+  .purchasePage header .jlmToBtn button {
+      font-size: 24px; 
+  }
+
+  .purchasepopup #submitButton {
+      height: 70px; 
+      font-size: 40px;
+  }
+
+  @media only all and (min-width: 992px) and (max-width: 1200px) {
+    .purchasePage {
+        margin: 20px 50px; 
+    }
+
+    .purchasePage .purchase .container .left {
+        width: 55%; 
+    }
+
+    .purchasePage .purchase .container .right {
+        width: 45%;
+    }
+
+    .purchasePage .purchase .container .left img {
+        height: 500px; 
+    }
+
+    .purchasePage header .logo_pic img {
+        width: 50%;
+    }
+
+    .purchasePage header .jlmToBtn button {
+        font-size: 20px;
+    }
+
+    .purchasepopup #submitButton {
+        height: 60px; 
+        font-size: 30px;
+    }
+}
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  .purchasePage {
+      margin: 10px 30px; 
+  }
+
+  .purchasePage .purchase .container {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .purchasePage .purchase .container .left, 
+  .purchasePage .purchase .container .right {
+      width: 100%; 
+      text-align: center;
+  }
+
+  .purchasePage .purchase .container .left img {
+      height: auto; 
+      width: 90%;
+  }
+
+  .purchasePage header .logo_pic img {
+      width: 60%; 
+  }
+
+  .purchasePage header .jlmToBtn button {
+      font-size: 18px; 
+  }
+
+  .purchasepopup #submitButton {
+      height: 55px;
+      font-size: 25px; 
+  }
+}
+
+}
+
 
