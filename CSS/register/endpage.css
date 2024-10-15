@@ -86,8 +86,8 @@ li {
   text-align: center;
 }
 
-.endPage header .menu li {
-  width: 15%;
+.endPage main header .menu li {
+  width: 18%;
   background: transparent;
   border: none;
   cursor: pointer;
