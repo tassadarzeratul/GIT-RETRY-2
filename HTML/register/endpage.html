@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>endpage</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../CSS/register/endpage.css">
 </head>
-
 <body>
     <!-- endpage 시작 -->
     <div class="endPage">
@@ -61,7 +63,6 @@
             </table>
         </div>
         <!-- 전시회 정보 노출 -->
-
         <div class="infoRight">
             <div class="creator">창작자 프로필 정보</div>
             <table class="creatorInfo">
@@ -90,7 +91,7 @@
         <!-- 작가 프로필 정보 노출 -->
 
         <div class="useAmount">
-            <input class="popup" type="button" value="금액사용내역" onclick="showPopup();" />  
+            <input class="popup" type="button" value="금액사용내역" onclick="showPopup();" />
         </div>
         <!-- 금액 사용 내역 버튼 -->
         <div class="community">
@@ -116,15 +117,14 @@
             </div>
             <div class="upload-btn-wrapper">
                 <button class="btn">파일 업로드
-                    <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);"
-                        multiple />
+                    <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);" multiple />
                 </button>
                 <div id="image_container"></div>
             </div>
         </div>
     </div>
-        <script src="../../JS/register/endpage.js"></script>
-        <script src="../../JS/register/김건우_endpop.js"></script>
+    <script src="../../JS/register/endpage.js"></script>
+    <script src="../../JS/register/김건우_endpop.js"></script>
 </body>
 
 </html>

@@ -21,9 +21,9 @@ $('#myPageBtn').on('click', () => mainToGo('../../HTML/mypage/김건우_mypage.h
 // 서브 사진
 $('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
 // 오른쪽 사진
-$('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+$('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 아래쪽 사진
-$('.otherRight img').on('click', () => mainToGo('../../HTML/mainpage/detailclone.html'));
+$('.otherRight img').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 
 
 

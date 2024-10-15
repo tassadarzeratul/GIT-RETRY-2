@@ -1,10 +1,10 @@
 var slideIndex = 1;
 showSlides(slideIndex);
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-// Thumbnail image controls
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -30,7 +30,7 @@ function showSlides(n) {
 document.getElementById("searchI").addEventListener("click", function() {
   const query = document.getElementById("searchBox").value;
   if (query) {
-      window.location.href = `../../HTML/mainpage/detailclone.html`;
+      window.location.href = `../../HTML/mainpage/detail.html`;
   } else {
       alert("검색어를 입력해주세요.");
   }

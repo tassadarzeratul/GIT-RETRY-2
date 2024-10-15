@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&display=swap");
 
 * {
   margin: 0;
@@ -17,41 +17,40 @@ li {
   list-style: none;
 }
 
-/* Main  */
-/* detail1 시작  */
+/* admin 시작  */
 
-.endPage {
+.endpage {
   height: auto;
-  margin: 20px 50px;
+  margin: 30px 100px;
   font-family: "Gowun Dodum", sans-serif;
 }
 
 /* 상단 로고 */
 
-.endPage header .top {
+.endpage header .top {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.endPage header .logo_pic {
+.endpage header .logo_pic {
   width: 65%;
+  cursor: pointer;
 }
 
-.endPage header .logo_pic img {
+.endpage header .logo_pic img {
   width: 50%;
 }
 
-.endPage header .jlmToBtn {
+.endpage header .jlmToBtn {
   width: 25%;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 
-/* join, loing, mypage */
-.endPage header .jlmToBtn button {
+.endpage header .jlmToBtn button {
   background: transparent;
   border: none;
   outline: none;
@@ -60,23 +59,24 @@ li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
-.endPage header .jlmToBtn button:hover {
+.endpage header .jlmToBtn button:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* nmenu */
 
-.endPage header .scroll {
+.endpage header .scroll {
   width: 100%;
   display: flex;
   border-bottom: 2px solid rgb(184, 181, 181);
 }
 
-.endPage header .scroll .menu {
+.endpage header .scroll .menu {
   width: 100%;
 }
 
-.endPage header .scroll .menu .menu_inner {
+.endpage header .scroll .menu .menu_inner {
   width: 100%;
   height: 70px;
   display: flex;
@@ -86,7 +86,7 @@ li {
   text-align: center;
 }
 
-.endPage header .menu li {
+.endpage header .menu_inner li {
   width: 15%;
   background: transparent;
   border: none;
@@ -94,18 +94,19 @@ li {
   font-size: 22px;
 }
 
-.endPage header .menu li:hover {
+.endpage header .menu li:hover {
   color: orange;
+  font-weight: bold;
 }
 
 /* 우측 서치부분 */
-.endPage header .search {
+.endpage header .search {
   width: 40%;
   display: flex;
   align-items: center;
 }
 
-.endPage header .search input {
+.endpage header .search input {
   width: 100%;
   height: 35px;
   border-radius: 10px;
@@ -116,14 +117,15 @@ li {
   outline: none;
 }
 
-.endPage header .search i {
+.endpage header .search i {
   position: relative;
-  right: 30px;
+  right: 20px;
   font-size: 18px;
   cursor: pointer;
+
 }
 
-.endPage header .login button {
+.endpage header .login button {
   width: 100%;
   background: transparent;
   border: none;
@@ -132,21 +134,123 @@ li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
-/* 상단 공통 로고 및 메뉴 */
 
-.endPage table {
+/* 슬라이더 */
+
+* {
+  box-sizing: border-box
+}
+
+.sildeshow-container {
+  max-width: 1000px;
+  width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: none;
+}
+
+/* 다음버튼 */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 1/3 */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* 슬라이드 끝 */
+
+
+/* 상단 공통 로고 및 메뉴 */
+.endpage table {
   font-size: 20px;
   border-spacing: 15px;
 }
 
 /* 테이블 공통 스타일 */
 
-.endPage div.infoLeft {
+.endpage div.infoLeft {
   display: inline-block;
   width: 45%;
 }
 
-.endPage div.exhibition {
+.endpage div.exhibition {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -154,89 +258,91 @@ li {
 }
 
 
-.endPage table.exhibitionInfo th {
+.endpage table.exhibitionInfo th {
   width: 200px;
   vertical-align: top;
 }
 
 /* 전시회 정보 */
 
-.endPage div.infoRight {
+.endpage div.infoRight {
   display: inline-block;
   width: 45%;
 
 }
 
-.endPage div.creator {
+.endpage div.creator {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   margin: 20px auto;
 }
 
-.endPage table.creatorInfo th {
+.endpage table.creatorInfo th {
   width: 200px;
   vertical-align: top;
 }
 
 /* 창작자 정보 */
 
-.endPage div.useAmount {
+.endpage div.useAmount {
   width: 9%;
   display: inline-block
 }
 
-.endPage div.useAmount .popup{
-  width: 9%;
-  height: 250px;
+.endpage div.useAmount .popup {
+  width: 300px;
+  height: 50px;
   border: 1px solid;
-  border-radius: 15px;
-  position: absolute;
+  border-radius: 25px;
+  position: relative;
   background-color: rgb(52, 99, 255);
   color: white;
-  font-size: 15px;
-  writing-mode: vertical-rl;
+  font-size: 20px;
   cursor: pointer;
   transition: 0.5s;
+  right:350px;
+  top:310px;
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 /* registerPop 버튼기능 */
-.endPage div.useAmount .popup:hover {
+.endpage div.useAmount .popup:hover {
   background-color: rgb(0, 26, 111);
-
 }
 
 /* 금액사용내역 버튼 */
 
 
-.endPage div.community .comment {
+.endpage div.community .comment {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 30px;
   width: 600px;
   margin: 0 auto;
-
+  margin-top:60px;
+  margin-bottom:60px;
 }
 
-.endPage div.community .comment>li {
+.endpage div.community .comment>li {
   margin-top: 20px;
 
 }
 
-.endPage div.community .comment>li:nth-child(1) {
+.endpage div.community .comment>li:nth-child(1) {
   margin: 0px;
 
 }
 
-.endPage div.community .comment-row {
+.endpage div.community .comment-row {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 
 }
 
-.endPage div.community .comment-row>li:nth-child(2) {
+.endpage div.community .comment-row>li:nth-child(2) {
   flex-shrink: 0;
   flex-grow: 1;
   padding-left: 25px;
@@ -245,12 +351,12 @@ li {
 
 }
 
-.endPage div.community .comment-row>li:nth-child(2) {
+.endpage div.community .comment-row>li:nth-child(2) {
   width: 85px;
 
 }
 
-.endPage div.community .comment-form>form {
+.endpage div.community .comment-form>form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -258,20 +364,20 @@ li {
 
 }
 
-.endPage div.community .comment-form>form>h4 {
+.endpage div.community .comment-form>form>h4 {
   width: 100%;
   margin: 14px 0 14px 0;
 
 }
 
-.endPage div.community .comment-content {
+.endpage div.community .comment-content {
   cursor: pointer;
   word-break: break-all;
   padding-right: 25px;
 
 }
 
-.endPage div.community .ps_box {
+.endpage div.community .ps_box {
   display: block;
   position: relative;
   width: 80%;
@@ -283,12 +389,12 @@ li {
 
 }
 
-.endPage div.community .ps_box>input {
+.endpage div.community .ps_box>input {
   outline: none;
 
 }
 
-.endPage div.community .int {
+.endpage div.community .int {
   display: block;
   position: relative;
   width: 100%;
@@ -303,7 +409,7 @@ li {
 
 }
 
-.endPage div.community .btn {
+.endpage div.community .btn {
   width: 18%;
   padding: 18px 0 16px;
   text-align: center;
@@ -316,14 +422,14 @@ li {
 
 }
 
-.endPage .comment-delete-btn {
+.endpage .comment-delete-btn {
   display: inline-block;
   margin-left: 7px;
   cursor: pointer;
 
 }
 
-.endPage .comment-update-input {
+.endpage .comment-update-input {
   border: none;
   border-bottom: 1px solid #333;
   font-size: 16px;
@@ -334,7 +440,7 @@ li {
 
 /* 커뮤니티 댓글창 */
 
-.endPage .reviewImg .button {
+.endpage .reviewImg .button {
   width: 200px;
   height: 50px;
   font-size: 20px;
@@ -346,21 +452,21 @@ li {
   left: 35px;
 }
 
-.endPage .reviewImg .button:hover {
+.endpage .reviewImg .button:hover {
   background-color: rgb(0, 0, 0);
   transition: 0.5s;
   color: white;
 }
 
 
-.endPage .reviewImg .upload-btn-wrapper {
+.endpage .reviewImg .upload-btn-wrapper {
   display: inline-block;
   position: relative;
   overflow: hidden;
   left: 25px;
 }
 
-.endPage .reviewImg .upload-btn-wrapper .btn {
+.endpage .reviewImg .upload-btn-wrapper .btn {
   border: 2px solid rgb(0, 0, 0);
   color: rgb(52, 99, 255);
   background-color: white;
@@ -371,7 +477,7 @@ li {
   cursor: pointer;
 }
 
-.endPage .reviewImg .upload-btn-wrapper input[type=file] {
+.endpage .reviewImg .upload-btn-wrapper input[type=file] {
   font-size: 100px;
   position: absolute;
   left: 0;
@@ -379,11 +485,11 @@ li {
   opacity: 0;
 }
 
-.endPage .reviewImg .tip {
+.endpage .reviewImg .tip {
   margin-bottom: 20px;
 }
 
-.endPage .announcement {
+.endpage .announcement {
   font-size: 24px;
   font-weight: bold;
 }
@@ -398,7 +504,7 @@ li {
   /* Main  */
   /* detail1 시작  */
 
-  .endPage {
+  .endpage {
     height: auto;
     margin: 20px 50px;
     font-family: "Gowun Dodum", sans-serif;
@@ -406,22 +512,22 @@ li {
 
   /* 상단 로고 */
 
-  .endPage header .top {
+  .endpage header .top {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .endPage header .logo_pic {
+  .endpage header .logo_pic {
     width: 65%;
   }
 
-  .endPage header .logo_pic img {
+  .endpage header .logo_pic img {
     width: 50%;
   }
 
-  .endPage header .jlmToBtn {
+  .endpage header .jlmToBtn {
     width: 25%;
     display: flex;
     justify-content: space-around;
@@ -429,7 +535,7 @@ li {
   }
 
   /* join, loing, mypage */
-  .endPage header .jlmToBtn button {
+  .endpage header .jlmToBtn button {
     background: transparent;
     border: none;
     outline: none;
@@ -438,23 +544,23 @@ li {
     font-family: "Gowun Dodum", sans-serif;
   }
 
-  .endPage header .jlmToBtn button:hover {
+  .endpage header .jlmToBtn button:hover {
     color: orange;
   }
 
   /* nmenu */
 
-  .endPage header .scroll {
+  .endpage header .scroll {
     width: 100%;
     display: flex;
     border-bottom: 2px solid rgb(184, 181, 181);
   }
 
-  .endPage header .scroll .menu {
+  .endpage header .scroll .menu {
     width: 100%;
   }
 
-  .endPage header .scroll .menu .menu_inner {
+  .endpage header .scroll .menu .menu_inner {
     width: 100%;
     height: 70px;
     display: flex;
@@ -464,7 +570,7 @@ li {
     text-align: center;
   }
 
-  .endPage header .menu li {
+  .endpage header .menu li {
     width: 15%;
     background: transparent;
     border: none;
@@ -472,18 +578,18 @@ li {
     font-size: 22px;
   }
 
-  .endPage header .menu li:hover {
+  .endpage header .menu li:hover {
     color: orange;
   }
 
   /* 우측 서치부분 */
-  .endPage header .search {
+  .endpage header .search {
     width: 40%;
     display: flex;
     align-items: center;
   }
 
-  .endPage header .search input {
+  .endpage header .search input {
     width: 100%;
     height: 35px;
     border-radius: 10px;
@@ -494,14 +600,14 @@ li {
     outline: none;
   }
 
-  .endPage header .search i {
+  .endpage header .search i {
     position: relative;
     right: 30px;
     font-size: 18px;
     cursor: pointer;
   }
 
-  .endPage header .login button {
+  .endpage header .login button {
     width: 100%;
     background: transparent;
     border: none;
@@ -512,73 +618,73 @@ li {
 
   /* 상단 공통 로고 및 메뉴 */
 
-  .endPage table {
+  .endpage table {
     font-size: 20px;
     border-spacing: 15px;
   }
 
   /* 테이블 공통 스타일 */
 
-  .endPage div.infoLeft {
+  .endpage div.infoLeft {
     display: inline-block;
     width: 42.5%;
   }
 
-  .endPage div.exhibition {
+  .endpage div.exhibition {
     font-size: 2rem;
   }
 
-  .endPage table.exhibitionInfo {
+  .endpage table.exhibitionInfo {
     font-size: 1.2rem;
   }
 
-  .endPage table.exhibitionInfo th {
+  .endpage table.exhibitionInfo th {
     width: 30%;
   }
 
   /* 전시회 정보 */
 
-  .endPage div.infoRight {
+  .endpage div.infoRight {
     display: inline-block;
     width: 42.5%;
 
   }
 
-  .endPage div.creator {
+  .endpage div.creator {
     font-size: 2rem;
   }
 
-  .endPage table.creatorInfo {
+  .endpage table.creatorInfo {
     font-size: 1.2rem;
   }
 
-  .endPage table.creatorInfo th {
+  .endpage table.creatorInfo th {
     width: 30%;
   }
 
   /* 창작자 정보 */
 
-  .endPage div.useAmount {
+  .endpage div.useAmount {
     width: 9%;
     display: inline-block
   }
 
-  .endPage div.useAmount button {
+  .endpage div.useAmount button {
     width: 9%;
     height: 25%;
     font-size: 2rem;
   }
 
-  .endPage .reviewImg .upload-btn-wrapper .btn {
+  .endpage .reviewImg .upload-btn-wrapper .btn {
     font-size: 1.4rem;
   }
 
 
-  .endPage .reviewImg .tip {
+  .endpage .reviewImg .tip {
     margin-bottom: 20px;
   }
 
-  .endPage .announcement {
+  .endpage .announcement {
     font-size: 1.4rem;
   }
 }
@@ -588,28 +694,28 @@ li {
   /* Main  */
   /* detail1 시작  */
 
-  .endPage {
+  .endpage {
     margin: 20px 50px;
   }
 
   /* 상단 로고 */
 
-  .endPage header .jlmToBtn button {
+  .endpage header .jlmToBtn button {
     font-size: 16px;
   }
 
-  .endPage header .menu li {
+  .endpage header .menu li {
     width: 25%;
     font-size: 15px;
   }
 
-  .endPage header .search {
+  .endpage header .search {
     width: 70%;
     display: flex;
     align-items: center;
   }
 
-  .endPage header .search input {
+  .endpage header .search input {
     width: 100%;
     height: 35px;
     border-radius: 10px;
@@ -620,12 +726,12 @@ li {
     outline: none;
   }
 
-  .endPage header .search i {
+  .endpage header .search i {
     right: 20px;
     font-size: 15px;
   }
 
-  .endPage .mainBox {
+  .endpage .mainBox {
     width: 100%;
     height: 700px;
     margin-top: 30px;
@@ -634,101 +740,101 @@ li {
 
   /* 상단 공통 로고 및 메뉴 */
 
-  .endPage table {
+  .endpage table {
     font-size: 0.9rem;
     border-spacing: 15px;
   }
 
   /* 테이블 공통 스타일 */
 
-  .endPage div.infoLeft {
+  .endpage div.infoLeft {
     display: inline-block;
     width: 45%;
   }
 
-  .endPage div.exhibition {
+  .endpage div.exhibition {
     font-size: 1.4rem;
   }
 
 
-  .endPage table.exhibitionInfo th {
+  .endpage table.exhibitionInfo th {
     width: 35%;
   }
 
   /* 전시회 정보 */
 
-  .endPage div.infoRight {
+  .endpage div.infoRight {
     display: inline-block;
     width: 44%;
 
   }
 
-  .endPage div.creator {
+  .endpage div.creator {
     font-size: 1.4rem;
 
   }
 
-  .endPage table.creatorInfo th {
+  .endpage table.creatorInfo th {
     width: 35%;
 
   }
 
   /* 창작자 정보 */
 
-  .endPage div.useAmount {
+  .endpage div.useAmount {
     display: inline-block
   }
 
-  .endPage div.useAmount button {
+  .endpage div.useAmount button {
     width: 9%;
     height: 20%;
     font-size: 1.6rem;
   }
 
-  .endPage .reviewImg .upload-btn-wrapper .btn {
+  .endpage .reviewImg .upload-btn-wrapper .btn {
     font-size: 1.4rem;
   }
 
 
-  .endPage .reviewImg .tip {
+  .endpage .reviewImg .tip {
     margin-bottom: 20px;
   }
 
-  .endPage .announcement {
+  .endpage .announcement {
     font-size: 1.3rem;
   }
 
   /* 전시회 후기 댓글 */
-  .endPage div.community .comment {
+  .endpage div.community .comment {
     width: 60%;
 
   }
 
-  .endPage div.community .comment>li {
+  .endpage div.community .comment>li {
     margin-top: 2%;
 
   }
 
-  .endPage div.community .ps_box {
+  .endpage div.community .ps_box {
     width: 80%;
     height: 51px;
 
   }
 
-  .endPage div.community .int {
+  .endpage div.community .int {
     width: 100%;
     height: 29px;
     font-size: 0.8rem;
 
   }
 
-  .endPage div.community .btn {
+  .endpage div.community .btn {
     width: 18%;
     font-size: 0.8rem;
 
   }
 
-  .endPage .comment-update-input {
+  .endpage .comment-update-input {
     font-size: 1.2rem;
 
   }
@@ -741,28 +847,28 @@ li {
   /* Main  */
   /* detail1 시작  */
 
-  .endPage {
+  .endpage {
     margin: 20px 50px;
   }
 
   /* 상단 로고 */
 
-  .endPage header .jlmToBtn button {
+  .endpage header .jlmToBtn button {
     font-size: 16px;
   }
 
-  .endPage header .menu li {
+  .endpage header .menu li {
     width: 25%;
     font-size: 15px;
   }
 
-  .endPage header .search {
+  .endpage header .search {
     width: 70%;
     display: flex;
     align-items: center;
   }
 
-  .endPage header .search input {
+  .endpage header .search input {
     width: 100%;
     height: 35px;
     border-radius: 10px;
@@ -773,12 +879,12 @@ li {
     outline: none;
   }
 
-  .endPage header .search i {
+  .endpage header .search i {
     right: 20px;
     font-size: 15px;
   }
 
-  .endPage .mainBox {
+  .endpage .mainBox {
     width: 100%;
     height: 700px;
     margin-top: 30px;
@@ -787,101 +893,101 @@ li {
 
   /* 상단 공통 로고 및 메뉴 */
 
-  .endPage table {
+  .endpage table {
     font-size: 0.7rem;
     border-spacing: 15px;
   }
 
   /* 테이블 공통 스타일 */
 
-  .endPage div.infoLeft {
+  .endpage div.infoLeft {
     display: inline-block;
     width: 44%;
   }
 
-  .endPage div.exhibition {
+  .endpage div.exhibition {
     font-size: 1rem;
   }
 
 
-  .endPage table.exhibitionInfo th {
+  .endpage table.exhibitionInfo th {
     width: 35%;
   }
 
   /* 전시회 정보 */
 
-  .endPage div.infoRight {
+  .endpage div.infoRight {
     display: inline-block;
     width: 44%;
 
   }
 
-  .endPage div.creator {
+  .endpage div.creator {
     font-size: 1rem;
 
   }
 
-  .endPage table.creatorInfo th {
+  .endpage table.creatorInfo th {
     width: 35%;
 
   }
 
   /* 창작자 정보 */
 
-  .endPage div.useAmount {
+  .endpage div.useAmount {
     display: inline-block
   }
 
-  .endPage div.useAmount button {
+  .endpage div.useAmount button {
     width: 8%;
     height: 20%;
     font-size: 1.4rem;
   }
 
-  .endPage .reviewImg .upload-btn-wrapper .btn {
+  .endpage .reviewImg .upload-btn-wrapper .btn {
     font-size: 1.4rem;
   }
 
 
-  .endPage .reviewImg .tip {
+  .endpage .reviewImg .tip {
     margin-bottom: 20px;
   }
 
-  .endPage .announcement {
+  .endpage .announcement {
     font-size: 1.2rem;
   }
 
   /* 전시회 후기 댓글 */
-  .endPage div.community .comment {
+  .endpage div.community .comment {
     width: 60%;
 
   }
 
-  .endPage div.community .comment>li {
+  .endpage div.community .comment>li {
     margin-top: 2%;
 
   }
 
-  .endPage div.community .ps_box {
+  .endpage div.community .ps_box {
     width: 80%;
     height: 51px;
 
   }
 
-  .endPage div.community .int {
+  .endpage div.community .int {
     width: 100%;
     height: 29px;
     font-size: 0.8rem;
 
   }
 
-  .endPage div.community .btn {
+  .endpage div.community .btn {
     width: 18%;
     font-size: 0.8rem;
 
   }
 
-  .endPage .comment-update-input {
+  .endpage .comment-update-input {
     font-size: 1.2rem;
 
   }

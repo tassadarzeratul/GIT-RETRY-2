@@ -189,48 +189,48 @@ li {
 
 /* 미디어 쿼리 */
 @media only all and (min-width: 1500px) {
-    .body {
+.body {
         width: 1000px;
-    }
+}
 
-    .right img {
+.right img {
         height: 1000px;
-    }
+}
 
-    .inputput {
+.inputput {
         margin-top: 10%;
         margin-bottom: 10%;
-    }
+}
 }
 
 
 @media only all and (min-width: 992px) and (max-width: 1200px) {
-    .body {
+.body {
         width: 900px;
-    }
+}
 
-    .right img {
+.right img {
         height: 800px;
-    }
+}
 
-    .inputput {
+.inputput {
         margin-top: 15%;
         margin-bottom: 15%;
-    }
+}
 }
 
 
 @media only all and (min-width: 768px) and (max-width: 991px) {
-    .body {
+.body {
         width: 700px;
-    }
+}
 
-    .right img {
+.right img {
         height: 700px;
-    }
+}
 
-    .inputput {
+.inputput {
         margin-top: 20%;
         margin-bottom: 20%;
-    }
+}
 }
