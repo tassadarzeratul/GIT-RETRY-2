@@ -24,10 +24,15 @@ $('.buying').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 $('.inner img').on('click', () => endToGo('../../HTML/register/endpage.html'));
 
 
-
-
-
 // ============================================================================
 
-
+// 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
+document.getElementById("searchI").addEventListener("click", function() {
+    const query = document.getElementById("searchBox").value;
+    if (query) {
+        window.location.href = `../../HTML/mainpage/detailclone.html`;
+    } else {
+        alert("검색어를 입력해주세요.");
+    }
+});
 
