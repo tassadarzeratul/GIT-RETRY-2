@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>purchasepageclone</title>
+    <title>purchasepage</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../CSS/purchase/puchasepageclone.css">
 </head>
+
 <body>
     <!--purchasepage 화면 시작-->
     <div class="purchasePage">
         <header class="header">
             <div class="top">
-                <div class="logo_pic" id="logo_picMain">
+                <div class="logo_pic">
                     <img src="../../img/withDreamLogo2.png" alt="logo" />
                 </div>
                 <div class="jlmToBtn">
-                    <button type="button" id="purchasepageToJoin">Join</button>
-                    <button type="button" id="purchasepageTologin">Login</button>
-                    <button type="button" id="purchasepageToMyPagen">MyPage</button>
+                    <button type="button" id="detail1ToJoin">Join</button>
+                    <button type="button" id="detail1Tologin">Login</button>
+                    <button type="button" id="detail1ToMyPagen">MyPage</button>
                 </div>
             </div>
             <div class="scroll">
                 <div class="menu">
                     <ul class="menu_inner">
-                        <li id="purchasepageToHome">홈</li>
-                        <li id="purchasepageToRegister">펀딩 등록</li>
-                        <li id="purchasepageToEnd">종료 펀딩</li>
-                        <li id="purchasepageTopurchase_1">작품 구매</li>
+                        <li id="detail1ToHome">홈</li>
+                        <li id="detail1ToRegister">펀딩 등록</li>
+                        <li id="detail1ToEnd">종료 펀딩</li>
+                        <li id="detail1Topurchase_1">작품 구매</li>
                     </ul>
                 </div>
                 <div class="search">
-                    <input type="text" id="searchBox" placeholder="검색어를 입력해주세요." />
-                    <i class="fa-solid fa-magnifying-glass" id="searchI"></i>
+                    <input type="text" id="detail1SearchBox" placeholder="검색어를 입력해주세요." />
+                    <i class="fa-solid fa-magnifying-glass" id="detail1SearchI"></i>
                 </div>
             </div>
         </header>
@@ -52,6 +54,7 @@
                         <img src="../../img/가로작품9 (7).jpg">
                     </div>
                 </div>
+
                 <div class="right">
                     <table class="creatorInformation">
                         <tr>
@@ -133,6 +136,7 @@
                         </div>
                     </form>
                 </div>
+
                 <div class="step" id="step3">
                     <div class="number">
                         <span>3</span>
@@ -141,6 +145,7 @@
                         <h1>장바구니</h1>
                     </div>
                 </div>
+
                 <div class="content">
                               <fieldset>
                             <input type="hidden" name="initialValue" value="0"/>
@@ -150,6 +155,7 @@
                         </fieldset>
 
                 </div>
+
                 <div class="step" id="step4">
                     <div class="number">
                         <span>4</span>
@@ -159,6 +165,7 @@
                     </div>
                 </div>
                 <p class="bub">* 구매약관 </p>
+
                 <textarea id="textarea_id" name="textarea_name">
                 이 표준거래계약서의 제정 목적은 온라인쇼핑몰과 납품업자가 공정한 계약조건에 따라 상품의 납품거래계약을 체결하도록 하기 위한 표준적 계약조건을 제시함에 있습니다.
 이 표준거래계약서에서는 온라인쇼핑몰과 납품업자 사이의 상품 직매입거래에 있어서 표준이 될 계약의 기본적 공통사항만을 제시하였습니다. 따라서 실제 계약을 체결하려는 계약당사자는 이 표준거래계약서의 기본 틀과 내용을 유지하는 범위에서 이 표준거래계약서보다 더 상세한 사항을 계약서에 규정하거나 특약으로 달리 약정할 수 있습니다.
@@ -245,51 +252,38 @@
 ③ “갑”은 “을”이 납품하는 상품에 대하여 품질검사 및 성분검사가 필요한 경우 “을”에게 해당 검사를 요구할 수 있다. 이 경우 “을”은 공인된 검사기관으로부터 검사를 받은 후 검사결과를 해당 상품의 납품 전에 “갑”에게 제출한다.
 ④ 제3항에 따른 검사비용은 “을”이 부담한다. 다만 상품의 특성상 추가적인 공인기관의 검사를 거치지 않더라도 해당 상품의 품질적합 여부가 외관상 뚜렷이 판단될 수 있는 등 처음부터 품질검사 및 성분검사가 필요하지 않았다고 인정될 수 있는 경우에는 그러하지 아니하다.
 ⑤ 품질검사 및 성분검사 결과 “을”이 납품한 상품이 법적기준을 충족시키지 못하여 불합격 또는 부적합 판정을 받은 경우 “갑”은 해당 상품의 납품중지 및 상당한 기간을 정하여 시정을 요구할 수 있으며, “을”이 시정요구에 불응할 경우 계약을 해지 또는 해제할 수 있다.
-                </textarea>
-                <div class="inputCheck">
-                    <div class="inputEmailCk">
-                        <label for="userEmailCk">
-                            <input class="emailCheck" id="userEmailCk" type="checkbox" required />
-                            이메일 중복확인
+</textarea>
+                <div>
+                    <form id="agreementForm">
+                        <label>
+                            <input type="checkbox" id="agreeCheckbox">
+                            (필수)약관에 동의합니다. 
                         </label>
-                        <div id="resultMessageId" class="warning"></div>
-                    </div>
-                    <div class="inputCopy">
-                        <label for="userCopy">
-                            <input class="terms-check" id="userCopy" type="checkbox" required />
-                            저작권 보호정책 읽고 동의합니다</label>
-                        <a href="../../HTML/mainpage/detailclone.html?scrollTo=textarea_id" id="copyRight">약관보기</a>
-                        <div id="resultMessageCopy" class="warning"></div>
-                    </div>
+                        <div id="sum">총 금액: <strong>0won</strong></div>
+                        <br>
+                        <button type="button" class="button" id="submitButton">결제하기</button>
+                    </form>
+                
                 </div>
+                
 
                 
-                <div id="sum">Total: <strong>$0</strong></div>
                 
-                <div>
+
+                
+                
+                <!-- <div>
                     <button type="submit" class="order" value="결제하기">결제하기</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-    <div class="explain">
-        <hr class="linee" width="100%" color="black">
-        <br><br>
-        <p class="company">직박구리(주) 대표이사 직박구리 사업자등록번호 123-456-678910 통신판매업신고번호 2024-천안시C-1234 충남 천안시 동남구 111-111호
-            <br><br>
-            이메일상담 zip@zicbac.kr 유선상담 1234-1234 zicbac Co., Ltd.
-        </p>
-        <p class="companyx">
-            직박구리는 플랫폼 제공자로서 직접적인 통신판매를 진행하지 않습니다. 상품의 정보, 상품, 거래에 관한 의무와 책임은 판매자에게 있으므로 구체적인 내용을 확인하시길 바랍니다.
-            직박구리 사이트의 등록된 사진 , 콘텐츠 UI 등에 대한 무단복제, 전송 등의 행위는 저작권법, 콘텐츠 산업 진흥법 등 관련 법령에 위배됩니다.</p>
-    </div>
-<<<<<<< HEAD
 
     </div>
-    <script src="../../js/mainpage/main.js"></script>
+
+    </div>
+    <!-- <script src="../../js/mainpage/main.js"></script> -->
     <script src="../../JS/purchase/purchasepageclone.js"></script>
-=======
-    <script src="../../js/purchase/purchasepage.js"></script>
->>>>>>> 4c48097ec631c1f2ed02c39b4c1b5bc72c65f370
 </body>
+
 </html>

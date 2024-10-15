@@ -1,20 +1,16 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//약관동의 js
+document.getElementById('submitButton').addEventListener('click', function() {
+ 
+  var checkbox = document.getElementById('agreeCheckbox');
+  
+  
+  if (checkbox.checked) {
+      alert('결제완료');
+  } else {
+      alert('약관에 동의해주세요.');
+  }
+});
 
 
 
@@ -22,24 +18,22 @@
 
 
 // 합계 금액 js 
-(function($) {
+(function(won) {
     var total, initialValue;
     var sum, options;
     var inc;
     
-    // updates total value
+    
     var updateTotal = function(evt, cb) {
       inc = (this.checked ? 1 : -1);
       total += this.value * inc;
       
-      // animation is only a test
-      // you should do ok with:
-      // sum.text(total);
+     
       sum.animate({top: 12 * inc + "px"},{
         duration:150,
         easing: "linear",
         complete: function() {
-          sum.css({"top": 12 * (inc * -1) + "px"}).animate({top:"0px"}, 100, "linear").text("$" + total);
+          sum.css({"top": 12 * (inc * -1) + "px"}).animate({top:"0px"}, 100, "linear").text(total + "won");
           if(cb) { cb(); }
         }
       });
@@ -61,11 +55,11 @@
       })();
     }
     
-    // Called when dom is ready
+   
     $(function() {
-      options = $('fieldset input[type=checkbox]');
-      sum = $('#sum strong');
-      initialValue = parseInt($("fieldset>input[name=initialValue]").val(), 10);
+      options = won('fieldset input[type=checkbox]');
+      sum = won('#sum strong');
+      initialValue = parseInt(won("fieldset>input[name=initialValue]").val(), 10);
       
       options.on('click', updateTotal);
       initTotal();
