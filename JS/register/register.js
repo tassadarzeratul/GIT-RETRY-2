@@ -1,9 +1,7 @@
-// 팝업 사이즈
-// function showPopup() { 
-//     window.open("registerpop.html", "a", "width=450, height=450, top=200, left=400"); 
-// }
+// 등록완료팝업
+function showRegister() { window.open("registerpop.html", "a", "width=400, height=400, left=100, top=0"); 
+}
 
-// 
 
 const container = document.getElementById('add')
 
