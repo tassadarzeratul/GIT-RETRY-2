@@ -1,7 +1,5 @@
 // 팝업창
-function showPopup() { window.open("김건우_endpop.html", "a", "width=600, height=1800"); }
-
-
+function showPopup() { window.open("endpop.html", "a", "width=600, height=1800"); }
 
 // main 화면으로 이동
 const mainToGo = (url) => {
