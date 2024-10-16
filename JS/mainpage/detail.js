@@ -101,7 +101,7 @@ function commentBtnHandler(e) {
     e.preventDefault();
 
     const input = e.target.content;
-    if (input.value ==="") {
+    if (input.value === "") {
         alert("내용을 넣고 등록 버튼을 눌러주세요.");
         return;
     }
@@ -116,3 +116,21 @@ function commentBtnHandler(e) {
 }
 
 commentBtn.addEventListener("submit", commentBtnHandler);
+
+
+
+// 하트 버튼
+let liked = false;  // 좋아요를 이미 눌렀는지 확인하는 변수
+let likeCount = 255;  // 좋아요 수량
+
+document.getElementById("likeButton").addEventListener("click", function () {
+    if (!liked) {
+        likeCount++;
+        document.getElementById("likeCount").textContent = likeCount;
+        liked = true;
+    } else {
+        // alert("좋아요는 한번만 가능합니다.");
+        window.open("../../HTML/mainpage/likespopup.html", "popup", "width=400,height=550");
+
+    }
+});

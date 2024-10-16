@@ -17,7 +17,7 @@ li {
   list-style: none;
 }
 
-/* admin 시작  */
+/* pagelist 시작  */
 
 .pagelist {
   height: auto;
@@ -99,7 +99,6 @@ li {
   font-weight: bold;
 }
 
-
 .pagelist .mainComment {
   width: 100%;
   display: flex;
@@ -171,7 +170,6 @@ li {
 .pagelist section .pic_container .pic_list .inner {
   width: 50%;
   margin: 0px 10px 70px 10px;
-  /* border-bottom: 3px solid #aaa; */
   background-color: #f8f8f8;
 }
 
@@ -247,43 +245,13 @@ li {
   background: #f677ed;
 }
 
-
-
-/* 슬라이드 버튼 */
-
-/* .pagelist .btn_container {
-  position: relative;
-} */
-
-/* .pagelist .btn_container button {
-  all: unset;
-  position: relative;
-  color: black;
-  cursor: pointer;
-  font-size: 22px;
-} */
-
-/* 슬라이드 왼쪽 버튼 위치 */
-/* .pagelist .btn_container .prevBtn {
-  left: 400px;
-} */
-
-/* 서브 슬라이드 오른쪽 버튼 위치 */
-/* .pagelist .btn_container .nextBtn {
-  left: 600px;
-} */
-
-
 .pagelist .explain {
   margin-top: 100px;
 }
 
 
 
-
-
 /* 미디어쿼리 */
-
 @media only all and (min-width: 1500px) {
   .pagelist {
     margin: 20px 150px;
@@ -295,17 +263,43 @@ li {
     top: -20px;
   }
 
-  /* 우측 서치부분 */
-  .pagelist header .search {
-    width: 35%;
+  /* 상단 멘트 */
+
+  .pagelist .mainComment .left {
+    width: 60%;
+    font-size: 25px;
+    padding-left: 300px;
+    line-height: 40px;
   }
 
-  .pagelist .subComment {
-    font-size: 22px;
+  .pagelist .mainComment .left span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .pagelist .mainComment .right {
+    width: 60%;
+  }
+
+  .pagelist .con {
     position: relative;
     top: 70px;
+  }
+
+  .pagelist .con .subComment {
+    position: relative;
     left: 50px;
   }
+
+  .pagelist .con .filter {
+    width: 100px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 50px;
+  }
+
 
   .pagelist section .pic_container {
     margin-top: 50px;
@@ -348,27 +342,6 @@ li {
     margin-top: 0px;
   }
 
-  /* 슬라이드 버튼 */
-
-  .pagelist .btn_container {
-    width: 95%;
-    text-align: center;
-    position: relative;
-  }
-
-  .pagelist .btn_container button {
-    bottom: 0px;
-  }
-
-  /* 슬라이드 왼쪽 버튼 위치 */
-  .pagelist .btn_container .prevBtn {
-    left: 0px;
-  }
-
-  /* 서브 슬라이드 오른쪽 버튼 위치 */
-  .pagelist .btn_container .nextBtn {
-    left: 100px;
-  }
 }
 
 
@@ -403,6 +376,7 @@ li {
     font-size: 30px;
   }
 
+
   /* section pic 화면구성 */
   .pagelist section .pic_container {
     width: 100%;
@@ -421,59 +395,6 @@ li {
   .pagelist section .pic_container .pic_list .inner .buying {
     width: 100%;
   }
-
-  /* 슬라이드 버튼 */
-
-  .pagelist .btn_container button {
-    bottom: 20px;
-    font-size: 18px;
-  }
-
-  /* 슬라이드 왼쪽 버튼 위치 */
-  .pagelist .btn_container .prevBtn {
-    left: 350px;
-  }
-
-  /* 서브 슬라이드 오른쪽 버튼 위치 */
-  .pagelist .btn_container .nextBtn {
-    left: 450px;
-  }
-
-
-
-  .pagelist .close {
-    width: 90%;
-    height: 300px;
-    margin: auto;
-    /* margin-top: 150px; */
-    margin-bottom: 50px;
-    border-radius: 5px;
-  }
-
-  .pagelist .close .container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-  }
-
-  .pagelist .close .container .left {
-    width: 50%;
-    padding: 0px;
-  }
-
-  .pagelist .close .container .right {
-    width: 100%;
-  }
-
-  .pagelist .close .container .left .comment .author {
-    font-size: 13px;
-  }
-
-  .pagelist .close .container .left .comment .title {
-    font-size: 18px;
-  }
-
 }
 
 
@@ -535,47 +456,6 @@ li {
   .pagelist section .pic_container .pic_list .inner .buying {
     width: 100%;
     font-size: 15px;
-  }
-
-  /* 슬라이드 버튼 */
-
-  .pagelist .btn_container button {
-    bottom: 20px;
-    font-size: 16px;
-  }
-
-  /* 슬라이드 왼쪽 버튼 위치 */
-  .pagelist .btn_container .prevBtn {
-    left: 260px;
-  }
-
-  /* 서브 슬라이드 오른쪽 버튼 위치 */
-  .pagelist .btn_container .nextBtn {
-    left: 340px;
-  }
-
-  /* close */
-
-  .pagelist .close .container {
-    padding: 0px;
-  }
-
-  .pagelist .close .container .left {
-    width: 40%;
-    padding-left: 0px;
-  }
-
-  .pagelist .close .container .right {
-    width: 60%;
-  }
-
-  .pagelist .close .container .left .comment .author {
-    font-size: 14px;
-    padding: 0px;
-  }
-
-  .pagelist .close .container .left .comment .title {
-    font-size: 18px;
   }
 
 }

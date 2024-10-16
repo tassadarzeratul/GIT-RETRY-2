@@ -261,15 +261,8 @@ li {
   letter-spacing: 5px;
   color: black;
   background-color: rgba(138, 138, 138, 0.233);
-  /* cursor: pointer;
-  transition: 0.5s; */
   font-family: "Gowun Dodum", sans-serif;
 }
-
-/* detail_2 오른쪽 후원버튼 기능 */
-/* .detail_2 .container .right button.scroll_move:hover {
-  background-color: #0f0f0f6e;
-} */
 
 
 /* detail_3  */
@@ -331,12 +324,6 @@ li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
-/* .detail3 .bigbox .right .product:hover {
-  background-color: #0f0f0f6e;
-  border-color: rgb(0, 0, 0);
-  border: none;
-} */
-
 /* detail3 추가 */
 
 .projectext0 {
@@ -378,10 +365,8 @@ li {
   margin-top: 90px;
 }
 
-
-/* detail3 추가 끝 */
-
 /* detail 3 끝 */
+
 
 /* detail 4 시작  */
 
@@ -426,13 +411,13 @@ li {
 
 /* detail 5 끝 */
 
+
 /* 커뮤니티 (댓글) 영역 스타일 */
 
 .detailclone div.community {
   border: solid 1px #dadada;
   margin: 3% auto;
   background-color: #dadada;
-
 }
 
 .detailclone div.community .comment {
@@ -442,65 +427,55 @@ li {
   padding: 30px;
   width: 600px;
   margin: 0 auto;
-
 }
 
-.detailclone div.community .comment > li {
+.detailclone div.community .comment>li {
   margin-top: 20px;
-
 }
 
-.detailclone div.community .comment > li:nth-child(1) {
+.detailclone div.community .comment>li:nth-child(1) {
   margin: 0px;
-
 }
 
 .detailclone div.community .comment-row {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
 }
 
 .detailclone div.community .comment-row {
   margin-top: 20px;
   width: 100%;
-
 }
 
-.detailclone div.community .comment-row > li:nth-child(2) {
+.detailclone div.community .comment-row>li:nth-child(2) {
   flex-shrink: 0;
   flex-grow: 1;
   padding-left: 25px;
   z-index: 1;
   width: 100%;
-  
 }
 
-.detailclone div.community .comment-row > li:nth-child(2) {
+.detailclone div.community .comment-row>li:nth-child(2) {
   width: 85px;
-
 }
 
-.detailclone div.community .comment-form > form {
+.detailclone div.community .comment-form>form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
-.detailclone div.community .comment-form > form > h4 {
+.detailclone div.community .comment-form>form>h4 {
   width: 100%;
   margin: 14px 0 14px 0;
-
 }
 
 .detailclone div.community .comment-content {
   cursor: pointer;
   word-break: break-all;
   padding-right: 25px;
-
 }
 
 .detailclone div.community .ps_box {
@@ -512,12 +487,10 @@ li {
   padding: 10px 14px 10px 14px;
   background: #fff;
   box-sizing: border-box;
-
 }
 
-.detailclone div.community .ps_box > input {
+.detailclone div.community .ps_box>input {
   outline: none;
-
 }
 
 .detailclone div.community .int {
@@ -532,7 +505,6 @@ li {
   font-size: 1rem;
   box-sizing: border-box;
   z-index: 10;
-
 }
 
 .detailclone div.community .btn {
@@ -545,14 +517,12 @@ li {
   background: #333;
   color: #fff;
   font-size: 1rem;
-
 }
 
 .detailclone div.community .comment-delete-btn {
   display: inline-block;
   margin-left: 7px;
   cursor: pointer;
-
 }
 
 .detailclone div.community .commnet-update-input {
@@ -561,13 +531,12 @@ li {
   font-size: 1.2rem;
   color: #666;
   outline: none;
-
 }
 
 
 /* 미디어 쿼리 */
 /* 큰화면 데스크탑 (가로 해상도가 1800px 보다 큰 화면에 적용)  */
-@media only all and (min-width: 1800px) {
+@media only all and (min-width: 1500px) {
 
   /* detail1 시작  */
   .detail_1 {
@@ -1061,7 +1030,7 @@ li {
     padding-bottom: 50px;
     text-align: center;
     margin-left: 10%;
-    margin-right:10%;
+    margin-right: 10%;
   }
 
   .detail_4 h2 {
@@ -1075,9 +1044,9 @@ li {
 
 
   /* detail 5 시작 */
-  .detail_5{
+  .detail_5 {
     margin-left: 10%;
-    margin-right:10%;
+    margin-right: 10%;
   }
 
   .detail_5 #copyright {
