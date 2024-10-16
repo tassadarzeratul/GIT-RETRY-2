@@ -33,7 +33,7 @@ document.getElementById('submitButton').addEventListener('click', function() {
         duration:150,
         easing: "linear",
         complete: function() {
-          sum.css({"top": 12 * (inc * -1) + "px"}).animate({top:"0px"}, 100, "linear").text(total + "won");
+          sum.css({"top": 12 * (inc * -1) + "px"}).animate({top:"0px"}, 100, "linear").text(total + "원");
           if(cb) { cb(); }
         }
       });
