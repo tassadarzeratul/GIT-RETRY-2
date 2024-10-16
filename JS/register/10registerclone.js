@@ -1,11 +1,11 @@
-document.getElementById('addProductBtn').addEventListener('click', function(event) {
+document.getElementById('addProductBtn').addEventListener('click', function (event) {
     event.preventDefault(); // 페이지 새로고침 방지
 
     // 입력된 수량과 상품명을 가져오기
     const quantitypirce = document.getElementById('quantitypirceInput').value;
     const quantity = document.getElementById('quantityInput').value;
     const productName = document.getElementById('productNameInput').value;
-    
+
 
     // 수량이나 상품명이 입력되지 않으면 경고창 표시
     if (!quantity || !productName || !quantitypirce) {

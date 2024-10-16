@@ -21,11 +21,11 @@ $('#mypageBtn').on('click', () => purchasepageToGo('../../HTML/mypage/mypage.htm
 
 
 // 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
-document.getElementById("searchI").addEventListener("click", function() {
+document.getElementById("searchI").addEventListener("click", function () {
   const query = document.getElementById("searchBox").value;
   if (query) {
-      window.location.href = `../../HTML/mainpage/detail.html`;
+    window.location.href = `../../HTML/mainpage/detail.html`;
   } else {
-      alert("검색어를 입력해주세요.");
+    alert("검색어를 입력해주세요.");
   }
 });
