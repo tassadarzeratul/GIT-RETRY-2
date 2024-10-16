@@ -7,84 +7,6 @@ loginPic.addEventListener('click', loginToLogo);
 
 // =============================================================================
 
-// const inputEmailId = document.getElementById('userEmail');
-// const inputEmailPwd = document.getElementById('userPwd');
-// const loginBtn = document.getElementById('btnlogin');
-
-// const emailWarning = document.getElementById('emailWarning');
-// const pwdWarning = document.getElementById('pwdWarning');
-
-// // 유효성 검사 함수
-// const login_user = () => {
-//     let isValid = true;
-
-//     // 경고 메시지 초기화
-//     emailWarning.textContent = '';
-//     pwdWarning.textContent = '';
-
-//     // 이메일 검사 (@ 포함)
-//     if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
-//         emailWarning.textContent = '이메일에는 @가 포함되어야 하며 공백을 포함할 수 없습니다.';
-//         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-//         loginBtn.disabled = true;
-//         isValid = false;
-//     }
-
-//     // 비밀번호 검사 (8~16자)
-//     else if (inputEmailPwd.value.length < 8 || inputEmailPwd.value.length > 16 || /\s/.test(inputEmailPwd.value)) {
-//         pwdWarning.textContent = '비밀번호는 8~16자여야 하며 공백을 포함할 수 없습니다.';
-//         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-//         loginBtn.disabled = true;
-//         isValid = false;
-//     }
-
-//     // 모든 조건을 통과했을 경우
-//     if (isValid) {
-//         loginBtn.style.backgroundColor = "#0095F6";
-//         loginBtn.disabled = false;
-//     }
-// }
-
-// // 페이지 이동
-// const loginToMain = () => {
-//     alert('환영합니다!!!!!!!!!');
-//     location.replace('../../HTML/mainpage/main.html');
-// }
-
-// // 로그인 처리 함수
-// const checkLoginCredentials = () => {
-//     const storedUser = JSON.parse(localStorage.getItem('user'));
-
-//     if (storedUser) {
-//         const storedEmail = storedUser.email;
-//         const storedPassword = storedUser.password;
-
-//         // 입력한 이메일과 비밀번호가 저장된 정보와 일치하는지 확인
-//         if (inputEmailId.value === storedEmail && inputEmailPwd.value === storedPassword) {
-//             loginToMain();
-//         } else {
-//             alert('이메일 또는 비밀번호가 잘못되었습니다.');
-//         }
-//     } else {
-//         alert('회원가입된 사용자가 없습니다.');
-//     }
-// }
-
-// // 로그인 버튼 클릭
-// loginBtn.addEventListener('click', (event) => {
-//     event.preventDefault();
-//     login_user();
-
-//     if (!loginBtn.disabled) {
-//         checkLoginCredentials();
-//     }
-// });
-
-// // 각 입력 필드에서 입력이 변경될 때마다 유효성 검사 호출
-// inputEmailId.addEventListener('input', login_user);
-// inputEmailPwd.addEventListener('input', login_user);
-
-
 const inputEmailId = document.getElementById('userEmail');
 const inputEmailPwd = document.getElementById('userPwd');
 const loginBtn = document.getElementById('btnlogin');
@@ -123,9 +45,9 @@ const login_user = () => {
     }
 }
 
-// 로그인 처리 함수
+// 로그인 처리 
 const checkLoginCredentials = () => {
-    const storedUser = JSON.parse(localStorage.getItem('user')); // LocalStorage에서 저장된 사용자 정보 가져오기
+    const storedUser = JSON.parse(localStorage.getItem('user'));
 
     if (storedUser) {
         const storedEmail = storedUser.email;
@@ -133,8 +55,8 @@ const checkLoginCredentials = () => {
 
         // 입력한 이메일과 비밀번호가 저장된 정보와 일치하는지 확인
         if (inputEmailId.value === storedEmail && inputEmailPwd.value === storedPassword) {
-            localStorage.setItem('isLoggedIn', 'true'); // 로그인 상태 저장
-            loginToMain(); // 로그인 성공 시 메인 페이지로 이동
+            localStorage.setItem('isLoggedIn', 'true');
+            loginToMain();
         } else {
             alert('이메일 또는 비밀번호가 잘못되었습니다.');
         }
@@ -146,16 +68,16 @@ const checkLoginCredentials = () => {
 // 페이지 이동
 const loginToMain = () => {
     alert('환영합니다!');
-    location.replace('../../HTML/mainpage/main.html'); // 메인 페이지 경로
+    location.replace('../../HTML/mainpage/main.html');
 }
 
 // 로그인 버튼 클릭
 loginBtn.addEventListener('click', (event) => {
-    event.preventDefault(); // 기본 동작 방지
-    login_user(); // 입력검사 호출
+    event.preventDefault();
+    login_user();
 
-    if (!loginBtn.disabled) { // 버튼이 활성화된 경우에만 로그인 시도
-        checkLoginCredentials(); // 로그인 자격 증명 확인
+    if (!loginBtn.disabled) {
+        checkLoginCredentials();
     }
 });
 

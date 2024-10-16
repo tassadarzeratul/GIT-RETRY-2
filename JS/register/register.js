@@ -28,16 +28,12 @@ function setThumbnail(input) {
 // 팝업등록완료
 function showRegister() {
     window.open("../../HTML/register/registerpop.html", "a", "width=400, height=400, left=100, top=0");
-
-
 }
 
 
 const container = document.getElementById('add')
 
-
 // 
-
 const registerTheme = document.getElementsByClassName('theme');
 const registerDetails = document.getElementsByClassName('details');
 const registerBt = document.getElementsByClassName('button');

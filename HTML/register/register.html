@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-    <title>펀딩 등록 화면</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../CSS/register/register.css">
+    <title>펀딩 등록 화면</title>
 </head>
 
 <body>
-    <!-- 김건우 register 시작 -->
+    <!-- register 시작 -->
     <div class="register">
         <div class="img">
             <a class="logo" href="../../HTML/mainpage/main.html">
@@ -46,8 +46,7 @@
                 </div>
                 <!-- 추가버튼 끝 -->
                 <div class="buttons">
-                    <div class="filebox" 
-                    onclick="document.querySelector('input[type=file]').click();">
+                    <div class="filebox" onclick="document.querySelector('input[type=file]').click();">
                         <input type="file" onchange="setThumbnail(this);" accept="image/*" multiple>
                         <span>이미지 업로드</span>
                         <div id="image_container"></div> <!-- 이미지 미리보기 -->
@@ -83,7 +82,7 @@
                         <label>목표금액:</label>
                         <input class="addbutton" type="text" id="targetAmountInput" placeholder="금액 입력">
                     </div>
-            
+
                     <button class="duplicate" onclick="validateAndShowRegister();">
                         등록하기
                     </button>
@@ -115,6 +114,7 @@
     <script src="../../JS/register/register.js"></script>
     <script src="../../JS/register/registerScript.js"></script>
     <script src="../../JS/register/10registerclone.js"></script>
-    </body>
+</body>
 <!-- 김건우 register 끝 -->
+
 </html>

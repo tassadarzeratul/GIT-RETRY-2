@@ -1,2 +1,2 @@
-function showPopup() { window.open("김건우_endpop.html", "a", "width=700, height=700"); }
+function showPopup() { window.open("endpop.html", "a", "width=700, height=700"); }
 
