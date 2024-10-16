@@ -58,26 +58,32 @@
                 <h2>펀딩 상세 정보 입력</h2>
                 <br>
                 <br>
+                <!-- info,add는 id product-info인풋박스 스타일-->
 
                 <div class="info">
-                    <div class="add" id="product-info">
-                        수량
-                        <input class="addbutton" type="text">
-                        상품명
-                        <input class="addbutton" type="text">
+                    <div class="add">
+                        <label>금액:</label>
+                        <input class="addbutton" type="text" id="quantitypirceInput" placeholder="금액 입력">
+                        <label>상품명:</label>
+                        <input class="addbutton" type="text" id="productNameInput" placeholder="상품명 입력">
+                        <label>수량:</label>
+                        <input class="addbutton" type="text" id="quantityInput" placeholder="수량 입력">
                     </div>
-            
-                    <button class="duplicate" id="addProductButton">
+
+                    <!-- 상품 정보 추가 버튼 -->
+                    <button class="duplicate" id="addProductBtn">
                         +상품 정보 추가하기
                     </button>
-                    <br>
-                    <br>
-                    <br>
-            
+
+                    <!-- 상품 정보가 추가될 곳 -->
+                    <div id="productInfoContainer"></div>
+
+                    <br><br><br>
+
                     <div class="add">
-                        기간
+                        <label>기간:</label>
                         <input class="addbutton" type="text">
-                        목표금액
+                        <label>목표금액:</label>
                         <input class="addbutton" type="text">
                     </div>
             
@@ -111,6 +117,7 @@
     <script src="../../JS/register/upload.js"></script>
     <script src="../../JS/register/register.js"></script>
     <script src="../../JS/register/registerScript.js"></script>
+    <script src="../../JS/register/10registerclone.js"></script>
 </body>
 <!-- 김건우 register 끝 -->
 
