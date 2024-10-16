@@ -1,6 +1,6 @@
 function setThumbnail(input) {
     const container = document.getElementById("image_container");
-    console.log("파일 선택됨:", input.files); // 선택된 파일 목록 출력
+    container.innerHTML = ''; // 기존 미리보기 이미지 제거
 
     for (const image of input.files) {
         const reader = new FileReader();
@@ -13,8 +13,8 @@ function setThumbnail(input) {
                 const canvas = document.createElement("canvas");
                 const ctx = canvas.getContext("2d");
 
-                const maxWidth = 80; // 최대 너비
-                const maxHeight = 80; // 최대 높이
+                const maxWidth = 80;
+                const maxHeight = 80;
                 let width = img.width;
                 let height = img.height;
 
@@ -38,10 +38,8 @@ function setThumbnail(input) {
                 const resizedImage = canvas.toDataURL("image/png");
                 const resizedImgElement = document.createElement("img");
                 resizedImgElement.setAttribute("src", resizedImage);
-                resizedImgElement.classList.add('preview-image'); // CSS 클래스 추가
-                container.appendChild(resizedImgElement); // 미리보기 컨테이너에 이미지 추가
-
-                console.log("리사이즈된 이미지 추가:", resizedImage); // 추가된 이미지 출력
+                resizedImgElement.classList.add('preview-image');
+                container.appendChild(resizedImgElement);
             };
         };
 
