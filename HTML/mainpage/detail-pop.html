@@ -33,11 +33,22 @@
                     60,000 원
                 </div>
                 <div class="payment">
-                    <button type="button">결제하기</button>
+                    <button id="myButton">결제하기</button>
+                <p id="message"></p>
                 </div>
             </form>
         </div>
         <script src="../../JS/mainpage/detail-pop.js"></script>
+        <!-- <script>
+             document.getElementById("myButton").onclick = function() {
+            const userConfirmed = window.confirm("결제하시겠습니까?");
+            if (userConfirmed) {
+                alert("결제가 완료되었습니다.");
+            } else {
+                alert("결제가 취소되었습니다.");
+            }
+        };
+        </script> -->
 </body>
 
 </html>

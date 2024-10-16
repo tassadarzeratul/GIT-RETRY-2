@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm 예제</title>
+</head>
+<body>
+    <button id="myButton">클릭하세요!</button>
+    <p id="message"></p>
+
+    <script>
+        document.getElementById("myButton").onclick = function() {
+            const userConfirmed = window.confirm("이 작업을 진행하시겠습니까?");
+            if (userConfirmed) {
+                document.getElementById("message").innerText = "작업이 진행됩니다.";
+            } else {
+                document.getElementById("message").innerText = "작업이 취소되었습니다.";
+            }
+        };
+    </script>
+</body>
+</html>
