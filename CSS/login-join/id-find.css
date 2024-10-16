@@ -132,7 +132,7 @@ li {
     background-color: rgb(0, 44, 190);
     color: white;
     font-size: 20px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Gowun Dodum", sans-serif;
     font-weight: bold;
     letter-spacing: 5px;
     cursor: pointer;
@@ -140,7 +140,7 @@ li {
     transition: 0.5s
 }
 
-/* 버튼 스타일 후버 */
+/* 버튼 스타일 호버 */
 .idfindPage form fieldset div.idfindBtn button:hover {
     background-color: rgb(0, 26, 111);
     /* box-shadow: 0 0 10px 0 rgb(107, 107, 201) inset, 0 0 10px 1px rgb(125, 125, 212); */
