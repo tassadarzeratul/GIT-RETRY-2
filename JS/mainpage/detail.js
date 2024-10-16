@@ -35,16 +35,6 @@ if (scrollTo) {
     }
 }
 
-// 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
-document.getElementById("searchI").addEventListener("click", function () {
-    const query = document.getElementById("searchBox").value;
-    if (query) {
-        window.location.href = `../../HTML/mainpage/detail.html`;
-    } else {
-        alert("검색어를 입력해주세요.");
-    }
-});
-
 // 스크롤
 document.querySelectorAll(".scroll_move").forEach(function (button) {
     button.addEventListener("click", function () {
