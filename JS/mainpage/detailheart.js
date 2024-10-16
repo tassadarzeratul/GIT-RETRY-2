@@ -7,6 +7,8 @@ document.getElementById("likeButton").addEventListener("click", function() {
         document.getElementById("likeCount").textContent = likeCount;
         liked = true;
     } else {
-        alert("좋아요는 한번만 가능합니다.");
+        // alert("좋아요는 한번만 가능합니다.");
+        window.open("../../HTML/mainpage/likespopup.html", "popup", "width=400,height=550");
+        
     }
 });
