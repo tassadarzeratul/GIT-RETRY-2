@@ -20,8 +20,9 @@ $('#joinBtn').on('click', () => detail1ToGo('../../HTML/login-join/join.html'));
 $('#loginBtn').on('click', () => detail1ToGo('../../HTML/login-join/login.html'));
 // myPage
 $('#mypageBtn').on('click', () => detail1ToGo('../../HTML/mypage/mypage.html'));
-// 검색어입력 돋보기
-$('#detail1SearchI').on('click', () => detail1ToGo('../../HTML/purchase/purchase1.html'));
+
+
+// ==============================================================================================
 
 
 // join창에서 약관보기 클릭 시 저작권으로 이동
@@ -35,6 +36,10 @@ if (scrollTo) {
     }
 }
 
+
+// ==============================================================================================
+
+
 // 스크롤
 document.querySelectorAll(".scroll_move").forEach(function (button) {
     button.addEventListener("click", function () {
@@ -46,6 +51,9 @@ document.querySelectorAll(".scroll_move").forEach(function (button) {
         }
     });
 });
+
+
+// ==============================================================================================
 
 
 // 커뮤니티 댓글 기능
@@ -114,9 +122,10 @@ function commentBtnHandler(e) {
     e.target.reset();
 
 }
-
 commentBtn.addEventListener("submit", commentBtnHandler);
 
+
+// ==============================================================================================
 
 
 // 하트 버튼

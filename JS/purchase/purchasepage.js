@@ -1,31 +1,65 @@
-// main 화면으로 이동
-const purchasepageToGo = (url) => {
-  window.open(url);
-}
-// 로고
-$('#logo_picMain').on('click', () => purchasepageToGo('../../HTML/mainpage/main.html'));
-// 홈
-$('#purchasepageToHome').on('click', () => purchasepageToGo('../../HTML/mainpage/main.html'));
-// 펀딩등록
-$('#purchasepageToRegister').on('click', () => purchasepageToGo('../../HTML/register/김건우_register.html'));
-// 종료펀딩
-$('#purchasepageToEnd').on('click', () => purchasepageToGo('../../HTML/register/end.html'));
-// 작품구매
-$('#purchasepageTopurchase_1').on('click', () => purchasepageToGo('../../HTML/purchase/purchase1.html'));
-// join
-$('#joinBtn').on('click', () => purchasepageToGo('../../HTML/login-join/join.html'));
-// Login
-$('#loginBtn').on('click', () => purchasepageToGo('../../HTML/login-join/login.html'));
-// myPage
-$('#mypageBtn').on('click', () => purchasepageToGo('../../HTML/mypage/mypage.html'));
+//약관동의 js
+document.getElementById('submitButton').addEventListener('click', function () {
+
+  var checkbox = document.getElementById('agreeCheckbox');
 
 
-// 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
-document.getElementById("searchI").addEventListener("click", function () {
-  const query = document.getElementById("searchBox").value;
-  if (query) {
-    window.location.href = `../../HTML/mainpage/detail.html`;
+  if (checkbox.checked) {
+    alert('결제완료');
   } else {
-    alert("검색어를 입력해주세요.");
+    alert('약관에 동의해주세요.');
   }
 });
+
+//==================================================================================================
+
+// 합계 금액 js 
+(function (won) {
+  var total, initialValue;
+  var sum, options;
+  var inc;
+
+
+  var updateTotal = function (evt, cb) {
+    inc = (this.checked ? 1 : -1);
+    total += this.value * inc;
+
+
+    sum.animate({ top: 12 * inc + "px" }, {
+      duration: 150,
+      easing: "linear",
+      complete: function () {
+        sum.css({ "top": 12 * (inc * -1) + "px" }).animate({ top: "0px" }, 100, "linear").text(total + "원");
+        if (cb) { cb(); }
+      }
+    });
+  };
+
+  var initTotal = function () {
+
+    var ind = 0;
+    var selected;
+    var opt, fn;
+
+    total = initialValue;
+    selected = options.filter(":checked");
+
+    (fn = function () {
+      if ((opt = selected[ind++])) {
+        updateTotal.apply(opt, [null, fn]);
+      }
+    })();
+  }
+
+
+  $(function () {
+    options = won('fieldset input[type=checkbox]');
+    sum = won('#sum strong');
+    initialValue = parseInt(won("fieldset>input[name=initialValue]").val(), 10);
+
+    options.on('click', updateTotal);
+    initTotal();
+
+  });
+
+})(jQuery);

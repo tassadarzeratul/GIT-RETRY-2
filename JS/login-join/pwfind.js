@@ -17,7 +17,7 @@ const emailWarning = document.getElementById('emailWarning');
 const pwdWarning = document.getElementById('nameWarning');
 
 const pwfind_user = () => {
-    let isValid = true; // 모든사항이 유효한지 확인 변수
+    let isValid = true;
 
     // 경고 메시지 초기화
     emailWarning.textContent = '';
@@ -53,10 +53,10 @@ const pwfindToMain = () => {
 
 // 로그인 버튼 클릭
 pwfindBtn.addEventListener('click', (event) => {
-    event.preventDefault(); // 기본 동작 방지
+    event.preventDefault();
     console.log('비밀번호 찾기')
-    pwfind_user(); // 입력검사 호출
-    if (!pwfindBtn.disabled) { // 버튼이 활성화된 경우에만 이동
+    pwfind_user();
+    if (!pwfindBtn.disabled) {
         pwfindToMain();
     }
 });
