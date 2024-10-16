@@ -5,15 +5,13 @@ const mainToGo = (url) => {
 // 로고
 $('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
-$('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
-// 펀딩등록
-$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/register.html'));
+$('#ToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩리스트
-$('#mainToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
+$('#ToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩
-$('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
+$('#Toend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
-$('#mainTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
+$('#Topurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // join
 $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
@@ -21,13 +19,13 @@ $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
 $('#mypageBtn').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
 // 서브 사진
-$('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+$('.pic_list li').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 전체보기
 $('#allPic').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
-// 오른쪽 사진
-$('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 최근 등록된 펀딩
+$('.rightPic').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 아래쪽 사진
-$('.otherRight img').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+$('.otherRight .inner').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 
 
 

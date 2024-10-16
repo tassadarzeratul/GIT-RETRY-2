@@ -4,8 +4,6 @@ const myPageToGo = (url) => {
 }
 // 홈
 $('#myPageToHome').on('click', () => myPageToGo('../../HTML/mainpage/main.html'));
-// 펀딩등록
-$('#myPageToRegister').on('click', () => myPageToGo('../../HTML/register/register.html'));
 // 펀딩리스트
 $('#myPageToList').on('click', () => myPageToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩
