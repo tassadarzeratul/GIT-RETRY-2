@@ -13,7 +13,7 @@ $('#mainToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html')
 // 종료펀딩
 $('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
-$('#allPic, #mainTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
+$('#mainTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // join
 $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
@@ -22,6 +22,8 @@ $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 $('#mypageBtn').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
 // 서브 사진
 $('.pic_list').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 전체보기
+$('#allPic').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 오른쪽 사진
 $('.right .pic').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 아래쪽 사진

@@ -76,10 +76,10 @@
                         <strong>0명</strong>
                     </div>
                     <div class="spoBtn">
-                        <button class="love" type="button" id="love">
+                        <button class="love" type="button" id="likeButton">
                             <div class="loveBtn">
                                 <i class="fa-solid fa-heart"></i>
-                                <span>0</span>
+                                <span id="likeCount">255</span>
                             </div>
                         </button>
                         <button class="scroll_move" type="button" data-target="scroll4">
@@ -284,21 +284,21 @@
             <!-- DETAIL 5 끝 -->
 
             <!-- 커뮤니티 (댓글) 기능 추가 -->
-            <div class="community">
+            <div class="community" id="scroll3">
                 <ul class="comment">
-                  <li class="comment-form">
-                    <form id="commentFrm">
-                      <h4>댓글쓰기 <span></span></h4>
-                      <span class="ps_box">
-                        <input type="text" placeholder="댓글 내용을 입력해주세요." class="int" name="content" />
-                      </span>
-                      <input type="submit" class="btn" value="등록" />
-                    </form>
-                  </li>
-                  <li id="comment-list"></li>
+                    <li class="comment-form">
+                        <form id="commentFrm">
+                            <h4>댓글쓰기 <span></span></h4>
+                            <span class="ps_box">
+                                <input type="text" placeholder="댓글 내용을 입력해주세요." class="int" name="content" />
+                            </span>
+                            <input type="submit" class="btn" value="등록" />
+                        </form>
+                    </li>
+                    <li id="comment-list"></li>
                 </ul>
-              </div>
-              <!-- 댓글 끝 -->
+            </div>
+            <!-- 댓글 끝 -->
             <div class="explain">
                 <hr class="linee" width="100%" color="black">
                 <br><br>
@@ -314,6 +314,7 @@
     </div>
     <script src="../../JS/mainpage/detail.js"></script>
     <script src="../../JS/mainpage/common.js"></script>
+    <script src="../../JS/mainpage/detailheart.js"></script>
 </body>
 
 </html>
