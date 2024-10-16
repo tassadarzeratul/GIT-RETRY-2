@@ -101,11 +101,28 @@ li {
 
 
 /* 메인부분 */
-.end .maindComment {
+.end .mainComment {
+  width: 100%;
+  margin-top: 120px;
+  display: block;
   text-align: center;
-  font-size: 36px;
-  margin: 50px 0px;
+  padding-bottom: 120px;
 }
+
+.end .mainComment .left {
+  width: 100%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.end .mainComment .right {
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+/* .end .mainComment .right {
+  width: 50%;
+} */
 
 .end .subComment {
   font-size: 18px;
