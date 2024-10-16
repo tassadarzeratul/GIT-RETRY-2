@@ -29,7 +29,7 @@
     padding-left:300px;
     padding-right: 300px;
     padding-bottom:0px;
-    padding-top:100px;
+    padding-top:30px;
   }
 
   .detail_Pop .container{
@@ -40,6 +40,7 @@
   
   .detail_Pop div.title{
     margin-top: 5%;
+    padding-bottom: 20px;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
@@ -48,13 +49,13 @@
   }
 
   .detail_Pop div.choice{
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     font-weight: bold;
     padding: 20px;
   }
 
   .detail_Pop div.discription {
-    width: 80%;
+    width: 100%;
     margin: 5% auto;
     border: solid 1px black;
     font-size: 16px;
@@ -67,6 +68,7 @@
     font-size: 1.4rem;
     line-height: 50px;
     border-radius: 10px;
+    padding-bottom: 20px;
     
   }
 
@@ -114,7 +116,7 @@
   font-size: 36px;
   font-weight: bold;
   width: 250px;
-  
+  padding-top: 20px;
 }
 
 .detail_Pop div.payment button {
