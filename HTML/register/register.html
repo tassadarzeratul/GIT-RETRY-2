@@ -48,43 +48,39 @@
                 </div>
                 <!-- 추가버튼 끝 -->
                 <div class="buttons">
-                    <!-- <div class="upload-btn-wrapper"> 이거 주석 풀면 파란색으로 변함-->
-                    <button class="btn">파일 업로드
-                        <input input type="file" id="image" accept="image/*, " onchange="setThumbnail(event);"
-                            multiple />
-                    </button>
-                    <div id="image_container"></div>
+                    <div class="filebox" 
+                    onclick="document.querySelector('input[type=file]').click();">
+                        <input type="file" onchange="setThumbnail(this);" accept="image/*" multiple>
+                        <span>이미지 업로드</span>
+                        <div id="image_container"></div>
+                    </div>
                 </div>
-                <br>
-
                 <h2>펀딩 상세 정보 입력</h2>
                 <br>
                 <br>
 
                 <div class="info">
-                    <div class="add">
+                    <div class="add" id="product-info">
                         수량
-                        <input class="addbutton">
+                        <input class="addbutton" type="text">
                         상품명
-                        <input class="addbutton">
+                        <input class="addbutton" type="text">
                     </div>
-
-                    <button class="duplicate">
+            
+                    <button class="duplicate" id="addProductButton">
                         +상품 정보 추가하기
                     </button>
                     <br>
                     <br>
                     <br>
-
+            
                     <div class="add">
                         기간
-                        <input class="addbutton">
-                        </button>
+                        <input class="addbutton" type="text">
                         목표금액
-                        <input class="addbutton">
-                        </button>
+                        <input class="addbutton" type="text">
                     </div>
-
+            
                     <button class="duplicate">
                         등록하기
                     </button>
