@@ -184,26 +184,26 @@ li {
 .pagelist section .pic_container .pic_list .inner .comment {
   width: 100%;
   height: 150px;
+  padding: 10px;
 }
 
 /* section pic 작가부분 */
 .pagelist section .pic_container .pic_list .inner .author {
   width: 100%;
-  padding-top: 10px;
   font-size: 14px;
   cursor: pointer;
 }
 
 /* section pic 제목부분 */
 .pagelist section .pic_container .pic_list .inner .title {
-  font-size: 16px;
-  padding: 5px 0px;
+  font-size: 15px;
+  padding: 10px 0px;
   font-weight: bold;
 }
 
 /* section pic 제목부분 */
 .pagelist section .pic_container .pic_list .inner .account {
-  font-size: 14px;
+  font-size: 15px;
   color: #444141;
 }
 
