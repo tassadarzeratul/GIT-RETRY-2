@@ -6,14 +6,33 @@ function count(type)  {
     let number = resultElement.innerText;
     
     // 더하기/빼기
-    if(type === 'plus') {
-      number = parseInt(number) + 1;
-    }else if(type === 'minus')  {
-      number = parseInt(number) - 1;
-    }else if(number === 0) {
-        number = parseInt(number) === 0;
+    if(number > 1) {
+      if(type === 'plus') {
+        number = parseInt(number) + 1;
+      }else if(type === 'minus')  {
+        number = parseInt(number) - 1;
+      }
+      
+    }else if ( number = 1) {
+      if(type === 'plus') {
+        number = parseInt(number) + 1;
     }
+  }
+    
     
     // 결과 출력
     resultElement.innerText = number;
   }
+
+// 결제
+  document.getElementById("myButton").onclick = function() {
+    const userConfirmed = window.confirm("결제하시겠습니까?");
+    if (userConfirmed) {
+        alert("결제가 완료되었습니다.");
+    } else {
+        alert("결제가 취소되었습니다.");
+    }
+};
+
+  
+// 결제끝
