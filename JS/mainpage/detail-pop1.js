@@ -23,7 +23,7 @@ function count(type)  {
 
     // 수량에 따른 금액 연산
 
-    sum = number * 60000;
+    sum = number * 150000;
     
     // 결과 출력
     resultElement.innerText = number;
