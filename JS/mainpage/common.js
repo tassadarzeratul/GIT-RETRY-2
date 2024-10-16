@@ -1,4 +1,3 @@
-// 로그인 정보
 document.addEventListener('DOMContentLoaded', () => {
     const joinBtn = document.getElementById('joinBtn');
     const loginBtn = document.getElementById('loginBtn');
