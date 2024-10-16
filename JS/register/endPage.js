@@ -135,6 +135,13 @@ function setThumbnail(event) {
         reader.readAsDataURL(image);
     }
 }
+
+// 결제하기
+function showPurchasePopup() {
+    window.open('../../HTML/mainpage/detail-pop1.html', 'popupWindow', 'width=1600,height=1600,');
+}
+
+
 // 업로드 끝
 
 // const textarea = useRef();
