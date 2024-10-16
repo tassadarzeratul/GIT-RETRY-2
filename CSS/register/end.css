@@ -17,7 +17,7 @@ li {
   list-style: none;
 }
 
-/* admin 시작  */
+/* end 시작  */
 
 .end {
   height: auto;
@@ -115,7 +115,7 @@ li {
   font-weight: bold;
 }
 
-.end .mainComment .left span{
+.end .mainComment .left span {
   color: blue;
 }
 
@@ -123,10 +123,6 @@ li {
   font-size: 25px;
   margin-top: 15px;
 }
-
-/* .end .mainComment .right {
-  width: 50%;
-} */
 
 .end .subComment {
   font-size: 18px;
@@ -140,7 +136,6 @@ li {
   width: 100%;
   display: flex;
   height: 1250px;
-  /* overflow: hidden; */
 }
 
 .end section .pic_container .pic_list {
@@ -201,7 +196,6 @@ li {
   position: relative;
   text-align: right;
   margin-top: 10px;
-  /* left: 240px; */
   color: blue;
   cursor: pointer;
 }
@@ -230,12 +224,9 @@ li {
   left: 600px;
 }
 
-
 .end .explain {
   margin-top: 100px;
 }
-
-
 
 
 
@@ -327,46 +318,8 @@ li {
   .end .btn_container .nextBtn {
     left: 100px;
   }
-
-
-
-  /* close */
-
-  .end .close {
-    margin: auto;
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: center;
-    /* background-color: #b0328a; */
-    color: black;
-  }
-
-  .end .close .container {
-    padding: 0px;
-  }
-
-  .end .close .container .left {
-    width: 45%;
-    padding: 0px 60px;
-  }
-
-  .end .close .container .right {
-    width: 65%;
-    background-image: url(../../img/withDreamLogo2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .end .close .container .left .comment .author {
-    font-size: 22px;
-    padding: 10px 0px;
-  }
-
-  .end .close .container .left .comment .title {
-    font-size: 33px;
-    font-weight: bold;
-  }
 }
+
 
 @media only all and (min-width: 992px) and (max-width: 1200px) {
   .end header .search {
@@ -433,42 +386,6 @@ li {
   .end .btn_container .nextBtn {
     left: 450px;
   }
-
-
-
-  .end .close {
-    width: 90%;
-    height: 300px;
-    margin: auto;
-    /* margin-top: 150px; */
-    margin-bottom: 50px;
-    border-radius: 5px;
-  }
-
-  .end .close .container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-  }
-
-  .end .close .container .left {
-    width: 50%;
-    padding: 0px;
-  }
-
-  .end .close .container .right {
-    width: 100%;
-  }
-
-  .end .close .container .left .comment .author {
-    font-size: 13px;
-  }
-
-  .end .close .container .left .comment .title {
-    font-size: 18px;
-  }
-
 }
 
 
@@ -547,30 +464,6 @@ li {
   /* 서브 슬라이드 오른쪽 버튼 위치 */
   .end .btn_container .nextBtn {
     left: 340px;
-  }
-
-  /* close */
-
-  .end .close .container {
-    padding: 0px;
-  }
-
-  .end .close .container .left {
-    width: 40%;
-    padding-left: 0px;
-  }
-
-  .end .close .container .right {
-    width: 60%;
-  }
-
-  .end .close .container .left .comment .author {
-    font-size: 14px;
-    padding: 0px;
-  }
-
-  .end .close .container .left .comment .title {
-    font-size: 18px;
   }
 
 }

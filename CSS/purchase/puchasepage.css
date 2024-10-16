@@ -19,6 +19,7 @@ li {
 }
 
 /* Main  */
+
 /* purchasePage 시작  */
 
 .purchasePage {
@@ -156,8 +157,6 @@ li {
 
 }
 
-
-
 .purchasepopup {
   height: auto;
   margin: 200px 100px 10px 100px;
@@ -204,12 +203,9 @@ li {
   font-weight: 300;
 }
 
-
 .purchasepopup #accordian .title h1 {
   font-weight: 400;
 }
-
-
 
 .purchasepopup #accordian .content .box {
   width: 450px;
@@ -263,7 +259,6 @@ fieldset {
   border: none;
   border-radius: 3px;
   color: black;
-
 }
 
 label {
@@ -285,7 +280,6 @@ input:hover {
 }
 
 #sum strong {
-  /* required for the animation */
   display: inline-block;
   position: relative;
 }
