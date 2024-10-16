@@ -427,6 +427,35 @@ li {
 
 /* detail 5 끝 */
 
+/* detail5 terms 약관 체크박스 */
+.agree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.terms-check {
+  margin-right: 10px; /* 체크박스와 텍스트 사이의 여백 */
+}
+
+/* 버튼 중앙 배치 */
+#closeBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#closeBtn:hover {
+  background-color: #0056b3;
+}
+
 /* 커뮤니티 (댓글) 영역 스타일 */
 
 .detailclone div.community {
