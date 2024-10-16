@@ -171,11 +171,11 @@ li {
 
 
 
-.hidden {
+.join div#custom-alert {
     display: none;
 }
 
-.alert-box {
+.join .hidden {
     position: fixed;
     top: 0;
     left: 0;
@@ -188,14 +188,14 @@ li {
     z-index: 1000; 
 }
 
-.alert-content {
+.join .alert-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px; /* 알림창의 최대 너비 설정 */
-    width: 100%; /* 창의 가로 너비 */
+    max-width: 400px; 
+    width: 100%; 
 }
 
 #close-btn {
