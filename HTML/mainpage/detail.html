@@ -41,10 +41,6 @@
                             <li id="detail1Topurchase_1">작품 구매</li>
                         </ul>
                     </div>
-                    <div class="search">
-                        <input type="text" id="searchBox" placeholder="검색어를 입력해주세요." />
-                        <i class="fa-solid fa-magnifying-glass" id="searchI"></i>
-                    </div>
                 </div>
             </header>
             <div class="title"><strong>[박호연] VIEW HY 사진전</strong></div>
@@ -154,35 +150,35 @@
                     </div>
                 </div>
                 <div class="right" id="scroll4">
-                    <div class="descriptiontext" href="../../HTML/mainpage/detail-pop.html"
-                        onclick="window.open('../../HTML/mainpage/detail-pop.html')">상품 선택
+                    <div class="descriptiontext">상품 선택
                         <button class="product">
                             <h2>1000원+</h2>
                             <h4>• 선물 없이 후원하기</h4>
                         </button>
+                        <button class="product" onclick="showProduct();">
+                            <h2>60,000원+</h2>
+                            <h4>
+                                • 한정판 포토북 × 1<br>
+                                • 엽서, 액자 × 1<br>
+                                • 관람티켓 × 1<br>
+                            </h4>
+                        </button>
+                        <button class="product" onclick="showProduct1()">
+                            <h2>150,000원+</h2>
+                            <h4>
+                                • 한정판 포토북, 목제보관함 × 1
+                            </h4>
+                        </button>
                         <button class="product">
-                            <h2>140,000원+</h2>
-                            <h4>• A4 사이즈의 한정판 아트 프린트 × 1</h4>
+                            <h2>130,000원+</h2>
                             <h4>• 한정판 아트북 × 1</h4>
                         </button>
                         <button class="product">
                             <h2>140,000원+</h2>
-                            <h4>• A4 사이즈의 한정판 아트 프린트 × 1</h4>
                             <h4>• 한정판 아트북 × 1</h4>
                         </button>
                         <button class="product">
-                            <h2>140,000원+</h2>
-                            <h4>• A4 사이즈의 한정판 아트 프린트 × 1</h4>
-                            <h4>• 한정판 아트북 × 1</h4>
-                        </button>
-                        <button class="product">
-                            <h2>140,000원+</h2>
-                            <h4>• A4 사이즈의 한정판 아트 프린트 × 1</h4>
-                            <h4>• 한정판 아트북 × 1</h4>
-                        </button>
-                        <button class="product">
-                            <h2>140,000원+</h2>
-                            <h4>• A4 사이즈의 한정판 아트 프린트 × 1</h4>
+                            <h2>160,000원+</h2>
                             <h4>• 한정판 아트북 × 1</h4>
                         </button>
                     </div>
@@ -236,7 +232,7 @@
                 『직박구리』 홈페이지 (이하 "홈페이지"이라 합니다)는 직박구리 창작자가 제공하는 인터넷서비스(이하 "서비스"라 합니다)의 내용을 보호하고,
                 저작권 등 타인의 권리를 침해하지 않도록 하기 위하여 다음과 같은 저작권 정책을 운영하고 있습니다. 다음에 명시되지 아니한 저작권 관련사항은
                 직박구리의 이용약관과 저작권법을 준용합니다.
-                미술관의 저작권보호 정책은 관련 법률 및 정부지침의 변경 등에 따라 개정될 수 있으며, 개정된 사항은 시행 전 홈페이지에 공지하도록 합니다.
+                직박구리의 저작권보호 정책은 관련 법률 및 정부지침의 변경 등에 따라 개정될 수 있으며, 개정된 사항은 시행 전 홈페이지에 공지하도록 합니다.
 
 
 
@@ -318,6 +314,7 @@
     <script src="../../JS/mainpage/detail.js"></script>
     <script src="../../JS/mainpage/common.js"></script>
     <script src="../../JS/mainpage/detailheart.js"></script>
+    <script src="../../JS/register/detailproduct.js"></script>
 </body>
 
 </html>

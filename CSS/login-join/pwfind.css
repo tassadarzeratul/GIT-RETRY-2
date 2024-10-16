@@ -133,7 +133,7 @@ li {
     background-color: rgb(0, 44, 190);
     color: white;
     font-size: 20px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Gowun Dodum", sans-serif;
     font-weight: bold;
     letter-spacing: 5px;
     cursor: pointer;
@@ -290,7 +290,7 @@ li {
         background-color: rgb(0, 44, 190);
         color: white;
         font-size: 22px; /* 글씨 크기 */
-        font-family: "Noto Sans KR", sans-serif;
+        font-family: "Gowun Dodum", sans-serif;
         font-weight: bold;
         letter-spacing: 5px;
         cursor: pointer;

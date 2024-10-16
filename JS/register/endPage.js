@@ -8,13 +8,15 @@ const mainToGo = (url) => {
 // 로고
 $('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
-$('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
+$('#endpageToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/register.html'));
+$('#endpageToRegister').on('click', () => mainToGo('../../HTML/register/register.html'));
+// 펀딩 리스트
+$('#endpageToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩
-$('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
+$('#endpageToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
-$('#allPic, #mainTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
+$('#endpageTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // join
 $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
@@ -74,7 +76,7 @@ const list = [];
 
 class Comment {
     constructor(content) {
-        this.userid = "jibakguri";
+        this.userid = "익명";
         this.content = content;
         this.date = "2024-10-16";
     }

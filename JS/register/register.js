@@ -1,9 +1,36 @@
-// 팝업 사이즈
-// function showPopup() { 
-//     window.open("registerpop.html", "a", "width=450, height=450, top=200, left=400"); 
-// }
+function validateAndShowRegister() {
+    const theme = document.querySelector('.theme').value.trim();
+    const details = document.querySelector('.details').value.trim();
+    const quantityPrice = document.getElementById('quantitypirceInput').value.trim();
+    const productName = document.getElementById('productNameInput').value.trim();
+    const quantity = document.getElementById('quantityInput').value.trim();
+    const period = document.getElementById('periodInput').value.trim();
+    const targetAmount = document.getElementById('targetAmountInput').value.trim();
 
-// 
+    // 하나라도 비어 있는 필드 체크
+    if (!theme || !details || !quantityPrice || !productName || !quantity || !period || !targetAmount) {
+        alert("모든 내용을 작성해주세요.");
+        return;
+    }
+
+    // 모든 필드가 채워지면 팝업 염.
+    showRegister();
+}
+
+function showRegister() { 
+    window.open("../../HTML/register/registerpop.html", "a", "width=400,height=400,left=100,top=0"); 
+}
+
+function setThumbnail(input) {
+    // 이미지 미리보기 
+}
+
+// 팝업등록완료
+function showRegister() { window.open("../../HTML/register/registerpop.html", "a", "width=400, height=400, left=100, top=0"); 
+    
+
+}
+
 
 const container = document.getElementById('add')
 
@@ -26,19 +53,19 @@ const registerPopBtn = () => {
         registerBt.disabled = false;
     }
 }
+// // 끝
+// const joinToMain = () => {
+//     location.replace('../../HTML/mainpage/main.html');
+// }
 
-const joinToMain = () => {
-    location.replace('../../HTML/mainpage/main.html');
-}
-
-// 로그인 버튼 클릭
-registerBt.addEventListener('click', (event) => {
-    event.preventDefault(); // 기본 동작 방지
-    registerPopBtn(); // 입력검사 호출
-    if (!registerBt.disabled) { // 버튼이 활성화된 경우에만 이동
-        registerPopBtn();
-    }
-});
+// // 로그인 버튼 클릭
+// registerBt.addEventListener('click', (event) => {
+//     event.preventDefault(); // 기본 동작 방지
+//     registerPopBtn(); // 입력검사 호출
+//     if (!registerBt.disabled) { // 버튼이 활성화된 경우에만 이동
+//         registerPopBtn();
+//     }
+// });
 
 // 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
 registerTheme.addEventListener('input', registerPopBtn);

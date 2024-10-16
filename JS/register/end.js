@@ -24,9 +24,9 @@ $('#mypageBtn').on('click', () => endToGo('../../HTML/mypage/mypage.html'));
 // 검색어입력 돋보기
 $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // 작품 구매
-$('.buying').on('click', () => endToGo('../../HTML/purchase/purchasepageclone.html'));
+$('.buying').on('click', () => endToGo('../../HTML/purchase/purchasepage.html'));
 // 사진 클릭
-$('.inner img').on('click', () => endToGo('../../HTML/register/endpageclone.html'));
+$('.inner img').on('click', () => endToGo('../../HTML/register/endpage.html'));
 
 
 

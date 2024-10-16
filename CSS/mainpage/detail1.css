@@ -73,7 +73,7 @@ li {
 }
 
 .detail_1 header .scroll .menu {
-  width: 100%;
+  width: 80%;
 }
 
 .detail_1 header .scroll .menu .menu_inner {
@@ -87,7 +87,7 @@ li {
 }
 
 .detail_1 header .menu li {
-  width: 15%;
+  width: 18%;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -96,41 +96,7 @@ li {
 
 .detail_1 header .menu li:hover {
   color: orange;
-}
-
-/* 우측 서치부분 */
-.detail_1 header .search {
-  width: 40%;
-  display: flex;
-  align-items: center;
-}
-
-.detail_1 header .search input {
-  width: 100%;
-  height: 35px;
-  border-radius: 10px;
-  border: none;
-  padding: 15px;
-  margin-left: 100px;
-  background-color: rgb(243, 243, 243);
-  outline: none;
-}
-
-.detail_1 header .search i {
-  position: relative;
-  right: 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.detail_1 header .login button {
-  width: 100%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 22px;
-  font-family: "Gowun Dodum", sans-serif;
-
+  font-weight: bold;
 }
 
 /* title */
