@@ -57,7 +57,7 @@ const list = [];
 
 class Comment {
     constructor(content) {
-        this.userid = "jibakguri";
+        this.userid = "익명";
         this.content = content;
         this.date = "2024-10-16";
     }
