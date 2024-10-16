@@ -1,15 +1,11 @@
 // 화면 이동 
-// 로고
-const joinToLogin_1 = () => {
-    window.location.replace('../../HTML/mainpage/main.html');
+const joinToLogin_1 = (url) => {
+    window.open(url);
 }
-joinPic.addEventListener('click', joinToLogin_1);
-
-// 회원가입
-const joinToLogin = () => {
-    window.open('../../HTML/login-join/login.html');
-}
-joinToJoin.addEventListener('click', joinToLogin);
+// 메인
+$('#joinPic').on('click', () => joinToLogin_1('../../HTML/mainpage/main.html'));
+// 로그인
+$('#joinToJoin').on('click', () => joinToLogin_1('../../HTML/login-join/login.html'));
 
 // =============================================================================
 
@@ -165,20 +161,6 @@ const saveUserData = () => {
     localStorage.setItem('user', JSON.stringify(userData)); // LocalStorage에 저장
 };
 
-
-// 가입화면에서 약관(저작권) 팝업
-function openPopup() {
-    window.open("../../HTML/mainpage/detail5 terms.html", "popupWindow", "width=1600,height=1600,scrollbars=no");
-    
-  }
-
-// 저작권 체크박스 누르면 닫기
-
-document.getElementById('userCopy').addEventListener('click', function() {
-    if (this.checked) {
-        window.close(); // 팝업 창 닫기
-    }
-});
 
 
 

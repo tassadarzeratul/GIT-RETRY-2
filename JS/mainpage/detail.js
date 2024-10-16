@@ -23,21 +23,6 @@ $('#mypageBtn').on('click', () => detail1ToGo('../../HTML/mypage/mypage.html'));
 // ==============================================================================================
 
 
-// join창에서 약관보기 클릭 시 저작권으로 이동
-const urlParams = new URLSearchParams(window.location.search);
-const scrollTo = urlParams.get('scrollTo');
-
-if (scrollTo) {
-    const targetElement = document.getElementById(scrollTo);
-    if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-
-
-// ==============================================================================================
-
-
 // 스크롤
 document.querySelectorAll(".scroll_move").forEach(function (button) {
     button.addEventListener("click", function () {
