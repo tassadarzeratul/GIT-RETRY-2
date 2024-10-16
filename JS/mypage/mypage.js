@@ -13,7 +13,7 @@ $('#myPageToend').on('click', () => myPageToGo('../../HTML/register/end.html'));
 // 작품구매
 $('#myPageTopurchase_1').on('click', () => myPageToGo('../../HTML/purchase/purchase1.html'));
 // 작품등록
-$('endTopurchaseregister_1').on('click', () => endToGo('../../register/productregister.html'));
+$('endTopurchaseregister_1').on('click', () => endToGo('../../HTML/register/productregister.html'));
 // join
 $('#joinBtn').on('click', () => myPageToGo('../../HTML/login-join/join.html'));
 // Login
