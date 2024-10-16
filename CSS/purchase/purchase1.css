@@ -716,6 +716,10 @@ main .mainBox .left {
     width: 100%;
     height: 500px;
   }
+  .purchase1 .mySlides img {
+    width: 100%;
+    height: 100%;
+  }
 
   .purchase1 .purchase-items p {
     margin-top: 50px;
@@ -741,6 +745,11 @@ main .mainBox .left {
     width: 90%;
     height: 400px;
   }
+  .purchase1 .mySlides {
+    width: 90%;
+    height: 400px;
+    
+  }
 
   .purchase1 section.portfolio .portfolio-inner {
     width: 300px;
@@ -760,6 +769,11 @@ main .mainBox .left {
   .purchase1 .mySlides {
     width: 100%;
     height: 300px;
+  }
+
+  .purchase1 .mySlides img {
+    width: 100%;
+    height: 100%;
   }
 
   .purchase1 section.portfolio .portfolio-inner {
