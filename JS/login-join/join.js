@@ -155,7 +155,6 @@ loginBtn.addEventListener('click', (event) => {
     }
 });
 
-// 사용자 정보 저장 함수 (LocalStorage에 저장)
 const saveUserData = () => {
     const userData = {
         name: inputName.value,
@@ -165,3 +164,8 @@ const saveUserData = () => {
     };
     localStorage.setItem('user', JSON.stringify(userData)); // LocalStorage에 저장
 };
+
+
+
+// =================================================================================
+
