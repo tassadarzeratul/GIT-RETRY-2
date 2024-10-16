@@ -23,7 +23,9 @@ $('.pic_list li').on('click', () => mainToGo('../../HTML/mainpage/detail.html'))
 // 전체보기
 $('#allPic').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 최근 등록된 펀딩
-$('.rightPic').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+$('.rightPic img').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 최근 본 프로젝트
+$('.other_2 .inner').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 아래쪽 사진
 $('.otherRight .inner').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 
