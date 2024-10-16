@@ -8,7 +8,7 @@ add_more_fields.onclick = function(){
 	newField.setAttribute('name','survey_options[]');
 	newField.setAttribute('class','survey_options');
 	newField.setAttribute('siz',50);
-	newField.setAttribute('placeholder','Another Field');
+	newField.setAttribute('placeholder','설명 추가');
 	survey_options.appendChild(newField);
 }
 

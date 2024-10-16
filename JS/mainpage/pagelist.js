@@ -15,11 +15,11 @@ $('#pagelistToend').on('click', () => pagelistToGo('../../HTML/register/end.html
 // 작품구매
 $('#pagelistTopurchase_1').on('click', () => pagelistToGo('../../HTML/purchase/purchase1.html'));
 // join
-$('#pagelistToJoin').on('click', () => pagelistToGo('../../HTML/login-join/join.html'));
+$('#joinBtn').on('click', () => pagelistToGo('../../HTML/login-join/join.html'));
 // Login
-$('#pagelistToLogin').on('click', () => pagelistToGo('../../HTML/login-join/login.html'));
+$('#loginBtn').on('click', () => pagelistToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#pagelistToMyPage').on('click', () => pagelistToGo('../../HTML/mypage/mypage.html'));
+$('#mypageBtn').on('click', () => pagelistToGo('../../HTML/mypage/mypage.html'));
 // 서브 사진
 $('.pic_list').on('click', () => pagelistToGo('../../HTML/mainpage/detail.html'));
 // 오른쪽 사진
