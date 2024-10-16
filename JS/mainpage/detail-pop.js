@@ -18,7 +18,7 @@ function count(type)  {
     resultElement.innerText = number;
   }
 
-
+// 결제
   document.getElementById("myButton").onclick = function() {
     const userConfirmed = window.confirm("결제하시겠습니까?");
     if (userConfirmed) {
@@ -27,3 +27,4 @@ function count(type)  {
         alert("결제가 취소되었습니다.");
     }
 };
+// 결제끝
