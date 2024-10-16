@@ -6,8 +6,6 @@ const detail1ToGo = (url) => {
 $('#logo_picMain').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#detail1ToHome').on('click', () => detail1ToGo('../../HTML/mainpage/main.html'));
-// 펀딩등록
-$('#detail1ToRegister').on('click', () => detail1ToGo('../../HTML/register/register.html'));
 // 펀딩 리스트
 $('#detail1ToList').on('click', () => detail1ToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩

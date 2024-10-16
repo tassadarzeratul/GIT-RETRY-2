@@ -9,8 +9,6 @@ const mainToGo = (url) => {
 $('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#endpageToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
-// 펀딩등록
-$('#endpageToRegister').on('click', () => mainToGo('../../HTML/register/register.html'));
 // 펀딩 리스트
 $('#endpageToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 종료펀딩
