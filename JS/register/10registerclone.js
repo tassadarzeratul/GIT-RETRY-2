@@ -1,14 +1,15 @@
 document.getElementById('addProductBtn').addEventListener('click', function(event) {
     event.preventDefault(); // 페이지 새로고침 방지
 
-    // 입력된 금액과 수량과 상품명을 가져오기
+    // 입력된 수량과 상품명을 가져오기
+    const quantitypirce = document.getElementById('quantitypirceInput').value;
     const quantity = document.getElementById('quantityInput').value;
     const productName = document.getElementById('productNameInput').value;
-    const productName = document.getElementById('productNameInput').value;
+    
 
     // 수량이나 상품명이 입력되지 않으면 경고창 표시
-    if (!quantity || !productName || !quantitypirceInput) {
-        alert('수량과 상품명을 모두 입력해 주세요.');
+    if (!quantity || !productName || !quantitypirce) {
+        alert('상품 정보를 모두 입력해 주세요.');
         return;
     }
 
@@ -20,8 +21,9 @@ document.getElementById('addProductBtn').addEventListener('click', function(even
     productInfoDiv.innerHTML = `
         <div class="product-card">
             <div class="product-details">
-                <p>${quantity}개</p>
-                <p>${productName}</p>
+                <p>•${quantitypirce}원+</p>
+                <p>•${productName} x ${quantity}</p>
+                
             </div>
         </div>
     `;

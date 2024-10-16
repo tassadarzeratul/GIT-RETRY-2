@@ -45,17 +45,19 @@ registerTheme.addEventListener('input', registerPopBtn);
 registerDetails.addEventListener('input', registerPopBtn);
 
 
-// 상품 정보 추가 기능
-document.getElementById('addProductButton').addEventListener('click', function() {
-    const productInfo = document.getElementById('product-info');
-    const newProductInfo = productInfo.cloneNode(true); // 클론 생성
+// // 상품 정보 추가 
+// document.getElementById('addProductButton').addEventListener('click', function() {
+//     const productInfo = document.getElementById('product-info');
+//     const newProductInfo = productInfo.cloneNode(true); // 클론 생성
 
-    // 클론의 입력 필드를 초기화합니다.
-    const inputs = newProductInfo.getElementsByTagName('input');
-    for (let input of inputs) {
-        input.value = ''; // 입력값 초기화
-    }
+//     // 클론 입력 필드 초기화.
+//     const inputs = newProductInfo.getElementsByTagName('input');
+//     for (let input of inputs) {
+//         input.value = ''; // 입력값 초기화
+//     }
 
-    // 클론을 기존 DOM에 추가합니다.
-    productInfo.parentNode.insertBefore(newProductInfo, this); // 버튼 앞에 추가
-});
+//     // 클론을 기존 DOM에 추가
+//     productInfo.parentNode.insertBefore(newProductInfo, this); // 버튼 앞에 추가
+// });
+
+
