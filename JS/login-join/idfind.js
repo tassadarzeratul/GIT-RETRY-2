@@ -9,12 +9,10 @@ idfindPic.addEventListener('click', loginToLogo);
 
 // 입력창 유효성 검사 
 
-const inputEmailId = document.getElementById('userEmail');
 const inputName = document.getElementById('userName');
 const inputPhone = document.getElementById('userPhone');
 const loginBtn = document.getElementById('btnidfind');
 
-const emailWarning = document.getElementById('emailWarning');
 const nameWarning = document.getElementById('nameWarning');
 const phoneWarning = document.getElementById('phoneWarning');
 
@@ -22,20 +20,12 @@ const idfind_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
 
     // 경고 메시지 초기화
-    emailWarning.textContent = '';
     nameWarning.textContent = '';
     phoneWarning.textContent = '';
 
 
-    // 이메일 검사 (@ 포함)
-    if (!inputEmailId.value.includes('@') || /\s/.test(inputEmailId.value)) {
-        emailWarning.textContent = '이메일에는 @가 포함되어야 하며 공백을 포함할 수 없습니다.';
-        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
-        loginBtn.disabled = true;
-        isValid = false;
-    }
     // 이름 검사 (2~10자)
-    else if (inputName.value.length < 2 || inputName.value.length > 10 || /\s/.test(inputName.value)) {
+    if (inputName.value.length < 2 || inputName.value.length > 10 || /\s/.test(inputName.value)) {
         nameWarning.textContent = '이름은 2~10자이며 공백을 포함할 수 없습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;

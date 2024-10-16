@@ -30,19 +30,21 @@
                         </div>
                         <div class="inputput">
                             <div class="inputBox">
-                                <input class="Name" id="userName" type="text" placeholder=" " minlength="2" maxlength="10" autocomplete="off" required />
-                                <label for="userPwd">Name</label>
+                                <input class="name" id="userName" type="text" placeholder=" " autocomplete="off"
+                                    required>
+                                <label for="userName">Name</label>
                                 <span class="hightlight"></span>
                                 <div class="warning" id="nameWarning"></div>
                             </div>
                             <div class="inputBox">
-                                <input class="Name" id="userPhone" type="tel" placeholder=" " maxlength="11" autocomplete="off" required />
-                                <label for="userPwd">Phone</label>
+                                <input class="phone" id="userPhone" type="tel" placeholder=" " maxlength="11"
+                                    autocomplete="off" required>
+                                <label for="userPhone">Phone</label>
                                 <span class="hightlight"></span>
                                 <div class="warning" id="phoneWarning"></div>
                             </div>
                             <div class="inputBox">
-                                <input class="authentication" id="useraut" type="text" placeholder=" "
+                                <input class="authentication" id="useraut" type="text" placeholder=" " maxlength="16"
                                     autocomplete="off" required />
                                 <label for="userPwd">Authentication </label>
                                 <span class="hightlight"></span>
@@ -54,16 +56,16 @@
                     </fieldset>
                 </form>
                 <div class="find">
-                    <div class="inputpwfind">
-                        계정이 없으신가요? <a href="../../HTML/login-join/join.html">회원가입 하기</a>
-                    </div>
-
-                    <div class="inputLogin" >
-                        아이디를 잊어버리셨나요? <a href="../../HTML/login-join/id-find.html">아이디 찾기</a>
+                    <div class="inputidfind">
+                        계정이 없으신가요? <a href="../../HTML/login-join/join.html" id="idfindToJoin">회원가입 하기</a>
                     </div>
 
                     <div class="inputLogin">
-                        비밀번호를 잊어버리셨나요? <a href="../../HTML/login-join/pwfind.html">비밀번호 찾기</a>
+                        아이디를 잊어버리셨나요? <a href="../../HTML/login-join/id-find.html" id="idfindToId">아이디 찾기</a>
+                    </div>
+
+                    <div class="inputLogin">
+                        비밀번호를 잊어버리셨나요? <a href="../../HTML/login-join/idfind.html" id="idfindToPw">비밀번호 찾기</a>
                     </div>
                 </div>
             </div>
