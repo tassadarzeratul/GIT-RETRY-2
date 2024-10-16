@@ -17,8 +17,8 @@ function validateAndShowRegister() {
     showRegister();
 }
 
-function showRegister() { 
-    window.open("../../HTML/register/registerpop.html", "a", "width=400,height=400,left=100,top=0"); 
+function showRegister() {
+    window.open("../../HTML/register/registerpop.html", "a", "width=400,height=400,left=100,top=0");
 }
 
 function setThumbnail(input) {
@@ -26,8 +26,9 @@ function setThumbnail(input) {
 }
 
 // 팝업등록완료
-function showRegister() { window.open("../../HTML/register/registerpop.html", "a", "width=400, height=400, left=100, top=0"); 
-    
+function showRegister() {
+    window.open("../../HTML/register/registerpop.html", "a", "width=400, height=400, left=100, top=0");
+
 
 }
 
@@ -42,9 +43,9 @@ const registerDetails = document.getElementsByClassName('details');
 const registerBt = document.getElementsByClassName('button');
 
 const registerPopBtn = () => {
-    let isValid = true; 
+    let isValid = true;
 
-    if (registerTheme.value.length < 1 || registerDetails.value.length < 1 ) {
+    if (registerTheme.value.length < 1 || registerDetails.value.length < 1) {
         registerBt.style.backgroundColor = 'rgb(252, 146, 146)';
         registerBt.disabled = true;
         isValid = false;
@@ -72,7 +73,7 @@ registerTheme.addEventListener('input', registerPopBtn);
 registerDetails.addEventListener('input', registerPopBtn);
 
 
-// // 상품 정보 추가 
+// // 상품 정보 추가
 // document.getElementById('addProductButton').addEventListener('click', function() {
 //     const productInfo = document.getElementById('product-info');
 //     const newProductInfo = productInfo.cloneNode(true); // 클론 생성

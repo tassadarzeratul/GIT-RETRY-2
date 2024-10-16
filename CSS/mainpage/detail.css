@@ -403,7 +403,8 @@ li {
 
 .detail_5 #copyright {
   width: 80%;
-  margin: 130px auto;
+  margin: auto;
+  padding-top: 150px;
   font-family: "Gowun Dodum", sans-serif;
 }
 

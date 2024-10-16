@@ -120,7 +120,7 @@ function commentBtnHandler(e) {
     e.preventDefault();
 
     const input = e.target.content;
-    if (input.value ==="") {
+    if (input.value === "") {
         alert("내용을 넣고 등록 버튼을 눌러주세요.");
         return;
     }
