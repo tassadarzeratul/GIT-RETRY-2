@@ -11,15 +11,37 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../../css/mainpage/main.css" />
-  <script src="../../js/mainpage/common.js" defer></script>
 </head>
 
 <body>
   <!--main 화면 시작-->
-  <div data-include="header.html"></div>
   <main>
+    <header class="header">
+      <div class="top">
+        <a class="logo_pic" id="logo_picMain" href="../../HTML/mainpage/main.html">
+          <img src="../../img/withDreamLogo2.png" alt="logo">
+        </a>
+        <div class="jlmToBtn">
+          <button type="button" id="joinBtn">Join</button>
+          <button type="button" id="loginBtn">Login</button>
+          <button type="button" id="mypageBtn" style="display:none;">MyPage</button>
+          <button type="button" id="logoutBtn" style="display:none;">Logout</button>
+        </div>
+      </div>
+      <div class="scroll">
+        <div class="menu">
+          <ul class="menu_inner">
+            <li id="mainToHome">홈</li>
+            <li id="mainToRegister">펀딩 등록</li>
+            <li id="mainToList">펀딩 리스트</li>
+            <li id="mainToend">종료 펀딩</li>
+            <li id="mainTopurchase_1">작품 구매</li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <div class="mainBox">
-      <!-- 왼쪽  -->
+      <!-- 왼쪽 사진부분  -->
       <div class="left">
         <!-- 메인 슬라이더 -->
         <section>
@@ -33,12 +55,9 @@
             </ul>
           </div>
         </section>
-
         <!-- 서브 슬라이더 -->
-
         <div class="subPicComment">주목할 만한 펀딩</div>
         <sub>
-
           <!-- 첫번째 -->
           <div class="pic_container">
             <ul class="pic_list">
@@ -55,7 +74,6 @@
               <i class="fa-solid fa-angle-right fa-2x"></i>
             </button>
           </div>
-
           <!-- 두번째 -->
           <div class="pic_container">
             <ul class="pic_list">
@@ -72,7 +90,6 @@
               <i class="fa-solid fa-angle-right fa-2x"></i>
             </button>
           </div>
-
           <!-- 세번째 -->
           <div class="pic_container">
             <ul class="pic_list">
@@ -89,7 +106,6 @@
               <i class="fa-solid fa-angle-right fa-2x"></i>
             </button>
           </div>
-
           <!-- 네번째 -->
           <div class="pic_container">
             <ul class="pic_list">
@@ -108,15 +124,16 @@
           </div>
         </sub>
       </div>
-
       <!-- 최근 등록된 펀딩 -->
       <div class="right">
         <div class="title">
           <p>최근 등록된 펀딩</p>
           <div id="allPic">전체보기</div>
         </div>
+
         <div id="timeDisplay"></div>
         <div class="pic">
+
           <div class="rightPic">
             <img src="../../img/사진37.jpeg" alt="img6" />
             <div class="num">1</div>
@@ -183,8 +200,8 @@
       </div>
     </div>
 
-    <!-- 최근 본 프로젝트 -->
     <div class="otherPicComment">최근 본 프로젝트</div>
+
     <div class="other_2">
       <div class="otherTwo">
         <div class="otherPic_container">
@@ -240,8 +257,8 @@
       </div>
     </div>
 
-    <!-- 이런 펀딩 어때요? -->
     <div class="otherPicComment">이런 펀딩 어때요?</div>
+
     <div class="other">
       <div class="otherLeft">
         <div class="inner">
@@ -253,6 +270,7 @@
 
       <div class="otherRight">
         <div class="otherOne">
+
           <div class="otherPic_container">
             <div class="inner" id="otherPic_1">
               <img src="../../img/사진49.jpeg" alt="img30">
@@ -351,8 +369,8 @@
     </div>
   </main>
   <!--Main 화면 끝-->
-
   <script src="../../js/mainpage/main.js"></script>
+  <script src="../../js/mainpage/common.js"></script>
 </body>
 
 </html>

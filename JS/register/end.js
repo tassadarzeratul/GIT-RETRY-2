@@ -32,47 +32,5 @@ $('.inner img').on('click', () => endToGo('../../HTML/register/endpage.html'));
 
 // ============================================================================
 
-// 검색어를 입력 후 돋보기를 누르면 상세페이지 이동
-document.getElementById("searchI").addEventListener("click", function () {
-    const query = document.getElementById("searchBox").value;
-    if (query) {
-        window.location.href = `../../HTML/mainpage/detail.html`;
-    } else {
-        alert("검색어를 입력해주세요.");
-    }
-});
-
-
-// 슬라이드 동작 구현
-let currentSlide = 0;
-const slides = document.querySelectorAll(".pic_list");
-const totalSlides = slides.length;
-
-document.querySelector(".nextBtn").addEventListener("click", function () {
-    if (currentSlide < totalSlides - 1) {
-        currentSlide++;
-        updateSlidePosition();
-    } else {
-        currentSlide = 0; // 마지막 슬라이드에서 처음으로
-        updateSlidePosition();
-    }
-});
-
-document.querySelector(".prevBtn").addEventListener("click", function () {
-    if (currentSlide > 0) {
-        currentSlide--;
-        updateSlidePosition();
-    } else {
-        currentSlide = totalSlides - 1; // 첫 슬라이드에서 마지막으로
-        updateSlidePosition();
-    }
-});
-
-function updateSlidePosition() {
-    const slideWidth = document.querySelector(".pic_container").offsetWidth;
-    document.querySelector(".pic_list").style.transform = `translateX(-${currentSlide * slideWidth
-        }px)`;
-}
-
 
 

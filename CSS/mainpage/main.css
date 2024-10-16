@@ -793,39 +793,6 @@ main .explain {
   main .other .otherRight .title {
     font-size: 13px;
   }
-
-  main .close {
-    width: 90%;
-    height: 300px;
-    margin: auto;
-    /* margin-top: 150px; */
-    margin-bottom: 50px;
-    border-radius: 5px;
-  }
-
-  main .close .container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-  }
-
-  main .close .container .left {
-    width: 50%;
-    padding: 0px;
-  }
-
-  main .close .container .right {
-    width: 100%;
-  }
-
-  main .close .container .left .comment .author {
-    font-size: 13px;
-  }
-
-  main .close .container .left .comment .title {
-    font-size: 18px;
-  }
 }
 
 /*태블릿 디바이스 (가로 해상도가 768px보다 크고 991px 보다 작은 화면에 적용)  */
@@ -974,25 +941,7 @@ main .explain {
     padding-top: 10px;
   }
 
-  /* close */
 
-  main .close .container {
-    padding: 0px;
-  }
-
-  main .close .container .left {
-    width: 40%;
-    padding-left: 0px;
-  }
-
-  main .close .container .left .comment .author {
-    font-size: 14px;
-    padding: 0px;
-  }
-
-  main .close .container .left .comment .title {
-    font-size: 18px;
-  }
 }
 
 
