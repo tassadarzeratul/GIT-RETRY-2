@@ -10,9 +10,12 @@ $('#myPageToList').on('click', () => myPageToGo('../../HTML/mainpage/pagelist.ht
 $('#myPageToend').on('click', () => myPageToGo('../../HTML/register/end.html'));
 // 작품구매
 $('#myPageTopurchase_1').on('click', () => myPageToGo('../../HTML/purchase/purchase1.html'));
+// 작품등록
+$('#endTopurchaseregister_1').on('click', () => myPageToGo('../../HTML/register/productregister.html'));
 // join
 $('#joinBtn').on('click', () => myPageToGo('../../HTML/login-join/join.html'));
 // Login
 $('#loginBtn').on('click', () => myPageToGo('../../HTML/login-join/login.html'));
 // myPage
 $('#mypageBtn').on('click', () => myPageToGo('../../HTML/mypage/mypage.html'));
+

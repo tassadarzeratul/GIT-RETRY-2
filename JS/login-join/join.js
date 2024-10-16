@@ -166,8 +166,19 @@ const saveUserData = () => {
 };
 
 
+// 가입화면에서 약관(저작권) 팝업
+function openPopup() {
+    window.open("../../HTML/mainpage/detail5 terms.html", "popupWindow", "width=1600,height=1600,scrollbars=no");
+    
+  }
 
-// =================================================================================
+// 저작권 체크박스 누르면 닫기
+
+document.getElementById('userCopy').addEventListener('click', function() {
+    if (this.checked) {
+        window.close(); // 팝업 창 닫기
+    }
+});
 
 
 
