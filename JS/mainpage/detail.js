@@ -15,11 +15,11 @@ $('#detail1ToEnd').on('click', () => detail1ToGo('../../HTML/register/end.html')
 // 작품구매
 $('#detail1Topurchase_1').on('click', () => detail1ToGo('../../HTML/purchase/purchase1.html'));
 // join
-$('#detail1ToJoin').on('click', () => detail1ToGo('../../HTML/login-join/join.html'));
+$('#joinBtn').on('click', () => detail1ToGo('../../HTML/login-join/join.html'));
 // Login
-$('#detail1Tologin').on('click', () => detail1ToGo('../../HTML/login-join/login.html'));
+$('#loginBtn').on('click', () => detail1ToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#detail1ToMyPagen').on('click', () => detail1ToGo('../../HTML/mypage/김건우_mypage.html'));
+$('#mypageBtn').on('click', () => detail1ToGo('../../HTML/mypage/mypage.html'));
 // 검색어입력 돋보기
 $('#detail1SearchI').on('click', () => detail1ToGo('../../HTML/purchase/purchase1.html'));
 
