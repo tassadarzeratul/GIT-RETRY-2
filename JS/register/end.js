@@ -15,8 +15,6 @@ $('#pagelistToList').on('click', () => endToGo('../../HTML/mainpage/pagelist.htm
 $('#endToend').on('click', () => endToGo('../../HTML/register/end.html'));
 // 작품구매
 $('#endTopurchase_1').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
-// 작품등록
-$('endTopurchaseregister_1').on('click', () => endToGo('../../register/productregister.html'));
 // join
 $('#joinBtn').on('click', () => endToGo('../../HTML/login-join/join.html'));
 // Login
