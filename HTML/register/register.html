@@ -27,7 +27,6 @@
         <div class="content">
             <form class="description">
                 <div class="wrapper">
-<a href="../../HTML/mainpage/detail-pop.html"></a>
                     <h2>펀딩 주제</h2>
                     <textarea class="theme" placeholder="펀딩 주제를 작성해주세요"></textarea>
                     <h2>펀딩 설명</h2>
@@ -43,7 +42,7 @@
                     </div>
                     <div class="controls">
                         <a href="#" id="add_more_fields"><i class="fa fa-plus"></i>설명 추가하기</a>
-                        <a href="#" id="remove_fields"><i class="fa fa-plus"></i>설명 지우기</a>
+                        <a href="#" id="remove_fields"><i class="fa fa-minus"></i>설명 지우기</a>
                     </div>
                 </div>
                 <!-- 추가버튼 끝 -->
@@ -82,12 +81,12 @@
 
                     <div class="add">
                         <label>기간:</label>
-                        <input class="addbutton" type="text" placeholder="YY.MM.DD ~ YY.MM.DD">
+                        <input class="addbutton" type="text" id="periodInput" placeholder="YY.MM.DD ~ YY.MM.DD">
                         <label>목표금액:</label>
-                        <input class="addbutton" type="text" placeholder="금액 입력">
+                        <input class="addbutton" type="text" id="targetAmountInput" placeholder="금액 입력">
                     </div>
             
-                    <button class="duplicate" onclick="showRegister();">
+                    <button class="duplicate" onclick="validateAndShowRegister();">
                         등록하기
                     </button>
                 </div>
