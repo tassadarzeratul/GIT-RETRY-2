@@ -44,7 +44,6 @@ main header .top {
 
 
 
-
 /* 상단 로고 */
 
 .purchase1 {
@@ -94,16 +93,14 @@ main header .jlmToBtn button:hover {
 
 /* nmenu */
 
-
 main header .scroll {
   width: 100%;
   display: flex;
   border-bottom: 2px solid rgb(184, 181, 181);
-  background-color: white;
 }
 
 main header .scroll .menu {
-  width: 100%;
+  width: 80%;
 }
 
 main header .scroll .menu .menu_inner {
@@ -111,6 +108,7 @@ main header .scroll .menu .menu_inner {
   height: 70px;
   display: flex;
   background: white;
+  border: none;
   align-items: center;
   text-align: center;
 }
@@ -126,42 +124,6 @@ main header .menu li {
 main header .menu li:hover {
   color: orange;
   font-weight: bold;
-}
-
-/* 우측 서치부분 */
-
-
-main header .search {
-  width: 40%;
-  display: flex;
-  align-items: center;
-}
-
-main header .search input {
-  width: 100%;
-  height: 35px;
-  border-radius: 10px;
-  border: none;
-  padding: 15px;
-  margin-left: 100px;
-  background-color: rgb(243, 243, 243);
-  outline: none;
-}
-
-main header .search i {
-  position: relative;
-  right: 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-main header .login button {
-  width: 100%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 22px;
-  font-family: "Gowun Dodum", sans-serif;
 }
 
 /* 메인 */

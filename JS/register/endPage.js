@@ -14,7 +14,7 @@ $('#mainToRegister').on('click', () => mainToGo('../../HTML/register/register.ht
 // 종료펀딩
 $('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
-$('#allPic, #mainTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
+$('#mainTopurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
 // join
 $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
