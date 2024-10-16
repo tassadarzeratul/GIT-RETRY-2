@@ -133,6 +133,29 @@ li {
   font-family: "Gowun Dodum", sans-serif;
 }
 
+.pagelist .mainComment {
+  width: 100%;
+  display: flex;
+  margin-top: 70px;
+}
+
+.pagelist .mainComment .left {
+  width: 40%;
+  font-size: 20px;
+  padding-left: 100px;
+  line-height: 30px;
+}
+
+.pagelist .mainComment .left span{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.pagelist .mainComment .right {
+  width: 50%;
+}
+
+
 .pagelist .subComment {
   margin-top: 80px;
   margin-bottom: 10px;

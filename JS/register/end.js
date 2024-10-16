@@ -16,11 +16,11 @@ $('#endToend').on('click', () => endToGo('../../HTML/register/end.html'));
 // 작품구매
 $('#endTopurchase_1').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // join
-$('#endToJoin').on('click', () => endToGo('../../HTML/login-join/join.html'));
+$('#joinBtn').on('click', () => endToGo('../../HTML/login-join/join.html'));
 // Login
-$('#endToLogin').on('click', () => endToGo('../../HTML/login-join/login.html'));
+$('#loginBtn').on('click', () => endToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#endToMyPage').on('click', () => endToGo('../../HTML/mypage/mypage.html'));
+$('#mypageBtn').on('click', () => endToGo('../../HTML/mypage/mypage.html'));
 // 검색어입력 돋보기
 $('#endToSearch').on('click', () => endToGo('../../HTML/purchase/purchase1.html'));
 // 작품 구매
