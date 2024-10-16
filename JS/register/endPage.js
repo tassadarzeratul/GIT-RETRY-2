@@ -12,7 +12,7 @@ $('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 홈
 $('#mainToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
 // 펀딩등록
-$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/김건우_register.html'));
+$('#mainToRegister').on('click', () => mainToGo('../../HTML/register/register.html'));
 // 종료펀딩
 $('#mainToend').on('click', () => mainToGo('../../HTML/register/end.html'));
 // 작품구매
@@ -22,7 +22,7 @@ $('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
 // Login
 $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#endToMyPage').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
+$('#mypageBtn').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
 
 
 // 슬라이드
