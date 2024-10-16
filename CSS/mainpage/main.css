@@ -191,7 +191,7 @@ main section .pic_slider {
   transition: transform 0.5s ease-in-out;
 }
 
-/* 메인 슬라이더 3장 간격 */
+/* 메인 슬라이더 5장 간격 */
 main section .pic_slider li {
   width: 20%;
 }
@@ -251,7 +251,7 @@ main sub button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: rgb(255, 255, 255);
+  color: rgb(91, 91, 93);
   cursor: pointer;
 }
 
@@ -314,7 +314,7 @@ main .mainBox .right .pic .rightPic {
 /* 메인 오른쪽 이미지 크기 */
 main .mainBox .right .pic .rightPic img {
   width: 40%;
-  height: 112px;
+  height: 113px;
   border-radius: 10px;
   cursor: pointer;
   transition-duration: 0.3s;

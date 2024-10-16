@@ -13,11 +13,11 @@ $('#myPageToend').on('click', () => myPageToGo('../../HTML/register/end.html'));
 // 작품구매
 $('#myPageTopurchase_1').on('click', () => myPageToGo('../../HTML/purchase/purchase1.html'));
 // join
-$('#mypageTojoin').on('click', () => myPageToGo('../../HTML/login-join/join.html'));
+$('#joinBtn').on('click', () => myPageToGo('../../HTML/login-join/join.html'));
 // Login
-$('#mypageTologin').on('click', () => myPageToGo('../../HTML/login-join/login.html'));
+$('#loginBtn').on('click', () => myPageToGo('../../HTML/login-join/login.html'));
 // myPage
-$('#mypageTomyPage').on('click', () => myPageToGo('../../HTML/mypage/mypage.html'));
+$('#mypageBtn').on('click', () => myPageToGo('../../HTML/mypage/mypage.html'));
 
 
 // 검색어를 입력 후 돋보기를 누르면 상세페이지 이동

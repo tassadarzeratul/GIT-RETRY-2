@@ -1,25 +1,55 @@
-function setThumbnail(event) {
-    for (var image of event.target.files) {
-        var reader = new FileReader();
+function setThumbnail(input) {
+  const container = document.getElementById("image_container");
+  console.log("파일 선택됨:", input.files); // 선택된 파일 목록 출력
 
-        reader.onload = function (event) {
-            var img = document.createElement("img");
-            img.setAttribute("src", event.target.result);
-            document.querySelector("div#image_container").appendChild(img);
-        };
-        console.log(image);
-        reader.readAsDataURL(image);
-    }
+  for (const image of input.files) {
+      const reader = new FileReader();
+
+      reader.onload = function (event) {
+          const img = new Image();
+          img.src = event.target.result;
+
+          img.onload = function() {
+              const canvas = document.createElement("canvas");
+              const ctx = canvas.getContext("2d");
+              
+              const maxWidth = 80; // 최대 너비
+              const maxHeight = 80; // 최대 높이
+              let width = img.width;
+              let height = img.height;
+
+              // 비율 유지하면서 리사이즈
+              if (width > height) {
+                  if (width > maxWidth) {
+                      height = Math.round((height * maxWidth) / width);
+                      width = maxWidth;
+                  }
+              } else {
+                  if (height > maxHeight) {
+                      width = Math.round((width * maxHeight) / height);
+                      height = maxHeight;
+                  }
+              }
+
+              canvas.width = width;
+              canvas.height = height;
+              ctx.drawImage(img, 0, 0, width, height);
+
+              const resizedImage = canvas.toDataURL("image/png");
+              const resizedImgElement = document.createElement("img");
+              resizedImgElement.setAttribute("src", resizedImage);
+              resizedImgElement.classList.add('preview-image'); // CSS 클래스 추가
+              container.appendChild(resizedImgElement); // 미리보기 컨테이너에 이미지 추가
+              
+              console.log("리사이즈된 이미지 추가:", resizedImage); // 추가된 이미지 출력
+          };
+      };
+
+      reader.readAsDataURL(image); // 파일을 Data URL로 읽기
+  }
 }
 
-const textarea = useRef();
-
-const handleResizeHeight = () => {
-    textarea.current.style.height = 'auto'; //height 초기화
-    textarea.current.style.height = textarea.current.scrollHeight + 'px';
-};
-
-
+  
 // 추가
 // function loadFile(input) {
 //     let file = input.files[0]; // 선택파일 가져오기

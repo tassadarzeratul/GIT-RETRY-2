@@ -43,3 +43,19 @@ registerBt.addEventListener('click', (event) => {
 // 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
 registerTheme.addEventListener('input', registerPopBtn);
 registerDetails.addEventListener('input', registerPopBtn);
+
+
+// 상품 정보 추가 기능
+document.getElementById('addProductButton').addEventListener('click', function() {
+    const productInfo = document.getElementById('product-info');
+    const newProductInfo = productInfo.cloneNode(true); // 클론 생성
+
+    // 클론의 입력 필드를 초기화합니다.
+    const inputs = newProductInfo.getElementsByTagName('input');
+    for (let input of inputs) {
+        input.value = ''; // 입력값 초기화
+    }
+
+    // 클론을 기존 DOM에 추가합니다.
+    productInfo.parentNode.insertBefore(newProductInfo, this); // 버튼 앞에 추가
+});
