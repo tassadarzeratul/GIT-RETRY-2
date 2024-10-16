@@ -6,13 +6,19 @@ function count(type)  {
     let number = resultElement.innerText;
     
     // 더하기/빼기
-    if(type === 'plus') {
-      number = parseInt(number) + 1;
-    }else if(type === 'minus')  {
-      number = parseInt(number) - 1;
-    }else if(number === 0) {
-        number = parseInt(number) === 0;
+    if(number > 1) {
+      if(type === 'plus') {
+        number = parseInt(number) + 1;
+      }else if(type === 'minus')  {
+        number = parseInt(number) - 1;
+      }
+      
+    }else if ( number = 1) {
+      if(type === 'plus') {
+        number = parseInt(number) + 1;
     }
+  }
+    
     
     // 결과 출력
     resultElement.innerText = number;
