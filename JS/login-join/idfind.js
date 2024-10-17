@@ -11,10 +11,12 @@ idfindPic.addEventListener('click', loginToLogo);
 
 const inputName = document.getElementById('userName');
 const inputPhone = document.getElementById('userPhone');
+const useraut = document.getElementById('useraut');
 const loginBtn = document.getElementById('btnidfind');
 
 const nameWarning = document.getElementById('nameWarning');
 const phoneWarning = document.getElementById('phoneWarning');
+const userautWarning = document.getElementById('userautWarning');
 
 const idfind_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
@@ -22,6 +24,7 @@ const idfind_user = () => {
     // 경고 메시지 초기화
     nameWarning.textContent = '';
     phoneWarning.textContent = '';
+    userautWarning.textContent = '';
 
 
     // 이름 검사 (2~10자)
@@ -35,6 +38,14 @@ const idfind_user = () => {
     // 전화번호 검사 (11자)
     else if (inputPhone.value.length !== 11 || /\s/.test(inputPhone.value)) {
         phoneWarning.textContent = '전화번호는 11자리여야 하며 공백을 포함할 수 없습니다.';
+        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
+        loginBtn.disabled = true;
+        isValid = false;
+    }
+
+    // 인증번호 (6자)
+    else if (useraut.value.length !== 6 || /\s/.test(useraut.value)) {
+        userautWarning.textContent = '인증번호는 6자리여야 하며 공백을 포함할 수 없습니다.';
         loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
         loginBtn.disabled = true;
         isValid = false;
