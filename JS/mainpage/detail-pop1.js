@@ -31,14 +31,14 @@ function count(type) {
 }
 
 // 결제
-// document.getElementById("myButton").onclick = function () {
-//   const userConfirmed = window.confirm("결제하시겠습니까?");
-//   if (userConfirmed) {
-//     alert("결제가 완료되었습니다.");
-//   } else {
-//     alert("결제가 취소되었습니다.");
-//   }
-// };
+document.getElementById("myButton").onclick = function () {
+  const userConfirmed = window.confirm("결제하시겠습니까?");
+  if (userConfirmed) {
+    alert("결제가 완료되었습니다.");
+  } else {
+    alert("결제가 취소되었습니다.");
+  }
+};
 
 
 // 결제끝
