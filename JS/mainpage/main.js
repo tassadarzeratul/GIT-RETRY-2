@@ -20,6 +20,8 @@ $('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
 $('#mypageBtn').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
 // 서브 사진
 $('.pic_list li').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 서브 사진
+$('.pic_list .inner').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 // 전체보기
 $('#allPic').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
 // 최근 등록된 펀딩
