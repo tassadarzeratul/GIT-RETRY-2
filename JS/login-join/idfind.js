@@ -51,7 +51,6 @@ const idfind_user = () => {
         isValid = false;
     }
 
-
     // 모든 조건을 통과했을 경우
     if (isValid) {
         loginBtn.style.backgroundColor = "#0095F6";
@@ -75,4 +74,5 @@ loginBtn.addEventListener('click', (event) => {
 });
 
 inputName.addEventListener('input', idfind_user);
+useraut.addEventListener('input', idfind_user);
 inputPhone.addEventListener('input', idfind_user);
