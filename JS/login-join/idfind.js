@@ -63,7 +63,5 @@ loginBtn.addEventListener('click', (event) => {
     }
 });
 
-// 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
-inputEmailId.addEventListener('input', idfind_user);
 inputName.addEventListener('input', idfind_user);
 inputPhone.addEventListener('input', idfind_user);
