@@ -12,6 +12,9 @@ $('#myPageToend').on('click', () => myPageToGo('../../HTML/register/end.html'));
 $('#myPageTopurchase_1').on('click', () => myPageToGo('../../HTML/purchase/purchase1.html'));
 // 작품등록
 $('#endTopurchaseregister_1').on('click', () => myPageToGo('../../HTML/register/productregister.html'));
+// 펀딩등록
+$('#endTregister_1').on('click', () => myPageToGo('../../HTML/register/register.html'));
+
 // join
 $('#joinBtn').on('click', () => myPageToGo('../../HTML/login-join/join.html'));
 // Login
