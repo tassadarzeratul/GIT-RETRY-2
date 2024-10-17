@@ -11,10 +11,12 @@ idfindPic.addEventListener('click', loginToLogo);
 
 const inputName = document.getElementById('userName');
 const inputPhone = document.getElementById('userPhone');
+const useraut = document.getElementById('useraut');
 const loginBtn = document.getElementById('btnidfind');
 
 const nameWarning = document.getElementById('nameWarning');
 const phoneWarning = document.getElementById('phoneWarning');
+const userautWarning = document.getElementById('userautWarning');
 
 const idfind_user = () => {
     let isValid = true; // 모든사항이 유효한지 확인 변수
@@ -22,6 +24,7 @@ const idfind_user = () => {
     // 경고 메시지 초기화
     nameWarning.textContent = '';
     phoneWarning.textContent = '';
+    userautWarning.textContent = '';
 
 
     // 이름 검사 (2~10자)
@@ -40,6 +43,13 @@ const idfind_user = () => {
         isValid = false;
     }
 
+    // 인증번호 (6자)
+    else if (useraut.value.length !== 6 || /\s/.test(useraut.value)) {
+        userautWarning.textContent = '인증번호는 6자리여야 하며 공백을 포함할 수 없습니다.';
+        loginBtn.style.backgroundColor = 'rgb(252, 146, 146)';
+        loginBtn.disabled = true;
+        isValid = false;
+    }
 
     // 모든 조건을 통과했을 경우
     if (isValid) {
@@ -63,7 +73,6 @@ loginBtn.addEventListener('click', (event) => {
     }
 });
 
-// 각 입력 필드에서 입력이 변경될 때마다 join_user 호출
-inputEmailId.addEventListener('input', idfind_user);
 inputName.addEventListener('input', idfind_user);
+useraut.addEventListener('input', idfind_user);
 inputPhone.addEventListener('input', idfind_user);

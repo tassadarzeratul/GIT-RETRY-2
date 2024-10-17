@@ -27,3 +27,9 @@ document.getElementById('logoutBtn')?.addEventListener('click', () => {
     localStorage.setItem('isLoggedIn', 'false');
     location.reload();
 });
+
+// 약관페이지 체크박스 누르면 윈도우 닫힘
+const userCopy = document.getElementById('userCopy');
+userCopy.addEventListener('click', (event) => {
+    window.close();
+});
