@@ -1,31 +1,36 @@
 // main 화면으로 이동
-// const mainToMain = () => {
-//     window.open('../../HTML/mainpage/main.html', '_blank');
-// }
-// logo_picMain.addEventListener('click', mainToMain);
-
-const mainToMain_1 = () => {
-    window.open('../../HTML/mainpage/main.html', '_blank');
+const mainToGo = (url) => {
+    window.open(url);
 }
-logo_picMainHome.addEventListener('click', mainToMain_1);
+// 로고
+$('#logo_picMain').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
+// 홈
+$('#ToHome').on('click', () => mainToGo('../../HTML/mainpage/main.html'));
+// 펀딩리스트
+$('#ToList').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
+// 종료펀딩
+$('#Toend').on('click', () => mainToGo('../../HTML/register/end.html'));
+// 작품구매
+$('#Topurchase_1').on('click', () => mainToGo('../../HTML/purchase/purchase1.html'));
+// join
+$('#joinBtn').on('click', () => mainToGo('../../HTML/login-join/join.html'));
+// Login
+$('#loginBtn').on('click', () => mainToGo('../../HTML/login-join/login.html'));
+// myPage
+$('#mypageBtn').on('click', () => mainToGo('../../HTML/mypage/mypage.html'));
+// 서브 사진
+$('.pic_list li').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 서브 사진
+$('.pic_list .inner').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 전체보기
+$('#allPic').on('click', () => mainToGo('../../HTML/mainpage/pagelist.html'));
+// 최근 등록된 펀딩
+$('.rightPic img').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 최근 본 프로젝트
+$('.other_2 .inner').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
+// 아래쪽 사진
+$('.otherRight .inner').on('click', () => mainToGo('../../HTML/mainpage/detail.html'));
 
-// Join 화면으로 이동
-const mainToJoin = () => {
-    window.open('../../HTML/login-join/join.html', '_blank');
-}
-joinBtn.addEventListener('click', mainToJoin);
-
-// Login 화면으로 이동
-const mainToLogin = () => {
-    window.open('../../HTML/login-join/login.html');
-}
-loginBtn.addEventListener('click', mainToLogin);
-
-// Mapage 화면으로 이동
-const mainToMypage = () => {
-    window.open('../../HTML/mypage/김건우_mypage.html');
-}
-myPageBtn.addEventListener('click', mainToMypage);
 
 
 // main slider 동작구현 =================================================================
@@ -52,10 +57,8 @@ function slideImages() {
 
 setInterval(slideImages, 3000);
 
-// main slider 동작구현 끝 =================================================================
 
 // sub slider 동작구현 =================================================================
-
 document.querySelectorAll('sub .pic_container').forEach(container => {
     // 각 슬라이드 영역의 클래스명 pic_container
     const picList = container.querySelector('.pic_list');
@@ -70,6 +73,7 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
             liIndex[i].style.display = "none";
         }
         liIndex[currentIndex].style.display = "block";
+
     });
 
     container.querySelector('.nextBtn').addEventListener('click', () => {
@@ -82,4 +86,12 @@ document.querySelectorAll('sub .pic_container').forEach(container => {
     });
 });
 
-// sub slider 동작구현 끝 =================================================================
+
+// 현재날짜,시간 표시 =================================================================
+function displayTime() {
+    let now = new Date();
+    document.getElementById("timeDisplay").innerText = now.toLocaleString();
+}
+setInterval(displayTime, 1000); // 1초마다 갱신
+
+
